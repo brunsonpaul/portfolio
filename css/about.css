@@ -1,0 +1,71 @@
+#about { padding:149px 6.55% 50px; }
+#about article h1 { font-family: 'mostra-nuova-light'; font-size:1.875em; text-align:center; }
+#about article h1 em { letter-spacing:0.16em; }
+#about article p { width:85%; margin:10px auto; font-family: 'mostra-nuova-light'; font-size:1.25em; text-align:center; }
+#about article a { color:#111; }
+#about article a:hover { color:#111; text-decoration:underline; }
+.age { position:relative; display:inline-block; width:38px; height:34px; vertical-align:bottom; }
+.age div { position:absolute; display:inline-block; width:38px; height:34px; top:0; left:0; clip:rect(0,40px,34px,0); }
+.age span { position:absolute; text-align:center; width:19px; display:inline-block;  }
+.age span:nth-of-type(1) { left:0; -moz-animation: firstNumber 5s infinite linear; -o-animation: firstNumber 5s infinite linear; -webkit-animation: firstNumber 5s infinite linear; animation: firstNumber 5s infinite linear; }
+.age span:nth-of-type(2) { right:0; -moz-animation: secondNumber 5s infinite linear; -o-animation: secondNumber 5s infinite linear; -webkit-animation: secondNumber 5s infinite linear; animation: secondNumber 5s infinite linear; }
+@-moz-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-136px; } 100% { top:0; } }
+@-webkit-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-136px; } 100% { top:0; } }
+@-o-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-136px; } 100% { top:0; } }
+@-ms-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-136px; } 100% { top:0; } }
+@keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-136px; } 100% { top:0; } }
+@-moz-keyframes secondNumber { 0% { top:0; } 20%, 80%{ bottom:-136px; } 100% { bottom:0; } }
+@-webkit-keyframes secondNumber { 0% { top:-136px; } 20%, 80%{ top:0; } 100% { top:-136px; } }
+@-o-keyframes secondNumber { 0% { bottom:0; } 20%, 80%{ bottom:-136px; } 100% { bottom:0; } }
+@-ms-keyframes secondNumber { 0% { bottom:0; } 20%, 80%{ bottom:-136px; } 100% { bottom:0; } }
+@keyframes secondNumber { 0% { bottom:0; } 20%, 80%{ bottom:-136px; } 100% { bottom:0; } }
+
+#about article h2 { font-family: 'mostra-nuova-regular'; font-size:3.5em; text-transform:uppercase; text-align:center; margin-top:30px; }
+#about article h2:after { content:''; display:block; width:400px; height:18px; background:url(img/bottom-use.png) no-repeat; margin:15px auto 10px auto; }
+#about article ul { margin:auto; width:400px; font-size:0; margin-bottom:500px;}
+#about article ul li { position:relative; font-size:1rem; font-family: 'mostra-nuova-bold'; display:inline-block; width:28%; text-align:center; }
+#about article ul li img { display:block; width:100%; }
+#about article ul li:nth-of-type(2){ margin:0 8%; }
+
+.code { position:absolute; width:100%; background:red; clip:rect(0,112px,112px,0); }
+.code span { position:absolute; width:100%; left:0; -moz-animation: codeAnimation 8s infinite linear; -o-animation: codeAnimation 8s infinite linear; -webkit-animation: codeAnimation 8s infinite linear; animation: codeAnimation 8s infinite linear; }
+@-moz-keyframes codeAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@-webkit-keyframes codeAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@-o-keyframes codeAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@-ms-keyframes codeAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@keyframes codeAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+
+.design { position:absolute; width:100%; background:red; clip:rect(0,112px,112px,0); }
+.design span { position:absolute; width:100%; left:0; -moz-animation: designAnimation 8s infinite linear; -o-animation: designAnimation 8s infinite linear; -webkit-animation: designAnimation 8s infinite linear; animation: designAnimation 8s infinite linear; }
+@-moz-keyframes designAnimation { 0%, 30% { top:-224px; } 35%, 65%{ top:-112px; } 70%, 100% { top:0; } }
+@-webkit-keyframes designAnimation { 0%, 30% { top:-224px; } 35%, 65%{ top:-112px; } 70%, 100% { top:0; } }
+@-o-keyframes designAnimation { 0%, 30% { top:-224px; } 35%, 65%{ top:-112px; } 70%, 100% { top:0; } }
+@-ms-keyframes designAnimation { 0%, 30% { top:-224px; } 35%, 65%{ top:-112px; } 70%, 100% { top:0; } }
+@keyframes designAnimation { 0%, 30% { top:-224px; } 35%, 65%{ top:-112px; } 70%, 100% { top:0; } }
+
+.management { position:absolute; width:100%; background:red; clip:rect(0,112px,112px,0); }
+.management span { position:absolute; width:100%; left:0; -moz-animation: managementAnimation 8s infinite linear; -o-animation: managementAnimation 8s infinite linear; -webkit-animation: managementAnimation 8s infinite linear; animation: managementAnimation 8s infinite linear; }
+@-moz-keyframes managementAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@-webkit-keyframes managementAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@-o-keyframes managementAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@-ms-keyframes managementAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+@keyframes managementAnimation { 0%, 30% { top:0; } 35%, 65%{ top:-112px; } 70%, 100% { top:-224px; } }
+
+
+@media screen and (max-width:640px) {
+
+}
+
+@media screen and (min-width:641px) {
+
+}
+
+@media screen and (min-width:1024px) {
+
+}
+
+@media screen and (min-width:1200px) {
+
+}
+
+

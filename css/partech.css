@@ -1,0 +1,196 @@
+#description { text-align:center; z-index:1; position:relative; background:#fcfcfc; }
+#description h1 { text-transform:uppercase; letter-spacing:0.16em; margin-bottom:30px; }
+#description h1:after { content:''; display:block; width:83px; height:4px; background:url(img/bottom-project.png) no-repeat; }
+#description ul li { font-family:'mostra-nuova-light'; font-size:1.125em; }
+#description ul li em { font-family:'mostra-nuova-regular';}
+#description p { margin:30px auto; font-family:'mostra-nuova-light'; }
+#description a { display:inline-block; font-family:'mostra-nuova-light'; padding:10px 20px; margin:auto; background:#111; color:#fcfcfc; font-size:1em; -moz-transition:all 0.6s ease 0s; -webkit-transition:all 0.6s ease 0s; -ms-transition:all 0.6s ease 0s; -khtml-transition:all 0.6s ease 0s; transition:all 0.6s ease 0s; }
+
+#dragScreen { position:relative; z-index:1; background:#eee; border-top:1px solid #ccc; border-bottom:1px solid #ccc; overflow:hidden; }
+#dragScreen div { position:relative; margin:auto; }
+
+#graphicIdentity { position:relative; z-index:1; background:#fcfcfc; }
+
+#sketch { position:relative; z-index:1; background:#111 url(img/dark-grid.png) repeat; background-position:center center; }
+#sketch img { width:100%; margin:auto; display:block; }
+
+#screenSize { position:relative; z-index:1; background:#fcfcfc; overflow:hidden; }
+#screenSize ul { position:absolute; left:50%; margin-left:-35px; padding:10px 0; width:70px; display:block; z-index:5; text-align:center; }
+#screenSize ul li{ position:relative; z-index:5; cursor:pointer; display:inline-block; margin:0 3px; width:8px; height:8px; text-indent:-9999px; border:1px solid #111; background:#fcfcfc; -o-transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); -khtml-transform:rotate(45deg); transform:rotate(45deg); -moz-transition:all 0.6s ease 0s; -webkit-transition:all 0.6s ease 0s; -ms-transition:all 0.6s ease 0s; -khtml-transition:all 0.6s ease 0s; transition:all 0.6s ease 0s; }
+#screenSize ul li:hover { background:#111; }
+#screenSize ul .screenSizeActive { background:#111;	-o-transform:rotate(405deg); -moz-transform:rotate(405deg); -webkit-transform:rotate(405deg); -ms-transform:rotate(405deg); -khtml-transform:rotate(405deg); transform:rotate(405deg); }
+#imac { position:relative; z-index:1; margin:auto; }
+#imac img:nth-of-type(1) { display:block; margin:auto; }
+#imac img:nth-of-type(2) { position:absolute; }
+#macbook { position:absolute; z-index:2; }
+#macbook img:nth-of-type(1) {display:block; margin:auto; }
+#macbook img:nth-of-type(2) { position:absolute; }
+#iphone5 { position:absolute; z-index:3; }
+#iphone5 img:nth-of-type(1) { display:block; margin:auto; }
+#iphone5 img:nth-of-type(2) { position:absolute; }
+#ipad { position:absolute; z-index:2; }
+#ipad img:nth-of-type(1) { display:block; margin:auto; }
+#ipad img:nth-of-type(2) { position:absolute; }
+#screenSize input { display:none; }
+#screenSize label:nth-of-type(1) { z-index:4; position:absolute; width:50%; left:0; top:0; bottom:0; cursor:url(img/cursor-left-black.png),auto; }
+#screenSize label:nth-of-type(2) { z-index:4; position:absolute; width:50%; right:0; top:0; bottom:0; cursor:url(img/cursor-right-black.png),auto; }
+#screenSize img { -moz-transition:all 0.6s ease 0s; -webkit-transition:all 0.6s ease 0s; -ms-transition:all 0.6s ease 0s; -khtml-transition:all 0.6s ease 0s; transition:all 0.6s ease 0s; }
+
+#partech nav { position:relative; background:#fcfcfc; z-index:1; display:block; text-align:center; font-size:0; }
+#partech nav ul li { display:inline-block; position:relative; font-size:1.125rem; }
+#partech nav ul li:nth-of-type(1){ margin-right:60px; }
+#partech nav ul li:nth-of-type(1):after { content:''; position:absolute; top:11px; right:-33px; display:block; height:1px; width:6px; background:#111; }
+#partech nav ul li a { width:112px; position:relative; color:#111; display:block; } 
+#partech nav ul li:nth-of-type(1) a:before { content:''; position:absolute; top:9px; left:-30px; border-right:22px solid #fcfcfc; display:block; width:8px; height:5px; background:url(img/arrow-left-right.png) no-repeat; }
+#partech nav ul li:nth-of-type(2) a:before { content:''; position:absolute; top:9px; right:-30px; border-left:22px solid #fcfcfc; display:block; width:8px; height:5px; background:url(img/arrow-left-right.png) no-repeat; background-position:-8px -3px; }
+
+@media screen and (max-width:640px) {
+	#description { padding:50px 7%; }
+	#description h1 { font-size:1.25em; }
+	#description h1:after { margin:5px auto; }
+	#description p { font-size:1.125em; }
+ 	
+ 	#dragScreen { padding:50px 7% 0 7%; }
+	#dragScreen div { width:100%; }
+	
+	#graphicIdentity { padding:50px 0; margin:0px 7%; background:#fcfcfc; }
+	#graphicIdentity img { display:block; margin:15px auto; }
+	#graphicIdentity img:nth-of-type(1) { margin:0 auto 15px auto; }
+	#graphicIdentity img:nth-of-type(4) { width:80%; }
+	#graphicIdentity img:nth-of-type(6) { width:80%; }
+	#graphicIdentity img:last-child { margin:15px auto 0 auto; }
+
+	#sketch { padding:50px 7%; }
+
+	#dragScreen div img:nth-of-type(1) { display:none; }
+	#dragScreen div img:nth-of-type(2) { width:100%; display:block; position:relative; z-index:2; }
+	#dragScreen div img:nth-of-type(3) { display:none; }
+	#dragScreen div span{ display:none; }
+
+	#screenSize { padding:50px 7% 60px 7%; }
+	#screenSize ul { margin-top:30px; }
+
+	#imac { width:250px; }
+	#imac img:nth-of-type(1) { width:250px; }
+	#imac img:nth-of-type(2) { top:10px; left: 10px; height:130px; clip:rect(0,230px,130px,0); }
+	.screenSizeImg1 #imac img:nth-of-type(2) { clip:rect(0,230px,130px,0); }
+	.screenSizeImg2 #imac img:nth-of-type(2) { clip:rect(0,463px,259px,232px); margin-left:-232px; }
+	.screenSizeImg3 #imac img:nth-of-type(2) { clip:rect(0,696px,259px,465px); margin-left:-465px; }
+	.screenSizeImg4 #imac img:nth-of-type(2) { clip:rect(0,927px,259px,697px); margin-left:-697px; }
+	#macbook { top:180px; left:1%; width:261px; }
+	#macbook img:nth-of-type(1) { width:261px; }
+	#macbook img:nth-of-type(2) { top:5.5px; left:57px; height:92px; }
+	.screenSizeImg1 #macbook img:nth-of-type(2) { clip:rect(0,147px,92px,0); }
+	.screenSizeImg2 #macbook img:nth-of-type(2) { clip:rect(0,311px,182px,164px); margin-left:-164px; }
+	.screenSizeImg3 #macbook img:nth-of-type(2) { clip:rect(0,474px,182px,327px); margin-left:-327px; }
+	.screenSizeImg4 #macbook img:nth-of-type(2) { clip:rect(0,639px,182px,492px); margin-left:-492px; }	
+	#ipad { top:170px; right:6%; width:163.5px; }
+	#ipad img:nth-of-type(1) { width:163.5px; }
+	#ipad img:nth-of-type(2) { top:11px; left:44px; height:102px; clip:rect(0,75px,102px,0px); }
+	.screenSizeImg1 #ipad img:nth-of-type(2) { clip:rect(0,75px,102px,0px); }
+	.screenSizeImg2 #ipad img:nth-of-type(2) { clip:rect(0,153px,201px,78px); margin-left:-78px; }
+	.screenSizeImg3 #ipad img:nth-of-type(2) { clip:rect(0,230px,201px,155px); margin-left:-155px; }
+	.screenSizeImg4 #ipad img:nth-of-type(2) { clip:rect(0,309px,201px,233px); margin-left:-233px; }
+	#iphone5 { top:210px; right:5%; width:76px; }
+	#iphone5 img:nth-of-type(1) { width:76px; }
+	#iphone5 img:nth-of-type(2) { top:12px; left:20px; height:64px; clip:rect(0,36px,64px,0px); }
+	.screenSizeImg1 #iphone5 img:nth-of-type(2) { clip:rect(0,36px,64px,0px); }
+	.screenSizeImg2 #iphone5 img:nth-of-type(2) { clip:rect(0,74px,201px,38px); margin-left:-38px; }
+	.screenSizeImg3 #iphone5 img:nth-of-type(2) { clip:rect(0,111px,201px,75px); margin-left:-75px; }
+	.screenSizeImg4 #iphone5 img:nth-of-type(2) { clip:rect(0,148px,201px,112px); margin-left:-112px; }
+
+	#partech nav { padding:50px 0;}
+
+}
+
+@media screen and (min-width:641px) {
+	#partech { padding:99px 0 0 0; }
+	#description { padding:80px 6.55%; margin-top: 23.55%; }
+	#description h1 { font-size:1.875em; }
+	#description h1:after{ margin:8px auto; }
+	#description a:hover { -moz-border-radius:10px; -webkit-border-radius:10px; -ms-border-radius:10px; -khtml-border-radius:10px; border-radius:10px; }
+	#description p { width:50%; font-size:1.25em; }
+	
+	#dragScreen { padding:80px 6.55% 0 6.55%; }
+
+ 	#sketch { padding:80px 6.55%; }
+
+	#graphicIdentity { padding:80px 6.55%; overflow:hidden; text-align: }
+	#graphicIdentity img { vertical-align:top; }	
+	#graphicIdentity img:nth-of-type(1) { display:block; margin-left:40px; }
+	#graphicIdentity img:nth-of-type(2) { display:block; margin-left:10px; margin-top:15px; }
+	#graphicIdentity img:nth-of-type(3) { display:block; margin-left:10px; margin-top:15px; }
+	#graphicIdentity img:nth-of-type(4) { position:absolute; top:75px; margin-left:270px; }
+	#graphicIdentity img:nth-of-type(5) { display:block; margin-left:0px; margin-top:15px; }
+	#graphicIdentity img:nth-of-type(6) { position:absolute; top:310px; margin-left:200px; }
+	#graphicIdentity img:nth-of-type(7) { display:block; margin-left:0px; margin-top:15px; }
+	#graphicIdentity img:nth-of-type(8) { position:absolute; top:100px; margin-left:625px; }
+	#graphicIdentity img:nth-of-type(9) { position:absolute; top:280px; margin-left:190px; }
+	#graphicIdentity img:nth-of-type(10) { position:absolute; top:550px; margin-left:190px; }
+
+	#dragScreen div img:nth-of-type(1) { display:none; }
+	#dragScreen div img:nth-of-type(2) { width:100%; display:block; position:relative; z-index:2; }
+	#dragScreen div img:nth-of-type(3) { display:none; }
+	#dragScreen div span{ display:none; }
+
+	#screenSize { padding:80px 0 40px 0; }
+	#screenSize ul { margin-top:10px; }
+	#imac { width:500px; }
+	#imac img:nth-of-type(1) { width:500px; }
+	#imac img:nth-of-type(2) { top:19px; left: 19px; height:259px; }
+	.screenSizeImg1 #imac img:nth-of-type(2) { clip:rect(0,460px,259px,0); }
+	.screenSizeImg2 #imac img:nth-of-type(2) { clip:rect(0,924px,259px,463px); margin-left:-463px; }
+	.screenSizeImg3 #imac img:nth-of-type(2) { clip:rect(0,1385px,259px,924px); margin-left:-924px; }
+	.screenSizeImg4 #imac img:nth-of-type(2) { clip:rect(0,1847px,259px,1386px); margin-left:-1386px; }
+	#macbook { top:300px; left:50%; margin-left:-500px; width:522px; }
+	#macbook img:nth-of-type(1) { width:522px; }
+	#macbook img:nth-of-type(2) { top:13px; left:115px; height:182px; }
+	.screenSizeImg1 #macbook img:nth-of-type(2) { clip:rect(0,292px,182px,0); }
+	.screenSizeImg2 #macbook img:nth-of-type(2) { clip:rect(0,617px,182px,325px); margin-left:-325px; }
+	.screenSizeImg3 #macbook img:nth-of-type(2) { clip:rect(0,941px,182px,649px); margin-left:-649px; }
+	.screenSizeImg4 #macbook img:nth-of-type(2) { clip:rect(0,1266px,182px,974px); margin-left:-974px; }
+	#ipad { top:260px; left:50%; margin-left:50px; width:327px; }
+	#ipad img:nth-of-type(1) { width:327px; }
+	#ipad img:nth-of-type(2) { top:23px; left:88px; height:201px; }
+	.screenSizeImg1 #ipad img:nth-of-type(2) { clip:rect(0,151px,201px,0px); }
+	.screenSizeImg2 #ipad img:nth-of-type(2) { clip:rect(0,304px,201px,153px); margin-left:-153px; }
+	.screenSizeImg3 #ipad img:nth-of-type(2) { clip:rect(0,456px,201px,305px); margin-left:-305px; }
+	.screenSizeImg4 #ipad img:nth-of-type(2) { clip:rect(0,620px,201px,459px); margin-left:-459px; }
+	#iphone5 { top:352px; left:50%; margin-left:235px; width:152px; }
+	#iphone5 img:nth-of-type(1) { width:152px; }
+	#iphone5 img:nth-of-type(2) { top:25px; left:40px; height:125px; }
+	.screenSizeImg1 #iphone5 img:nth-of-type(2) { clip:rect(0,72px,125px,0px); }
+	.screenSizeImg2 #iphone5 img:nth-of-type(2) { clip:rect(0,146px,125px,74px); margin-left:-74px; }
+	.screenSizeImg3 #iphone5 img:nth-of-type(2) { clip:rect(0,219px,125px,147px); margin-left:-147px; }
+	.screenSizeImg4 #iphone5 img:nth-of-type(2) { clip:rect(0,292px,125px,219px); margin-left:-219px; }
+
+	#partech nav { padding-top:50px;}
+	#partech nav ul li:nth-of-type(1) a:hover:before { left:-45px; border-right:37px solid #fcfcfc; }
+	#partech nav ul li:nth-of-type(2) a:hover:before { right:-45px; border-left:37px solid #fcfcfc; }
+}
+
+@media screen and (min-width:1024px) {
+	#graphicIdentity { height:538px;}
+	#graphicIdentity img { position:absolute; }
+	#graphicIdentity img:nth-of-type(1) { margin-left:-480px; left:50%; top:102px; z-index:2; }
+	#graphicIdentity img:nth-of-type(2) { margin-left:-450px; left:50%; top:125px; z-index:2; }
+	#graphicIdentity img:nth-of-type(3) { margin-left:-210px; left:50%; top:90px; z-index:2; }
+	#graphicIdentity img:nth-of-type(4) { margin-left:20px; left:50%; top:80px; z-index:2; }
+	#graphicIdentity img:nth-of-type(5) { margin-left:360px; left:50%; top:100px; z-index:2; }
+	#graphicIdentity img:nth-of-type(6) { left:50%; margin-left:-500px; top:250px; z-index:2; }
+	#graphicIdentity img:nth-of-type(7) { margin-left:-180px; left:50%; top:204px; z-index:2; }
+	#graphicIdentity img:nth-of-type(8) { margin-left:-55px; left:50%; top:180px; z-index:2; }
+	#graphicIdentity img:nth-of-type(9) { margin-left:20px; left:50%; top:360px; z-index:2; }
+	#graphicIdentity img:nth-of-type(10) { margin-left:20px; left:50%; top:305px; z-index:2; }
+}
+
+@media screen and (min-width:1200px) {
+	#dragScreen { position:relative; z-index:1; background:#eee; border-top:1px solid #ccc; border-bottom:1px solid #ccc; overflow:hidden; padding:80px 6.55% 0 6.55%;}
+	#dragScreen div { position:relative; margin:auto; width:980px; }
+	#dragScreen div img:nth-of-type(1) { position:absolute; z-index:3; display:block; left:185px; top:-44px; }
+	#dragScreen div img:nth-of-type(2) { display:block; position:relative; z-index:2; }
+	#dragScreen div img:nth-of-type(3) { position:absolute; display:block; z-index:0; top:46px; left:185px; display:block; clip:rect(0,749px,559px,0); }
+	#dragScreen div span{ position:absolute; cursor:pointer; z-index:99; top:-54px; left:200px; display:block; width:35px; height:35px; background:url(img/arrow-left-right.png) no-repeat center center #fcfcfc; box-shadow: 1px 1px 5px rgba(0,0,0,0.2);  -moz-border-radius:50%;; -webkit-border-radius:50%;; -ms-border-radius:50%;; -khtml-border-radius:50%;; border-radius:50%; }
+
+
+}
