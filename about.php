@@ -17,12 +17,82 @@
 	<article>
 		<h1>I'm <em><span class="mostraNuovaRegular">LAGI<span class="mostraNuovaAltaRegular" >E</span>R</span> Kév<span class="mostraNuovaAltaLight" >i</span>n</em>, a <div class="age"><div><span>7 3 8 1 2</span><span>1 4 9 5 7</span></div></div> year old webdesigner from France.</h1>
 		<p>
-			I'm currently student at <a href="http://hetic.net" target="_blank" title="HETIC, l'école des métiers de l'internet">HETIC</a> : a webschool based in Paris. Combining Graphic design and Web development,<br/>
+			I'm currently student at <a href="http://hetic.net" target="_blank" title="HETIC, l'école des métiers de l'internet">HETIC</a> : a webschool based in Paris. Combining Graphic Design and Web Development,<br/>
 			I offer solutions for websites. I have also skills in Project Direction, UX Conception and Art Direction.<br/>
 			I'm always aware and mindful of cultural and environmental change.
 		</p>
-		<h2>I can use</h2>
+		<img src="img/about/about.png" alt="" />	
+
+		<h2>Skills</h2>
 		<ul>
+			<li>
+				<div class="diagram">
+					<div class="percent">75 %</div>
+					<div class="value">
+						<div class="oneQuarter"></div>
+						<div class="twoQuarter"></div>
+						<div class="threeQuarter"></div>
+						<div class="fourQuarter"></div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<p>Graphic Design</p>
+			</li>
+			<li>
+				<div class="diagram">
+					<div class="percent">75 %</div>
+					<div class="value">
+						<div class="oneQuarter"></div>
+						<div class="twoQuarter"></div>
+						<div class="threeQuarter"></div>
+						<div class="fourQuarter"></div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<p>Web Development</p>
+			</li>
+			<li>
+				<div class="diagram">
+					<div class="percent">75 %</div>
+					<div class="value">
+						<div class="oneQuarter"></div>
+						<div class="twoQuarter"></div>
+						<div class="threeQuarter"></div>
+						<div class="fourQuarter"></div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<p>Project Direction</p>
+			</li>
+			<li>
+				<div class="diagram">
+					<div class="percent">75 %</div>
+					<div class="value">
+						<div class="oneQuarter"></div>
+						<div class="twoQuarter"></div>
+						<div class="threeQuarter"></div>
+						<div class="fourQuarter"></div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<p>UX Conception</p>
+			</li>
+			<li>
+				<div class="diagram">
+					<div class="percent">75 %</div>
+					<div class="value">
+						<div class="oneQuarter"></div>
+						<div class="twoQuarter"></div>
+						<div class="threeQuarter"></div>
+						<div class="fourQuarter"></div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<p>Art Direction</p>
+			</li>
+		</ul>
+
+		<!--<ul>
 			<li>
 				Code
 				<div class="code">
@@ -52,7 +122,7 @@
 					</span>
 				</dib>	
 			</li>
-		</ul>
+		</ul>!-->
 	<article>
 </section>
 
