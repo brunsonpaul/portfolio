@@ -1,0 +1,14 @@
+@import "helper.less";
+
+body { width:100%; height:100%; margin:0; padding:0; border:none; background:@whiteColor; color:@blackColor; font-family: Helvetica, Arial, sans-serif; .mostraNuova(); .fontSize(); }
+
+#menu { 
+	background:@whiteColor;
+	nav { position:relative; display:block; } 
+
+}
+#menu nav { position:relative; display:block; border-bottom:1px solid @grayColor; }
+#menu nav h1 { font-size:1.750em; font-family: 'mostra-nuova-light'; color:#111; letter-spacing:0.16em; }
+#menu nav ul li { display:inline-block; font-size:0.625rem; letter-spacing:0.16em; }
+#menu nav ul li a { display:block; text-transform:uppercase; color:#111; font-size:1.563em; }
+#menu nav ul li a.selected:after { content:''; display:block; background:#111; }
