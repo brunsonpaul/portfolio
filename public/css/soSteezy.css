@@ -311,13 +311,14 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  background: red;
+  background: #eeeeee;
   color: #111111;
   font-family: Helvetica, Arial, sans-serif;
   font-family: 'mostra-nuova-light';
 }
 #menu {
   background: #fcfcfc;
+  cursor: url(img/arrow-top-white.svg), auto;
 }
 #menu div {
   border-bottom: solid 1px #eeeeee;
