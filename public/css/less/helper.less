@@ -57,17 +57,31 @@ table{border-collapse:collapse;border-spacing:0}
 @font-face { font-family: 'mostra-nuova-alta-regular'; src: url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.svg#mostra_nuova_alta_regularRg') format('svg'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'mostra-nuova-alta-thin'; src: url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.svg#mostra_nuova_altathin') format('svg'); font-weight: normal; font-style: normal; }
 
-.mostraNuova(@type:light) {
-	@mostraNuova:mostra-nuova-;
-	font-family: '@{mostraNuova}@{type}';
-}
+.thinFont() { font-family: 'mostra-nuova-thin'; }
+.thinFontA() { font-family: 'mostra-nuova-alta-thin'; }
+.lightFont() { font-family: 'mostra-nuova-light'; }
+.lightFontA() { font-family: 'mostra-nuova-alta-light'; }
+.regularFont() { font-family: 'mostra-nuova-regular'; }
+.regularFontA() { font-family: 'mostra-nuova-alta-regular'; }
+.boldFont() { font-family: 'mostra-nuova-bold'; }
 
 @blackColor: #111;
 @whiteColor: #fcfcfc;
 @grayColor: #eee;
 
-.fontSize(@size:1em){
-	font-size:@size;
-}
+.fontSize1() { font-size:10px; font-size:0.625rem; }
+.fontSize2() { font-size:11px; font-size:0.688rem; }
+.fontSize3() { font-size:12px; font-size:0.75rem; }
+.fontSize4() { font-size:13px; font-size:0.813rem; }
+.fontSize5() { font-size:14px; font-size:0.875rem; }
+.fontSize6() { font-size:15px; font-size:0.938rem; }
+.fontSize6() { font-size:16px; font-size:1rem; }
+.fontSize7() { font-size:17px; font-size:1.063rem; }
+.fontSize8() { font-size:18px; font-size:1.125rem; }
+.fontSize9() { font-size:19px; font-size:1.188rem; }
+.fontSize10() { font-size:20px; font-size:1.250rem; }
+
+
+
 
 

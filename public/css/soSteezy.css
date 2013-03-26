@@ -287,39 +287,8 @@ body {
   color: #111111;
   font-family: Helvetica, Arial, sans-serif;
   font-family: 'mostra-nuova-light';
-  font-size: 1em;
 }
-#menu {
-  background: #fcfcfc;
-}
-#menu nav {
-  position: relative;
-  display: block;
-}
-#menu nav {
-  position: relative;
-  display: block;
-  border-bottom: 1px solid #eeeeee;
-}
-#menu nav h1 {
-  font-size: 1.750em;
-  font-family: 'mostra-nuova-light';
-  color: #111;
-  letter-spacing: 0.16em;
-}
-#menu nav ul li {
-  display: inline-block;
-  font-size: 0.625rem;
-  letter-spacing: 0.16em;
-}
-#menu nav ul li a {
-  display: block;
-  text-transform: uppercase;
-  color: #111;
-  font-size: 1.563em;
-}
-#menu nav ul li a.selected:after {
-  content: '';
-  display: block;
-  background: #111;
+h1 {
+  font-size: 20px;
+  font-size: 1.250rem;
 }
