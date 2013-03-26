@@ -17,8 +17,8 @@
 	<article>
 		<h1>I'm <em><span class="mostraNuovaRegular">LAGI<span class="mostraNuovaAltaRegular" >E</span>R</span> Kév<span class="mostraNuovaAltaLight" >i</span>n</em>, a <div class="age"><div><span>7 3 8 1 2</span><span>1 4 9 5 7</span></div></div> year old webdesigner from France.</h1>
 		<p>
-			I'm currently student at <a href="http://hetic.net" target="_blank" title="HETIC, l'école des métiers de l'internet">HETIC</a> : a webschool based in Paris. Combining Graphic Design and Web Development,<br/>
-			I offer solutions for websites. I have also skills in Project Direction, UX Conception and Art Direction.<br/>
+			I'm currently student at <a href="http://hetic.net" target="_blank" title="HETIC, l'école des métiers de l'internet">HETIC</a> : a webschool based in Paris. Combining Graphic Design and Front-End Development,<br/>
+			I offer solutions for websites. I have also skills in Project Management, UX Conception and Art Direction.<br/>
 			I'm always aware and mindful of cultural and environmental change.
 		</p>
 		<img src="img/about/about.png" alt="" />	
@@ -27,12 +27,12 @@
 		<ul>
 			<li>
 				<div class="diagram">
-					<div class="percent">75 %</div>
+					<div class="percentGraphicDesign"><span>0 1 2 3 4 5 6 7</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8</span><span>%</span></div>
 					<div class="value">
-						<div class="oneQuarter"></div>
-						<div class="twoQuarter"></div>
-						<div class="threeQuarter"></div>
-						<div class="fourQuarter"></div>
+						<div class="graphicDesignOne oneQuarter"></div>
+						<div class="graphicDesignTwo twoQuarter"></div>
+						<div class="graphicDesignThree threeQuarter"></div>
+						<div class="graphicDesignFour fourQuarter"></div>
 						<div class="mask"></div>
 					</div>
 				</div>
@@ -40,38 +40,34 @@
 			</li>
 			<li>
 				<div class="diagram">
-					<div class="percent">75 %</div>
+					<div class="percentFrontEnd"><span>0 1 2 3 4 5 6</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6</span><span>%</span></div>
 					<div class="value">
-						<div class="oneQuarter"></div>
-						<div class="twoQuarter"></div>
-						<div class="threeQuarter"></div>
-						<div class="fourQuarter"></div>
+						<div class="frontEndOne oneQuarter"></div>
+						<div class="frontEndTwo twoQuarter"></div>
+						<div class="frontEndThree threeQuarter"></div>
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>Web Development</p>
+				<p>Front-End Development</p>
 			</li>
 			<li>
 				<div class="diagram">
-					<div class="percent">75 %</div>
+					<div class="percentProjectManagement"><span>0 1 2 3 4 5</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3</span><span>%</span></div>
 					<div class="value">
-						<div class="oneQuarter"></div>
-						<div class="twoQuarter"></div>
-						<div class="threeQuarter"></div>
-						<div class="fourQuarter"></div>
+						<div class="projectManagementOne oneQuarter"></div>
+						<div class="projectManagementTwo twoQuarter"></div>
+						<div class="projectManagementThree threeQuarter"></div>
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>Project Direction</p>
+				<p>Project Management</p>
 			</li>
 			<li>
 				<div class="diagram">
-					<div class="percent">75 %</div>
+					<div class="percentUxConception"><span>0 1 2 3 4</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7</span><span>%</span></div>
 					<div class="value">
-						<div class="oneQuarter"></div>
-						<div class="twoQuarter"></div>
-						<div class="threeQuarter"></div>
-						<div class="fourQuarter"></div>
+						<div class="uxConceptionOne oneQuarter"></div>
+						<div class="uxConceptionTwo twoQuarter"></div>
 						<div class="mask"></div>
 					</div>
 				</div>
@@ -79,12 +75,10 @@
 			</li>
 			<li>
 				<div class="diagram">
-					<div class="percent">75 %</div>
+					<div class="percentArtDirection"><span>0 1 2 3 4</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3</span><span>%</span></div>
 					<div class="value">
-						<div class="oneQuarter"></div>
-						<div class="twoQuarter"></div>
-						<div class="threeQuarter"></div>
-						<div class="fourQuarter"></div>
+						<div class="artDirectionOne oneQuarter"></div>
+						<div class="artDirectionTwo twoQuarter"></div>
 						<div class="mask"></div>
 					</div>
 				</div>
@@ -132,6 +126,8 @@
 ?>
 
 <?php require_once ("views/assets/script.php"); ?>
+<script src="js/about.js"></script>
+
 <!--
 
 <div id="grid">
