@@ -231,6 +231,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+hr {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: 'mostra-nuova-bold';
   src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot');
@@ -286,67 +311,59 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  background: #fcfcfc;
+  background: red;
   color: #111111;
   font-family: Helvetica, Arial, sans-serif;
-  font-family: 'mostra-nuova-regular';
+  font-family: 'mostra-nuova-light';
 }
 #menu {
   background: #fcfcfc;
 }
-#menu nav {
-  position: relative;
-  display: block;
-  border-bottom: 1px solid #eeeeee;
+#menu div {
+  border-bottom: solid 1px #eeeeee;
 }
-#menu nav h1 {
-  font-size: 28px;
-  font-size: 1.750rem;
-  font-family: 'mostra-nuova-light';
+#menu div a {
   color: #111111;
+}
+#menu div a h1 {
   letter-spacing: 0.16em;
 }
-#menu nav ul li {
-  display: inline-block;
-  font-size: 0.625rem;
+#menu div nav {
+  font-family: 'mostra-nuova-regular';
   letter-spacing: 0.16em;
-}
-#menu nav ul li a {
-  display: block;
   text-transform: uppercase;
-  color: #111;
-  font-size: 1.563em;
 }
-#menu nav ul li a.selected:after {
+#menu div nav ul li a.selected:after {
   content: '';
   display: block;
-  background: #111;
+  background: #111111;
 }
 @media screen and (max-width: 640px) {
   #menu {
     padding: 0px 7%;
   }
-  #menu nav {
+  #menu div {
     text-align: center;
-    padding: 14px 0;
+    padding: 15px 0;
   }
-  #menu nav h1 {
-    margin-top: 3px;
+  #menu div a h1 {
+    font-size: 20px;
+    font-size: 1.250rem;
   }
-  #menu nav ul {
+  #menu div nav {
     display: block;
+    text-align: center;
   }
-  #menu nav ul li a {
-    padding: 14px 10px 0px 10px;
-    font-size: 1.25em;
+  #menu div nav ul li {
+    font-size: 12px;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin: 15px 10px 0 10px;
   }
-  #menu nav ul li a.selected:after {
-    content: '';
-    display: block;
+  #menu div nav ul li a.selected:after {
     margin: 2px auto;
     width: 100%;
     height: 2px;
-    background: #111;
   }
 }
 @media screen and (min-width: 641px) {
@@ -356,47 +373,43 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0px 2.5396%;
+    padding: 0 2.5396%;
   }
-  #menu nav {
+  #menu div {
+    position: relative;
     height: 99px;
   }
-  #menu nav h1 {
-    display: inline-block;
-    margin-top: 34px;
+  #menu div a h1 {
+    float: left;
     margin-left: 2.25%;
-  }
-  #menu nav ul {
-    position: absolute;
-    right: 2.25%;
-    top: 0;
-    display: inline-block;
-    font-size: 0;
-  }
-  #menu nav ul li {
-    display: inline-block;
-    font-size: 0.625rem;
+    font-size: 28px;
+    font-size: 1.750rem;
     letter-spacing: 0.16em;
+    margin-top: 34px;
   }
-  #menu nav ul li a {
+  #menu div nav {
+    float: right;
+    margin-right: 2.25%;
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'mostra-nuova-regular';
+  }
+  #menu div nav li {
+    float: left;
+  }
+  #menu div nav li a {
     position: relative;
+    display: block;
     padding: 41px 25px 39px 25px;
   }
-  #menu nav ul li a.selected:after {
-    content: '';
+  #menu div nav ul li a.selected:after {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     height: 6px;
   }
-  #menu nav ul li a.notSelected:hover {
+  #menu div nav ul li a.notSelected:hover {
     text-decoration: underline;
   }
-}
-@media screen and (min-width: 1024px) {
-  
-}
-@media screen and (min-width: 1200px) {
-  
 }
