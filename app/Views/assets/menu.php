@@ -1,5 +1,4 @@
 <div id="top"></div>
-
 <section id="menu">
 	<div>
 		<a href="/"><h1>We Are Full Linked</h1></a>

@@ -381,6 +381,7 @@ body {
   }
   #menu div a h1 {
     float: left;
+    position: absolute;
     margin-left: 2.25%;
     font-size: 28px;
     font-size: 1.750rem;
