@@ -1,0 +1,17 @@
+#about { margin-top:189px; background:@colorGray;
+	article { display:inline-block; width:33.3%; background:@colorWhite; text-align:center;
+		&:nth-of-type(2){ margin:0 0.05%; }
+		h1 {
+			.fontSize24();
+			span { .fontLightA() }
+			em { .fontRegular(); text-transform:uppercase;
+				span{ .fontRegularA(); text-transform:uppercase; }
+			}
+		}
+		h2 { .fontBold(); text-transform:uppercase; .fontSize14(); margin:5px auto 10px auto;
+		}
+		p {
+			margin:0 13%;
+		}
+	}
+}
