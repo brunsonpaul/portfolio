@@ -1,17 +1,22 @@
-#about { margin-top:189px; background:@colorGray;
-	article { display:inline-block; width:33.3%; background:@colorWhite; text-align:center;
-		&:nth-of-type(2){ margin:0 0.05%; }
+#about { margin-top:189px;
+	article { position:relative; display:inline-block; width:33.3333333%; text-align:center; vertical-align:top;
+		&:nth-of-type(2):before{ content:''; position:absolute; top:0; left:-0.05em; display:block; width:0.1em; height:100%; background:@colorGray; }
+		&:nth-of-type(2):after{ content:''; position:absolute; top:0; right:-0.05em; display:block; width:0.1em; height:100%; background:@colorGray; }
+		&:hover{ cursor:url(img/more-black.svg),auto; }
 		h1 {
+			margin:0 13%;		
 			.fontSize24();
 			span { .fontLightA() }
 			em { .fontRegular(); text-transform:uppercase;
 				span{ .fontRegularA(); text-transform:uppercase; }
 			}
 		}
-		h2 { .fontBold(); text-transform:uppercase; .fontSize14(); margin:5px auto 10px auto;
+		h2 { .fontBold(); text-transform:uppercase; .fontSize14(); margin:5px 13% 10px 13%;
 		}
 		p {
 			margin:0 13%;
+			&:after{ .zigZag(); }
 		}
 	}
 }
+
