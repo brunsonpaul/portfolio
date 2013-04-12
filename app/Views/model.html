@@ -1,36 +1,51 @@
 <?php require ("app/Views/Assets/head.php"); ?>
 
+<?php require ("app/Views/Assets/header.php"); ?>
 
 <?php require ("app/Views/Assets/menu.php"); ?>
 
-<section id="about">
-	<article>
-		<h1>Florent<span>i</span>n <em>Mont<span>e</span>il<em></h1>
-		<h2>Webdeveloper</h2>
-		<p>I'm a 21 year old webdesigner from France. I'm currently student at HETIC : a webschool based in Paris. Combining Graphic Design and Front-End Development, I offer solutions for websites. I have also skills in Project Management, UX Conception and Art Direction.</p>
-	</article><!--
-	--><article>
-		<h1>Kév<span>i<span>n <em>Lag<span>i<span>er<em></h1>
-		<h2>Webdesigner & Front-end Developer</h2>
-		<p>I'm a 21 year old webdesigner from France. I'm currently student at HETIC : a webschool based in Paris. Combining Graphic Design and Front-End Development, I offer solutions for websites. I have also skills in Project Management, UX Conception and Art Direction.</p>
-	</article><!--
-	--><article>
-		<h1>Math<span>i</span>eu <em>Boul<span>e</span>t<em></h1>
-		<h2>Creative writer & graphic designer</h2>
-		<p>I'm a 21 year old webdesigner from France. I'm currently student at HETIC : a webschool based in Paris. Combining Graphic Design and Front-End Development, I offer solutions for websites. I have also skills in Project Management, UX Conception and Art Direction.</p>
+
+<div id="nav-dock"> 
+	<a id="prev" href="#"><span>... This is some things I've worked on</span></a> 
+	<a id="next" href="#"><span>I'm a Webdesigner and ...</span></a>
+</div>
+<div id="video" style="position:absolute; left:0; right:0; top:0; bottom:0; text-align:center; font-size:30px; ">
+	<video preload="auto" autoplay="autoplay" loop="loop" onended="loopVideo()"
+	 style="width:100%; left:0; position:fixed;">
+        <source src="public/video/video.mp4" />
+    </video>       
+</div>
+<section id="work">
+	<div class="post"></div>
+
+	<article class="post" id="theWholeWork">
+		<a href="#" class="scrolltoanchor">
+			<div class="unactiveWork" ></div>
+
+		</a>
 	</article>
+
+	<article class="post" id="socialCokeWork">
+		<a href="#" class="scrolltoanchor">
+			<div class="unactiveWork"></div>
+
+
+		</a>
+	</article>
+	<article class="post" id="partechWork">
+		<a href="#" class="scrolltoanchor">
+			<div class="unactiveWork"></div>
+		</a>
+	</article>	
+	<div class="post"></div>
+
 </section>
 
-<div style="bottom:15px; left:15px; position:fixed">
-	<img src="public/css/img/mouse-and-keyboard.svg">
-</div>
 
 
 
+<?php require ("app/Views/Assets/footer.php"); ?>
 
-</body>
-</html>
-
-
-
+<script type="text/javascript" src="public/js/lib/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="public/js/lib/jquery.mousewheel.min.js"></script>
 

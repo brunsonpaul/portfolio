@@ -1,0 +1,215 @@
+#slider input { display: none; }
+#slide1:checked ~ #slides .inner { margin-left:0; }
+#slide2:checked ~ #slides .inner { margin-left:-100%; }
+#slide3:checked ~ #slides .inner { margin-left:-200%; }
+#slide4:checked ~ #slides .inner { margin-left:-300%; }
+#overflow { width: 100%; overflow: hidden; }
+#slider img { width: 100%; }
+#slides .inner { width: 400%; line-height: 0; }
+#slides article { width: 25%; float: left; }
+
+#controls { position:absolute; top:0; bottom:0; width:100%; }
+#active { z-index:99; position:absolute; font-size:0.875em; bottom:3px; right:6.55%; text-align: center; }
+#active label { background:@colorWhite; padding:3px 6px; cursor:pointer; }
+#slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3),  #slide3:checked ~ #controls label:nth-child(4), #slide4:checked ~ #controls label:nth-child(1) { cursor:url(img/arrow-white.svg),auto; z-index:99; position:absolute; top:0; right:0; display:block; width:50%; height:100%; }
+#slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3){ cursor:url(img/arrow-white.svg),auto; z-index:99; position:absolute; top:0; left:0; display:block; width:50%; height:100%; }
+#slide1:checked ~ #active label:nth-child(1),#slide2:checked ~ #active label:nth-child(2),#slide3:checked ~ #active label:nth-child(3),#slide4:checked ~ #active label:nth-child(4) { background:@colorBlack; color:@colorWhite; }
+
+#slides { width:100%; z-index:-1}
+#slides .inner {	
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+     -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}
+
+#slider {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+#controls label{
+	-webkit-transform: translateZ(0);
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
+}
+
+#controls, #slides, #active, #active label, {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+
+#dragScreen { position:relative; z-index:1; background:@colorGray; border-top:1px solid @colorGrayMedium; border-bottom:1px solid @colorGrayMedium; overflow:hidden; 
+	div { position:relative; margin:auto; }
+}
+
+#sketch { position:relative; z-index:1; background: url('img/dark-grid.png') repeat @colorBlack; background-position:center center;
+ img { width:100%; margin:auto; display:block; }
+}
+
+#screenSize { position:relative; z-index:1; background:@colorWhite; overflow:hidden;
+	ul { text-align:center;
+		li{ position:relative; z-index:5; cursor:pointer; display:inline-block; margin:0 0.15em; width:7px; height:7px; text-indent:-9999px; border:1px solid @colorBlack; background:@colorWhite; .rotateKit(45deg); .easeTransition(0.6s); }
+		}
+	.screenSizeActive { background:@colorBlack;	.rotateKit(405deg); }
+	input { display:none; }
+	label:nth-of-type(1) { z-index:4; position:absolute; width:50%; left:0; top:0; bottom:0; cursor:url(img/cursor-left-black.png),auto; }
+	label:nth-of-type(2) { z-index:4; position:absolute; width:50%; right:0; top:0; bottom:0; cursor:url(img/cursor-right-black.png),auto; }
+	img { .easeTransition(0.6s); }
+}
+
+#imac { position:relative; z-index:1; margin:auto;
+	img:nth-of-type(1) { display:block; margin:auto; }
+	img:nth-of-type(2) { position:absolute; }
+}
+#macbook { position:absolute; z-index:2; 
+	img:nth-of-type(1) {display:block; margin:auto; }
+	img:nth-of-type(2) { position:absolute; }
+}
+#iphone5 { position:absolute; z-index:3;
+	img:nth-of-type(1) { display:block; margin:auto; }
+	img:nth-of-type(2) { position:absolute; }
+}
+#ipad { position:absolute; z-index:2;
+	img:nth-of-type(1) { display:block; margin:auto; }
+	img:nth-of-type(2) { position:absolute; }
+}
+
+
+
+@media screen and (max-width:640px) {
+	#dragScreen {
+		div {
+			img:nth-of-type(1) { display:none; }
+			img:nth-of-type(2) { width:100%; display:block; position:relative; z-index:2; }
+			img:nth-of-type(3) { display:none; }
+			span{ display:none; }
+		}
+	}
+	
+	#sketch { padding:2.5em 7%; }
+	
+	#screenSize { padding:2.5em 0;
+		ul { margin-top:3em; }
+	}
+	#imac { width:250px;
+		img:nth-of-type(1) { width:250px; }
+		img:nth-of-type(2) { top:10px; left: 10px; height:130px; clip:rect(0,230px,130px,0); }
+	}
+	.screenSizeImg1 #imac img:nth-of-type(2) { clip:rect(0,230px,130px,0); }
+	.screenSizeImg2 #imac img:nth-of-type(2) { clip:rect(0,463px,259px,232px); margin-left:-232px; }
+	.screenSizeImg3 #imac img:nth-of-type(2) { clip:rect(0,696px,259px,465px); margin-left:-465px; }
+	.screenSizeImg4 #imac img:nth-of-type(2) { clip:rect(0,927px,259px,697px); margin-left:-697px; }
+	#macbook { top:180px; left:1%; width:261px;
+		img:nth-of-type(1) { width:261px; }
+		img:nth-of-type(2) { top:5.5px; left:57px; height:92px; }
+	}
+	.screenSizeImg1 #macbook img:nth-of-type(2) { clip:rect(0,147px,92px,0); }
+	.screenSizeImg2 #macbook img:nth-of-type(2) { clip:rect(0,311px,182px,164px); margin-left:-164px; }
+	.screenSizeImg3 #macbook img:nth-of-type(2) { clip:rect(0,474px,182px,327px); margin-left:-327px; }
+	.screenSizeImg4 #macbook img:nth-of-type(2) { clip:rect(0,639px,182px,492px); margin-left:-492px; }	
+	#ipad { top:170px; right:6%; width:163.5px;
+		img:nth-of-type(1) { width:163.5px; }
+		img:nth-of-type(2) { top:11px; left:44px; height:102px; clip:rect(0,75px,102px,0px); }
+	}
+	.screenSizeImg1 #ipad img:nth-of-type(2) { clip:rect(0,75px,102px,0px); }
+	.screenSizeImg2 #ipad img:nth-of-type(2) { clip:rect(0,153px,201px,78px); margin-left:-78px; }
+	.screenSizeImg3 #ipad img:nth-of-type(2) { clip:rect(0,230px,201px,155px); margin-left:-155px; }
+	.screenSizeImg4 #ipad img:nth-of-type(2) { clip:rect(0,309px,201px,233px); margin-left:-233px; }
+	#iphone5 { top:210px; right:5%; width:76px;
+		img:nth-of-type(1) { width:76px; }
+		img:nth-of-type(2) { top:12px; left:20px; height:64px; clip:rect(0,36px,64px,0px); }
+	}
+	.screenSizeImg1 #iphone5 img:nth-of-type(2) { clip:rect(0,36px,64px,0px); }
+	.screenSizeImg2 #iphone5 img:nth-of-type(2) { clip:rect(0,74px,201px,38px); margin-left:-38px; }
+	.screenSizeImg3 #iphone5 img:nth-of-type(2) { clip:rect(0,111px,201px,75px); margin-left:-75px; }
+	.screenSizeImg4 #iphone5 img:nth-of-type(2) { clip:rect(0,148px,201px,112px); margin-left:-112px; }
+	
+}
+
+@media screen and (min-width:641px) {
+	#slider {  }
+	#active label:hover { background:@colorBlack; color:@colorWhite; }
+
+	#dragScreen {
+		div {
+			img:nth-of-type(1) { display:none; }
+			img:nth-of-type(2) { width:100%; display:block; position:relative; z-index:2; }
+			img:nth-of-type(3) { display:none; }
+			span{ display:none; }	
+		}
+	}
+
+	#sketch { padding:5em 6.55%; }
+
+	#screenSize { padding:5em 0;
+		ul { margin-top:2em; 
+			li { &:hover { background:@colorBlack; }
+			}
+		}
+	}
+	#imac { width:500px;
+		img:nth-of-type(1) { width:500px; }
+		img:nth-of-type(2) { top:19px; left: 19px; height:259px; }
+	}
+	.screenSizeImg1 #imac img:nth-of-type(2) { clip:rect(0,460px,259px,0); }
+	.screenSizeImg2 #imac img:nth-of-type(2) { clip:rect(0,924px,259px,463px); margin-left:-463px; }
+	.screenSizeImg3 #imac img:nth-of-type(2) { clip:rect(0,1385px,259px,924px); margin-left:-924px; }
+	.screenSizeImg4 #imac img:nth-of-type(2) { clip:rect(0,1847px,259px,1386px); margin-left:-1386px; }
+	#macbook { top:300px; left:50%; margin-left:-500px; width:522px;
+		img:nth-of-type(1) { width:522px; }
+		img:nth-of-type(2) { top:13px; left:115px; height:182px; }
+	}
+	.screenSizeImg1 #macbook img:nth-of-type(2) { clip:rect(0,292px,182px,0); }
+	.screenSizeImg2 #macbook img:nth-of-type(2) { clip:rect(0,617px,182px,325px); margin-left:-325px; }
+	.screenSizeImg3 #macbook img:nth-of-type(2) { clip:rect(0,941px,182px,649px); margin-left:-649px; }
+	.screenSizeImg4 #macbook img:nth-of-type(2) { clip:rect(0,1266px,182px,974px); margin-left:-974px; }
+	#ipad { top:260px; left:50%; margin-left:50px; width:327px;
+		img:nth-of-type(1) { width:327px; }
+		img:nth-of-type(2) { top:23px; left:88px; height:201px; }
+	}
+	.screenSizeImg1 #ipad img:nth-of-type(2) { clip:rect(0,151px,201px,0px); }
+	.screenSizeImg2 #ipad img:nth-of-type(2) { clip:rect(0,304px,201px,153px); margin-left:-153px; }
+	.screenSizeImg3 #ipad img:nth-of-type(2) { clip:rect(0,456px,201px,305px); margin-left:-305px; }
+	.screenSizeImg4 #ipad img:nth-of-type(2) { clip:rect(0,620px,201px,459px); margin-left:-459px; }
+	#iphone5 { top:352px; left:50%; margin-left:235px; width:152px;
+		img:nth-of-type(1) { width:152px; }
+		img:nth-of-type(2) { top:25px; left:40px; height:125px; }
+	}
+	.screenSizeImg1 #iphone5 img:nth-of-type(2) { clip:rect(0,72px,125px,0px); }
+	.screenSizeImg2 #iphone5 img:nth-of-type(2) { clip:rect(0,146px,125px,74px); margin-left:-74px; }
+	.screenSizeImg3 #iphone5 img:nth-of-type(2) { clip:rect(0,219px,125px,147px); margin-left:-147px; }
+	.screenSizeImg4 #iphone5 img:nth-of-type(2) { clip:rect(0,292px,125px,219px); margin-left:-219px; }
+}
+
+@media screen and (min-width:1024px) {
+
+}
+
+@media screen and (min-width:1200px) {
+	#dragScreen { padding:5em 6.55% 0 6.55%;
+		div { position:relative; margin:auto; width:980px;
+			img:nth-of-type(1) { position:absolute; z-index:3; display:block; left:185px; top:-44px; }
+			img:nth-of-type(2) { display:block; position:relative; z-index:2; }
+			img:nth-of-type(3) { position:absolute; display:block; z-index:0; top:46px; left:185px; display:block; clip:rect(0,749px,559px,0); }
+			span{ position:absolute; cursor:pointer; z-index:99; top:-54px; left:200px; display:block; width:35px; height:35px; background:url(img/arrow-left-right-white.svg) no-repeat center center; box-shadow: 1px 1px 5px rgba(0,0,0,0.2); .borderRadius(50%); }
+		}
+	}
+}
+

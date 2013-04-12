@@ -1,0 +1,30 @@
+section { }
+	.description { text-align:center;
+	h1 { .fontSize28(); .fontRegular(); .textUppercase();
+		&:after { .zigZag(); }
+	}
+	ul { margin:1em 0;
+		em { .fontRegular(); }
+	}
+	p {	margin:auto; } 
+	a { margin:2em auto 0 auto; display:inline-block; padding:0.7em 1.4em; background:@colorBlack; color:@colorWhite; .easeTransition(0.6s); }
+}
+
+@media screen and (max-width:640px) {
+	.description { padding:2.5em 7%; 
+		ul { 
+		}
+	}
+	p { margin:0 7%; .fontSize18(); } 
+}
+
+@media screen and (min-width:641px) {
+	.description { padding:5em 0; 
+		ul { .fontSize18();
+		}
+		p { .fontSize20(); width:50%; }
+		a { 
+			&:hover { .borderRadius(10px); }
+		}
+	}
+}

@@ -24,11 +24,16 @@ a{text-decoration:none;}
 .fontRegular() { font-family: 'mostra-nuova-regular'; }
 .fontRegularA() { font-family: 'mostra-nuova-alta-regular'; }
 .fontBold() { font-family: 'mostra-nuova-bold'; }
+.fontVivaldi() { font-family:'vivalD'; }
 
 @colorBlack: #111;
+@colorGrayDark: #818181;
 @colorGray: #eee;
+@colorGrayMedium: #ccc;
 @colorWhite: #fcfcfc;
 
+.fontSize8() { font-size:8px; font-size:0.625rem; }
+.fontSize9() { font-size:9px; font-size:0.625rem; }
 .fontSize10() { font-size:10px; font-size:0.625rem; }
 .fontSize11() { font-size:11px; font-size:0.688rem; }
 .fontSize12() { font-size:12px; font-size:0.75rem; }
@@ -48,9 +53,26 @@ a{text-decoration:none;}
 .fontSize26() { font-size:26px; font-size:1.625rem; }
 .fontSize27() { font-size:27px; font-size:1.688rem; }
 .fontSize28() { font-size:28px; font-size:1.750rem; }
+.fontSize29() { font-size:29px; font-size:1.813rem; }
+.fontSize30() { font-size:30px; font-size:1.875rem; }
+.fontSize31() { font-size:31px; font-size:1.938rem; }
+.fontSize32() { font-size:32px; font-size:2rem; }
+.fontSize33() { font-size:33px; font-size:2.063rem; }
+.fontSize34() { font-size:34px; font-size:2.125rem; }
+.fontSize35() { font-size:35px; font-size:2.188rem; }
+.fontSize36() { font-size:36px; font-size:2.250rem; }
+.fontSize37() { font-size:37px; font-size:2.313rem; }
+.fontSize38() { font-size:38px; font-size:2.375rem; }
+.fontSize39() { font-size:39px; font-size:2.438rem; }
+.fontSize40() { font-size:40px; font-size:2.5rem; }
 
-.zigZag(){ content:''; display:block; width:83px; height:4px; background:url(img/zigzag-black.svg) no-repeat; margin:15px auto 50px auto; }
 
+.textUppercase() { text-transform:uppercase; letter-spacing:0.16em; }
 
+.zigZag(){ content:''; display:block; width:83px; height:4px; background:url(img/zigzag-black.svg) no-repeat; margin:0.3em auto 0 auto; }
 
+.rotateKit(@deg) { -webkit-transform: rotate(@deg); -moz-transform: rotate(@deg); -o-transform: rotate(@deg); -ms-transform: rotate(@deg); transform: rotate(@deg); }
 
+.easeTransition(@timer) { -moz-transition:all @timer ease 0s; -webkit-transition:all @timer ease 0s; -ms-transition:all @timer ease 0s; -khtml-transition:all @timer ease 0s; transition:all @timer ease 0s; }
+
+.borderRadius(@radius) { -moz-border-radius:@radius; -webkit-border-radius:@radius; -ms-border-radius:@radius; -khtml-border-radius:@radius; border-radius:@radius; }

@@ -18,7 +18,7 @@
     <meta name="description" content="" >
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="css/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="public/img/logo/logo.svg" />
 
     <link rel="stylesheet" href="public/css/soSteezy.css" type="text/css" media="screen"  />
 

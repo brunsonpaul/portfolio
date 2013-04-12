@@ -1,0 +1,20 @@
+#header { background:@colorWhite; margin:0; text-align:center; 
+	h1 { color:@colorBlack;
+		span { .fontLightA() }
+		em { .fontRegular(); .textUppercase();
+			span{ .fontRegularA(); .textUppercase(); }			
+		}
+	}	
+}
+
+@media screen and (max-width:640px) {
+	#header { padding:1em 0 0 0; }
+	#userMouseOrKeyboard { display:block; }
+}
+
+@media screen and (min-width:641px) {
+	#header { position:fixed; z-index:999; top:0; left:0; right:0; padding:1em 0; 
+		h1 { .fontSize20(); }
+	}
+	#userMouseOrKeyboard { z-index:999; position:fixed; right:1%; bottom:4px; }
+}

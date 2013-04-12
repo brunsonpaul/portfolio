@@ -1,14 +1,28 @@
-<div id="top"></div>
-<section id="menu">
-	<div>
-		<a href="/"><h1>We Are Full Linked</h1></a>
-		<nav>
-			<ul>
-				<li><a href="/" class="selected" >About</a></li><!-- 
-				--><li><a href="resume" class="notSelected" >Work</a></li><!--
-				--><li><a href="about" class="notSelected" >Contact</a></li><!--	
-			--></ul>
-		</nav>
-	</div>	
-</section>
+<menu id="menu">
+	<nav>
+		<ul>
+			<li>
+				<a href="about" >
+					<p>I</p>
+					<em>About</em>
+					<p>Some things you may need to know</p>
+				</a>
+			</li><!-- 
+			--><li>
+				<a href="/" class="selected" >
+					<p>II</p>
+					<em>Work</em>
+					<p>Some things I've worked on</p>
+				</a>
+			</li><!--
+			--><li>
+				<a href="resume">
+					<p>III</p>
+					<em>Resume</em>
+					<p>Some things I've lived</p>
+				</a>
+			</li><!--	
+		--></ul>
+	</nav>
+</menu>
 

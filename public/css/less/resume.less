@@ -1,0 +1,80 @@
+.resume { text-align:center;
+	h1 { .fontSize28(); .fontRegular(); .textUppercase();
+		&:after { .zigZag(); }
+	}
+	dl { 
+		dt { .fontRegular(); text-transform:uppercase; }
+		dd { 
+			a { color:@colorBlack; .fontRegular(); }
+			img { display:block; margin:auto; }
+		}
+		&:after { content:''; display:block; height:1px; background:@colorBlack; }
+	}
+}
+.download { text-align:center; }
+.download a { display:inline-block; padding:0.7em 1.4em; margin:auto; background:@colorBlack; color:@colorWhite; .easeTransition(0.6s); }
+
+@media screen and (max-width:640px) {
+	.resume { padding:2.5em 7% 1.25em;
+		dl { margin:2em auto; 
+			dt { .fontSize22(); }
+			dd {  .fontSize18(); margin:0.5em auto 2em;
+				a { 			
+					&:hover { text-decoration:underline; }
+				}
+				img { margin:1em auto 0 auto; }
+			}
+			&:after { margin:auto; width:8%; }
+		}
+		&:nth-of-type(2) { padding:0 7% ; }
+	}
+	.download { margin:3em auto; }
+}
+
+@media screen and (min-width:641px) {
+	.resume { padding:5em 6.55% 2.5em 6.55%;
+		dl { margin:2em auto; 
+			dt { .fontSize40(); }
+			dd { .fontSize24(); margin:0.5em auto 2em;
+				a { 			
+					&:hover { text-decoration:underline; }
+				}
+				img { margin:1em auto 0 auto; }
+			}
+			&:after { margin:auto; width:3%; }
+		}
+		&:nth-of-type(2) { padding:0 6.55%; }
+	}
+	.download { margin:3em auto; }
+	.download a:hover { .borderRadius(10px); }
+}
+
+/*
+
+
+#resume article dd 
+
+@media screen and (max-width:640px) {
+	#resume { padding:50px 7% 50px 7%; }
+	#resume article:nth-of-type(2) { margin-top:80px; }
+	#resume article h1 { font-size:1.25em; margin-bottom:30px; }
+	#resume article h1:after { margin:5px auto; }
+	#resume article dl:after { content:''; display:block; width:3%; height:1px; background:#111; margin:30px auto; }
+	#resume article dt { font-size:1.5em; }
+	#resume article dd { font-size:1.125em; }
+}
+
+@media screen and (min-width:641px) {
+	#resume { padding:149px 6.55% 50px 6.55%; }
+	#resume article:nth-of-type(2) { margin-top:100px; }
+	#resume article h1 { font-size:1.875em; margin-bottom:50px; }
+	#resume article h1:after { margin:8px auto; }
+	#resume article dl:after { content:''; display:block; width:3%; height:1px; background:#111; margin:50px auto; }
+	#resume article dt { font-size:2.5em; }
+	#resume article dd { font-size:1.5em; }
+	#resume article dd a:hover { text-decoration:underline; }
+	.download a:hover { -moz-border-radius:10px; -webkit-border-radius:10px; -ms-border-radius:10px; -khtml-border-radius:10px; border-radius:10px; }
+}
+
+
+*/
