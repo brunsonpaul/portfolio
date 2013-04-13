@@ -8,17 +8,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title></title>
+    <title>Kévin LAGIER</title>
     <meta name="description" content="">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <meta name="author" content="Kevin LAGIER & Florentin MONTEIL" />
-    <meta name="keywords" content="" >
-    <meta name="description" content="" >
+    <meta name="author" content="Kevin LAGIER" />
+    <meta name="keywords" content="Kévin LAGIER, portfolio, web, design, graphic design, webdesign, websites, mobile, tablet, communication, project management, ergonomics, UX, responsive, digital, Hetic, Paris, France" />
+    <meta name="description" content="Personal portfolio Kévin LAGIER, webdesigner from Paris, France" />   
+
+    <meta name="google-site-verification" content="2QDxl5b5q7pZfwnV43B7jVxTSVBsLSbAt3CUDt0vEvc" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="public/img/logo/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="public/img/other/favicon.png" />
 
     <link rel="stylesheet" href="public/css/soSteezy.css" type="text/css" media="screen"  />
 

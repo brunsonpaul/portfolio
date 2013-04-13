@@ -94,27 +94,6 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'mostra-nuova-alta-light';
-  src: url('font/mostra-nuova/mostra_nuova_alta_light-webfont.eot');
-  src: url('font/mostra-nuova/mostra_nuova_alta_light-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_light-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_light-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_light-webfont.svg#mostra_nuova_altalight') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'mostra-nuova-alta-regular';
-  src: url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.eot');
-  src: url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.svg#mostra_nuova_alta_regularRg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'mostra-nuova-alta-thin';
-  src: url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.eot');
-  src: url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.svg#mostra_nuova_altathin') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   width: 100%;
   height: 100%;
@@ -129,23 +108,19 @@ body {
 #header {
   background: #fcfcfc;
   margin: 0;
-  text-align: center;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  -khtml-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 #header h1 {
-  color: #111111;
+  display: none;
 }
-#header h1 span {
-  font-family: 'mostra-nuova-alta-light';
-}
-#header h1 em {
-  font-family: 'mostra-nuova-regular';
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-}
-#header h1 em span {
-  font-family: 'mostra-nuova-alta-regular';
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
+#header img {
+  display: block;
+  margin: auto;
+  width: 200px;
 }
 @media screen and (max-width: 640px) {
   #header {
@@ -158,21 +133,14 @@ body {
 @media screen and (min-width: 641px) {
   #header {
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     top: 0;
     left: 0;
     right: 0;
     padding: 1em 0;
   }
   #header h1 {
-    font-size: 20px;
-    font-size: 1.250rem;
-  }
-  #userMouseOrKeyboard {
-    z-index: 999;
-    position: fixed;
-    right: 1%;
-    bottom: 4px;
+    display: none;
   }
 }
 #menu {
@@ -230,12 +198,9 @@ body {
   #menu nav ul li a p:nth-of-type(2) {
     display: none;
   }
-  #menu nav ul li a:hover p:nth-of-type(1) {
-    color: #111111;
-  }
 }
 @media screen and (min-width: 641px) {
-  #menu {
+  .homeMenu {
     position: absolute;
     left: 0;
     right: 0;
@@ -253,6 +218,11 @@ body {
     padding: 1em 0;
     width: 80%;
     margin: auto;
+    -moz-transition: all 0.6s ease 0s;
+    -webkit-transition: all 0.6s ease 0s;
+    -ms-transition: all 0.6s ease 0s;
+    -khtml-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
   }
   #menu nav ul li a p:nth-of-type(1) {
     font-family: 'mostra-nuova-regular';
@@ -261,6 +231,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.16em;
     color: #eeeeee;
+    -moz-transition: all 0.6s ease 0s;
+    -webkit-transition: all 0.6s ease 0s;
+    -ms-transition: all 0.6s ease 0s;
+    -khtml-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
   }
   #menu nav ul li a em {
     font-size: 28px;
@@ -279,6 +254,7 @@ body {
 }
 footer {
   position: relative;
+  z-index: 199;
   background: #111111;
   color: #fcfcfc;
   font-family: 'mostra-nuova-thin';
@@ -293,10 +269,6 @@ footer article h1 em {
   font-family: 'mostra-nuova-light';
   text-transform: uppercase;
   letter-spacing: 0.16em;
-}
-footer article h1 em span {
-  font-family: 'mostra-nuova-alta-light';
-  text-transform: uppercase;
 }
 footer article ul li span {
   display: inline-block;
@@ -396,54 +368,82 @@ footer aside p {
     display: inline-block;
   }
 }
-/**#prev { cursor:url(img/cursor-top.png),auto; position:fixed; z-index:999; display:block; left:0; right:0; top:99px; }
-#next { cursor:url(img/cursor-bottom.png),auto; position:fixed; z-index:999; display:block; left:0; right:0; bottom:0; }
-
-#work { position:relative; overflow:hidden; background:red; 
-	article { position:relative; width:100%; margin:auto;
-		a { position:absolute; bottom:0; display:block; width:100%; height:100%; }
-		img { display:block; margin:auto; width:100%; }
-		div { background:@colorBlack; opacity:0.9; position:absolute; bottom:0; top:0; left:0; right:0; z-index:10; }
-	}
-	.activeWork div{ display:none; }
-	#the-whole { background:#1c232e; } 
-	#social-coke { background:#f0e2c7; } 
-	#partech { background:#f0e2c7; }
-}
-
-@media screen and (max-width:640px) {
-	#work {
-		
-	}	
-}
-
-@media screen and (min-width:641px) {
-	#work {
-		nav { z-index:999; position:fixed; bottom:0; left:0; right:0; text-align:center; vertical-align:bottom;
-			ul { display:block; border-bottom:1px solid @colorGrayDark;
-				li { position:relative; display:inline-block; vertical-align:bottom; height:2em; width:1.5em; cursor:pointer;
-					a { position:absolute; bottom:0; display:block; height:0; width:1.5em; vertical-align:bottom; .easeTransition(0.2s); }
-					&:hover a { height:0.5em; background:@colorWhite; }
-				}
-				.activeWorkLink a { background:@colorWhite; height:0.5em; }
-			}
-		}
-	}
-}**/
-#prev {
-  -moz-transition: all 0.6s ease 0s;
-  -webkit-transition: all 0.6s ease 0s;
-  -ms-transition: all 0.6s ease 0s;
-  -khtml-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
-  cursor: url(img/cursor-bottom.png), auto;
+#video {
   position: fixed;
-  z-index: 30;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#video video {
+  display: block;
+  margin: auto;
+  min-width: 100%;
+}
+#navigation {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111111;
+  height: 28px;
+}
+#navigation nav {
+  display: block;
+}
+#navigation nav ul {
+  display: block;
+  text-align: center;
+}
+#navigation nav ul li {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+}
+#navigation nav ul li a {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #111111;
+  border-left: 1px solid #fcfcfc;
+}
+#navigation nav ul li:last-child a {
+  border-right: 1px solid #fcfcfc;
+}
+#navigation nav ul li:hover a {
+  height: 25px;
+  border: none;
+  border-top: 1px solid #fcfcfc;
+}
+#navigation nav ul li .activeWorkNav {
+  height: 25px;
+  border: none;
+  border-top: 1px solid #fcfcfc;
+}
+#navigation #userMouseOrKeyboard {
+  z-index: 1;
+  position: absolute;
+  right: 1%;
+  top: 6px;
+  height: 11px;
+}
+#prev {
+  position: fixed;
+  z-index: 99;
   left: 0;
   right: 0;
   top: 55px;
   text-align: center;
   color: #fcfcfc;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  -khtml-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  cursor: url(img/arrow-top-white.png), auto;
 }
 #prev span {
   font-size: 16px;
@@ -461,19 +461,19 @@ footer aside p {
   margin-top: -22.5px;
 }
 #next {
-  -moz-transition: all 0.6s ease 0s;
-  -webkit-transition: all 0.6s ease 0s;
-  -ms-transition: all 0.6s ease 0s;
-  -khtml-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
-  cursor: url(img/cursor-bottom.png), auto;
   position: fixed;
-  z-index: 30;
+  z-index: 99;
   left: 0;
   right: 0;
   bottom: 0;
   text-align: center;
   color: #fcfcfc;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  -khtml-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  cursor: url(img/arrow-bottom-white.png), auto;
 }
 #next span {
   font-size: 20px;
@@ -493,7 +493,6 @@ footer aside p {
 #work {
   position: relative;
   overflow: hidden;
-  z-index: 10;
 }
 #work .post {
   position: relative;
@@ -531,17 +530,362 @@ footer aside p {
 #work .activeWork .unactiveWork {
   opacity: 0;
 }
-#work .activeWork a {
-  cursor: url(img/cursor-more.png), auto;
+#work .backgroundWork {
+  margin: auto;
+  display: block;
 }
 #work #theWholeWork a {
   background: #1c232e;
+  z-index: 11;
+  cursor: url(img/more-white.png), auto;
 }
 #work #socialCokeWork a {
   background: #f0e2c7;
+  z-index: 12;
+  cursor: url(img/more-black.png), auto;
 }
 #work #partechWork a {
-  background: #ff0000;
+  background: url('img/dark-grid.png') repeat #1d1d1c;
+  z-index: 13;
+  cursor: url(img/more-white.png), auto;
+}
+#work #waflWork a {
+  background: #fff;
+  z-index: 14;
+  cursor: url(img/more-black.png), auto;
+}
+.oiseau-social-coke {
+  display: block;
+  position: absolute;
+  clip: rect(0, 374px, 235px, 0);
+  left: -150%;
+  top: 20px;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  -khtml-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+.activeWork .oiseau-social-coke {
+  left: -80px;
+}
+.bonhomme-social-coke {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 155px;
+  margin-left: 13%;
+}
+.poisson-social-coke {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 185px;
+  margin-left: 40%;
+}
+.drink-social-coke {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 115px;
+  margin-left: 30%;
+}
+.love-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 20px;
+  margin-right: 29%;
+}
+.hello-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 65px;
+  margin-right: 20%;
+}
+.point1-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 215px;
+  margin-right: 38%;
+}
+.point2-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 211px;
+  margin-right: 32%;
+}
+.point3-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 167px;
+  margin-right: 28%;
+}
+.point4-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 184px;
+  margin-right: 21%;
+}
+.point5-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 155px;
+  margin-right: 34%;
+}
+.point6-social-coke {
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 206px;
+  margin-right: 26%;
+}
+#goutte-social-coke {
+  z-index: 99999;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  clip: rect(0, 500px, 245px, 0);
+}
+.goutte1 {
+  position: absolute;
+  left: 475px;
+  top: -68px;
+}
+.goutte2 {
+  position: absolute;
+  left: 130px;
+  top: -68px;
+}
+.goutte3 {
+  position: absolute;
+  left: 65px;
+  top: -68px;
+}
+.goutte4 {
+  position: absolute;
+  left: 340px;
+  top: -68px;
+}
+.goutte5 {
+  position: absolute;
+  left: 40px;
+  top: -68px;
+}
+.activeWork .goutte1 {
+  -moz-animation: goutte 1s infinite 1s linear;
+  -o-animation: goutte 1s infinite 1s linear;
+  -webkit-animation: goutte 1s infinite 1s linear;
+  animation: goutte 1s infinite 1s linear;
+}
+.activeWork .goutte2 {
+  -moz-animation: goutte 0.8s infinite 1s linear;
+  -o-animation: goutte 0.8s infinite 1s linear;
+  -webkit-animation: goutte 0.8s infinite 1s linear;
+  animation: goutte 0.8s infinite 1s linear;
+}
+.activeWork .goutte3 {
+  -moz-animation: goutte 1.2s infinite 1s linear;
+  -o-animation: goutte 1.2s infinite 1s linear;
+  -webkit-animation: goutte 1.2s infinite 1s linear;
+  animation: goutte 1.2s infinite 1s linear;
+}
+.activeWork .goutte4 {
+  -moz-animation: goutte 0.9s infinite 1s linear;
+  -o-animation: goutte 0.9s infinite 1s linear;
+  -webkit-animation: goutte 0.9s infinite 1s linear;
+  animation: goutte 0.9s infinite 1s linear;
+}
+.activeWork .goutte5 {
+  -moz-animation: goutte 0.6s infinite 1s linear;
+  -o-animation: goutte 0.6s infinite 1s linear;
+  -webkit-animation: goutte 0.6s infinite 1s linear;
+  animation: goutte 0.6s infinite 1s linear;
+}
+@-moz-keyframes goutte {
+  0% {
+    top: -68px;
+  }
+  100% {
+    top: 313px;
+  }
+}
+@-webkit-keyframes goutte {
+  0% {
+    top: -68px;
+  }
+  100% {
+    top: 313px;
+  }
+}
+@-o-keyframes goutte {
+  0% {
+    top: -68px;
+  }
+  100% {
+    top: 265px;
+  }
+}
+@-ms-keyframes goutte {
+  0% {
+    top: -68px;
+  }
+  100% {
+    top: 313px;
+  }
+}
+@keyframes goutte {
+  0% {
+    top: -68px;
+  }
+  100% {
+    top: 313px;
+  }
+}
+.tweet-social-coke {
+  display: block;
+  position: absolute;
+  right: -70%;
+  top: 15px;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  -khtml-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+.activeWork .tweet-social-coke {
+  right: 25px;
+  top: 15px;
+  -moz-animation: tweetButton 4s infinite linear;
+  -o-animation: tweetButton 4s infinite linear;
+  -webkit-animation: tweetButton 4s infinite linear;
+  animation: tweetButton 4s infinite linear;
+}
+@-webkit-keyframes tweetButton {
+  50%,
+  54%,
+  58%,
+  62% {
+    margin: 0;
+  }
+  52%,
+  56%,
+  60% {
+    margin-right: 10px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+@-o-keyframes tweetButton {
+  50%,
+  54%,
+  58%,
+  62% {
+    margin: 0;
+  }
+  52%,
+  56%,
+  60% {
+    margin-right: 10px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+@-moz-keyframes tweetButton {
+  50%,
+  54%,
+  58%,
+  62% {
+    margin: 0;
+  }
+  52%,
+  56%,
+  60% {
+    margin-right: 10px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+@-khtml-keyframes tweetButton {
+  50%,
+  54%,
+  58%,
+  62% {
+    margin: 0;
+  }
+  52%,
+  56%,
+  60% {
+    margin-right: 10px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+@-ms-keyframes tweetButton {
+  50%,
+  54%,
+  58%,
+  62% {
+    margin: 0;
+  }
+  52%,
+  56%,
+  60% {
+    margin-right: 10px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+@keyframes tweetButton {
+  50%,
+  54%,
+  58%,
+  62% {
+    margin: 0;
+  }
+  52%,
+  56%,
+  60% {
+    margin-right: 10px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+#waflLogoWork {
+  display: block;
+  margin: 27.5px auto;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  -khtml-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  -webkit-transform: scale(0) rotate(0deg);
+  -o-transform: scale(0) rotate(0deg);
+  -moz-transform: scale(0) rotate(0deg);
+  -ms-transform: scale(0) rotate(0deg);
+  -khtml-transform: scale(0) rotate(0deg);
+  transform: scale(0) rotate(0deg);
+}
+.activeWork #waflLogoWork {
+  -webkit-transform: scale(1) rotate(720deg);
+  -o-transform: scale(1) rotate(720deg);
+  -moz-transform: scale(1) rotate(720deg);
+  -khtml-transform: scale(1) rotate(720deg);
+  -ms-transform: scale(1) rotate(720deg);
+  transform: scale(1) rotate(720deg);
 }
 @media screen and (max-width: 640px) {
   
@@ -558,19 +902,11 @@ footer aside p {
 #about {
   text-align: center;
 }
-#about h1 strong {
+#about h1 .author {
   letter-spacing: 0.16em;
 }
-#about h1 strong span {
-  font-family: 'mostra-nuova-alta-light';
-}
-#about h1 strong em {
+#about h1 .author em {
   font-family: 'mostra-nuova-regular';
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-}
-#about h1 strong em span {
-  font-family: 'mostra-nuova-alta-regular';
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
@@ -2391,7 +2727,7 @@ footer aside p {
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(1) {
-  cursor: url(img/arrow-white.svg), auto;
+  cursor: url(img/arrow-right-white.png), auto;
   z-index: 99;
   position: absolute;
   top: 0;
@@ -2404,7 +2740,7 @@ footer aside p {
 #slide2:checked ~ #controls label:nth-child(1),
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3) {
-  cursor: url(img/arrow-white.svg), auto;
+  cursor: url(img/arrow-left-white.png), auto;
   z-index: 99;
   position: absolute;
   top: 0;
@@ -2535,7 +2871,7 @@ footer aside p {
   left: 0;
   top: 0;
   bottom: 0;
-  cursor: url(img/cursor-left-black.png), auto;
+  cursor: url(img/arrow-left-black.png), auto;
 }
 #screenSize label:nth-of-type(2) {
   z-index: 4;
@@ -2544,7 +2880,7 @@ footer aside p {
   right: 0;
   top: 0;
   bottom: 0;
-  cursor: url(img/cursor-right-black.png), auto;
+  cursor: url(img/arrow-right-black.png), auto;
 }
 #screenSize img {
   -moz-transition: all 0.6s ease 0s;

@@ -1,4 +1,4 @@
-<menu id="menu">
+<menu id="menu" <?php echo classMenu; ?> >
 	<nav>
 		<ul>
 			<li>

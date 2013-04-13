@@ -1,7 +1,7 @@
 <footer>
     <section>
         <article>
-            <h1>Kév<span>i</span>n <em>Lagi<span>e</span>r</em></h1>
+            <h1>Kévin <em>Lagier</em></h1>
             <ul>
                 <li><span>H</span> Paris</li>
                 <li><span>M</span> <a href="hello@lagier-kevin.com">hello@lagier-kevin.com</a></li>

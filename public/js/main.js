@@ -17,11 +17,15 @@ $(document).ready(function(){
 
 function iniHeight() {
 	var screenHeight = innerHeight;
+	var screenwidth = innerWidth;
 	var menuHeight = $("#menu").height();
 	var headerHeight = 55;
 	var workHeight = 245;
 	var borderHeight =  (screenHeight - workHeight)/2 + headerHeight/2;
 
+	 $("video").css({
+	 	"min-height" : screenHeight,
+	 });
 	$("#work .post").css({
 		"height" : workHeight + borderHeight,
 	 	"border-top-width": borderHeight,
@@ -41,35 +45,65 @@ function iniHeight() {
 		"margin-top": -headerHeight,
 		"z-index":-1
 	});
-	$("#nav-dock a").css({
-		//"height": (screenHeight - headerHeight - workHeight)/2,
-	});
-	if($(document).scrollTop() < (workHeight*2)){
-		$("#prev").css({
-			"height": (screenHeight - headerHeight - workHeight)/2,
-			"opacity":1,
+
+
+	if($(document).scrollTop() < (workHeight-1)){ 
+		$("#header").css({
+	 		"padding-top":"3em",
 		});
 	}
-	else{
-		$("#prev").css({
-			"opacity":0,
+	else{ 
+		$("#header").css({
+	 		"padding-top":"1.2em",
 		});
 	}
+
+	if($(document).scrollTop() < (workHeight-1)){ 
+		$("#prev").css({
+	 		"height":0,
+			"opacity":0,			
+		});
+	}
+	if($(document).scrollTop() > (workHeight) && $(document).scrollTop() < (workHeight*2.5) ){
+	 	$("#prev").css({
+	 		"height": (screenHeight - headerHeight - workHeight)/2,
+	 		"opacity":1,
+		});
+	}
+	if($(document).scrollTop() > (workHeight*2.5) && $(document).scrollTop() < (workHeight*5) ){
+	 	$("#prev").css({
+	 		"opacity":0,
+	 	 	"height": (screenHeight - headerHeight - workHeight)/2,
+		});
+	}
+	if($(document).scrollTop() > (workHeight*5)){
+		$("#prev").css({
+			"height": (screenHeight/2),
+		});
+	}
+
 	if($(document).scrollTop() < (1)){
 		$("#next").css({
 			"height": (screenHeight - menuHeight),
 			"opacity":1,
+			"z-index":9,
 		});
 	}
-	if( $(document).scrollTop() > (1) && $(document).scrollTop() < (workHeight*4)){
+	if($(document).scrollTop() > (workHeight*1.5)){
+		$("#next").css({
+			"z-index":399,
+		});
+	}
+	if( $(document).scrollTop() > (1) && $(document).scrollTop() < (workHeight*5)){
 		$("#next").css({
 			"height": (screenHeight - headerHeight - workHeight)/2,
 			"opacity":0,
+			"display": "block",
 		});
 	}
-	if($(document).scrollTop() > (workHeight*4)){
+	if($(document).scrollTop() > (workHeight*5)){
 		$("#next").css({
-			"height": 0,
+			"display": "none",
 		});
 	}
 }

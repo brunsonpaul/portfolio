@@ -13,18 +13,11 @@ a{text-decoration:none;}
 @font-face { font-family: 'mostra-nuova-light'; src: url('font/mostra-nuova/mostra_nuova_light-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_light-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_light-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_light-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_light-webfont.svg#mostra_nuovalight') format('svg'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'mostra-nuova-regular'; src: url('font/mostra-nuova/mostra_nuova_regular-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_regular-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_regular-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_regular-webfont.svg#mostra_nuova_regularregular') format('svg'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'mostra-nuova-thin'; src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.svg#mostra_nuovathin') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'mostra-nuova-alta-light'; src: url('font/mostra-nuova/mostra_nuova_alta_light-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_alta_light-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_light-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_light-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_light-webfont.svg#mostra_nuova_altalight') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'mostra-nuova-alta-regular'; src: url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_regular-webfont.svg#mostra_nuova_alta_regularRg') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'mostra-nuova-alta-thin'; src: url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.eot'); src: url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_alta_thin-webfont.svg#mostra_nuova_altathin') format('svg'); font-weight: normal; font-style: normal; }
 
 .fontThin() { font-family: 'mostra-nuova-thin'; }
-.fontThinA() { font-family: 'mostra-nuova-alta-thin'; }
 .fontLight() { font-family: 'mostra-nuova-light'; }
-.fontLightA() { font-family: 'mostra-nuova-alta-light'; }
 .fontRegular() { font-family: 'mostra-nuova-regular'; }
-.fontRegularA() { font-family: 'mostra-nuova-alta-regular'; }
 .fontBold() { font-family: 'mostra-nuova-bold'; }
-.fontVivaldi() { font-family:'vivalD'; }
 
 @colorBlack: #111;
 @colorGrayDark: #818181;
@@ -76,3 +69,8 @@ a{text-decoration:none;}
 .easeTransition(@timer) { -moz-transition:all @timer ease 0s; -webkit-transition:all @timer ease 0s; -ms-transition:all @timer ease 0s; -khtml-transition:all @timer ease 0s; transition:all @timer ease 0s; }
 
 .borderRadius(@radius) { -moz-border-radius:@radius; -webkit-border-radius:@radius; -ms-border-radius:@radius; -khtml-border-radius:@radius; border-radius:@radius; }
+
+.scaleKit(@scale) { -webkit-transform: scale(@scale); -moz-transform: scale(@scale); -o-transform: scale(@scale); transform: scale(@scale); }
+
+
+
