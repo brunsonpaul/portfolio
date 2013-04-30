@@ -1,6 +1,14 @@
 @import "helper.less";
 
-body { width:100%; height:100%; margin:0; padding:0; border:none; background:@colorWhite; color:@colorBlack; font-family: Helvetica, Arial, sans-serif; .fontLight(); }
+::-webkit-input-placeholder  { color:@colorBlack; .fontSize16(); .fontLight(); }
+input:-moz-placeholder { color:@colorBlack; .fontSize16(); .fontLight(); }
+
+body { width:100%; height:100%; margin:0; padding:0; border:none; background:@colorBlack; color:@colorBlack; font-family: Helvetica, Arial, sans-serif; .fontLight(); }
+
+.button { text-align:center; }
+.button a { display:inline-block; padding:0.7em 1.4em; margin:auto; background:@colorBlack; color:@colorWhite; .easeTransition(0.6s); 
+	&:hover { .borderRadius(10px); }
+}
 
 @import "header.less";
 
@@ -8,12 +16,16 @@ body { width:100%; height:100%; margin:0; padding:0; border:none; background:@co
 
 @import "footer.less";
 
-@import "work.less";
-
 @import "about.less";
 
+@import "contact.less";
+
+@import "work.less";
+
+/*
 @import "resume.less";
 
 @import "project.less";
 
 @import "partech.less";
+*/

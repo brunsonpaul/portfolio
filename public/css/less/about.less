@@ -1,4 +1,4 @@
-#about { text-align:center;
+#about { text-align:center; background:@colorWhite;  padding:5em 10% 2.5em 10%;
 	h1 { 
 		.author { letter-spacing:0.16em;
 			em { .fontRegular(); .textUppercase(); }
@@ -9,15 +9,20 @@
 		#ageRight { position:absolute; top:0; right:0; display:block; -moz-animation: secondNumber 5s infinite linear; -o-animation: secondNumber 5s infinite linear; -webkit-animation: secondNumber 5s infinite linear; animation: secondNumber 5s infinite linear; }
 	}
 	p { }
-	a { color:@colorBlack; .fontRegular(); }
+	a { color:@colorBlack; .fontRegular(); 
+		&:hover { text-decoration:underline; }
+	}
 }
-#aboutImg { display:block; width:100%; }
-#skills { text-align:center;
-	h1 { .fontSize28(); .fontRegular(); .textUppercase();
+#aboutImg { overflow:hidden; margin:auto; text-align:center; 
+	img { display:block; width:100%; min-width:700px; margin:auto;}
+}
+
+#skills { text-align:center; background:@colorWhite; padding:2.5em 10%;
+	h1 { .fontSize30(); .fontRegular(); .textUppercase();
 		&:after { .zigZag(); }
 	}
-	ul { display:block; text-align:center;
-		li { vertical-align:top; display:inline-block; 
+	#skillsDiagram { display:block; text-align:center;
+		li { vertical-align:top; display:inline-block; width:150px; margin:2.5em 1.5% 0 1.5%;
 			.diagram { position:relative; z-index:5; width:130px; height:130px; display:inline-block; .fontRegular();
 				&:after { content: ''; display:block; position:absolute; top:0px; left:0px; width:130px; height:130px; background:@colorGray; z-index:0; border-radius:50%; }
 				&:before { content: ''; display:block; position:absolute; top:20px; left:20px; width:90px; height:90px; background:@colorWhite; z-index:10; border-radius:50%; }
@@ -31,9 +36,51 @@
 			p { font-size:0.875rem; font-family:"mostra-nuova-regular"; margin-top:25px; }
 		}
 	}
+	#level { margin:2.5em auto 0 auto; width:100%; max-width:1024px; .fontSize16();
+		ul { display:inline-block; text-align:left; vertical-align:top; width:30%; min-width:300px;			
+			li { display:block; margin-top:0.8em; padding:0 15px;
+				p { display:inline-block; width:30%; }
+				.lineSkillsMax { position:relative; display:inline-block;  vertical-align:top; margin-top:2px; width:65%; margin-left:5%; height:14px; background:@colorGray; }
+				.lineSkills { position:absolute; height:14px; left:0; top:0; background:@colorBlack; }
+			}
+		}
+	}
 }
+
+#experience { text-align:center; background:@colorWhite; padding:2.5em 10% 2.5em 10%;
+	h1 { .fontSize30(); .fontRegular(); .textUppercase();
+		&:after { .zigZag(); }
+	}
+	ul { display:block; margin:0 auto;
+		li { display:inline-block; vertical-align:top; width:30%; min-width:300px; margin-top:2.5em;
+			&:nth-of-type(2) { margin:2.5em 5% 0 5%}
+			img { display:block; margin:auto; height:50px; }
+			em { .fontRegular(); margin:1em auto 0.5em auto; display:block; }
+			a { color:@colorBlack; 
+				&:hover { text-decoration:underline; }
+			}
+		}
+	}
+}
+
+#education { text-align:center; background:@colorWhite; padding:2.5em 10% 5em 10%;
+	h1 { .fontSize30(); .fontRegular(); .textUppercase();
+		&:after { .zigZag(); }
+	}
+	ul { display:block; margin:0 auto 5em auto;
+		li { display:inline-block; vertical-align:top; width:30%; min-width:300px; margin-top:2.5em;
+			&:nth-of-type(2) { margin:2.5em 5% 0 5%}
+			img { display:block; margin:auto; height:50px; }
+			em { .fontRegular(); margin:0 auto 0.5em auto; display:block; }
+			a { color:@colorBlack; 
+				&:hover { text-decoration:underline; }
+			}
+		}
+	}
+}
+
 @media screen and (max-width:640px) {
-	#about { padding:2.5em 7%; 
+	#about {
 		h1 { .fontSize22(); 
 			#age { width:24px; height:20px; }
 			#ageContent { width:24px; height:20px; }
@@ -41,13 +88,6 @@
 			#ageRight { width:12px; }
 		}
 		p { .fontSize16(); line-height:1.25em; margin-top:1em; }
-	}
-	#skills { padding:2.5em 7%; 
-		ul { margin-top:3em;
-			li { width:50%; margin:0 auto 2em auto; 
-				&:last-child { margin:0 auto; }
-			}
-		}
 	}
 	@-moz-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
 	@-webkit-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
@@ -62,35 +102,29 @@
 }
 
 @media screen and (min-width:641px) {
-	#about { padding:5em 0;
-		h1 { .fontSize30; 
+	#about {
+		h1 { .fontSize30(); margin:auto;
 			#age { width:30px; height:25px; }
 			#ageContent { width:30px; height:25px; }
 			#ageLeft { width:15px; }
 			#ageRight { width:15px; }
 		}
 		p { .fontSize20(); line-height:1.4em; width:70%; max-width:850px; margin:auto; margin-top:0.8em; }
-		a {
-			&:hover { text-decoration:underline; }
-		}
-	}
-	#skills { padding:5em 0;
-		ul {
-			li { width:150px; margin:3em 1.5% 0 1.5%; }
-		}
 	}
 	@-moz-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-138px; } 100% { top:0; } }
 	@-webkit-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-138px; } 100% { top:0; } }
 	@-o-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-138px; } 100% { top:0; } }
 	@-ms-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-138px; } 100% { top:0; } }
 	@keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-138px; } 100% { top:0; } }
-	@-moz-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:0; } 100% { top:-138px; } }
-	@-webkit-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:0; } 100% { top:-138px; } }
-	@-o-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:0; } 100% { top:-138px; } }
-	@-ms-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:0; } 100% { top:-138px; } }
-	@keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:0; } 100% { top:-138px; } }
+	@-moz-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:-2px; } 100% { top:-138px; } }
+	@-webkit-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:-2px; } 100% { top:-138px; } }
+	@-o-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:-2px; } 100% { top:-138px; } }
+	@-ms-keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:-2px; } 100% { top:-138px; } }
+	@keyframes secondNumber { 0% { top:-138px; } 20%, 80%{ top:-2px; } 100% { top:-138px; } }
 }
 
+.percentOnOff { display:none; }
+.play .percentOnOff { display:block; }
 .play .diagramPartOne { -webkit-animation: diagramPartOne 1s 1 linear forwards; -moz-animation: diagramPartOne 1s 1 linear forwards; -ms-animation: diagramPartOne 1s 1 linear forwards; -o-animation: diagramPartOne 1s 1 linear forwards; animation: diagramPartOne 1s 1 linear forwards; }
 .play .diagramPartTwo { -webkit-animation: diagramPartTwo 2s 1 linear forwards; -moz-animation: diagramPartTwo 2s 1 linear forwards; -ms-animation: diagramPartTwo 2s 1 linear forwards; -o-animation: diagramPartTwo 2s 1 linear forwards; animation: diagramPartTwo 2s 1 linear forwards; }
 .play .diagramPartThree { -webkit-animation: diagramPartThree 3s 1 linear forwards; -moz-animation: diagramPartThree 3s 1 linear forwards; -ms-animation: diagramPartThree 3s 1 linear forwards; -o-animation: diagramPartThree 3s 1 linear forwards; animation: diagramPartThree 3s 1 linear forwards; }
@@ -119,8 +153,8 @@
 .play .percentProjectManagement span:nth-of-type(1){left:0;-webkit-animation:firstProjectManagement 2s linear forwards;-moz-animation:firstProjectManagement 2s linear forwards;-ms-animation:firstProjectManagement 2s linear forwards;-o-animation:firstProjectManagement 2s linear forwards;animation:firstProjectManagement 2s linear forwards;}
 .play .percentProjectManagement span:nth-of-type(2){left:12px;-webkit-animation:secondProjectManagement 2.2s 1 linear forwards;-moz-animation:secondProjectManagement 2.2s 1 linear forwards;-ms-animation:secondProjectManagement 2.2s 1 linear forwards;-o-animation:secondProjectManagement 2.2s 1 linear forwards;animation:secondProjectManagement 2.2s 1 linear forwards;}
 .play .percentProjectManagement span:nth-of-type(3) { left:25px; top:-3px; font-size:0.625em;}
-@keyframes "firstProjectManagement"{0%{top:0;}100%{top:-118px;}}@-moz-keyframes firstProjectManagement{0%{top:0;}100%{top:-118px;}}@-webkit-keyframes "firstProjectManagement"{0%{top:0;}100%{top:-118px;}}@-ms-keyframes "firstProjectManagement"{0%{top:0;}100%{top:-118px;}}@-o-keyframes "firstProjectManagement"{0%{top:0;}100%{top:-118px;}}
-@keyframes "secondProjectManagement"{0%{top:0;}100%{top:-1222px;}}@-moz-keyframes secondProjectManagement{0%{top:0;}100%{top:-1222px;}}@-webkit-keyframes "secondProjectManagement"{0%{top:0;}100%{top:-1222px;}}@-ms-keyframes "secondProjectManagement"{0%{top:0;}100%{top:-1222px;}}@-o-keyframes "secondProjectManagement"{0%{top:0;}100%{top:-1222px;}}
+@keyframes firstProjectManagement{0%{top:0;}100%{top:-118px;}}@-moz-keyframes firstProjectManagement{0%{top:0;}100%{top:-118px;}}@-webkit-keyframes firstProjectManagement{0%{top:0;}100%{top:-118px;}}@-ms-keyframes firstProjectManagement{0%{top:0;}100%{top:-118px;}}@-o-keyframes firstProjectManagement{0%{top:0;}100%{top:-118px;}}
+@keyframes secondProjectManagement{0%{top:0;}100%{top:-1222px;}}@-moz-keyframes secondProjectManagement{0%{top:0;}100%{top:-1222px;}}@-webkit-keyframes secondProjectManagement{0%{top:0;}100%{top:-1222px;}}@-ms-keyframes secondProjectManagement{0%{top:0;}100%{top:-1222px;}}@-o-keyframes secondProjectManagement{0%{top:0;}100%{top:-1222px;}}
 
 .play .uxConceptionTwo{-webkit-animation:uxConceptionTwo 1.88s 1 linear forwards;-moz-animation:uxConceptionTwo 1.88s 1 linear forwards;-ms-animation:uxConceptionTwo 1.88s 1 linear forwards;-o-animation:uxConceptionTwo 1.88s 1 linear forwards;animation:uxConceptionTwo 1.88s 1 linear forwards;}
 .play .percentUxConception { overflow:hidden; position:absolute; font-size:1.25rem; left:50%; margin-left:-20px; top:58px; color:@colorBlack; z-index:11; width:40px; height:20px; clip:rect(0,auto,auto,0);}
@@ -128,8 +162,8 @@
 .play .percentUxConception span:nth-of-type(1){left:0;-webkit-animation:firstUxConception 1.6s linear forwards;-moz-animation:firstUxConception 1.6s linear forwards;-ms-animation:firstUxConception 1.6s linear forwards;-o-animation:firstUxConception 1.6s linear forwards;animation:firstUxConception 1.6s linear forwards;}
 .play .percentUxConception span:nth-of-type(2){left:12px;-webkit-animation:secondUxConception 1.88s linear forwards;-moz-animation:secondUxConception 1.88s linear forwards;-ms-animation:secondUxConception 1.88s linear forwards;-o-animation:secondUxConception 1.88s linear forwards;animation:secondUxConception 1.88s linear forwards;}
 .play .percentUxConception span:nth-of-type(3) { left:25px; top:-3px; font-size:0.625em; }
-@keyframes "firstUxConception"{0%{top:0;}100%{top:-95px;}}@-moz-keyframes firstUxConception{0%{top:0;}100%{top:-95px;}}@-webkit-keyframes "firstUxConception"{0%{top:0;}100%{top:-95px;}}@-ms-keyframes "firstUxConception"{0%{top:0;}100%{top:-95px;}}@-o-keyframes "firstUxConception"{0%{top:0;}100%{top:-95px;}}
-@keyframes "secondUxConception"{0%{top:0;}100%{top:-1084px;}}@-moz-keyframes secondUxConception{0%{top:0;}100%{top:-1084px;}}@-webkit-keyframes "secondUxConception"{0%{top:0;}100%{top:-1084px;}}@-ms-keyframes "secondUxConception"{0%{top:0;}100%{top:-1084px;}}@-o-keyframes "secondUxConception"{0%{top:0;}100%{top:-1084px;}}
+@keyframes firstUxConception{0%{top:0;}100%{top:-95px;}}@-moz-keyframes firstUxConception{0%{top:0;}100%{top:-95px;}}@-webkit-keyframes firstUxConception{0%{top:0;}100%{top:-95px;}}@-ms-keyframes firstUxConception{0%{top:0;}100%{top:-95px;}}@-o-keyframes firstUxConception{0%{top:0;}100%{top:-95px;}}
+@keyframes secondUxConception{0%{top:0;}100%{top:-1084px;}}@-moz-keyframes secondUxConception{0%{top:0;}100%{top:-1084px;}}@-webkit-keyframes secondUxConception{0%{top:0;}100%{top:-1084px;}}@-ms-keyframes secondUxConception{0%{top:0;}100%{top:-1084px;}}@-o-keyframes secondUxConception{0%{top:0;}100%{top:-1084px;}}
 
 .play .artDirectionTwo{-webkit-animation:artDirectionTwo 1.5832s 1 linear forwards;-moz-animation:artDirectionTwo 1.5832s 1 linear forwards;-ms-animation:artDirectionTwo 1.5832s 1 linear forwards;-o-animation:artDirectionTwo 1.5832s 1 linear forwards;animation:artDirectionTwo 1.5832s 1 linear forwards;}
 .play .percentArtDirection { overflow:hidden; position:absolute; font-size:1.25rem; left:50%; margin-left:-22.5px; top:58px; color:@colorBlack; z-index:11; width:45px; height:20px; clip:rect(0,auto,auto,0);}
@@ -137,8 +171,8 @@
 .play .percentArtDirection span:nth-of-type(1){left:0;-webkit-animation:firstArtDirection 1.6s linear forwards;-moz-animation:firstArtDirection 1.6s linear forwards;-ms-animation:firstArtDirection 1.6s linear forwards;-o-animation:firstArtDirection 1.6s linear forwards;animation:firstArtDirection 1.6s linear forwards;}
 .play .percentArtDirection span:nth-of-type(2){left:12px;-webkit-animation:secondArtDirection 1.72s linear forwards;-moz-animation:secondArtDirection 1.72s linear forwards;-ms-animation:secondArtDirection 1.72s linear forwards;-o-animation:secondArtDirection 1.72s linear forwards;animation:secondArtDirection 1.72s linear forwards;}
 .play .percentArtDirection span:nth-of-type(3) { left:25px; top:-3px; font-size:0.625em; }
-@keyframes "firstArtDirection"{0%{top:0;}100%{top:-95px;}}@-moz-keyframes firstArtDirection{0%{top:0;}100%{top:-95px;}}@-webkit-keyframes "firstArtDirection"{0%{top:0;}100%{top:-95px;}}@-ms-keyframes "firstArtDirection"{0%{top:0;}100%{top:-95px;}}@-o-keyframes "firstArtDirection"{0%{top:0;}100%{top:-95px;}}
-@keyframes "secondArtDirection"{0%{top:0;}100%{top:-993px;}}@-moz-keyframes secondArtDirection{0%{top:0;}100%{top:-993px;}}@-webkit-keyframes "secondArtDirection"{0%{top:0;}100%{top:-993px;}}@-ms-keyframes "secondArtDirection"{0%{top:0;}100%{top:-993px;}}@-o-keyframes "secondArtDirection"{0%{top:0;}100%{top:-993px;}}
+@keyframes firstArtDirection{0%{top:0;}100%{top:-95px;}}@-moz-keyframes firstArtDirection{0%{top:0;}100%{top:-95px;}}@-webkit-keyframes firstArtDirection{0%{top:0;}100%{top:-95px;}}@-ms-keyframes firstArtDirection{0%{top:0;}100%{top:-95px;}}@-o-keyframes firstArtDirection{0%{top:0;}100%{top:-95px;}}
+@keyframes secondArtDirection{0%{top:0;}100%{top:-993px;}}@-moz-keyframes secondArtDirection{0%{top:0;}100%{top:-993px;}}@-webkit-keyframes secondArtDirection{0%{top:0;}100%{top:-993px;}}@-ms-keyframes secondArtDirection{0%{top:0;}100%{top:-993px;}}@-o-keyframes secondArtDirection{0%{top:0;}100%{top:-993px;}}
 
 @-moz-keyframes diagramPartOne { 100% { .rotateKit(90deg); } }@-webkit-keyframes diagramPartOne { 100% { .rotateKit(90deg); } }@-o-keyframes diagramPartOne { 100% { .rotateKit(90deg); } }@-khtml-keyframes diagramPartOne { 100% { .rotateKit(90deg); } }@-ms-keyframes diagramPartOne { 100% { .rotateKit(90deg); } }
 @-moz-keyframes diagramPartTwo { 100% { .rotateKit(180deg); } }@-webkit-keyframes diagramPartTwo { 100% { .rotateKit(180deg); } }@-o-keyframes diagramPartTwo { 100% { .rotateKit(180deg); } }@-khtml-keyframes diagramPartTwo { 100% { .rotateKit(180deg); } }@-ms-keyframes diagramPartTwo { 100% { .rotateKit(180deg); } }
@@ -148,3 +182,23 @@
 @-moz-keyframes projectManagementThree { 100% { .rotateKit(198deg); } }@-webkit-keyframes projectManagementThree { 100% { .rotateKit(198deg); } }@-o-keyframes projectManagementThree { 100% { .rotateKit(198deg); } }@-khtml-keyframes projectManagementThree { 100% { .rotateKit(198deg); } }@-ms-keyframes projectManagementThree { 100% { .rotateKit(198deg); } }
 @-moz-keyframes uxConceptionTwo { 100% { .rotateKit(169.2deg); } }@-webkit-keyframes uxConceptionTwo { 100% { .rotateKit(169.2deg); } }@-o-keyframes uxConceptionTwo { 100% { .rotateKit(169.2deg); } }@-khtml-keyframes uxConceptionTwo { 100% { .rotateKit(169.2deg); } }@-ms-keyframes uxConceptionTwo { 100% { .rotateKit(169.2deg); } }
 @-moz-keyframes artDirectionTwo { 100% { .rotateKit(154.8deg); } }@-webkit-keyframes artDirectionTwo { 100% { .rotateKit(154.8deg); } }@-o-keyframes artDirectionTwo { 100% { .rotateKit(154.8deg); } }@-khtml-keyframes artDirectionTwo { 100% { .rotateKit(154.8deg); } }@-ms-keyframes artDirectionTwo { 100% { .rotateKit(154.8deg); } }
+
+.play .photoshopLevel { -moz-animation:photoshopLevelAnimation 1.74s 1 linear forwards; -webkit-animation:photoshopLevelAnimation 1.74s 1 linear forwards; -o-animation:photoshopLevelAnimation 1.74s 1 linear forwards; -ms-animation:photoshopLevelAnimation 1.74s 1 linear forwards; -khtml-animation:photoshopLevelAnimation 1.74s 1 linear forwards; animation:photoshopLevelAnimation 1.74s 1 linear forwards; }
+.play .illustratorLevel { -moz-animation:illustratorLevelAnimation 1.62s 1 linear forwards; -webkit-animation:illustratorLevelAnimation 1.62s 1 linear forwards; -o-animation:illustratorLevelAnimation 1.62s 1 linear forwards; -ms-animation:illustratorLevelAnimation 1.62s 1 linear forwards; -khtml-animation:illustratorLevelAnimation 1.62s 1 linear forwards; animation:illustratorLevelAnimation 1.62s 1 linear forwards; }
+.play .indesignLevel { -moz-animation:indesignLevelAnimation 1.32s 1 linear forwards; -webkit-animation:indesignLevelAnimation 1.32s 1 linear forwards; -o-animation:indesignLevelAnimation 1.32s 1 linear forwards; -ms-animation:indesignLevelAnimation 1.32s 1 linear forwards; -khtml-animation:indesignLevelAnimation 1.32s 1 linear forwards; animation:indesignLevelAnimation 1.32s 1 linear forwards; }
+.play .htmlCssLevel { -moz-animation:htmlCssLevelAnimation 1.82s 1 linear forwards; -webkit-animation:htmlCssLevelAnimation 1.82s 1 linear forwards; -o-animation:htmlCssLevelAnimation 1.82s 1 linear forwards; -ms-animation:htmlCssLevelAnimation 1.82s 1 linear forwards; -khtml-animation:htmlCssLevelAnimation 1.82s 1 linear forwards; animation:htmlCssLevelAnimation 1.82s 1 linear forwards; }
+.play .jsLevel { -moz-animation:jsLevelAnimation 0.94s 1 linear forwards; -webkit-animation:jsLevelAnimation 0.94s 1 linear forwards; -o-animation:jsLevelAnimation 0.94s 1 linear forwards; -ms-animation:jsLevelAnimation 0.94s 1 linear forwards; -khtml-animation:jsLevelAnimation 0.94s 1 linear forwards; animation:jsLevelAnimation 0.94s 1 linear forwards; }
+.play .phpLevel { -moz-animation:phpLevelAnimation 0.42s 1 linear forwards; -webkit-animation:phpLevelAnimation 0.42s 1 linear forwards; -o-animation:phpLevelAnimation 0.42s 1 linear forwards; -ms-animation:phpLevelAnimation 0.42s 1 linear forwards; -khtml-animation:phpLevelAnimation 0.42s 1 linear forwards; animation:phpLevelAnimation 0.42s 1 linear forwards; }
+.play .wordpressLevel { -moz-animation:wordpressLevelAnimation 0.84s 1 linear forwards; -webkit-animation:wordpressLevelAnimation 0.84s 1 linear forwards; -o-animation:wordpressLevelAnimation 0.84s 1 linear forwards; -ms-animation:wordpressLevelAnimation 0.84s 1 linear forwards; -khtml-animation:wordpressLevelAnimation 0.84s 1 linear forwards; animation:wordpressLevelAnimation 0.84s 1 linear forwards; }
+.play .seoLevel { -moz-animation:seoLevelAnimation 0.76s 1 linear forwards; -webkit-animation:seoLevelAnimation 0.76s 1 linear forwards; -o-animation:seoLevelAnimation 0.76s 1 linear forwards; -ms-animation:seoLevelAnimation 0.84s 1 linear forwards; -khtml-animation:seoLevelAnimation 0.76s 1 linear forwards; animation:seoLevelAnimation 0.76s 1 linear forwards; }
+
+@-moz-keyframes photoshopLevelAnimation { 0% { width:0; } 100% { width:87%; } } @-webkit-keyframes photoshopLevelAnimation { 0% { width:0; } 100% { width:87%; } } @-o-keyframes photoshopLevelAnimation { 0% { width:0; } 100% { width:87%; } } @-ms-keyframes photoshopLevelAnimation { 0% { width:0; } 100% { width:87%; } } @-khtml-keyframes photoshopLevelAnimation { 0% { width:0; } 100% { width:87%; } } @keyframes photoshopLevelAnimation { 0% { width:0; } 100% { width:87%; } }
+@-moz-keyframes illustratorLevelAnimation { 0% { width:0; } 100% { width:81%; } } @-webkit-keyframes illustratorLevelAnimation { 0% { width:0; } 100% { width:81%; } } @-o-keyframes illustratorLevelAnimation { 0% { width:0; } 100% { width:81%; } } @-ms-keyframes illustratorLevelAnimation { 0% { width:0; } 100% { width:81%; } } @-khtml-keyframes illustratorLevelAnimation { 0% { width:0; } 100% { width:81%; } } @keyframes illustratorLevelAnimation { 0% { width:0; } 100% { width:81%; } }
+@-moz-keyframes indesignLevelAnimation { 0% { width:0; } 100% { width:66%; } } @-webkit-keyframes indesignLevelAnimation { 0% { width:0; } 100% { width:66%; } } @-o-keyframes indesignLevelAnimation { 0% { width:0; } 100% { width:66%; } } @-ms-keyframes indesignLevelAnimation { 0% { width:0; } 100% { width:66%; } } @-khtml-keyframes indesignLevelAnimation { 0% { width:0; } 100% { width:66%; } } @keyframes indesignLevelAnimation { 0% { width:0; } 100% { width:66%; } }
+@-moz-keyframes htmlCssLevelAnimation { 0% { width:0; } 100% { width:91%; } } @-webkit-keyframes htmlCssLevelAnimation { 0% { width:0; } 100% { width:91%; } } @-o-keyframes htmlCssLevelAnimation { 0% { width:0; } 100% { width:91%; } } @-ms-keyframes htmlCssLevelAnimation { 0% { width:0; } 100% { width:91%; } } @-khtml-keyframes htmlCssLevelAnimation { 0% { width:0; } 100% { width:91%; } } @keyframes htmlCssLevelAnimation { 0% { width:0; } 100% { width:91%; } }
+@-moz-keyframes jsLevelAnimation { 0% { width:0; } 100% { width:47%; } } @-webkit-keyframes jsLevelAnimation { 0% { width:0; } 100% { width:47%; } } @-o-keyframes jsLevelAnimation { 0% { width:0; } 100% { width:47%; } } @-ms-keyframes jsLevelAnimation { 0% { width:0; } 100% { width:47%; } } @-khtml-keyframes jsLevelAnimation { 0% { width:0; } 100% { width:47%; } } @keyframes jsLevelAnimation { 0% { width:0; } 100% { width:47%; } }
+@-moz-keyframes phpLevelAnimation { 0% { width:0; } 100% { width:21%; } } @-webkit-keyframes phpLevelAnimation { 0% { width:0; } 100% { width:21%; } } @-o-keyframes phpLevelAnimation { 0% { width:0; } 100% { width:21%; } } @-ms-keyframes phpLevelAnimation { 0% { width:0; } 100% { width:21%; } } @-khtml-keyframes phpLevelAnimation { 0% { width:0; } 100% { width:21%; } } @keyframes phpLevelAnimation { 0% { width:0; } 100% { width:21%; } }
+@-moz-keyframes wordpressLevelAnimation { 0% { width:0; } 100% { width:42%; } } @-webkit-keyframes wordpressLevelAnimation { 0% { width:0; } 100% { width:42%; } } @-o-keyframes wordpressLevelAnimation { 0% { width:0; } 100% { width:42%; } } @-ms-keyframes wordpressLevelAnimation { 0% { width:0; } 100% { width:42%; } } @-khtml-keyframes wordpressLevelAnimation { 0% { width:0; } 100% { width:42%; } } @keyframes wordpressLevelAnimation { 0% { width:0; } 100% { width:42%; } }
+@-moz-keyframes seoLevelAnimation { 0% { width:0; } 100% { width:38%; } } @-webkit-keyframes seoLevelAnimation { 0% { width:0; } 100% { width:38%; } } @-o-keyframes seoLevelAnimation { 0% { width:0; } 100% { width:38%; } } @-ms-keyframes seoLevelAnimation { 0% { width:0; } 100% { width:38%; } } @-khtml-keyframes seoLevelAnimation { 0% { width:0; } 100% { width:38%; } } @keyframes seoLevelAnimation { 0% { width:0; } 100% { width:38%; } }
+
+

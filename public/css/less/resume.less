@@ -1,4 +1,4 @@
-.resume { text-align:center;
+.resume { text-align:center; background:@colorWhite;
 	h1 { .fontSize28(); .fontRegular(); .textUppercase();
 		&:after { .zigZag(); }
 	}
@@ -11,12 +11,12 @@
 		&:after { content:''; display:block; height:1px; background:@colorBlack; }
 	}
 }
-.download { text-align:center; }
+.download { text-align:center; background:@colorWhite; }
 .download a { display:inline-block; padding:0.7em 1.4em; margin:auto; background:@colorBlack; color:@colorWhite; .easeTransition(0.6s); }
 
 @media screen and (max-width:640px) {
 	.resume { padding:2.5em 7% 1.25em;
-		dl { margin:2em auto; 
+		dl { padding:2em auto; 
 			dt { .fontSize22(); }
 			dd {  .fontSize18(); margin:0.5em auto 2em;
 				a { 			
@@ -28,12 +28,11 @@
 		}
 		&:nth-of-type(2) { padding:0 7% ; }
 	}
-	.download { margin:3em auto; }
 }
 
 @media screen and (min-width:641px) {
 	.resume { padding:5em 6.55% 2.5em 6.55%;
-		dl { margin:2em auto; 
+		dl { padding:2em auto; 
 			dt { .fontSize40(); }
 			dd { .fontSize24(); margin:0.5em auto 2em;
 				a { 			
@@ -45,8 +44,7 @@
 		}
 		&:nth-of-type(2) { padding:0 6.55%; }
 	}
-	.download { margin:3em auto; }
-	.download a:hover { .borderRadius(10px); }
+	.download { padding:3em auto; }
 }
 
 /*

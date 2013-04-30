@@ -1,31 +1,28 @@
-$(document).ready(function(){
-	scrollProject();
-	iniHeight();
+// $(document).ready(function(){
+// 	scrollProject();
+// 	iniHeight();
+// 	$.localScroll();	
+
+// 	$(window).resize(function(){ 
+// 		iniHeight();
+// 	})
+
+// 	$(window).scroll(function(){
+// 		iniHeight();
+// 	})	
 
 
-	$(window).resize(function(){ 
-		iniHeight();
-	})
-
-	$(window).scroll(function(){
-		iniHeight();
-	})	
-
-
-});
+// });
 
 
 function iniHeight() {
 	var screenHeight = innerHeight;
-	var screenwidth = innerWidth;
+	var screenWidth = innerWidth;
 	var menuHeight = $("#menu").height();
-	var headerHeight = 55;
 	var workHeight = 245;
-	var borderHeight =  (screenHeight - workHeight)/2 + headerHeight/2;
+	var borderHeight =  (screenHeight - workHeight)/2;
 
-	 $("video").css({
-	 	"min-height" : screenHeight,
-	 });
+
 	$("#work .post").css({
 		"height" : workHeight + borderHeight,
 	 	"border-top-width": borderHeight,
@@ -39,23 +36,29 @@ function iniHeight() {
 	 	"border-top-width": 0,
 	 	"margin-top": 0,
 	 });	
+	$("#homeVideo video").css({
+	 	"min-height": screenHeight,
+	 });	
 	$("#work .post:last-child").css({
-		"height": headerHeight,
+		"height": 0,
 		"border-top-width": 0,
-		"margin-top": -headerHeight,
+		"margin-top": -0,
 		"z-index":-1
+	});
+	$("#video-the-whole").css({
+		"clip": "rect(0, "+screenWidth+"px, 245px,0)"
 	});
 
 
 	if($(document).scrollTop() < (workHeight-1)){ 
-		$("#header").css({
-	 		"padding-top":"3em",
-		});
+		document.getElementById("losange-logo").setAttribute('fill', "#111111");
+		document.getElementById("k-logo").setAttribute('fill', "#111111");
+		document.getElementById("l-logo").setAttribute('fill', "#111111");
 	}
 	else{ 
-		$("#header").css({
-	 		"padding-top":"1.2em",
-		});
+		document.getElementById("losange-logo").setAttribute('fill', "#fcfcfc");
+		document.getElementById("k-logo").setAttribute('fill', "#fcfcfc");
+		document.getElementById("l-logo").setAttribute('fill', "#fcfcfc");
 	}
 
 	if($(document).scrollTop() < (workHeight-1)){ 
@@ -66,17 +69,17 @@ function iniHeight() {
 	}
 	if($(document).scrollTop() > (workHeight) && $(document).scrollTop() < (workHeight*2.5) ){
 	 	$("#prev").css({
-	 		"height": (screenHeight - headerHeight - workHeight)/2,
+	 		"height": (screenHeight - workHeight)/2,
 	 		"opacity":1,
 		});
 	}
-	if($(document).scrollTop() > (workHeight*2.5) && $(document).scrollTop() < (workHeight*5) ){
+	if($(document).scrollTop() > (workHeight*2.5) && $(document).scrollTop() < (workHeight*5.1) ){
 	 	$("#prev").css({
 	 		"opacity":0,
-	 	 	"height": (screenHeight - headerHeight - workHeight)/2,
+	 	 	"height": (screenHeight - workHeight)/2,
 		});
 	}
-	if($(document).scrollTop() > (workHeight*5)){
+	if($(document).scrollTop() > (workHeight*5.1)){
 		$("#prev").css({
 			"height": (screenHeight/2),
 		});
@@ -94,14 +97,14 @@ function iniHeight() {
 			"z-index":399,
 		});
 	}
-	if( $(document).scrollTop() > (1) && $(document).scrollTop() < (workHeight*5)){
+	if( $(document).scrollTop() > (1) && $(document).scrollTop() < (workHeight*5.1)){
 		$("#next").css({
-			"height": (screenHeight - headerHeight - workHeight)/2,
+			"height": (screenHeight - workHeight)/2,
 			"opacity":0,
 			"display": "block",
 		});
 	}
-	if($(document).scrollTop() > (workHeight*5)){
+	if($(document).scrollTop() > (workHeight*5.1)){
 		$("#next").css({
 			"display": "none",
 		});
@@ -204,6 +207,60 @@ function scrollProject (){
 		});
 }
 
+function theWholeVideo (){
+	if ($("#theWholeWork").hasClass("activeWork")){
+		$("#video-the-whole video").get(0).currentTime = 0;
+		$("#video-the-whole video").play();
+		$("#video-the-whole video").css({
+			"opacity": "1",
+		});
+	}
+	else {
+
+		$("#video-the-whole video").css({
+			"opacity": "0",
+		});	}
+}
+
+
+
+function scrollAbout() {
+	if($(document).scrollTop() > (310)){
+		$("#skills").addClass("play");
+	}
+}
+
+function googleMap(){
+	var style=[
+		{featureType: "water",elementType: "all",stylers: [{ hue: "#65b2df" }, { saturation: 30 }, { lightness: -16 }]},
+		{featureType: "transit",elementType: "all",stylers: [{ saturation: -100 }]},
+		{featureType: "road",elementType: "all",stylers: [{ saturation: -100 }]},
+		 {featureType: "poi",elementType: "all",stylers: [{ saturation: +100 }]},
+		{featureType: "poi",elementType: "all",stylers: [{ visibility: "off" }]},
+		// {featureType: "landscape",elementType: "all",stylers: [{ saturation: -100 }]}
+		{featureType: "landscape.man_made",elementType: "all",stylers: [ { visibility: "simplified" }, { saturation: -100 },{ lightness: 0 }]},
+		{featureType: "landscape.natural",elementType: "all",stylers: [{ saturation: -100 }]},
+		]     
+
+    var mapOptions = {
+      zoom: 12,
+      'styles':style,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("map"),
+        mapOptions);
+
+    var geocoder = new google.maps.Geocoder();
+		geocoder.geocode ( {'address':"Paris" }, function(data,status) {
+		if (status=='OK') {
+			map.setCenter(data[0].geometry.location);
+			var marker = new google.maps.Marker({ position: data[0].geometry.location,map:map })
+		}
+		else {
+		}
+	});
+}
 
 
 

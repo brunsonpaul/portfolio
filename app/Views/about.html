@@ -1,23 +1,27 @@
-<?php require ("app/Views/Assets/head.php"); ?>
+<?php require ("assets/head.php"); ?>
 
-<?php require ("app/Views/Assets/menu.php"); ?>
+<?php require ("assets/header.php"); ?>
+
+<?php require ("assets/menu.php"); ?>
 
 <section>
+	<div id="aboutImg" >
+		<img src="public/img/about/about.png" alt=""/>	
+	</div>
 	<article id="about">
 		<h1>
-			I'm <span class="author">Kévin <em>Lagier</em></span>, a <em id="age"><span id="ageContent"><span id="ageLeft">7 3 8 1 2</span><span id="ageRight">1 4 9 5 7</span></span></em> year old webdesigner from France.
+			I'm <span class="author">Kévin <em>Lagier</em></span>, a <em id="age"><span id="ageContent"><span id="ageLeft">7 3 8 1 2</span><span id="ageRight">2 4 9 5 7</span></span></em> year old webdesigner from France.
 		</h1>
 		<p>
-			Currently student at <a href="http://hetic.net" target="_blank" title="HETIC, l'école des métiers de l'internet">Hétic</a>, a webschool based in Paris, I combine Graphic Design and Front-End Development, in order to offer solutions for websites. I have also skills in Project Management, UX Conception and Art Direction. I'm always aware and mindful of cultural and environmental change.
+			Currently student at <a href="http://hetic.net" target="_blank" title="HETIC, l'école des métiers de l'internet">Hétic</a>, a webschool based in Paris, I combine Design and Web Development, in order to offer solutions for websites. I have also skills in UX Conception, Project Management and Web Marketing. I'm always aware and mindful of cultural and environmental change.
 		</p>
 	</article>
-	<img id="aboutImg" src="public/img/about/about.png" alt=""/>	
 	<article id="skills">
 		<h1>Skills</h1>
-		<ul class="play">
+		<ul id="skillsDiagram">
 			<li>
 				<div class="diagram">
-					<div class="percentGraphicDesign"><span>0 1 2 3 4 5 6 7</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8</span><span>%</span></div>
+					<div class="percentGraphicDesign percentOnOff"><span>0 1 2 3 4 5 6 7</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8</span><span>%</span></div>
 					<div class="value">
 						<div class="diagramPartOne oneQuarter"></div>
 						<div class="diagramPartTwo twoQuarter"></div>
@@ -26,11 +30,11 @@
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>Graphic Design</p>
+				<p>Graphic & Web design</p>
 			</li><!--
 			!--><li>
 				<div class="diagram">
-					<div class="percentFrontEnd"><span>0 1 2 3 4 5 6</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6</span><span>%</span></div>
+					<div class="percentFrontEnd percentOnOff"><span>0 1 2 3 4 5 6</span><span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6</span><span>%</span></div>
 					<div class="value">
 						<div class="diagramPartOne oneQuarter"></div>
 						<div class="diagramPartTwo twoQuarter"></div>
@@ -38,11 +42,11 @@
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>Front-End Development</p>
+				<p>UX Conception</p>
 			</li><!--
 			!--><li>
 				<div class="diagram">
-					<div class="percentProjectManagement">
+					<div class="percentProjectManagement percentOnOff">
 						<span>0 1 2 3 4 5</span>
 						<span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3</span>
 						<span>%</span>
@@ -54,11 +58,11 @@
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>Project Management</p>
+				<p>Web Development</p>
 			</li><!--
 			!--><li>
 				<div class="diagram">
-					<div class="percentUxConception">
+					<div class="percentUxConception percentOnOff">
 						<span>0 1 2 3 4</span>
 						<span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7</span>
 						<span>%</span>
@@ -69,11 +73,11 @@
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>UX Conception</p>
+				<p>Project Management</p>
 			</li><!--
 			!--><li>
 				<div class="diagram">
-					<div class="percentArtDirection">
+					<div class="percentArtDirection percentOnOff">
 						<span>0 1 2 3 4</span>
 						<span>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3
 						</span>
@@ -85,12 +89,87 @@
 						<div class="mask"></div>
 					</div>
 				</div>
-				<p>Art Direction</p>
+				<p>Web Marketing</p>
+			</li>
+		</ul>
+		<div id="level">
+			<ul>
+				<li><p>Photoshop :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills photoshopLevel"></span></span></li>
+				<li><p>Illustrator :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills illustratorLevel"></span></span></li>
+				<li><p>Indesign :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills indesignLevel"></span></span></li>
+			</ul><!--
+			!--><ul>
+				<li><p>HTML / CSS :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills htmlCssLevel"></span></span></li>
+				<li><p>Js / Jquery :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills jsLevel"></span></span></li>
+				<li><p>Php / MySql :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills phpLevel"></span></span></li>
+			</ul><!--
+			!--><ul>
+				<li><p>Wordpress :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills wordpressLevel"></span></span></li>
+				<li><p>SEO / SEA :</p><!-- !--><span class="lineSkillsMax"><span class="lineSkills seoLevel"></span></span></li>
+			</ul>
+		</div>
+	</article>
+	<article id="experience">
+		<h1>Experience</h1>
+		<ul>
+			<li>
+				<img src="public/img/resume/synerghetic.svg" alt="Synerg'Hetic" />
+				<em>Involved in <a href="http://www.synerghetic.net/" target="_blank">Synerg’Hétic</a></em>
+				Webdesign - Integration - UX Conception<br/>
+				February 2013 - now
+			</li><!--
+			!--><li>
+				<img src="public/img/resume/ozconseil.svg" alt="Oz Conseil" />
+				<em>Intern at <a href="http://www.ozconseil.com/" target="_blank">Oz Conseil</a></em>
+				Webdesign - Interface - Usability - Print - Design - Integration<br/>
+				June 2013 - September 2013
+			</li><!--
+			!--><li>
+				<img src="public/img/resume/felixcreation.svg" alt="Felix Creation" />
+				<em>Intern at <a href="http://www.felix-creation.fr/" target="_blank">Felix Creation</a></em>
+				Webdesign - Print - Design<br/>
+				April 2012 - June 2012
 			</li>
 		</ul>
 	</article>	
+	<article id="education">
+		<h1>Education</h1>
+		<ul>
+			<li>
+				<em>“Expert en Ingénierie et Management<br/>de la Communication Numérique“</em>
+				Hétic, the largest Internet school</br>
+				Paris (75)<br/>
+				2012 - now
+			</li><!--
+			!--><li>
+				<em>D.U.T. SeReCom</a></em>
+				University Institute of Technology<br/>
+				Chambéry (73)<br/>
+				2010 - 2012
+			</li><!--
+			!--><li>
+				<em>Baccalauréat Scientifique</a></em>
+				Option Physics - Chemistry<br/>
+				High School "Claude Louis Berthollet"<br/>
+				Annecy (74)<br/>
+				2007 - 2009
+			</li>
+		</ul>
+		<div class="button">
+			<a href="Lagier-Kevin-Resume.pdf" target="_blank">Download my Resume</a>
+		</div>
+	</article>	
 </section>	
 
-<?php require ("app/Views/Assets/footer.php"); ?>
+<?php require ("assets/footer.php"); ?>
 
+<script type="text/javascript" src="public/js/main.js"></script>
+
+<script>
+$(document).ready(function(){
+	$(window).scroll(function(){
+		scrollAbout();
+	})	
+});
+</script>
 

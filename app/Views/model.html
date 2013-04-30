@@ -24,24 +24,24 @@ require ("app/Views/Assets/menu.php"); ?>
 	<a id="next" href="#"><span>I'm a Webdesigner and ...</span></a>
 </div>
 
-<div id="video" style="">
-	<video preload="auto" autoplay="autoplay" loop="loop" onended="loopVideo()"
-        <source src="public/video/video.mp4" />
-    </video>       
-</div>
-
-<section id="work">
-	<div class="post"></div>
+<section id="work" >
+	<div class="activeWork post" id="homeVideo">
+		<video preload="auto" autoplay="autoplay" loop="loop" onended="loopVideo()">
+	    	<source src="public/video/video.mp4" />
+		</video> 
+	</div>
 	<article class="post" id="theWholeWork">
-		<a href="#" class="scrolltoanchor">
-			<div class="unactiveWork" ></div>
+		<a href="work/the-whole" class="scrolltoanchor">
 			<img class="backgroundWork" src="public/img/work/the-whole/the-whole-work.png" alt="The Whole"/>	
-
+<!-- 		<div id="video-the-whole" >
+			<video width="350px" height="100px" preload="auto" autoplay="autoplay" >
+		    	<source src="public/video/the-whole.mp4" />
+			</video> 
+		</div> -->
 		</a>
 	</article>
 	<article class="post" id="socialCokeWork">
-		<a href="#" class="scrolltoanchor">
-			<div class="unactiveWork"></div>
+		<a href="work/social-coke" class="scrolltoanchor">
 			<div id="goutte-social-coke">
 				<img class="goutte1" src="public/img/work/social-coke/goutte1-social-coke-news.png" alt="" />	
 				<img class="goutte2" src="public/img/work/social-coke/goutte2-social-coke-news.png" alt="" />	
@@ -66,13 +66,12 @@ require ("app/Views/Assets/menu.php"); ?>
 		</a>
 	</article>
 	<article class="post" id="partechWork">
-		<a href="#" class="scrolltoanchor">
-			<div class="unactiveWork"></div>
+		<a href="work/partech" class="scrolltoanchor">
 			<img class="backgroundWork" src="public/img/work/partech/partech-work.png" alt="Partech"/>	
 		</a>
 	</article>	
 	<article class="post" id="waflWork">
-		<a href="#" class="scrolltoanchor">
+		<a href="work/wafl" class="scrolltoanchor">
 			<div class="unactiveWork"></div>
 			<img id="waflLogoWork" src="public/img/work/wafl/wafl-logo-work.png" alt="Wafl"/>	
 		</a>

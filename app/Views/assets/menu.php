@@ -9,17 +9,17 @@
 				</a>
 			</li><!-- 
 			--><li>
-				<a href="/" class="selected" >
+				<a href="work" class="selected" >
 					<p>II</p>
 					<em>Work</em>
 					<p>Some things I've worked on</p>
 				</a>
 			</li><!--
 			--><li>
-				<a href="resume">
+				<a href="contact">
 					<p>III</p>
-					<em>Resume</em>
-					<p>Some things I've lived</p>
+					<em>Contact</em>
+					<p>Some things to tell me</p>
 				</a>
 			</li><!--	
 		--></ul>

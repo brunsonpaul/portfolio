@@ -1,13 +1,25 @@
 <?php
-class App_controller{
+	class App_controller{
  
- function __construct(){
-  
- }
+	function __construct(){
+
+	}
  
- function home(){
-    echo Views::instance()->render('model.html');
- }
+	function work(){
+    	echo Views::instance()->render('work.html');
+	}
+
+	function about(){
+    	echo Views::instance()->render('about.html');
+	}
+
+	function contact(){
+    	echo Views::instance()->render('contact.html');
+	}
+
+	function partech(){
+    	echo Views::instance()->render('partech.html');
+	}
 
  function __destruct(){
 

@@ -28,8 +28,10 @@
     <script type="text/javascript" src="public/js/lib/modernizr-2.5.3.min.js"></script>
     <script type="text/javascript" src="public/js/lib/jquery.easing.min.js"></script>
     <script type="text/javascript" src="public/js/lib/supersized.3.2.7.js"></script>
-    <script type="text/javascript" src="public/js/main.js"></script>
-    
+
+    <script type="text/javascript" src="public/js/lib/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="public/js/lib/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="public/js/localscroll/jquery.localscroll.js"></script>    
 </head>
 
 <body>

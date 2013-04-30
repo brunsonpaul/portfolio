@@ -1,15 +1,16 @@
-#header { background:@colorWhite; margin:0; .easeTransition(0.6s);
-	h1 { display:none; }	
-	img { display:block; margin:auto; width:200px;}
+#header { margin:0; padding:0; text-align:center; z-index:9999;
+	a { display:block;
+		h1 { display:none; }	
+		svg { display:block; }
+	}
 }
 
 @media screen and (max-width:640px) {
-	#header { padding:1em 0 0 0; }
-	#userMouseOrKeyboard { display:block; }
+
 }
 
 @media screen and (min-width:641px) {
-	#header { position:fixed; z-index:9999; top:0; left:0; right:0; padding:1em 0; 
+	#header { position:fixed; top:1.5em; left:50%; margin-left:-25px; 
 		h1 { display:none; }
 	}
 }

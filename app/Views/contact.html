@@ -1,0 +1,37 @@
+<?php require ("assets/head.php"); ?>
+
+<?php require ("assets/header.php"); ?>
+
+<?php require ("assets/menu.php"); ?>
+
+<section>
+	<div id="map"></div>
+	<article id="contact">
+        <h1>Kévin <em>Lagier</em></h1>
+        <ul>
+            <li><span>H</span> Paris</li>
+            <li><span>M</span> <a href="hello@lagier-kevin.com">hello@lagier-kevin.com</a></li>
+            <li><span>P</span> (+33)6.09.65.67.69</li>
+        </ul>
+        <form  autocomplete="off" id="contactForm" method="post" action="" >
+            <input type="text" id="name" name="name" placeholder="Name" required ><!--
+            !--><input type="email" id="email" name="email" placeholder="Email" required ><!-- 
+            !--><input type="text" id="subject" name="subject" placeholder="Subject" required ><!-- 
+            !--><textarea name="message" id="message" rows="7" cols="50" placeholder="Message" required></textarea>
+           	<div id="sendButton">
+           		<input type="submit" class="inputSend" value="Send the message" id="send" name="Submit" />
+           	<div>    
+        </form>         
+    </article>
+</section>	
+
+<?php require ("assets/footer.php"); ?>
+
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="public/js/main.js"></script>
+
+<script>
+$(document).ready(function(){
+	googleMap();
+});
+</script>
