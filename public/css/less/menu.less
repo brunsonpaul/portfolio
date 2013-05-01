@@ -5,13 +5,16 @@
 				a { display:block; color:@colorBlack; border:solid @colorWhite 2px;
 					em { display:block; .fontRegular(); .textUppercase(); }
 				}
-				.selected { border:solid @colorBlack 2px;
+				.selected { 
+					border:solid @colorBlack 2px;
 					p:nth-of-type(1) { color:@colorBlack; }
 				}
 			}
 		}
 	}				
 }
+
+#menu.workselected{background-color:black;}
 
 @media screen and (max-width:640px) {
 	#menu {

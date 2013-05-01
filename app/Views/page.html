@@ -1,0 +1,163 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Kévin LAGIER</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="author" content="Kevin LAGIER" />
+    <meta name="keywords" content="Kévin LAGIER, portfolio, web, design, graphic design, webdesign, websites, mobile, tablet, communication, project management, ergonomics, UX, responsive, digital, Hetic, Paris, France" />
+    <meta name="description" content="Personal portfolio Kévin LAGIER, webdesigner from Paris, France" />   
+
+    <meta name="google-site-verification" content="2QDxl5b5q7pZfwnV43B7jVxTSVBsLSbAt3CUDt0vEvc" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/img/other/favicon.png" />
+
+    <link rel="stylesheet" href="public/css/soSteezy.css" type="text/css" media="screen"  />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="public/js/lib/modernizr-2.5.3.min.js"></script>
+    <script type="text/javascript" src="public/js/lib/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="public/js/lib/supersized.3.2.7.js"></script>
+
+</head>
+
+<body>
+
+    <div id="top"></div>
+    <menu id="header">
+        <a href="#top">
+            <h1>Kévin Lagier's portfolio</h1>
+            <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="50px" height="50px" viewBox="35.188 -7.718 67.438 67.438" enable-background="new 35.188 -7.718 67.438 67.438"
+                 xml:space="preserve">
+            <g>
+                <path id="losange-logo" fill="#111111" d="M68.915-4.873l30.877,30.877L68.915,56.881L38.038,26.004L68.915-4.873 M68.915-7.701L35.21,26.004
+                    l33.705,33.705l33.705-33.705L68.915-7.701L68.915-7.701z"/>
+            </g>
+            <g>
+                <path id="k-logo" d="M65.75,33.946l-4.221-7.002l-0.557,0.951v6.051h-1.576V18.065h1.576v6.816l4.035-6.816h1.854l-4.404,7.326l5.123,8.555
+                    H65.75z"/>
+            </g>
+            <g>
+                <path id="l-logo" d="M71.55,33.959V18.051h1.579v14.328h5.317v1.58H71.55z"/>
+            </g>
+            </svg>
+        </a>
+    </menu>
+    <menu id="menu" class="homeMenu workselected">
+        <nav>
+            <ul>
+                <?php switch($page) {
+                    case "work": ?>
+                    <li class="previous">
+                        <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
+                            <p>I</p>
+                            <em>About</em>
+                            <p>Some things you may need to know</p>
+                        </a>
+                    </li><!-- 
+                    --><li class="current">
+                        <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
+                            <p>II</p>
+                            <em>Work</em>
+                            <p>Some things I've worked on</p>
+                        </a>
+                    </li><!--
+                    --><li class="next">
+                        <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
+                            <p>III</p>
+                            <em>Contact</em>
+                            <p>Some things to tell me</p>
+                        </a>
+                    </li><!--   
+                -->
+            <?php  break;
+                   case "contact": ?>
+                    <li class="previous">
+                        <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
+                            <p>II</p>
+                            <em>Work</em>
+                            <p>Some things I've worked on</p>
+                        </a>
+                    </li><!--
+                    --><li class="current">
+                        <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
+                            <p>III</p>
+                            <em>Contact</em>
+                            <p>Some things to tell me</p>
+                        </a>
+                    </li><!--   
+                --><li class="next">
+                        <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
+                            <p>I</p>
+                            <em>About</em>
+                            <p>Some things you may need to know</p>
+                        </a>
+                    </li><!---->
+            <?php  break;
+                   case "about": ?>
+                    <li class="previous">
+                        <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
+                            <p>III</p>
+                            <em>Contact</em>
+                            <p>Some things to tell me</p>
+                        </a>
+                    </li><!--   
+                --><li class="current">
+                        <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
+                            <p>I</p>
+                            <em>About</em>
+                            <p>Some things you may need to know</p>
+                        </a>
+                    </li><!--
+                    --><li class="next">
+                        <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
+                            <p>II</p>
+                            <em>Work</em>
+                            <p>Some things I've worked on</p>
+                        </a>
+                    </li><!--
+                    -->
+            <?php break; }?>
+            </ul>
+        </nav>
+    </menu>
+
+    <div id="wrapper-container">
+        <?php require("app/Views/Partials/".$page .".html") ?>
+    </div>
+
+    <footer>
+        <section>
+            <article>
+                <h1>Kévin <em>Lagier</em></h1>
+                <ul>
+                    <li><span>H</span> Paris</li>
+                    <li><span>M</span> <a href="hello@lagier-kevin.com">hello@lagier-kevin.com</a></li>
+                    <li><span>P</span> (+33)6.09.65.67.69</li>
+                </ul>
+            </article><!--
+        --><article>
+                <h1><em>Share</em></h1>
+
+            </article>
+        </section>
+        <div><p>Feel free to leave me a message.<br/>I'm open to all your web, multimedia and print projects suggestions.</p></div>
+        <aside>
+            <nav><a href="#" class="selected">English</a> - <a href="#">Français</a></nav>
+            <p>Copyright 2013. All Rights Reserved</p>
+        </aside>
+    </footer>
+    <script type="text/javascript" src="public/js/main.js"></script>
+</body>
+</html>

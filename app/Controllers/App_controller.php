@@ -5,6 +5,15 @@
 
 	}
  
+	function page(){
+		F3::set("page",F3::get("PARAMS.page"));
+		if(F3::get('AJAX')){
+			echo Views::instance()->render("Partials/".F3::get("page").".html");
+		} else {
+			echo Views::instance()->render("page.html");
+		}
+	}
+
 	function work(){
     	echo Views::instance()->render('work.html');
 	}

@@ -176,6 +176,7 @@ body {
   padding: 0;
   text-align: center;
 }
+.aboutnav{display:none;}
 #menu nav {
   display: block;
 }
@@ -186,6 +187,7 @@ body {
   display: inline-block;
   position: relative;
   vertical-align: top;
+  overflow:hidden;
 }
 #menu nav ul li a {
   display: block;

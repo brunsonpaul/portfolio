@@ -1,268 +1,59 @@
-// $(document).ready(function(){
-// 	scrollProject();
-// 	iniHeight();
-// 	$.localScroll();	
+var navigation = {};
+navigation.$links = $("#menu a");
 
-// 	$(window).resize(function(){ 
-// 		iniHeight();
-// 	})
+var position = 0;
 
-// 	$(window).scroll(function(){
-// 		iniHeight();
-// 	})	
-
-
-// });
-
-
-function iniHeight() {
-	var screenHeight = innerHeight;
-	var screenWidth = innerWidth;
-	var menuHeight = $("#menu").height();
-	var workHeight = 245;
-	var borderHeight =  (screenHeight - workHeight)/2;
-
-
-	$("#work .post").css({
-		"height" : workHeight + borderHeight,
-	 	"border-top-width": borderHeight,
-	 	"margin-top": -borderHeight,
-	 });
-	$("#work .post a").css({
-		"height" : workHeight,
-	 });
-	$("#work .post:first-child").css({
-	 	"height": screenHeight,
-	 	"border-top-width": 0,
-	 	"margin-top": 0,
-	 });	
-	$("#homeVideo video").css({
-	 	"min-height": screenHeight,
-	 });	
-	$("#work .post:last-child").css({
-		"height": 0,
-		"border-top-width": 0,
-		"margin-top": -0,
-		"z-index":-1
-	});
-	$("#video-the-whole").css({
-		"clip": "rect(0, "+screenWidth+"px, 245px,0)"
-	});
-
-
-	if($(document).scrollTop() < (workHeight-1)){ 
-		document.getElementById("losange-logo").setAttribute('fill', "#111111");
-		document.getElementById("k-logo").setAttribute('fill', "#111111");
-		document.getElementById("l-logo").setAttribute('fill', "#111111");
+$.each(navigation.$links,function(){
+	if($(this).hasClass("selected")){
+		navigation.$activeLink = $(this);
 	}
-	else{ 
-		document.getElementById("losange-logo").setAttribute('fill', "#fcfcfc");
-		document.getElementById("k-logo").setAttribute('fill', "#fcfcfc");
-		document.getElementById("l-logo").setAttribute('fill', "#fcfcfc");
-	}
+});
 
-	if($(document).scrollTop() < (workHeight-1)){ 
-		$("#prev").css({
-	 		"height":0,
-			"opacity":0,			
-		});
-	}
-	if($(document).scrollTop() > (workHeight) && $(document).scrollTop() < (workHeight*2.5) ){
-	 	$("#prev").css({
-	 		"height": (screenHeight - workHeight)/2,
-	 		"opacity":1,
-		});
-	}
-	if($(document).scrollTop() > (workHeight*2.5) && $(document).scrollTop() < (workHeight*5.1) ){
-	 	$("#prev").css({
-	 		"opacity":0,
-	 	 	"height": (screenHeight - workHeight)/2,
-		});
-	}
-	if($(document).scrollTop() > (workHeight*5.1)){
-		$("#prev").css({
-			"height": (screenHeight/2),
-		});
-	}
+navigation.$menu = $("#menu nav ul");
+navigation.$links.live("click", function(){navigation.navigateTo(this);return false;});
 
-	if($(document).scrollTop() < (1)){
-		$("#next").css({
-			"height": (screenHeight - menuHeight),
-			"opacity":1,
-			"z-index":9,
-		});
-	}
-	if($(document).scrollTop() > (workHeight*1.5)){
-		$("#next").css({
-			"z-index":399,
-		});
-	}
-	if( $(document).scrollTop() > (1) && $(document).scrollTop() < (workHeight*5.1)){
-		$("#next").css({
-			"height": (screenHeight - workHeight)/2,
-			"opacity":0,
-			"display": "block",
-		});
-	}
-	if($(document).scrollTop() > (workHeight*5.1)){
-		$("#next").css({
-			"display": "none",
-		});
-	}
+navigation.navigateTo = function(el){
+  	navigation.$activeLink.toggleClass("selected");
+  	navigation.$activeLink = $(el);
+  	navigation.$activeLink.toggleClass("selected");
+
+	navigation.switchLinks();
+	
+	jQuery.ajax({
+	  url: $(el).attr('href'),
+	  type: 'GET',
+	  dataType: 'html',
+	  success: function(data, textStatus, xhr) {
+	  	var $container = $("#wrapper-container");
+	    $container.empty();
+	    $container.html(data);
+	  }
+	});	
 }
 
+navigation.switchLinks = function(param){
 
-function scrollProject (){
-
-		var lastAnimation = 0;
-		var animationTime = 500;
-		var quietPeriod = 250;
-
-
-		function scroll(direction) {
-			var scroll, disable, i,
-			positions = [],
-			here = $(window).scrollTop(),
-			collection = $('.post');
-		
-			collection.each(function() {
-				positions.push(parseInt($(this).offset()['top'],10));
-			});
-		
-			for(i = 0; i < positions.length; i++) {
-				if (direction == 'next' && positions[i] > here) { scroll = collection.get(i); disable = collection.get(i-1); $(scroll).addClass("activeWork");$(disable).removeClass("activeWork"); break; }
-				if (direction == 'prev' && i > 0 && positions[i] >= here) { scroll = collection.get(i-1); disable = collection.get(i); $(scroll).addClass("activeWork");$(disable).removeClass("activeWork"); break; }
-			}
-		
-			if (scroll) {
-				$.scrollTo(scroll, {
-					duration: 750       
-				});
-			}
-		   return false;
-		}
-
-		$("#next,#prev").click(function() {
-			var timeNow = new Date().getTime();
-			if(timeNow - lastAnimation < quietPeriod + animationTime) {
-				event.preventDefault();
-				return;
-			}
-			else { 
-				lastAnimation = timeNow;
-				return scroll($(this).attr('id')); 
-			}       
-		});
-
-
-		$("body").mousewheel(function(event, delta, deltaX, deltaY) {
-			var timeNow = new Date().getTime();
-			deltaOfInterest = delta;
-			
-			if (deltaOfInterest == 0) {
-				return;
-			}
-			if(timeNow - lastAnimation < quietPeriod + animationTime) {
-				event.preventDefault();
-				return;
-			}
-			
-			if (deltaOfInterest < 0) {
-				lastAnimation = timeNow;
-				return scroll($("#next").attr('id'));
-			}
-			else {
-				lastAnimation = timeNow;
-				return scroll($("#prev").attr('id'));
-			}
-		});
-
-		$(document).keydown(function(e){
-			var timeNow = new Date().getTime();
-			var keyCode = e.keyCode || e.which, arrow = {up:38, down:40};
-			
-			if(timeNow - lastAnimation < quietPeriod + animationTime) {
-				event.preventDefault();
-				return;
-			}
-			switch (keyCode) {
-				case arrow.up:
-					lastAnimation = timeNow;
-					return scroll($("#prev").attr('id'));
-					break;
-				case arrow.down:
-					lastAnimation = timeNow;
-					return scroll($("#next").attr('id'));
-					break;
-			};
-		});
-
-		$(".scrolltoanchor").click(function() {
-			$(".post").removeClass("activeWork");
-			$($(this).attr("href")).addClass("activeWork")
-			$.scrollTo($($(this).attr("href")), {
-				duration: 750
-			});
-			return false;
-		});
-}
-
-function theWholeVideo (){
-	if ($("#theWholeWork").hasClass("activeWork")){
-		$("#video-the-whole video").get(0).currentTime = 0;
-		$("#video-the-whole video").play();
-		$("#video-the-whole video").css({
-			"opacity": "1",
-		});
-	}
-	else {
-
-		$("#video-the-whole video").css({
-			"opacity": "0",
-		});	}
-}
-
-
-
-function scrollAbout() {
-	if($(document).scrollTop() > (310)){
-		$("#skills").addClass("play");
+	var target = navigation.$activeLink.parent();
+	target = target[0];
+	var next = $(".next")[0];
+	var previous = $(".previous")[0];
+	if($(target).attr("class")=="next"){
+		$(".previous").animate(
+			{"opacity":"0","width":"0%"}, 1000, function() {
+				$(".previous").insertAfter($(target));
+				$(".previous").animate({"opacity":"1","width":"33%"},1000,function(){
+					$(target).prev()[0].className = "previous";
+					$(target).next()[0].className = "next";
+					target.className = "current"
+				});});
+	} else if($(target).attr("class")=="previous"){
+		$(".next").animate(
+			{"opacity":"0","width":"0%"}, 1000, function() {
+				$(".next").insertBefore($(target));
+				$(".next").animate({"opacity":"1","width":"33%"},1000,function(){
+					$(target).prev()[0].className = "previous";
+					$(target).next()[0].className = "next";
+					target.className = "current"
+				});});
 	}
 }
-
-function googleMap(){
-	var style=[
-		{featureType: "water",elementType: "all",stylers: [{ hue: "#65b2df" }, { saturation: 30 }, { lightness: -16 }]},
-		{featureType: "transit",elementType: "all",stylers: [{ saturation: -100 }]},
-		{featureType: "road",elementType: "all",stylers: [{ saturation: -100 }]},
-		 {featureType: "poi",elementType: "all",stylers: [{ saturation: +100 }]},
-		{featureType: "poi",elementType: "all",stylers: [{ visibility: "off" }]},
-		// {featureType: "landscape",elementType: "all",stylers: [{ saturation: -100 }]}
-		{featureType: "landscape.man_made",elementType: "all",stylers: [ { visibility: "simplified" }, { saturation: -100 },{ lightness: 0 }]},
-		{featureType: "landscape.natural",elementType: "all",stylers: [{ saturation: -100 }]},
-		]     
-
-    var mapOptions = {
-      zoom: 12,
-      'styles':style,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    var map = new google.maps.Map(document.getElementById("map"),
-        mapOptions);
-
-    var geocoder = new google.maps.Geocoder();
-		geocoder.geocode ( {'address':"Paris" }, function(data,status) {
-		if (status=='OK') {
-			map.setCenter(data[0].geometry.location);
-			var marker = new google.maps.Marker({ position: data[0].geometry.location,map:map })
-		}
-		else {
-		}
-	});
-}
-
-
-
-
-
