@@ -176,7 +176,6 @@ body {
   padding: 0;
   text-align: center;
 }
-.aboutnav{display:none;}
 #menu nav {
   display: block;
 }
@@ -187,7 +186,6 @@ body {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  overflow:hidden;
 }
 #menu nav ul li a {
   display: block;
@@ -205,6 +203,9 @@ body {
 }
 #menu nav ul li .selected p:nth-of-type(1) {
   color: #111111;
+}
+#menu.workselected {
+  background-color: black;
 }
 @media screen and (max-width: 640px) {
   #menu nav ul {
