@@ -188,17 +188,20 @@ body {
   position: relative;
   vertical-align: top;
   overflow:hidden;
+  white-space: nowrap;
 }
 #menu nav ul li a {
   display: block;
   color: #111111;
   border: solid #fcfcfc 2px;
+  overflow:hidden;
 }
 #menu nav ul li a em {
   display: block;
   font-family: 'mostra-nuova-regular';
   text-transform: uppercase;
   letter-spacing: 0.16em;
+  overflow:hidden;
 }
 #menu nav ul li .selected {
   border: solid #111111 2px;
