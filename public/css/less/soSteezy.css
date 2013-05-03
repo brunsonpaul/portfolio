@@ -109,7 +109,6 @@ input:-moz-placeholder {
 body {
   width: 100%;
   height: 100%;
-  min-width: 960px;
   margin: 0;
   padding: 0;
   border: none;
@@ -142,10 +141,6 @@ body {
   border-radius: 10px;
 }
 #header {
-  position: absolute;
-  top: 1.5em;
-  left: 50%;
-  margin-left: -25px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -160,90 +155,51 @@ body {
 #header a svg {
   display: block;
 }
+@media screen and (max-width: 640px) {
+  
+}
+@media screen and (min-width: 641px) {
+  #header {
+    position: fixed;
+    top: 1.5em;
+    left: 50%;
+    margin-left: -25px;
+  }
+  #header h1 {
+    display: none;
+  }
+}
 #menu {
   background: #fcfcfc;
   z-index: 99;
   margin: 0;
   padding: 0;
   text-align: center;
+  background: red;
 }
 #menu nav {
-  position: relative;
   display: block;
-  padding-top: 6.3em;
-}
-#menu nav #selection {
-  z-index: 99;
-  border: solid 2px #000;
-  position: absolute;
-  bottom: 47px;
-  left: 50%;
-  margin-left: -14%;
-  width: 28%;
-  height: 120px;
 }
 #menu nav ul {
   width: 100%;
-  padding: 1em 0 3em 0;
 }
 #menu nav ul li {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  width: 33.3333%;
-  white-space: nowrap;
 }
 #menu nav ul li a {
   display: block;
   color: #111111;
-  padding: 1em 0;
-  width: 80%;
-  margin: auto;
-  -moz-transition: all 0.6s ease 0s;
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-  -ms-transition: all 0.6s ease 0s;
-  -khtml-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
-}
-#menu nav ul li a p:nth-of-type(1) {
-  font-family: 'mostra-nuova-regular';
-  font-size: 14px;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #eeeeee;
-  -moz-transition: all 0.6s ease 0s;
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-  -ms-transition: all 0.6s ease 0s;
-  -khtml-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
 }
 #menu nav ul li a em {
   display: block;
   font-family: 'mostra-nuova-regular';
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 28px;
-  font-size: 1.750rem;
-  margin: 0.5em auto 0.2em auto;
-}
-#menu nav ul li a p:nth-of-type(2) {
-  margin: 0 2.5em;
-}
-#menu nav ul li a:hover p:nth-of-type(1) {
-  color: #111111;
 }
 #menu nav ul li .selected p:nth-of-type(1) {
   color: #111111;
-}
-@media screen and (min-width: 641px) {
-  .homeMenu {
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
 }
 footer {
   position: relative;
