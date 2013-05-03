@@ -142,23 +142,19 @@ body {
   border-radius: 10px;
 }
 #header {
-  position: absolute;
-  top: 1.5em;
-  left: 50%;
-  margin-left: -25px;
+  background: #fcfcfc;
   margin: 0;
-  padding: 0;
+  padding: 1em 0 2em 0;
   text-align: center;
   z-index: 9999;
-}
-#header a {
-  display: block;
 }
 #header a h1 {
   display: none;
 }
-#header a svg {
+#header a img {
   display: block;
+  width: 80px;
+  margin: auto;
 }
 #menu {
   background: #fcfcfc;
@@ -170,7 +166,6 @@ body {
 #menu nav {
   position: relative;
   display: block;
-  padding-top: 6.3em;
 }
 #menu nav #selection {
   z-index: 99;
