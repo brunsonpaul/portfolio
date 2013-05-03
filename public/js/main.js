@@ -39,6 +39,9 @@ navigation.switchLinks = function(param){
 	var next = $(".next")[0];
 	var previous = $(".previous")[0];
 	if($(target).attr("class")=="next"){
+
+		$("#container-wrapper").toggleClass("containerPrevious");
+
 		$(".previous").animate(
 			{"opacity":"0","width":"0%"}, 800, function() {
 				$(".previous").insertAfter($(target));

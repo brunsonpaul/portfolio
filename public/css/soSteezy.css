@@ -232,7 +232,7 @@ body {
 }
 @media screen and (min-width: 641px) {
   .homeMenu {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
   }
@@ -402,6 +402,30 @@ footer aside p {
     display: inline-block;
   }
 }
+
+/* 
+CONTAINER
+*/
+#wrapper-container{
+  margin-left:0%;
+  -moz-transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -khtml-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+#wrapper-container.containerPrevious{
+  margin-left:-100%;
+  -moz-transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -khtml-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
 #about {
   text-align: center;
   background: #fcfcfc;
