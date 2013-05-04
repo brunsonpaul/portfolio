@@ -162,6 +162,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  border-bottom: 1px solid #eeeeee;
 }
 #menu nav {
   position: relative;
@@ -189,10 +190,11 @@ body {
   white-space: nowrap;
 }
 #menu nav ul li a {
+  text-align: center;
   display: block;
   color: #111111;
   padding: 1em 0;
-  width: 80%;
+  width: 84%;
   margin: auto;
   -moz-transition: all 0.6s ease 0s;
   -webkit-transition: all 0.6s ease 0s;
@@ -224,21 +226,11 @@ body {
   font-size: 1.750rem;
   margin: 0.5em auto 0.2em auto;
 }
-#menu nav ul li a p:nth-of-type(2) {
-  margin: 0 2.5em;
-}
 #menu nav ul li a:hover p:nth-of-type(1) {
   color: #111111;
 }
 #menu nav ul li .selected p:nth-of-type(1) {
   color: #111111;
-}
-@media screen and (min-width: 641px) {
-  .homeMenu {
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
 }
 footer {
   position: relative;
@@ -360,7 +352,10 @@ footer aside p {
 #about {
   text-align: center;
   background: #fcfcfc;
-  padding: 5em 10% 2.5em 10%;
+  padding: 2.5em 10% 0em 10%;
+  font-size: 30px;
+  font-size: 1.875rem;
+  margin: auto;
 }
 #about h1 .author {
   letter-spacing: 0.16em;
@@ -375,16 +370,21 @@ footer aside p {
   overflow: hidden;
   position: relative;
   text-align: center;
+  width: 30px;
+  height: 25px;
 }
 #about h1 #ageContent {
   position: absolute;
   display: block;
   top: 0 left:0;
+  width: 30px;
+  height: 25px;
 }
 #about h1 #ageLeft {
   position: absolute;
   top: 0;
   left: 0;
+  width: 15px;
   display: block;
   -moz-animation: firstNumber 5s infinite linear;
   -o-animation: firstNumber 5s infinite linear;
@@ -395,6 +395,7 @@ footer aside p {
   position: absolute;
   top: 0;
   right: 0;
+  width: 15px;
   display: block;
   -moz-animation: secondNumber 5s infinite linear;
   -o-animation: secondNumber 5s infinite linear;
@@ -422,7 +423,7 @@ footer aside p {
 #skills {
   text-align: center;
   background: #fcfcfc;
-  padding: 2.5em 10%;
+  padding: 2.5em 0;
 }
 #skills h1 {
   font-size: 30px;
@@ -617,7 +618,6 @@ footer aside p {
   display: inline-block;
   vertical-align: top;
   width: 30%;
-  min-width: 300px;
   margin-top: 2.5em;
 }
 #experience ul li:nth-of-type(2) {
@@ -667,7 +667,6 @@ footer aside p {
   display: inline-block;
   vertical-align: top;
   width: 30%;
-  min-width: 300px;
   margin-top: 2.5em;
 }
 #education ul li:nth-of-type(2) {
@@ -689,172 +688,7 @@ footer aside p {
 #education ul li a:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 640px) {
-  #about h1 {
-    font-size: 22px;
-    font-size: 1.375rem;
-  }
-  #about h1 #age {
-    width: 24px;
-    height: 20px;
-  }
-  #about h1 #ageContent {
-    width: 24px;
-    height: 20px;
-  }
-  #about h1 #ageLeft {
-    width: 12px;
-  }
-  #about h1 #ageRight {
-    width: 12px;
-  }
-  #about p {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.25em;
-    margin-top: 1em;
-  }
-  @-moz-keyframes firstNumber {
-    0% {
-      top: 0;
-    }
-    20%,
-    80% {
-      top: -100px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-webkit-keyframes firstNumber {
-    0% {
-      top: 0;
-    }
-    20%,
-    80% {
-      top: -100px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-o-keyframes firstNumber {
-    0% {
-      top: 0;
-    }
-    20%,
-    80% {
-      top: -100px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-ms-keyframes firstNumber {
-    0% {
-      top: 0;
-    }
-    20%,
-    80% {
-      top: -100px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @keyframes firstNumber {
-    0% {
-      top: 0;
-    }
-    20%,
-    80% {
-      top: -100px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-moz-keyframes secondNumber {
-    0% {
-      top: -100px;
-    }
-    20%,
-    80% {
-      top: 0;
-    }
-    100% {
-      top: -100px;
-    }
-  }
-  @-webkit-keyframes secondNumber {
-    0% {
-      top: -100px;
-    }
-    20%,
-    80% {
-      top: 0;
-    }
-    100% {
-      top: -100px;
-    }
-  }
-  @-o-keyframes secondNumber {
-    0% {
-      top: -100px;
-    }
-    20%,
-    80% {
-      top: 0;
-    }
-    100% {
-      top: -100px;
-    }
-  }
-  @-ms-keyframes secondNumber {
-    0% {
-      top: -100px;
-    }
-    20%,
-    80% {
-      top: 0;
-    }
-    100% {
-      top: -100px;
-    }
-  }
-  @keyframes secondNumber {
-    0% {
-      top: -100px;
-    }
-    20%,
-    80% {
-      top: 0;
-    }
-    100% {
-      top: -100px;
-    }
-  }
-}
 @media screen and (min-width: 641px) {
-  #about h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-    margin: auto;
-  }
-  #about h1 #age {
-    width: 30px;
-    height: 25px;
-  }
-  #about h1 #ageContent {
-    width: 30px;
-    height: 25px;
-  }
-  #about h1 #ageLeft {
-    width: 15px;
-  }
-  #about h1 #ageRight {
-    width: 15px;
-  }
   #about p {
     font-size: 20px;
     font-size: 1.250rem;

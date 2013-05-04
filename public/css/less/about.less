@@ -1,12 +1,12 @@
-#about { text-align:center; background:@colorWhite;  padding:5em 10% 2.5em 10%;
+#about { text-align:center; background:@colorWhite;  padding:2.5em 10% 0em 10%; .fontSize30(); margin:auto;
 	h1 { 
 		.author { letter-spacing:0.16em;
-			em { .fontRegular(); .textUppercase(); }
+		em { .fontRegular(); .textUppercase(); }
 		}			
-		#age { display:inline-block; overflow:hidden; position:relative; text-align:center; }
-		#ageContent { position:absolute; display:block; top:0 left:0; }
-		#ageLeft { position:absolute; top:0; left:0; display:block; -moz-animation: firstNumber 5s infinite linear; -o-animation: firstNumber 5s infinite linear; -webkit-animation: firstNumber 5s infinite linear; animation: firstNumber 5s infinite linear; }
-		#ageRight { position:absolute; top:0; right:0; display:block; -moz-animation: secondNumber 5s infinite linear; -o-animation: secondNumber 5s infinite linear; -webkit-animation: secondNumber 5s infinite linear; animation: secondNumber 5s infinite linear; }
+		#age { display:inline-block; overflow:hidden; position:relative; text-align:center; width:30px; height:25px; }
+		#ageContent { position:absolute; display:block; top:0 left:0; width:30px; height:25px; }
+		#ageLeft { position:absolute; top:0; left:0; width:15px; display:block; -moz-animation: firstNumber 5s infinite linear; -o-animation: firstNumber 5s infinite linear; -webkit-animation: firstNumber 5s infinite linear; animation: firstNumber 5s infinite linear; }
+		#ageRight { position:absolute; top:0; right:0; width:15px; display:block; -moz-animation: secondNumber 5s infinite linear; -o-animation: secondNumber 5s infinite linear; -webkit-animation: secondNumber 5s infinite linear; animation: secondNumber 5s infinite linear; }
 	}
 	p { }
 	a { color:@colorBlack; .fontRegular(); 
@@ -17,7 +17,7 @@
 	img { display:block; width:100%; min-width:700px; margin:auto;}
 }
 
-#skills { text-align:center; background:@colorWhite; padding:2.5em 10%;
+#skills { text-align:center; background:@colorWhite; padding:2.5em 0;
 	h1 { .fontSize30(); .fontRegular(); .textUppercase();
 		&:after { .zigZag(); }
 	}
@@ -37,7 +37,7 @@
 		}
 	}
 	#level { margin:2.5em auto 0 auto; width:100%; max-width:1024px; .fontSize16();
-		ul { display:inline-block; text-align:left; vertical-align:top; width:30%; min-width:300px;			
+		ul { display:inline-block; text-align:left; vertical-align:top; width:30%; min-width:300px;	
 			li { display:block; margin-top:0.8em; padding:0 15px;
 				p { display:inline-block; width:30%; }
 				.lineSkillsMax { position:relative; display:inline-block;  vertical-align:top; margin-top:2px; width:65%; margin-left:5%; height:14px; background:@colorGray; }
@@ -52,7 +52,7 @@
 		&:after { .zigZag(); }
 	}
 	ul { display:block; margin:0 auto;
-		li { display:inline-block; vertical-align:top; width:30%; min-width:300px; margin-top:2.5em;
+		li { display:inline-block; vertical-align:top; width:30%; margin-top:2.5em;
 			&:nth-of-type(2) { margin:2.5em 5% 0 5%}
 			img { display:block; margin:auto; height:50px; }
 			em { .fontRegular(); margin:1em auto 0.5em auto; display:block; }
@@ -68,7 +68,7 @@
 		&:after { .zigZag(); }
 	}
 	ul { display:block; margin:0 auto 5em auto;
-		li { display:inline-block; vertical-align:top; width:30%; min-width:300px; margin-top:2.5em;
+		li { display:inline-block; vertical-align:top; width:30%; margin-top:2.5em;
 			&:nth-of-type(2) { margin:2.5em 5% 0 5%}
 			img { display:block; margin:auto; height:50px; }
 			em { .fontRegular(); margin:0 auto 0.5em auto; display:block; }
@@ -79,35 +79,10 @@
 	}
 }
 
-@media screen and (max-width:640px) {
-	#about {
-		h1 { .fontSize22(); 
-			#age { width:24px; height:20px; }
-			#ageContent { width:24px; height:20px; }
-			#ageLeft { width:12px; }
-			#ageRight { width:12px; }
-		}
-		p { .fontSize16(); line-height:1.25em; margin-top:1em; }
-	}
-	@-moz-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
-	@-webkit-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
-	@-o-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
-	@-ms-keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
-	@keyframes firstNumber { 0% { top:0; } 20%, 80%{ top:-100px; } 100% { top:0; } }
-	@-moz-keyframes secondNumber { 0% { top:-100px; } 20%, 80%{ top:0; } 100% { top:-100px; } }
-	@-webkit-keyframes secondNumber { 0% { top:-100px; } 20%, 80%{ top:0; } 100% { top:-100px; } }
-	@-o-keyframes secondNumber { 0% { top:-100px; } 20%, 80%{ top:0; } 100% { top:-100px; } }
-	@-ms-keyframes secondNumber { 0% { top:-100px; } 20%, 80%{ top:0; } 100% { top:-100px; } }
-	@keyframes secondNumber { 0% { top:-100px; } 20%, 80%{ top:0; } 100% { top:-100px; } }
-}
-
 @media screen and (min-width:641px) {
 	#about {
-		h1 { .fontSize30(); margin:auto;
-			#age { width:30px; height:25px; }
-			#ageContent { width:30px; height:25px; }
-			#ageLeft { width:15px; }
-			#ageRight { width:15px; }
+		h1 { 
+
 		}
 		p { .fontSize20(); line-height:1.4em; width:70%; max-width:850px; margin:auto; margin-top:0.8em; }
 	}

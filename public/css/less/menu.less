@@ -1,12 +1,11 @@
-#menu { background:@colorWhite; z-index:99; margin:0; padding:0; text-align:center;
+#menu { background:@colorWhite; z-index:99; margin:0; padding:0; text-align:center; border-bottom:1px solid @colorGray;
 	nav { position:relative; display:block;
 		#selection { z-index:99; border:solid 2px #000; position:absolute; bottom:47px; left:50%; margin-left:-14%; width:28%; height:120px; }
 		ul { width:100%; padding:1em 0 3em 0;
 			li { display:inline-block; position:relative; vertical-align:top; width:33.3333%; white-space: nowrap;
-				a { display:block; color:@colorBlack; padding:1em 0; width:80%; margin:auto; .easeTransition(0.6s);
+				a { text-align:center; display:block; color:@colorBlack; padding:1em 0; width:84%; margin:auto; .easeTransition(0.6s);
 					p:nth-of-type(1) { .fontRegular(); .fontSize14(); .textUppercase(); color:@colorGray; .easeTransition(0.6s); }
 					em { display:block; .fontRegular(); .textUppercase(); .fontSize28();  margin:0.5em auto 0.2em auto; }
-					p:nth-of-type(2) { margin:0 2.5em; }
 					&:hover { 
 						p:nth-of-type(1) { color:@colorBlack;  } }
 				}
@@ -16,21 +15,4 @@
 			}
 		}
 	}				
-}
-
-
-@media screen and (min-width:641px) {
-	.homeMenu { position:absolute; left:0; right:0; }
-	#menu {
-		nav { 
-			ul { 
-				li {
-					a { 
-						em {  }
-
-					}
-				}
-			}
-		}				
-	}
 }
