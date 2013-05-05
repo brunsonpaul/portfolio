@@ -1,5 +1,4 @@
-<div id="top"></div>
-<menu id="header">
+<header id="#header">
 	<a href="#top">
 		<h1>Kévin Lagier's portfolio</h1>
 		<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -18,4 +17,4 @@
 		</g>
 		</svg>
 	</a>
-</menu>
+</header>

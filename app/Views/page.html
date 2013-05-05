@@ -33,121 +33,120 @@
 
 <body>
 
-    <div id="top"></div>
-    <menu id="header">
-        <a href="#top">
-            <h1>Kévin Lagier's portfolio</h1>
-            <img src="public/img/other/wood.svg" alt="wood"/>    
-        </a>
-    </menu>
-    <menu id="menu">
-        <nav>
-            <div id="selection"></div>
-            <ul>
-                <?php switch($page) {
-                    case "work": ?>
-                    <li class="previous">
-                        <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
-                            <p>I</p>
-                            <em>About</em>
-                            <p>Some things you may need to know</p>
-                        </a>
-                    </li><!-- 
-                    --><li class="current">
-                        <a href="work" <?php echo $page == "work" ? 'class="selected"' : "" ?> >
-                            <p>II</p>
-                            <em>Work</em>
-                            <p>Some things I've worked on</p>
-                        </a>
-                    </li><!--
-                    --><li class="next">
-                        <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
-                            <p>III</p>
-                            <em>Contact</em>
-                            <p>Some things to tell me</p>
-                        </a>
-                    </li><!--   
-                -->
-            <?php  break;
-                   case "contact": ?>
-                    <li class="previous">
-                        <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
-                            <p>II</p>
-                            <em>Work</em>
-                            <p>Some things I've worked on</p>
-                        </a>
-                    </li><!--
-                    --><li class="current">
-                        <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
-                            <p>III</p>
-                            <em>Contact</em>
-                            <p>Some things to tell me</p>
-                        </a>
-                    </li><!--   
-                --><li class="next">
-                        <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
-                            <p>I</p>
-                            <em>About</em>
-                            <p>Some things you may need to know</p>
-                        </a>
-                    </li><!---->
-            <?php  break;
-                   case "about": ?>
-                    <li class="previous">
-                        <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
-                            <p>III</p>
-                            <em>Contact</em>
-                            <p>Some things to tell me</p>
-                        </a>
-                    </li><!--   
+<header id="#header">
+    <a href="#top">
+        <h1>Kévin Lagier's portfolio</h1>
+        <img src="public/img/other/wood.svg" alt="wood"/>    
+    </a>
+</header>
+<menu id="menu">
+    <nav>
+        <div id="selection"></div>
+        <ul>
+            <?php switch($page) {
+                case "work": ?>
+                <li class="previous">
+                    <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
+                        <p>I</p>
+                        <em>About</em>
+                        <p>Some things you may need to know</p>
+                    </a>
+                </li><!-- 
                 --><li class="current">
-                        <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
-                            <p>I</p>
-                            <em>About</em>
-                            <p>Some things you may need to know</p>
-                        </a>
-                    </li><!--
-                    --><li class="next">
-                        <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
-                            <p>II</p>
-                            <em>Work</em>
-                            <p>Some things I've worked on</p>
-                        </a>
-                    </li><!--
-                    -->
-            <?php break; }?>
+                    <a href="work" <?php echo $page == "work" ? 'class="selected"' : "" ?> >
+                        <p>II</p>
+                        <em>Work</em>
+                        <p>Some things I've worked on</p>
+                    </a>
+                </li><!--
+                --><li class="next">
+                    <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
+                        <p>III</p>
+                        <em>Contact</em>
+                        <p>Some things to tell me</p>
+                    </a>
+                </li><!--   
+            -->
+        <?php  break;
+               case "contact": ?>
+                <li class="previous">
+                    <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
+                        <p>II</p>
+                        <em>Work</em>
+                        <p>Some things I've worked on</p>
+                    </a>
+                </li><!--
+                --><li class="current">
+                    <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
+                        <p>III</p>
+                        <em>Contact</em>
+                        <p>Some things to tell me</p>
+                    </a>
+                </li><!--   
+            --><li class="next">
+                    <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
+                        <p>I</p>
+                        <em>About</em>
+                        <p>Some things you may need to know</p>
+                    </a>
+                </li><!---->
+        <?php  break;
+               case "about": ?>
+                <li class="previous">
+                    <a href="contact" <?php echo $page == "contact" ? 'class="selected"' : "" ?>>
+                        <p>III</p>
+                        <em>Contact</em>
+                        <p>Some things to tell me</p>
+                    </a>
+                </li><!--   
+            --><li class="current">
+                    <a href="about" <?php echo $page == "about" ? 'class="selected"' : "" ?>>
+                        <p>I</p>
+                        <em>About</em>
+                        <p>Some things you may need to know</p>
+                    </a>
+                </li><!--
+                --><li class="next">
+                    <a href="work"  <?php echo $page == "work" ? 'class="selected"' : "" ?> >
+                        <p>II</p>
+                        <em>Work</em>
+                        <p>Some things I've worked on</p>
+                    </a>
+                </li><!--
+                -->
+        <?php break; }?>
+        </ul>
+    </nav>
+</menu>
+
+<div id="wrapper-container">
+    <?php require("app/Views/Partials/".$page .".html") ?>
+</div>
+
+<footer>
+    <section>
+        <article>
+            <h1>Kévin <em>Lagier</em></h1>
+            <ul>
+                <li><span>H</span> Paris</li>
+                <li><span>M</span> <a href="hello@lagier-kevin.com">hello@lagier-kevin.com</a></li>
+                <li><span>P</span> (+33)6.09.65.67.69</li>
             </ul>
-        </nav>
-    </menu>
+        </article><!--
+    --><article>
+            <h1><em>Share</em></h1>
 
-    <div id="wrapper-container">
-        <?php require("app/Views/Partials/".$page .".html") ?>
-    </div>
+        </article>
+    </section>
+    <div><p>Feel free to leave me a message.<br/>I'm open to all your web, multimedia and print projects suggestions.</p></div>
+    <aside>
+        <nav><a href="#" class="selected">English</a> - <a href="#">Français</a></nav>
+        <p>Copyright 2013. All Rights Reserved</p>
+    </aside>
+</footer>
 
-    <footer>
-        <section>
-            <article>
-                <h1>Kévin <em>Lagier</em></h1>
-                <ul>
-                    <li><span>H</span> Paris</li>
-                    <li><span>M</span> <a href="hello@lagier-kevin.com">hello@lagier-kevin.com</a></li>
-                    <li><span>P</span> (+33)6.09.65.67.69</li>
-                </ul>
-            </article><!--
-        --><article>
-                <h1><em>Share</em></h1>
-
-            </article>
-        </section>
-        <div><p>Feel free to leave me a message.<br/>I'm open to all your web, multimedia and print projects suggestions.</p></div>
-        <aside>
-            <nav><a href="#" class="selected">English</a> - <a href="#">Français</a></nav>
-            <p>Copyright 2013. All Rights Reserved</p>
-        </aside>
-    </footer>
-
-    <script type="text/javascript" src="public/js/lib/ascensor.js"></script>
-    <script type="text/javascript" src="public/js/main.js"></script>
+<script type="text/javascript" src="public/js/lib/ascensor.js"></script>
+<script type="text/javascript" src="public/js/main.js"></script>
 
 </body>
 </html>

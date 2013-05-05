@@ -409,17 +409,6 @@ footer aside p {
 #about a:hover {
   text-decoration: underline;
 }
-#aboutImg {
-  overflow: hidden;
-  margin: auto;
-  text-align: center;
-}
-#aboutImg img {
-  display: block;
-  width: 100%;
-  min-width: 700px;
-  margin: auto;
-}
 #skills {
   text-align: center;
   background: #fcfcfc;
@@ -2325,12 +2314,6 @@ footer aside p {
   100% {
     width: 38%;
   }
-}
-#map {
-  width: 100%;
-  height: 300px;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 #contact {
   text-align: center;
