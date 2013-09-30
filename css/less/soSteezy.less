@@ -1,0 +1,78 @@
+@import "helper.less";
+
+body, html { background:@colorBlack; margin: 0; overflow: hidden; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
+html { height: 100%; }
+body {  -webkit-touch-callout: none; padding: 0; position: relative; margin: 0; height: 100%; -webkit-font-smoothing: antialiased; }
+body, .onepage-wrapper, html { display: block; position: static; padding: 0; width: 100%; height: 100%; }
+
+.userSelect { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
+.dragCursor { 
+	&:hover { cursor:url('../img/identity/drag.png'), move; }
+	&:active { cursor:url('../img/identity/drag-active.png'), move; }
+}
+
+#resize { display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:99999; background:@colorGold; text-align:center;
+	p { position:absolute; width:100%; margin-top:-30px; top:50%; .fontSize30(); .textUppercase(); }
+}
+
+#borderTop { z-index:9999; position:fixed; height:8px; background:@colorGold; }
+#borderLeft { z-index:9999; position:fixed; width:8px; background:@colorGold; }
+#borderRight { z-index:9999; position:fixed; width:8px; background:@colorGold; }
+#borderBottom { z-index:9999; position:fixed; height:8px; background:@colorGold; }
+
+#borderTop.closeBorder { top:20px; left:20px; right:20px; }
+#borderLeft.closeBorder { top:20px; left:20px; bottom:20px; }
+#borderRight.closeBorder { top:20px; bottom:20px; right:20px; }
+#borderBottom.closeBorder { bottom:20px; left:20px; right:20px; }
+
+#borderTop.openBorder { top:0; left:0; right:0; }
+#borderLeft.openBorder { top:0; left:0; bottom:0; }
+#borderRight.openBorder { top:0; bottom:0; right:0; }
+#borderBottom.openBorder { bottom:0; left:0; right:0; }
+
+#wave1 { z-index:9999; position:fixed; top:48px; right:48px; 
+	img { display:block; height:55px; }
+}
+#wave2 { z-index:9999; position:fixed; bottom:48px; left:48px;
+	img { display:block; height:55px; }
+}
+
+.button-menu { position:absolute; left:50%; top:58px; margin-left:-17px; text-align:center;
+	a { .transition(0.4s); color:@colorGold; display:block; width:34px; height:28px; padding-top:6px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
+		&:hover {  border:solid 2px @colorGold; }
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#resize { display:block; }
+}
+@media screen and (max-height: 500px) {
+	#resize { display:block; }
+}
+@import "header.less";
+
+@import "footer.less";
+
+@import "loader.less";
+
+@import "partech.less";
+
+.partech { background:@colorBlack url('../img/partech/partech-bg-mini.jpg') no-repeat center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+#partech-content { position:absolute; top:50%; left:0; right:0; margin-top:-192px; color:@colorGold; text-align:center; .textUppercase();
+	h1 { 
+		span { display:none; }
+		img { display:block; height:80px; margin:auto; }
+	}
+	p { .fontSize13(); line-height:20px; margin:30px auto 20px auto; position:relative;
+	}
+	a { .transition(0.4s); position:absolute; display:block; .fontSize16(); border:1px dotted @colorGold; left:50%; margin-left:-107px; width:212px; height:38px; clip:rect(0,214px,40px,0);
+		span:nth-of-type(1) { .transition(0.4s); position:absolute; display:block; width:100%; top:50%; margin-top:-9px; color:@colorGold; }
+		span:nth-of-type(2) { .transition(0.4s); position:absolute; display:block; width:100%; bottom:-16px; color:#33333b; opacity:0; }
+		&:hover { background:@colorGold; border:1px dotted @colorBlack; 
+			span:nth-of-type(1) { top:-16px; margin-top:0; opacity:0; }
+			span:nth-of-type(2) { bottom:50%; margin-bottom:-10px; opacity:1; }
+		}
+	}
+}
