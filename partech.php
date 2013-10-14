@@ -21,13 +21,19 @@
 
 <body>
 
+<div id="resize">
+    <p>
+        Please<br/>resize your browser
+    </p>
+</div>
+
 <div id="borderTop" class="openBorder"></div>
 <div id="borderLeft" class="openBorder"></div>
 <div id="borderBottom" class="openBorder"></div>
 <div id="borderRight" class="openBorder"></div>
 
 <div class="wrapper">
-    <div class="main">
+    <div class="main" id="partech">
         <section class="intro">
             <div class="page_container">
                 <ul>
@@ -40,16 +46,19 @@
                         Partech S.A.R. L.
                     </li><!--
                     !--><li>
-                        <span>Rôle :</span>
+                        <span>Role :</span>
                         Design - Intégration
                     </li>
                 </ul>
-                <h1>Partech</h1>
+                <h1>
+                    <img src='img/partech/partech-logo.jpg' alt="Partech logo">
+                    <span>Partech</span>
+                </h1>
                 <span class="sepPartech"></span>
-                <p>Créée en 1992 par Yves Lagier, Partech propose ses solutions d’engineering et réalisations dans le milieu de l’industrie et des remontées mécaniques.</p>
+                <p>Réalisation du design et du développement d'un site vitrine pour le bureau d'étude Partech. Site responsive, réalisé en HTML 5 / CSS 3, Javascript et Flash.</p>
                 <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
+                <img id='partechCinemaDisplay' src='img/partech/partech-cinema-display.png' alt="partech cinema display">
             </div>
-            <img src='img/partech/partech-cinema-display.png' alt="partech cinema display">
         </section>
 
         <section class="theClient">
@@ -63,7 +72,7 @@
                  </p><!--
                 !--><p>
                     Doté d’un outil performant en conception, Logiciel 3D, calculs en éléments finis. Nos atouts sont fondés sur le sérieux, la motivation, l’expérience et l’écoute des clients.<br/>
-                    <span>PARTECH</span> s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
+                    Partech s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
                 </p>   
                 <img src='img/partech/back-rack-sketch.png' alt="Back Rack">
             </div>
@@ -72,10 +81,18 @@
         <section class="screenDrag">
             <div class="page_container">
                 <h2>Horizontal navigation</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <p>Une navigation originale permettant de présenter un grand nombre de projets et laisse les visiteurs s’imprégner de l’ambiance.</p>
                 <div class="toDrag">
-                    <div class="dragCursorPartech"></div>
-                    <div class="dragScreen"></div>
+                    <div class="dragCursorPartech">
+                    </div>
+                    <div class="dragScreenArrow">
+                        <span class="dragPoint"></span>
+                        <span class="dragArrow"></span>
+                    </div>
+                </div>
+                <div class="partech-screen">
+                    <img src='img/partech/safari-window.png' alt="Safari Window">
+                    <img src='img/partech/drag-screen.png' alt="Safari Window">
                 </div>
             </div>
         </section>
@@ -87,21 +104,31 @@
         <section class="mobile">
             <div class="page_container">
                 <h2>Responsive Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                <img id="partech-iphone" src='img/partech/partech-iphone.png' alt="Iphone">
+                <p>Le web mobile étant de plus en plus important, il était nécessaire de s'adapter aux nouvelles modalités de consultation.</p>
+                <div class="mobileScreen">
+                    <img id="partech-iphone" src='img/partech/partech-iphone.png' alt="Iphone">
+                    <ul>
+                        <li><img src='img/partech/partech-iphone-screen4.png' alt="Partech mobile"></li><!--
+                    !--><li><img src='img/partech/partech-iphone-screen2.png' alt="Partech mobile"></li><!--
+                    !--><li><img src='img/partech/partech-iphone-screen1.png' alt="Partech mobile"></li><!--
+                    !--><li><img src='img/partech/partech-iphone-screen3.png' alt="Partech mobile"></li><!--
+                    !--><li><img src='img/partech/partech-iphone-screen5.png' alt="Partech mobile"></li><!--
+                    !-->
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="thatsall">
             <div class="page_container">
                 <h2>UI Element</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p> 
+                <p>Création d'éléments graphiques pour faciliter la consultation du site aux personnes ayant peu de compétences en informatique.</p>
                 <ul>
-                    <li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
-                    !--><li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
-                    !--><li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
-                    !--><li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
-                    !-->
+                    <li><img src='img/partech/ui1.png' alt='UI Element'></li><!--
+                !--><li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
+                !--><li><img src='img/partech/ui3.png' alt='UI Element'></li><!--
+                !--><li><img src='img/partech/ui4.png' alt='UI Element'></li><!--
+                !-->
                 </ul>
             </div>
             <footer>
@@ -115,7 +142,7 @@
 
 
 
-<script type="text/javascript" src="js/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 <script>
     $(document).ready(function(){

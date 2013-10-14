@@ -1,14 +1,14 @@
 header { position:absolute; top:0; left:0; bottom:0; right:0;  color:@colorGold; text-align:center;
-	#header-content { position:absolute; top:50%; left:0; right:0; margin-top:-198px; .textUppercase();
+	#header-content { position:absolute; top:50%; left:0; right:0; .textUppercase();
 		h1 { 
 			span { display:none; }
-			img { display:block; height:120px; margin:auto; }
+			img { display:block; width:12%; margin:auto; }
 		}
 		p { .fontSize14(); line-height:20px; margin:20px auto 60px auto; position:relative;
 			&:after { content:""; position:absolute; left:50%; bottom:-45px; display:block; border-left:1px dotted @colorGold; height:35px; }
 		}
-		#discover { position:absolute; display:block; .fontSize14(); color:@colorGold; border:1px dotted @colorGold; left:50%; margin-left:-122px; padding:11px 20px; }
-		#contact { .fontSize14(); margin-top:127px; 
+		#discover { display:inline-block; .fontSize14(); color:@colorGold; border:1px dotted @colorGold; left:50%; padding:11px 20px; }
+		#contact { .fontSize14(); margin-top:40px;
 			li { display:inline-block; margin:0 25px;
 				a { color:@colorGold; position:relative; padding-bottom:5px; 
 					&:after { content:''; .transition(0.2s); position:absolute; left:0; bottom:0px; width:100%; height:0px; border-top:1px dotted @colorGold; }
@@ -21,8 +21,9 @@ header { position:absolute; top:0; left:0; bottom:0; right:0;  color:@colorGold;
 				a { .transition(0.4s); color:@colorGold; display:block; width:34px; height:25px; padding-top:9px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
 					&:hover {  border:solid 2px @colorGold; }
 				}
-				#behance { height:26px; padding-top:8px; }
-				#dribbble { text-transform:none; .fontBold; cursor:pointer; position:relative; .transition(0.4s); color:@colorGold; display:block; width:34px; height:25px; padding-top:9px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
+				#twitter { background:url('../img/identity/twitter.svg') center center no-repeat; }
+				#behance { background:url('../img/identity/behance.svg') center center no-repeat; }
+				#dribbble { background:url('../img/identity/dribble.svg') center center no-repeat; text-transform:none; .fontBold; cursor:pointer; position:relative; .transition(0.4s); color:@colorGold; display:block; width:34px; height:25px; padding-top:9px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
 					span { position:absolute; display:none; background:@colorGold; color:@colorBlack; .fontSize12(); top:46px; left:-62px; width:150px; padding:5px 0; .borderRadius(3px);
 						&:before { content:''; position:absolute; top:-14px; left:50%; margin-left:-4px; display:block; width:0; height:0; border-top:8px solid transparent; border-bottom:8px solid @colorGold; border-left:8px solid transparent; border-right:8px solid transparent; }
 					}
@@ -30,6 +31,7 @@ header { position:absolute; top:0; left:0; bottom:0; right:0;  color:@colorGold;
 						span { display:block; }
 					}
 				}
+				#linkedin { background:url('../img/identity/linkedin.svg') center center no-repeat; }
 			}
 		}
 	}
