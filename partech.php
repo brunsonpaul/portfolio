@@ -27,130 +27,119 @@
     </p>
 </div>
 
-<div id="borderTop" class="openBorder"></div>
-<div id="borderLeft" class="openBorder"></div>
-<div id="borderBottom" class="openBorder"></div>
-<div id="borderRight" class="openBorder"></div>
+<div id='borderTop' class="open"></div>
+<div id='borderBottom' class="open"></div>
+<div id='borderLeft' class="open"></div>
+<div id='borderRight' class="open"></div>
 
-<div class="wrapper">
-    <div class="main" id="partech">
-        <section class="intro">
-            <div class="page_container">
+<section id='partech'>
+    <article id='partech-introduction'>
+        <div class='page-content'>
+            <ul>
+                <li>
+                    <span>Date :</span>
+                    Janvier 2011
+                </li><!--
+                !--><li>
+                    <span>Client :</span>
+                    Partech S.A.R. L.
+                </li><!--
+                !--><li>
+                    <span>Role :</span>
+                    Design - Intégration
+                </li>
+            </ul>
+            <h1>
+                <img src='img/partech/partech-logo.jpg' alt="Partech logo">
+                <span>Partech</span>
+            </h1>
+            <span class="sepPartech"></span>
+            <p>Réalisation du design et du développement d'un site vitrine pour le bureau d'étude Partech. Site responsive, réalisé en HTML 5 / CSS 3, Javascript et Flash.</p>
+            <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
+            <img id='partechCinemaDisplay' src='img/partech/partech-cinema-display.png' alt="partech cinema display">
+        </div>
+    </article>
+
+    <article id='partech-client' >
+        <div class='page-content'>
+            <h2>The Client</h2>
+            <h3>Bureau d'etudes, engineering mecanique</h3>
+            <span class="sepPartech"></span>
+            <p>
+                <span>Créée en 1992 par Yves Lagier, PARTECH propose ses solutions d’engineering et réalisations dans le milieu de l’industrie et des remontées mécaniques.</span><br/>
+                Fort d’une expérience de plusieurs années au sein de bureau d’études de grands constructeurs (SKIRAIL, VON ROLL, CWA), PARTECH vous apporte son expérience dans des biens d’équipements industriels et montagne.
+             </p><!--
+            !--><p>
+                Doté d’un outil performant en conception, Logiciel 3D, calculs en éléments finis. Nos atouts sont fondés sur le sérieux, la motivation, l’expérience et l’écoute des clients.<br/>
+                Partech s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
+            </p>   
+            <img src='img/partech/back-rack-sketch.png' alt="Back Rack">
+        </div>
+    </article>
+
+    <article id='partech-dragScreen'>
+        <div class='page-content'>
+            <h2>Horizontal navigation</h2>
+            <p>Une navigation originale permettant de présenter un grand nombre de projets et laisse les visiteurs s’imprégner de l’ambiance.</p>
+            <div class="toDrag">
+                <div class="dragCursorPartech">
+                </div>
+                <div class="dragScreenArrow">
+                    <span class="dragPoint"></span>
+                    <span class="dragArrow"></span>
+                </div>
+            </div>
+            <div class="partech-screen">
+                <img src='img/partech/safari-window.png' alt="Safari Window">
+                <img src='img/partech/drag-screen.png' alt="Screen partech">
+            </div>
+        </div>
+    </article>
+
+    <article id="partech-sketch">
+        <div class="page-content">
+            <img src='img/partech/spad-rail-sketch.png' alt="Sketch Spad Rail">
+        </div>
+    </article>
+
+    <article id="partech-mobile">
+        <div class="page-content">
+            <h2>Responsive Design</h2>
+            <p>Le web mobile étant de plus en plus important, il était nécessaire de s'adapter aux nouvelles modalités de consultation.</p>
+            <div class="mobileScreen">
+                <img id="partech-iphone" src='img/partech/partech-iphone.png' alt="Iphone">
                 <ul>
-                    <li>
-                        <span>Date :</span>
-                        Janvier 2011
-                    </li><!--
-                    !--><li>
-                        <span>Client :</span>
-                        Partech S.A.R. L.
-                    </li><!--
-                    !--><li>
-                        <span>Role :</span>
-                        Design - Intégration
-                    </li>
-                </ul>
-                <h1>
-                    <img src='img/partech/partech-logo.jpg' alt="Partech logo">
-                    <span>Partech</span>
-                </h1>
-                <span class="sepPartech"></span>
-                <p>Réalisation du design et du développement d'un site vitrine pour le bureau d'étude Partech. Site responsive, réalisé en HTML 5 / CSS 3, Javascript et Flash.</p>
-                <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
-                <img id='partechCinemaDisplay' src='img/partech/partech-cinema-display.png' alt="partech cinema display">
-            </div>
-        </section>
-
-        <section class="theClient">
-            <div class="page_container">
-                <h2>The Client</h2>
-                <h3>Bureau d'etudes, engineering mecanique</h3>
-                <span class="sepPartech"></span>
-                <p>
-                    <span>Créée en 1992 par Yves Lagier, PARTECH propose ses solutions d’engineering et réalisations dans le milieu de l’industrie et des remontées mécaniques.</span><br/>
-                    Fort d’une expérience de plusieurs années au sein de bureau d’études de grands constructeurs (SKIRAIL, VON ROLL, CWA), PARTECH vous apporte son expérience dans des biens d’équipements industriels et montagne.
-                 </p><!--
-                !--><p>
-                    Doté d’un outil performant en conception, Logiciel 3D, calculs en éléments finis. Nos atouts sont fondés sur le sérieux, la motivation, l’expérience et l’écoute des clients.<br/>
-                    Partech s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
-                </p>   
-                <img src='img/partech/back-rack-sketch.png' alt="Back Rack">
-            </div>
-        </section>
-
-        <section class="screenDrag">
-            <div class="page_container">
-                <h2>Horizontal navigation</h2>
-                <p>Une navigation originale permettant de présenter un grand nombre de projets et laisse les visiteurs s’imprégner de l’ambiance.</p>
-                <div class="toDrag">
-                    <div class="dragCursorPartech">
-                    </div>
-                    <div class="dragScreenArrow">
-                        <span class="dragPoint"></span>
-                        <span class="dragArrow"></span>
-                    </div>
-                </div>
-                <div class="partech-screen">
-                    <img src='img/partech/safari-window.png' alt="Safari Window">
-                    <img src='img/partech/drag-screen.png' alt="Safari Window">
-                </div>
-            </div>
-        </section>
-
-        <section class="sketch">
-            <div class="page_container"></div>
-        </section>
-
-        <section class="mobile">
-            <div class="page_container">
-                <h2>Responsive Design</h2>
-                <p>Le web mobile étant de plus en plus important, il était nécessaire de s'adapter aux nouvelles modalités de consultation.</p>
-                <div class="mobileScreen">
-                    <img id="partech-iphone" src='img/partech/partech-iphone.png' alt="Iphone">
-                    <ul>
-                        <li><img src='img/partech/partech-iphone-screen4.png' alt="Partech mobile"></li><!--
-                    !--><li><img src='img/partech/partech-iphone-screen2.png' alt="Partech mobile"></li><!--
-                    !--><li><img src='img/partech/partech-iphone-screen1.png' alt="Partech mobile"></li><!--
-                    !--><li><img src='img/partech/partech-iphone-screen3.png' alt="Partech mobile"></li><!--
-                    !--><li><img src='img/partech/partech-iphone-screen5.png' alt="Partech mobile"></li><!--
-                    !-->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="thatsall">
-            <div class="page_container">
-                <h2>UI Element</h2>
-                <p>Création d'éléments graphiques pour faciliter la consultation du site aux personnes ayant peu de compétences en informatique.</p>
-                <ul>
-                    <li><img src='img/partech/ui1.png' alt='UI Element'></li><!--
-                !--><li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
-                !--><li><img src='img/partech/ui3.png' alt='UI Element'></li><!--
-                !--><li><img src='img/partech/ui4.png' alt='UI Element'></li><!--
+                    <li><img src='img/partech/partech-iphone-screen4.png' alt="Partech mobile"></li><!--
+                !--><li><img src='img/partech/partech-iphone-screen2.png' alt="Partech mobile"></li><!--
+                !--><li><img src='img/partech/partech-iphone-screen1.png' alt="Partech mobile"></li><!--
+                !--><li><img src='img/partech/partech-iphone-screen3.png' alt="Partech mobile"></li><!--
+                !--><li><img src='img/partech/partech-iphone-screen5.png' alt="Partech mobile"></li><!--
                 !-->
                 </ul>
             </div>
-            <footer>
-                <p>That’s all folk</p>
-                <p>Thank you for watching</p>
-            </footer>
-        </section>
-    </div>
-</div>
+        </div>
+    </article>
 
+    <article id='partech-ui'>
+        <div class="sepPartech"></div>
+        <div class="page-content">
+            <h2>UI Element</h2>
+            <p>Création d'éléments graphiques pour faciliter la consultation du site aux personnes ayant peu de compétences en informatique.</p>
+            <ul>
+                <li><img src='img/partech/ui1.png' alt='UI Element'></li><!--
+            !--><li><img src='img/partech/ui2.png' alt='UI Element'></li><!--
+            !--><li><img src='img/partech/ui3.png' alt='UI Element'></li><!--
+            !--><li><img src='img/partech/ui4.png' alt='UI Element'></li><!--
+            !-->
+            </ul>
+        </div>
+    </article>
 
-
-
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".main").onepage_scroll({
-            sectionContainer: "section"
-        });
-    });    
-</script>
+    <footer>
+        <p>That’s all folk</p>
+        <p>Thank you for watching</p>
+    </footer>
+</section>
 
 </body>
 </html>

@@ -21,103 +21,128 @@
 
 <body>
 
-<div id="borderTop" class="openBorder"></div>
-<div id="borderLeft" class="openBorder"></div>
-<div id="borderBottom" class="openBorder"></div>
-<div id="borderRight" class="openBorder"></div>
-
-<div class="wrapper">
-    <div class="main" id="socialCoke">
-        <section class="intro">
-            <div class="page_container" id='socialCokeIntro'>
-                <ul>
-                    <li>
-                        <span>Date :</span>
-                        Decembre 2012
-                    </li><!--
-                    !--><li>
-                        <span>Client :</span>
-                        Coca Cola
-                    </li><!--
-                    !--><li>
-                        <span>Role :</span>
-                        Design - Intégration
-                    </li>
-                </ul>
-                <h1>
-                    Social Coke
-                    <img src='img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
-                </h1>
-                <p>Social Coke est une (fausse) campagne digitale à l’échelle internationale pour la marque Coca Cola, basée sur un concept innovant de site web collaboratif en lien avec les réseaux sociaux. Le sens premier de l’écriture sur Twitter est ici détourné pour servir finalement de base à l’écriture d’un message et d’un univers publicitaire. Une réalisation bouclée en deux semaines dans le cadre d'un projet scolaire.</p>
-                <a href='http://lagier-kevin.com/social-coke/' target='_blank'>                    
-                    <img src='img/social-coke/social-coke-link.svg' alt='Social Coke Link'>
-                    <img src='img/social-coke/social-coke-link-hover.svg' alt='Social Coke Link hover'>
-                </a>
-            </div>
-            <div id='goutte'>
-                <img src='img/social-coke/goutte1.png' alt=''>
-                <img src='img/social-coke/goutte2.png' alt=''>
-                <img src='img/social-coke/goutte3.png' alt=''>
-                <img src='img/social-coke/goutte4.png' alt=''>
-                <img src='img/social-coke/goutte5.png' alt=''>
-            </div>
-        </section>
-
-        <section class="context">
-            <div class="page_container">
-                <h2>The Context</h2>
-                <h3>Campagne digitale pour Coca Cola</h3>
-                <p>
-                    Au fils des années l’entreprise Coca Cola a façonné son image et sa notoriété à grand coup de campagnes publicitaires de grande ampleur, marquantes par leur originalité et par la qualité des réalisations.<br/>
-                    Au fils des siècles la marque a par ailleurs souvent fait appel à des artistes et designers de renom pour réaliser des concepts visuels encore gravés dans les esprits.
-                </p><!--
-                !--><p>
-                    Aujourd’hui Coca Cola cherche à poursuivre cette tradition de campagnes innovantes et créatives en prenant en compte les nouveaux enjeux de 2012 et en particulier le canal internet.<br/>
-                    La marque cherche en particulier à s’adresser à une cible jeune, sensible aux innovations digitales, pour renforcer sa notoriété et son image de marque innovante.                
-                </p>
-                <img src='img/social-coke/coca-cola-girl.png' alt=''>                  
-            </div>
-        </section>
-
-        <section class="context2">
-            <div class="page_container">
-                <h2>
-                    Coca Cola
-                    <img src='img/social-coke/coca-cola.svg' alt='Coca Cola'>
-                </h2>
-                <ul>
-                    <li>Une marque active et créative en terme de campagne de communication</li>
-                    <li>Des thèmes récurrents dans la communication Coca-Cola : l’émerveillement, le rêve, le merveilleux</li>
-                    <li>Un lien fort entre la marque (campagnes, packaging, logo) et l’art</li>
-                    <li>Une marque qui s’adresse à une cible plutôt jeune, par conséquent sensible au digital et à l’innovation de manière générale.</li>
-                </ul>
-                <p>
-                    <span>Objectifs :</span>
-                    <b>Image :</b> Entretenir et renforcer l’image d’une marque jeune et innovante, proche des milieux artistiques et active dans le domaine du digital.
-                    <b>Notoriété :</b> Entretenir la notoriété de la marque sur les réseaux sociaux et en particulier sur Twitter.
-                </p>
-
-
-            </div>
-        </section>
-    </div>
+<div id="resize">
+    <p>
+        Please<br/>resize your browser
+    </p>
 </div>
 
+<div id='borderTop' class="open"></div>
+<div id='borderBottom' class="open"></div>
+<div id='borderLeft' class="open"></div>
+<div id='borderRight' class="open"></div>
 
+<div style="display:none; z-index:99; position:fixed; top:0; left:0; right:0; text-align:center;">
+    <img src='img/grid.png'>
+</div>
 
+<section id='socialCoke'>
+    <article id='socialCoke-introduction'>
+        <div class="page-content">
+            <ul>
+                <li>
+                    <span>Date :</span>
+                    Decembre 2012
+                </li><!--
+                !--><li>
+                    <span>Client :</span>
+                    Coca Cola
+                </li><!--
+                !--><li>
+                    <span>Role :</span>
+                    Design - Intégration
+                </li>
+            </ul>
+            <h1>
+                Social Coke
+                <img src='img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
+            </h1>
+            <p>
+                Social Coke est une (fausse) campagne digitale à l’échelle internationale pour la marque Coca Cola, basée sur un concept innovant de site web collaboratif avec Twitter.
+                Le site plonge ses internautes dans une expérience riche, captivante, amusantes où ils pourront découvrir différents modules modules à base de jeux ou de contenus dynamiques.
+            </p>
+            <a href='http://lagier-kevin.com/social-coke/' target='_blank'>                    
+                <img src='img/social-coke/social-coke-link.svg' alt='Social Coke Link'>
+                <img src='img/social-coke/social-coke-link-hover.svg' alt='Social Coke Link hover'>
+            </a>
+        </div>
+        <img class='goutte1' src='img/social-coke/goutte1.png' alt=''>
+        <img class='goutte2' src='img/social-coke/goutte2.png' alt=''>
+        <img class='goutte3' src='img/social-coke/goutte3.png' alt=''>
+        <img class='goutte4' src='img/social-coke/goutte4.png' alt=''>
+        <img class='goutte5' src='img/social-coke/goutte5.png' alt=''>
+    </article>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".main").onepage_scroll({
-            sectionContainer: "section"
-        });
-    });    
-</script>
+    <article id='socialCoke-context'>
+        <img id='cloud1' src='img/social-coke/cloud-2.svg' alt=''>
+        <img id='cloud2' src='img/social-coke/cloud.svg' alt=''>
+        <img id='cloud3' src='img/social-coke/cloud-3.svg' alt=''>
+        <img id='cloud4' src='img/social-coke/cloud-4.svg' alt=''>
+        <div class="page-content">
+            <h2>The Context</h2>
+            <h3>Coca Cola, une marque active et créative</h3>
+            <p>
+                Au fils des années l’entreprise Coca Cola a façonné son image et sa notoriété à grand coup de campagnes publicitaires de grande ampleur, marquantes par leur originalité et par la qualité des réalisations.<br/>
+                Au fils des siècles la marque a par ailleurs souvent fait appel à des artistes et designers de renom pour réaliser des concepts visuels encore gravés dans les esprits.
+            </p><!--
+            !--><p>
+                Aujourd’hui Coca Cola cherche à poursuivre cette tradition de campagnes innovantes et créatives en prenant en compte les nouveaux enjeux de 2012 et en particulier le canal internet.<br/>
+                La marque cherche en particulier à s’adresser à une cible jeune, sensible aux innovations digitales, pour renforcer sa notoriété et son image de marque innovante.                
+            </p>
+            <img id='coca-cola-logo' src='img/social-coke/coca-cola.svg' alt='Coca Cola logo'>   
+             <p>
+                <em>Une marque active et créative en terme de campagne de communication :</em>
+                <b>•</b><!-- !--><span>Des thèmes récurrents dans la communication Coca Cola : l’émerveillement, le rêve, le merveilleux</span><br/>
+                <b>•</b><!-- !--><span>Un lien fort entre la marque (campagnes, packaging, logo) et l’art</span><br/>
+                <b>•</b><!-- !--><span>Une marque qui s’adresse à une cible plutôt jeune, par conséquent sensible au digital et à l’innovation de manière générale</span><br/>
+            </p><!--
+            !--><p>
+                <em>Image :</em>
+                Entretenir et renforcer l’image d’une marque jeune et innovante, proche des milieux artistiques et active dans le domaine du digital.
+                <em>Notoriété :</em>
+                Entretenir la notoriété de la marque sur les réseaux sociaux et en particulier sur Twitter.    
+           </p>     
+            <img id='coca-cola-girl' src='img/social-coke/coca-cola-girl.png' alt='Coca Cola Girl'>             
+        </div>
+    </article>
 
-<script type="text/javascript" src="js/soSmooth.js"></script>
+    <article id='socialCoke-idea'>
+        <div class="page-content">
+            <h2>The Idea</h2>
+            <h3>Campagne digitale pour Coca Cola</h3>    
+            <p class='firstP'>
+                Le site propose aux internautes de découvrir un vaste univers très illustré. Au cœur de cet univers se trouve une bouteille dont les formes se dessinent peu à peu avec les noms des internautes qui tweet avec le # de la campagne (#socialcoke). Le but premier de cette page est donc d’inciter les internautes à parler de la marque. Ils ont par ailleurs la possibilité de le faire directement depuis la page d’accueil.
+            </p>
+            <a href='#'>
+                <img src='img/social-coke/btn-tweet.svg' alt=''>
+                <img src='img/social-coke/btn-tweet-hover.svg' alt=''>
+            </a> 
+            <div id='socialCoke-universe'>
+                <p>
+                    <em>The Universe</em>
+                    Lorsque l’internaute se rend sur le site, il plonge au coeur d’un univers graphique qui capte sa curiosité et son émerveillement. On s’appuie ainsi sur une constante de la communication Coca Cola, à savoir la place primordiale qu’occupent l’émerveillement et l’émotionnel.<br/><br/>
+                    Plus concrètement, l’interaction de l’internaute avec le site se fait principalement sur la base du tweet. Pour chaque tweet posté avec le #socialcoke, le pseudo de l’internaute vient compléter le design de la bouteille. Il apparaît alors directement sur la bouteille et découvre un peu plus de sa forme.<br/><br/>
+                    Par ailleurs, les tweets ont une seconde fonction dans notre campagne. Ils permettent de construire l’univers Coca cola autour de l’événement principal. Les internautes prennent ainsi partie à la construction de l’univers « décalé » qui se dessine peu à peu.
+                </p>   
+            </div> 
+            <div id='socialCoke-bottle'>
+                <img src='img/social-coke/oiseaux.svg' alt=''><!--                    
+                !--><p>
+                    <em>Et quand la bouteille est pleine ?</em>
+                    La campagne se termine lorsque la bouteille est pleine. Pour autant tout ne s’arrête pas là. Il s’agit de remercier les participants et de profiter de la plus grande notoriété du site.<br/><br/>
+                    La bouteille sera donc réellement produite sous forme d’une nouvelle édition collector « Socialbottle ». Elle sera offerte aux participants à la campagne et une possibilité sera donnée aux internautes de la commander sur le site.<br/><br/>
+                    Le site sera par ailleurs disponible dans son intégralité. Les visiteurs pourront donc profiter pleinement de l’expérience, à la manière d’une infographie présentant les liens forts entre Coca-Cola et le monde de l’art.  
+                </p>  
+            </div>    
+        </div>
+        <img id='poisson' src='img/social-coke/poisson.svg' alt=''>                  
+    </article>
 
+    <footer>
+        <p>That’s all folk</p>
+        <p>Thank you for watching</p>
+    </footer>
+</section>
 
 </body>
 </html>

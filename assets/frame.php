@@ -1,7 +1,8 @@
-<div id="borderTop" class="closeBorder"></div>
-<div id="borderLeft" class="closeBorder"></div>
-<div id="borderBottom" class="closeBorder"></div>
-<div id="borderRight" class="closeBorder"></div>
+<div id='borderTop' class="close"></div>
+<div id='borderBottom' class="close"></div>
+<div id='borderLeft' class="close"></div>
+<div id='borderRight' class="close"></div>
+
 <div id="wave1">		
 	<img src="img/identity/wave-1.svg" alt=""> 
 </div>

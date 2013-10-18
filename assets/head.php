@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="userSelect">
+<body class="userSelect social">
 
 <div id="resize">
     <p>
