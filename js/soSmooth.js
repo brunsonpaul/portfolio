@@ -14,6 +14,3 @@ $(document).ready(function(){
 		$(".onepage-pagination ").css('margin-top',-headerHeight/2);
 	};
 });
-
-			
-

@@ -248,6 +248,22 @@
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
       init_scroll(event, delta);
     });
+
+    $(document).keydown(function(event) {
+      if(event.keyCode==38)
+      {
+        event.preventDefault();
+        el.moveUp();
+        return false;
+      }
+      if(event.keyCode==40)
+      {
+        event.preventDefault();
+        el.moveDown();
+        return false;
+      }
+    });
+
     return false;
     
   }

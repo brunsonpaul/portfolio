@@ -2,6 +2,10 @@
 
 <?php require ("assets/frame.php"); ?>
 
+<?php require ("assets/header.php"); ?>
+
+<?php require ("assets/loader.php"); ?>
+
 
 
 
@@ -14,14 +18,14 @@
         </svg>
     </a>
 </nav>
-<img style='margin-left:20%; position:absolute; top:50%; left:50%;'src='img/social-coke/monkey.svg'>
+<!-- <img style='margin-left:20%; position:absolute; top:50%; left:50%;'src='img/social-coke/monkey.svg'>
 <img style='position:absolute; top:20%; left:10%;'src='img/social-coke/patate.svg'>
 <img style='position:absolute; top:16%; left:80%;'src='img/social-coke/cool.svg'>
 <img style='position:absolute; top:30%; left:23%;'src='img/social-coke/drink.svg'>
 <img style='position:absolute; top:20%; left:60%;'src='img/social-coke/point1.svg'>
 <img style='position:absolute; top:77%; left:24%;'src='img/social-coke/point2.svg'>
 <img style='position:absolute; top:88%; left:55%;'src='img/social-coke/point3.svg'>
-<img style='position:absolute; top:34%; left:60%;'src='img/social-coke/point4.svg'>
+<img style='position:absolute; top:34%; left:60%;'src='img/social-coke/point4.svg'> -->
 <!--
 <div id="partech-content">
    
