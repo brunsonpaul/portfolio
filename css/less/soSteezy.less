@@ -41,6 +41,12 @@ body, .onepage-wrapper, html { display: block; position: static; padding: 0; wid
 	}
 }
 
+.button-close { z-index:99; position:fixed; left:50%; top:58px; margin-left:-17px; text-align:center;
+	a { .transition(0.4s); color:@colorGold; display:block; width:36px; padding-top:10px; height:26px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
+		&:hover {  border:solid 2px @colorGold; }
+	}
+}
+
 #resize { display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:99999; background:@colorGold; text-align:center;
 	p { position:absolute; width:100%; margin-top:-30px; top:50%; .fontSize30(); .textUppercase(); }
 }
@@ -78,6 +84,8 @@ body, .onepage-wrapper, html { display: block; position: static; padding: 0; wid
 @import "partech.less";
 
 @import "socialCoke.less";
+
+@import "100ansdetour.less";
 
 section { padding:8px 0; 
 	.page-content { width:950px; margin:auto; }

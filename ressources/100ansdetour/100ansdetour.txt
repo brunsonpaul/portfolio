@@ -1,0 +1,10 @@
+Ce projet de data-visualization a été réalisé dans le cadre d'un cours à HETIC (Haute Ecole des Technologie de l'Information et de la Communication). A quelques mois de la 100ème édition du Tour, la Grande Boucle a retenu tout notre intérêt. Un sujet qui plus est fascinant sur le plan des données à explorer. 100 ans de données à parcourir entre classements, parcours ou encore coureurs de légende.
+
+
+
+Année par année le visiteur manipule les données d'une façon ludique et interactive. Il mesure alors les évolutions et les tournants qui ont animé le Tour de France en 100 ans d'existence. Une façon également de vivre ou revivre les instants les plus reculés de l'histoire du Tour.
+
+
+REMERCIEMENTS
+Un remerciement très spécial à l'ensemble des sites et internautes qui mettent à disposition les données du Tour de France. Ils nous ont permis de constituer une base de données fondamentale dans la réalisation de ce projet.
+N'hésitez pas à nous contacter pour faire remonter d'éventuelles erreurs ou simplement passer le bonjour !

@@ -36,6 +36,17 @@
     <img src='img/grid.png'>
 </div>
 
+
+<!-- <nav class="button-close">
+    <a href="#">
+        <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.849px" height="14.849px" viewBox="0 0 14.849 14.849" enable-background="new 0 0 14.849 14.849" xml:space="preserve">
+             <rect x="-2.575" y="6.925" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.4246 -3.0754)" fill="#B59663" width="20" height="1"/>
+            <rect x="-2.575" y="6.925" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 17.9246 7.4246)" fill="#B59663" width="20" height="1"/>
+        </svg>
+    </a>
+</nav>
+ -->
+
 <section id='socialCoke'>
     <article id='socialCoke-introduction'>
         <div class="page-content">
@@ -59,7 +70,7 @@
             </h1>
             <p>
                 Social Coke est une (fausse) campagne digitale à l’échelle internationale pour la marque Coca Cola, basée sur un concept innovant de site web collaboratif avec Twitter.
-                Le site plonge ses internautes dans une expérience riche, captivante, amusantes où ils pourront découvrir différents modules modules à base de jeux ou de contenus dynamiques.
+                Le site plonge ses internautes dans une expérience riche, captivante, amusante où ils pourront découvrir différents modules à base de jeux ou de contenus dynamiques.
             </p>
             <a href='http://lagier-kevin.com/social-coke/' target='_blank'>                    
                 <img src='img/social-coke/social-coke-link.svg' alt='Social Coke Link'>
@@ -102,7 +113,6 @@
                 <em>Notoriété :</em>
                 Entretenir la notoriété de la marque sur les réseaux sociaux et en particulier sur Twitter.    
            </p>     
-            <img id='coca-cola-girl' src='img/social-coke/coca-cola-girl.png' alt='Coca Cola Girl'>             
         </div>
     </article>
 
@@ -110,13 +120,61 @@
         <div class="page-content">
             <h2>The Idea</h2>
             <h3>Campagne digitale pour Coca Cola</h3>    
-            <p class='firstP'>
+            <p>
                 Le site propose aux internautes de découvrir un vaste univers très illustré. Au cœur de cet univers se trouve une bouteille dont les formes se dessinent peu à peu avec les noms des internautes qui tweet avec le # de la campagne (#socialcoke). Le but premier de cette page est donc d’inciter les internautes à parler de la marque. Ils ont par ailleurs la possibilité de le faire directement depuis la page d’accueil.
             </p>
             <a href='#'>
                 <img src='img/social-coke/btn-tweet.svg' alt=''>
                 <img src='img/social-coke/btn-tweet-hover.svg' alt=''>
-            </a> 
+            </a>
+    </article>
+
+    <article id='socialCoke-interest'>
+        <div class="page-content">
+            <h2>Quel intérêt pour l'internaute ?</h2>
+            <p>
+                Lorsque l’internaute se rend sur le site, il plonge au coeur d’un univers graphique qui capte sa curiosité et son émerveillement. On s’appuie ainsi sur une constante de la communication Coca Cola, à savoir la place primordiale qu’occupent l’émerveillement et l’émotionnel.<br/><br/>
+            </p><!--
+            !--><p>
+                Plus concrètement, l’interaction de l’internaute avec le site se fait principalement sur la base du tweet. Pour chaque tweet posté avec #socialcoke, le pseudo de l’internaute vient compléter le design de la bouteille. Il apparaît alors directement sur la bouteille et découvre un peu plus de sa forme.<br/><br/>
+            </p><!--
+            !--><p>
+                Par ailleurs, les tweets ont une seconde fonction dans notre campagne. Ils permettent de construire l’univers Coca Cola autour de l’événement principal. Les internautes prennent ainsi partie à la construction de l’univers « décalé » qui se dessine peu à peu.
+            </p>
+        </div>
+    </article>
+            
+    <article id='socialCoke-universe'>
+        <div class="page-content">
+            <h2>The Universe</h2>
+            <h3>Propose à l’internaute une expérience riche, captivante et amusante</h3>    
+            <p>
+                Cet univers entourant la bouteille présente la marque Coca Cola sous l’angle de l’art. Il est composé à la manière d’une infographie, présentant des historiques graphiques de la marque, l’évolution de son design, ou encore la forme de ses bouteilles au fil des années, le tout présenté de manières ludique.
+            </p><!--
+            !--><p>
+                L’univers est volontairement très illustré, sans cadre défini pour laisser une très grande liberté à la navigation de l’internaute.<br/>Un soin particulier a été accordé aux détails dans les illustrations, les animations et tous autres rendus visuels qui permettent d’attiser, la curiosité et l’enthousiasme du visiteur.            
+            </p>
+            <img src='img/social-coke/oiseaux.svg' alt=''> 
+        </div>                  
+    </article>
+
+    <article id='socialCoke-bottle'>
+        <div class="page-content">
+            <h2>Et quand la bouteille est pleine ?</h2>
+            <p>
+                La campagne se termine lorsque la bouteille est pleine. Pour autant tout ne s’arrête pas là. Il s’agit de remercier les participants et de profiter de la plus grande notoriété du site.<br/><br/>
+            </p><!--
+            !--><p>
+                La bouteille sera donc réellement produite sous forme d’une nouvelle édition collector "Socialbottle". Elle sera offerte aux participants à la campagne et une possibilité sera donnée aux internautes de la commander sur le site.<br/><br/>
+            </p><!--
+            !--><p>
+                Le site sera par ailleurs disponible dans son intégralité. Les visiteurs pourront donc profiter pleinement de l’expérience, à la manière d’une infographie présentant les liens forts entre Coca Cola et le monde de l’art.  
+            </p>
+        </div>
+                <img id='poisson' src='img/social-coke/poisson.svg' alt=''>                  
+
+    </article>
+            <!--
             <div id='socialCoke-universe'>
                 <p>
                     <em>The Universe</em>
@@ -126,8 +184,8 @@
                 </p>   
             </div> 
             <div id='socialCoke-bottle'>
-                <img src='img/social-coke/oiseaux.svg' alt=''><!--                    
-                !--><p>
+                <img src='img/social-coke/oiseaux.svg' alt=''>                   
+                <p>
                     <em>Et quand la bouteille est pleine ?</em>
                     La campagne se termine lorsque la bouteille est pleine. Pour autant tout ne s’arrête pas là. Il s’agit de remercier les participants et de profiter de la plus grande notoriété du site.<br/><br/>
                     La bouteille sera donc réellement produite sous forme d’une nouvelle édition collector « Socialbottle ». Elle sera offerte aux participants à la campagne et une possibilité sera donnée aux internautes de la commander sur le site.<br/><br/>
@@ -135,8 +193,7 @@
                 </p>  
             </div>    
         </div>
-        <img id='poisson' src='img/social-coke/poisson.svg' alt=''>                  
-    </article>
+    </article>!-->
 
     <footer>
         <p>That’s all folk</p>
