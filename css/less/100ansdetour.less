@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+.lato300() { font-family: 'Lato', sans-serif; font-weight: 300; }
+.lato400() { font-family: 'Lato', sans-serif; font-weight: 400; }
+.lato700() { font-family: 'Lato', sans-serif; font-weight:700; }
+.lato900() { font-family: 'Lato', sans-serif; font-weight: 900; }
+
+
+@tdfColor1:#000;
+@tdfColor2:#fff;
+@tdfColor3:#f5da3f;
+
+
+#tdf { background:@tdfColor3 url('../img/100ansdetour/tdfInto.png') top center repeat-y; .gothamBook();
+	#tdf-introduction { padding:100px 0; position:relative;
+		.page-content { text-align:center; 
+			ul { margin:auto; .fontSize16(); 
+				li { .calcWidthKit(100/3%); .inline-block(); color:@tdfColor1; vertical-align:top;
+					span { display:block; .gothamMedium(); text-transform:uppercase; }
+				}
+			}
+			h1 { .gothamMedium(); .textUppercase(); .fontSize24();
+				img { display:block; width:150px; margin:60px auto 20px auto; -webkit-animation: pignon 3s infinite linear; -o-animation: pignon 3s infinite linear; -moz-animation: pignon 3s infinite linear; animation: pignon 3s infinite linear; }
+				@-webkit-keyframes pignon { 0% {  } 100% { .rotateKit(360deg); } }
+			}
+			p { width:610px; .fontSize14(); margin:40px auto; line-height:1.5em; }
+			a { .textUppercase(); .borderRadius(5px); .fontSize12(); display:inline-block; margin:auto; .gothamMedium(); padding:15px 60px; color:@tdfColor2; background:@tdfColor1; .transition(0.4s); 
+				&:hover { color:@tdfColor1; background:@tdfColor2; }
+			}
+		}
+	}	
+	#tdf-context { padding:100px 0; position:relative; background:@tdfColor1;  color:@tdfColor2; 
+		.page-content { 
+			h2 {  .gothamMedium(); text-transform:uppercase; text-align:center; .fontSize32(); }
+			h3 { text-transform:uppercase; text-align:center; color:@tdfColor3; line-height:1.5em; }
+			p {  .fontSize18(); width:720px; color:@tdfColor2; margin:40px auto; text-align:center; line-height:1.5em; }
+			ul { 
+				li { vertical-align:top; margin-top:45px; display:inline-block; width:285px; text-align:justify; .fontSize12(); line-height:1.3em;
+					&:nth-of-type(1) { margin-right:380px; }
+					span { margin-bottom:5px; display:block; .gothamMedium(); .fontSize18(); text-transform:uppercase; color:@tdfColor3; }
+				}
+			}
+			#logo100ansdetour { position:absolute; left:50%; top:355px; margin-left:-100px; display:block; width:200px; vertical-align:top; }
+			#maillot { width:900px; margin:145px auto 0 auto; text-align:center; 
+				img { display:inline-block; margin:0 30px; }
+			}
+		}
+	}	
+	#tdf-analyse { padding:100px 0; position:relative; background:@tdfColor3;  color:@tdfColor1; 
+		.page-content { 
+			h2 {  .gothamMedium(); text-transform:uppercase; text-align:center; .fontSize32(); }
+		}
+	}
+	footer { background:@tdfColor1; text-align:center; padding:70px 0; display:block; 
+		p:nth-of-type(1) { color:@tdfColor2; .fontSize40(); }
+		p:nth-of-type(2) { color:@tdfColor3; .fontSize18(); }
+	}
+}
+
+

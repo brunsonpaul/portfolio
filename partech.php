@@ -38,7 +38,7 @@
             <ul>
                 <li>
                     <span>Date :</span>
-                    Janvier 2011
+                    January 2011
                 </li><!--
                 !--><li>
                     <span>Client :</span>
@@ -46,7 +46,7 @@
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Design - Intégration
+                    Design - Integration
                 </li>
             </ul>
             <h1>
@@ -54,7 +54,7 @@
                 <span>Partech</span>
             </h1>
             <span class="sepPartech"></span>
-            <p>Réalisation du design et du développement d'un site vitrine pour le bureau d'étude Partech. Site responsive, réalisé en HTML 5 / CSS 3, Javascript et Flash.</p>
+            <p>Production of the graphism and the development of a static website for the design office Partech. Site responsive, create with HTML 5 / CSS 3, Javascript and Flash.</p>
             <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
             <img id='partechCinemaDisplay' src='img/partech/partech-cinema-display.png' alt="partech cinema display">
         </div>
@@ -121,7 +121,7 @@
     </article>
 
     <article id='partech-ui'>
-        <div class="sepPartech"></div>
+        <div class="sep"></div>
         <div class="page-content">
             <h2>UI Element</h2>
             <p>Création d'éléments graphiques pour faciliter la consultation du site aux personnes ayant peu de compétences en informatique.</p>
