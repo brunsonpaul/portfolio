@@ -1,15 +1,28 @@
 <?php require ("assets/head.php"); ?>
 
 <?php require ("assets/frame.php"); ?>
+<?php //require ("assets/loader.php"); ?>
 
-<?php require ("assets/header.php"); ?>
-
-<?php require ("assets/loader.php"); ?>
-
+<?php //require ("assets/header.php"); ?>
 
 
 
-<nav class="button-menu">
+
+<div class="projects-container">
+    <div class="project _home">
+        
+    </div><!--
+    --><div class="project _partech">
+        
+    </div><!--
+    --><div class="project _social-coke">
+        
+    </div><!--
+    --><div class="project _100ansdetour">
+        
+    </div>
+</div>
+<!-- <nav class="button-menu">
     <a href="#">
         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
             <rect fill="#b59663" width="18" height="1"/>
@@ -17,7 +30,7 @@
             <rect y="6" fill="#b59663" width="18" height="1"/>
         </svg>
     </a>
-</nav>
+</nav> -->
 <!-- <img style='margin-left:20%; position:absolute; top:50%; left:50%;'src='img/social-coke/monkey.svg'>
 <img style='position:absolute; top:20%; left:10%;'src='img/social-coke/patate.svg'>
 <img style='position:absolute; top:16%; left:80%;'src='img/social-coke/cool.svg'>
@@ -44,22 +57,38 @@
     </a>
 </div> !-->
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/soSmooth.js"></script>
+    <!-- build:js scripts/vendor.js -->
+    <script src="scripts/vendor/jquery/jquery.js"></script>
+    <script src="scripts/vendor/underscore/underscore.js"></script>
+    <script src="scripts/vendor/backbone/backbone.js"></script>
+    <script src="scripts/vendor/dragdealer.js"></script>
+    <!-- endbuild -->
 
-<script type="text/javascript">
+    <!-- build:js({.tmp,app}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/routes/application.js"></script>
+    <script src="scripts/views/application.js"></script>
+    <script src="scripts/views/100ansdetour.js"></script>
+    <script src="scripts/views/converseChallenge.js"></script>
+    <script src="scripts/views/partech.js"></script>
+    <script src="scripts/views/socialCoke.js"></script>
+    <script src="scripts/views/theWhole.js"></script>
+    <script src="scripts/collections/application.js"></script>
+    <!-- endbuild -->
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29119748-1']);
-  _gaq.push(['_trackPageview']);
+    <script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29119748-1']);
+      _gaq.push(['_trackPageview']);
 
-</script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 
 </body>
 </html>
