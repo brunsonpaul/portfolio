@@ -21,9 +21,7 @@
                 <a id="behance" href="http://www.behance.net/KevinLagier" target="_blank"></a>
             </li><!--
             !--><li>
-                <a id="dribbble" href="http://dribbble.com/kevlag">
-                    <span>I'm looking for an invitation</span>
-                </a>
+                <a id="dribbble" href="http://dribbble.com/kevlag" target="_blank"></a>
             </li><!--
             !--><li>
                 <a id="linkedin" href="http://www.linkedin.com/profile/view?id=175237599&trk=hb_tab_pro_top" target="_blank">
