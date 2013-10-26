@@ -231,7 +231,8 @@ html {
   width: 100%;
 }
 .button-menu {
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
   left: 50%;
   top: 58px;
   margin-left: -17px;
@@ -308,6 +309,58 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  background: #b59663;
+  text-align: center;
+}
+#loader div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -198px;
+  margin-left: -126px;
+}
+#loader div img {
+  display: block;
+  height: 120px;
+  margin: auto;
+}
+#loader div p {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #111111;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 30px auto;
+}
+#loader div span {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 1px;
+  margin: auto;
+  background: #fbfbfb;
+}
+#loader div span span {
+  position: absolute;
+  width: 50%;
+  background: #111111;
+  top: 0;
+  left: 0;
+}
+section {
+  padding: 8px 0;
+}
+section .page-content {
+  width: 950px;
+  margin: auto;
+}
 /*@media screen and (max-width: 640px) {
 	#resize { display:block; }
 }
@@ -325,11 +378,7 @@ html {
 		}
 	}
 }
-
-.wrapper { height: 100% !important; height: 100%; margin: 0 auto;  overflow: hidden; }
-.main { float: left; width: 100%; margin: 0 auto; }
-.main section .page_container { position:relative; margin: 0 auto 0; z-index:3; }
-.main section  { overflow: hidden; }**/
+**/
 html {
   overflow: hidden;
 }
@@ -480,6 +529,16 @@ html {
   font-size: 0.875rem;
   color: #b59663;
 }
+#tdfProject {
+  display: none;
+}
+#socialCokeProject {
+  background: url('../img/social-coke/social-bg.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #partechProject {
   background: #111111 url('../img/partech/partech-bg.jpg') no-repeat center;
   -webkit-background-size: cover;
@@ -570,16 +629,6 @@ html {
   margin-bottom: -10px;
   opacity: 1;
 }
-#socialCokeProject {
-  background: url('../img/social-coke/social-bg.jpg') no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-._100ansdetour {
-  background: yellow;
-}
 #footer footer {
   background: #fbfbfb;
   position: absolute;
@@ -598,51 +647,6 @@ html {
   margin-top: -6%;
   left: 50%;
   margin-left: -7.5%;
-}
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 9999;
-  background: #b59663;
-  text-align: center;
-}
-#loader div {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -198px;
-  margin-left: -126px;
-}
-#loader div img {
-  display: block;
-  height: 120px;
-  margin: auto;
-}
-#loader div p {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #111111;
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin: 30px auto;
-}
-#loader div span {
-  position: relative;
-  display: block;
-  width: 250px;
-  height: 1px;
-  margin: auto;
-  background: #fbfbfb;
-}
-#loader div span span {
-  position: absolute;
-  width: 50%;
-  background: #111111;
-  top: 0;
-  left: 0;
 }
 @font-face {
   font-family: 'Conv_Gotham-Book';
@@ -3076,11 +3080,4 @@ html {
   color: #f5da3f;
   font-size: 18px;
   font-size: 1.125rem;
-}
-section {
-  padding: 8px 0;
-}
-section .page-content {
-  width: 950px;
-  margin: auto;
 }
