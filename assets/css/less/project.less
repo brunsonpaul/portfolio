@@ -1,0 +1,82 @@
+html{
+	overflow: hidden;
+}
+
+.project{
+	position:relative;
+}
+
+.projects-container{
+	overflow:hidden;
+}
+.project{
+	.inline-block();
+}
+#home{
+	header { position:absolute; top:0; left:0; bottom:0; right:0;  color:@colorGold; text-align:center; background:@colorBlack;
+		#header-content { position:absolute; top:50%; left:0; right:0; .textUppercase();
+			h1 { 
+				span { display:none; }
+				img { display:block; width:148px; margin:auto; }
+			}
+			p { .fontSize14(); line-height:20px; margin:20px auto 60px auto; position:relative;
+				&:after { content:""; position:absolute; left:50%; bottom:-45px; display:block; border-left:1px dotted @colorGold; height:35px; }
+			}
+			#discover { display:inline-block; .fontSize14(); color:@colorGold; border:1px dotted @colorGold; left:50%; padding:11px 20px; }
+			#contact { .fontSize14(); margin-top:40px;
+				li { display:inline-block; margin:0 25px;
+					a { color:@colorGold; position:relative; padding-bottom:5px; 
+						&:after { content:''; .transition(0.2s); position:absolute; left:0; bottom:0px; width:100%; height:0px; border-top:1px dotted @colorGold; }
+						&:hover:after { width:0; }
+					}
+				} 
+			}
+			#social { margin-top:35px;
+				li { display:inline-block; margin:0 7.5px;
+					a { .transition(0.4s); color:@colorGold; display:block; width:34px; height:25px; padding-top:9px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
+						&:hover {  border:solid 2px @colorGold; }
+					}
+					#twitter { background:url('../img/identity/twitter.svg') center center no-repeat; }
+					#behance { background:url('../img/identity/behance.svg') center center no-repeat; }
+					#dribbble { background:url('../img/identity/dribble.svg') center center no-repeat; }
+					#linkedin { background:url('../img/identity/linkedin.svg') center center no-repeat; }
+				}
+			}
+		}
+		#copyright { display:block; z-index:9999; position:absolute; bottom:48px; right:48px;
+			p { .fontSize14(); color:@colorGold; }
+		}
+	}
+}
+#partechProject{ background:@colorBlack url('../img/partech/partech-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+	div { position:absolute; top:50%; left:0; right:0; margin-top:-192px; color:@colorGold; text-align:center; .textUppercase();
+		h1 { 
+			span { display:none; }
+			img { display:block; height:80px; margin:auto; }
+		}
+		p { .fontSize13(); line-height:20px; margin:30px auto 20px auto; position:relative;
+		}
+		a { .transition(0.4s); position:absolute; display:block; .fontSize16(); border:1px dotted @colorGold; left:50%; margin-left:-107px; width:212px; height:38px; clip:rect(0,214px,40px,0);
+			span:nth-of-type(1) { .transition(0.4s); position:absolute; display:block; width:100%; top:50%; margin-top:-9px; color:@colorGold; }
+			span:nth-of-type(2) { .transition(0.4s); position:absolute; display:block; width:100%; bottom:-16px; color:#33333b; opacity:0; }
+			&:hover { background:@colorGold; border:1px dotted @colorBlack; 
+				span:nth-of-type(1) { top:-16px; margin-top:0; opacity:0; }
+				span:nth-of-type(2) { bottom:50%; margin-bottom:-10px; opacity:1; }
+			}
+		}
+	}
+}
+
+
+#socialCokeProject{ background:url('../img/social-coke/social-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+
+}
+
+._100ansdetour{
+	background: yellow;
+}
+#footer {
+	footer { background:@colorWhite; position:absolute; top:0; left:0; bottom:0; right:0; color:@colorGold; text-align:center;
+		#footerLogo { display:block; position:absolute; width:15%; top:50%; margin-top:-6%; left:50%; margin-left:-7.5%; }
+	}
+}
