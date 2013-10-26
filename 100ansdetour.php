@@ -61,6 +61,7 @@
                 Projet de data-visualization sur les 100 ans du Tour de France . À quelques mois de la 100ème édition, la Grande Boucle a retenu tout notre intérêt. Un sujet qui plus est fascinant sur le plan des données à explorer. 100 ans de données à parcourir entre classements, parcours ou encore coureurs de légende.
             </p>
             <a id='checkTdf' href='http://100ansdetour.fr' target='_blank'>Chech the site</a>
+            <img id='tdf-mbp' src='img/100ansdetour/tdf-mbp.png' alt=''>
         </div>
     </article>
     <article id='tdf-context'>
@@ -97,7 +98,7 @@
         </div>
     </article>
 
-     <article id='tdf-data'>
+    <article id='tdf-data'>
         <div class="page-content">
             <h2>
                 The data
@@ -105,10 +106,7 @@
             <h3>
                 Des choix et des concessions
             </h3>
-            <p class="dataDescription">
-                La récupération de données pour les 100 ans du Tour de France a été un travail de longue haleine. Nous avons du faire des choix et des concessions. Il a été difficile de trouver les informations que nous recherchions, notamment pour les premières éditions de la Grande Boucle.
-            </p>
-            <ul>
+            <ul id='tdf-dataNumbers'>
                 <li>
                     <span>2 142</span>
                     étapes
@@ -122,8 +120,22 @@
                     participants
                 </li>
             </ul>
+            <p class="dataDescription">
+                La récupération de données pour les 100 ans du Tour de France a été un travail de longue haleine. Nous avons du faire des choix et des concessions. Il a été difficile de trouver les informations que nous recherchions, notamment pour les premières éditions de la Grande Boucle.
+            </p>
+            <ul id='tdf-UI'>
+                <li>
+                    <img src='img/100ansdetour/tdf-ui1.png' alt=''>
+                </li><!--
+                !--><li>
+                    <img src='img/100ansdetour/tdf-ui2.png' alt=''>
+                </li><!--
+                !--><li>
+                    <img src='img/100ansdetour/tdf-ui3.png' alt=''>
+                </li>
+            </ul>
             <p>
-                Les sites et les internautes qui mettent à disposition les données du Tour de France, nous ont permis de constituer une base données fondamentale dans la réalisation de ce projet. Un grand merci pour eux.
+                Les sites et les internautes mettant à disposition les données du Tour de France, nous ont permis de constituer une base données fondamentale dans la réalisation de ce projet. Un grand merci pour eux.
             </p><!--
             !--><p>
                 Nous avons créer des scripts qui nous ont permis de récupérer ces données et ensuite de faire un formatage au format Json pour constituer notre base de données.
@@ -131,8 +143,36 @@
             !--><p>
                 Nous avons du ensuite adapter le développement de notre interface sur la base des données collectées. L’ensemble de nos graphiques ont été réalisés avec la librairie javascript D3.            
             </p>
+        </div>
+    </article>
 
-
+    <article id='tdf-other'>
+        <div class="page-content">
+            <div id='tdf-tweetLeft' class='tdf-tweet'>
+                Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href=''>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
+                <b>Thibault Jorge - @madebytj</b>
+            </div>            
+            <div id='tdf-tweetRight' class='tdf-tweet'>
+                Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href=''>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
+                <b>Thibault Jorge - @madebytj</b>
+            </div>
+            <img id='tdf-twitter' src='img/100ansdetour/twitter.svg' alt=''>   
+            <ul id='tdf-award'>
+                <li>
+                    <a href="http://www.thefwa.com/site/100-ans-de-tour?search=tour" target="_blank">
+                        <img src='img/100ansdetour/fwa.svg' alt=''>
+                        <span>Site of the day</span>
+                        September 07 2013
+                    </a>
+                </li><!--
+                !--><li>
+                    <a href="http://www.awwwards.com/web-design-awards/100-ans-de-tour" target="_blank">
+                        <img src='img/100ansdetour/awwwards.svg' alt=''>
+                        <span>Site of the day</span>
+                        July 31 2013
+                    </a>
+                </li>
+            </ul>
         </div>
     </article>
 
