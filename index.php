@@ -9,16 +9,16 @@
 
 
 <div class="projects-container">
-    <div class="project _home">
+    <div class="project _home" data-project="home">
         
     </div><!--
-    --><div class="project _partech">
+    --><div class="project _partech" data-project="partech">
         
     </div><!--
-    --><div class="project _social-coke">
+    --><div class="project _social-coke" data-project="social-coke">
         
     </div><!--
-    --><div class="project _100ansdetour">
+    --><div class="project _100ansdetour" data-project="100ansdetour">
         
     </div>
 </div>

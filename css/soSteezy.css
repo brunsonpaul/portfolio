@@ -2844,14 +2844,18 @@ header #copyright p {
   font-size: 18px;
   font-size: 1.125rem;
 }
+html {
+  overflow: hidden;
+}
 .projects-container {
-  width: 300px;
-  height: 300px;
   overflow: hidden;
 }
 .project {
-  width: 300px;
-  height: 300px;
+  display: inline-block;
+}
+.lt-ie9 .project {
+  display: inline;
+  zoom: 1;
 }
 ._home {
   background: white;
