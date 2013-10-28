@@ -105,7 +105,7 @@ body,
 html {
   font-size: 16px;
   font-size: 1rem;
-  background: red;
+  background: #b59663;
   margin: 0;
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
@@ -323,8 +323,8 @@ html {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -198px;
-  margin-left: -126px;
+  margin-top: -204px;
+  margin-left: -125px;
 }
 #loader div img {
   display: block;
@@ -379,21 +379,16 @@ section .page-content {
 	}
 }
 **/
-html {
-  overflow: hidden;
-}
-.project {
-  position: relative;
-}
-.projects-container {
-  overflow: hidden;
-}
 .project {
   display: inline-block;
+  position: relative;
 }
 .lt-ie9 .project {
   display: inline;
   zoom: 1;
+}
+.projects-container {
+  overflow: hidden;
 }
 #home header {
   position: absolute;
@@ -408,6 +403,7 @@ html {
 #home header #header-content {
   position: absolute;
   top: 50%;
+  margin-top: -204px;
   left: 0;
   right: 0;
   text-transform: uppercase;
@@ -525,22 +521,110 @@ html {
   right: 48px;
 }
 #home header #copyright p {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 13px;
+  font-size: 0.813rem;
   color: #b59663;
 }
 #tdfProject {
   display: none;
 }
 #socialCokeProject {
-  background: url('../img/social-coke/social-bg.jpg') no-repeat center;
+  background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+#socialCokeProject div {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -134px;
+  color: #b59663;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+#socialCokeProject div h1 span {
+  display: none;
+}
+#socialCokeProject div h1 img {
+  display: block;
+  height: 98px;
+}
+#socialCokeProject div h1:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #b59663;
+  margin: 30px 0;
+}
+#socialCokeProject div p {
+  width: 400px;
+  font-size: 13px;
+  font-size: 0.813rem;
+  line-height: 1.5em;
+}
+#socialCokeProject div a {
+  margin-top: 30px;
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  font-size: 1rem;
+  border: 1px dotted #b59663;
+  width: 212px;
+  height: 38px;
+  clip: rect(0, 214px, 40px, 0);
+  text-align: center;
+}
+#socialCokeProject div a span:nth-of-type(1) {
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+  margin-top: -9px;
+  color: #b59663;
+}
+#socialCokeProject div a span:nth-of-type(2) {
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: -16px;
+  color: #f0e2c7;
+  opacity: 0;
+}
+#socialCokeProject div a:hover {
+  background: #b59663;
+  border: 1px dotted #f0e2c7;
+}
+#socialCokeProject div a:hover span:nth-of-type(1) {
+  top: -16px;
+  margin-top: 0;
+  opacity: 0;
+}
+#socialCokeProject div a:hover span:nth-of-type(2) {
+  bottom: 50%;
+  margin-bottom: -10px;
+  opacity: 1;
+}
 #partechProject {
-  background: #111111 url('../img/partech/partech-bg.jpg') no-repeat center;
+  background: #111111 url('../img/partech/bg/partech-bg.jpg') no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -566,9 +650,9 @@ html {
   margin: auto;
 }
 #partechProject div p {
-  font-size: 13px;
-  font-size: 0.813rem;
-  line-height: 20px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.5em;
   margin: 30px auto 20px auto;
   position: relative;
 }
@@ -617,7 +701,7 @@ html {
 }
 #partechProject div a:hover {
   background: #b59663;
-  border: 1px dotted #111111;
+  border: 1px dotted #33333b;
 }
 #partechProject div a:hover span:nth-of-type(1) {
   top: -16px;
@@ -650,36 +734,36 @@ html {
 }
 @font-face {
   font-family: 'Conv_Gotham-Book';
-  src: url('../font/Gotham/Gotham-Book.eot');
-  src: local('☺'), url('../font/Gotham/Gotham-Book.woff') format('woff'), url('../font/Gotham/Gotham-Book.ttf') format('truetype'), url('../font/Gotham/Gotham-Book.svg') format('svg');
+  src: url('font/Gotham/Gotham-Book.eot');
+  src: local('☺'), url('font/Gotham/Gotham-Book.woff') format('woff'), url('font/Gotham/Gotham-Book.ttf') format('truetype'), url('font/Gotham/Gotham-Book.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Conv_Gotham-Light';
-  src: url('../font/Gotham/Gotham-Light.eot');
-  src: local('☺'), url('../font/Gotham/Gotham-Light.woff') format('woff'), url('../font/Gotham/Gotham-Light.ttf') format('truetype'), url('../font/Gotham/Gotham-Light.svg') format('svg');
+  src: url('font/Gotham/Gotham-Light.eot');
+  src: local('☺'), url('font/Gotham/Gotham-Light.woff') format('woff'), url('font/Gotham/Gotham-Light.ttf') format('truetype'), url('font/Gotham/Gotham-Light.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Conv_Gotham-Thin';
-  src: url('../font/Gotham/Gotham-Thin.eot');
-  src: local('☺'), url('../font/Gotham/Gotham-Thin.woff') format('woff'), url('../font/Gotham/Gotham-Thin.ttf') format('truetype'), url('../font/Gotham/Gotham-Thin.svg') format('svg');
+  src: url('font/Gotham/Gotham-Thin.eot');
+  src: local('☺'), url('font/Gotham/Gotham-Thin.woff') format('woff'), url('font/Gotham/Gotham-Thin.ttf') format('truetype'), url('font/Gotham/Gotham-Thin.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Conv_Gotham-Bold';
-  src: url('../font/Gotham/Gotham-Bold.eot');
-  src: local('☺'), url('../font/Gotham/Gotham-Bold.woff') format('woff'), url('../font/Gotham/Gotham-Bold.ttf') format('truetype'), url('../font/Gotham/Gotham-Bold.svg') format('svg');
+  src: url('font/Gotham/Gotham-Bold.eot');
+  src: local('☺'), url('font/Gotham/Gotham-Bold.woff') format('woff'), url('font/Gotham/Gotham-Bold.ttf') format('truetype'), url('font/Gotham/Gotham-Bold.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Conv_Gotham-Medium';
-  src: url('../font/Gotham/Gotham-Medium.eot');
-  src: local('☺'), url('../font/Gotham/Gotham-Medium.woff') format('woff'), url('../font/Gotham/Gotham-Medium.ttf') format('truetype'), url('../font/Gotham/Gotham-Medium.svg') format('svg');
+  src: url('font/Gotham/Gotham-Medium.eot');
+  src: local('☺'), url('font/Gotham/Gotham-Medium.woff') format('woff'), url('font/Gotham/Gotham-Medium.ttf') format('truetype'), url('font/Gotham/Gotham-Medium.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1310,106 +1394,106 @@ html {
 
 **/@font-face {
   font-family: 'PFDinDisplayProBlackRegular';
-  src: url('../font/PFDIN/pfdindisplaypro-black-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-black-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-black-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-black-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-black-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-black-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-black-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-black-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProBlackItalic';
-  src: url('../font/PFDIN/pfdindisplaypro-blackit-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-blackit-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-blackit-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-blackit-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-blackit-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-blackit-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-blackit-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-blackit-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProBold';
-  src: url('../font/PFDIN/pfdindisplaypro-bold-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-bold-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-bold-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-bold-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-bold-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-bold-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProBoldItalic';
-  src: url('../font/PFDIN/pfdindisplaypro-boldital-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-boldital-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-boldital-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-boldital-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-boldital-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-boldital-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-boldital-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-boldital-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProItalic';
-  src: url('../font/PFDIN/pfdindisplaypro-italic-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-italic-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-italic-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-italic-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-italic-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-italic-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-italic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProLightRegular';
-  src: url('../font/PFDIN/pfdindisplaypro-light-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-light-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-light-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-light-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-light-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-light-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-light-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-light-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProLightItalic';
-  src: url('../font/PFDIN/pfdindisplaypro-lightital-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-lightital-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-lightital-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-lightital-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-lightital-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-lightital-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-lightital-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-lightital-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProMediumRegular';
-  src: url('../font/PFDIN/pfdindisplaypro-med-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-med-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-med-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-med-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-med-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-med-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-med-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-med-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProMediumItalic';
-  src: url('../font/PFDIN/pfdindisplaypro-medital-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-medital-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-medital-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-medital-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-medital-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-medital-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-medital-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-medital-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProRegular';
-  src: url('../font/PFDIN/pfdindisplaypro-reg-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-reg-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-reg-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-reg-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-reg-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-reg-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-reg-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-reg-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProThinRegular';
-  src: url('../font/PFDIN/pfdindisplaypro-thin-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-thin-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-thin-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-thin-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-thin-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-thin-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-thin-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProThinItalic';
-  src: url('../font/PFDIN/pfdindisplaypro-thinital-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-thinital-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-thinital-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-thinital-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-thinital-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-thinital-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-thinital-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-thinital-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProExtraThinRg';
-  src: url('../font/PFDIN/pfdindisplaypro-xthin-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-xthin-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-xthin-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-xthin-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-xthin-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-xthin-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-xthin-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-xthin-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PFDinDisplayProExtraThinIt';
-  src: url('../font/PFDIN/pfdindisplaypro-xthinit-webfont.eot');
-  src: url('../font/PFDIN/pfdindisplaypro-xthinit-webfont.eot?#iefix') format('embedded-opentype'), url('../font/PFDIN/pfdindisplaypro-xthinit-webfont.woff') format('woff'), url('../font/PFDIN/pfdindisplaypro-xthinit-webfont.ttf') format('truetype');
+  src: url('font/PFDIN/pfdindisplaypro-xthinit-webfont.eot');
+  src: url('font/PFDIN/pfdindisplaypro-xthinit-webfont.eot?#iefix') format('embedded-opentype'), url('font/PFDIN/pfdindisplaypro-xthinit-webfont.woff') format('woff'), url('font/PFDIN/pfdindisplaypro-xthinit-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lavanderia-Regular';
-  src: url('../font/lavanderia/lavanderiaregular.eot');
-  src: url('../font/lavanderia/lavanderiaregular.eot?#iefix') format('embedded-opentype'), url('../font/lavanderia/lavanderiaregular.woff') format('woff'), url('../font/lavanderia/lavanderiaregular.ttf') format('truetype'), url('../font/lavanderia/lavanderiaregular.svg#lavanderiaregular') format('svg');
+  src: url('font/lavanderia/lavanderiaregular.eot');
+  src: url('font/lavanderia/lavanderiaregular.eot?#iefix') format('embedded-opentype'), url('font/lavanderia/lavanderiaregular.woff') format('woff'), url('font/lavanderia/lavanderiaregular.ttf') format('truetype'), url('font/lavanderia/lavanderiaregular.svg#lavanderiaregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2716,7 +2800,8 @@ html {
 **/
 #tdf {
   background: #f5da3f;
-  font-family: 'Conv_Gotham-Book';
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 #tdf #tdf-introduction {
   padding: 100px 0 0 0;
@@ -2747,11 +2832,13 @@ html {
 }
 #tdf #tdf-introduction .page-content ul li span {
   display: block;
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 #tdf #tdf-introduction .page-content h1 {
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 24px;
@@ -2790,7 +2877,8 @@ html {
   font-size: 0.75rem;
   display: inline-block;
   margin: auto;
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   padding: 15px 60px;
   color: #f5da3f;
   background: #000000;
@@ -2824,7 +2912,8 @@ html {
   border-bottom: 6px solid #ffffff;
 }
 #tdf #tdf-context .page-content h2 {
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   font-size: 32px;
@@ -2895,7 +2984,8 @@ html {
   color: #000000;
 }
 #tdf #tdf-data .page-content h2 {
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   font-size: 32px;
@@ -2934,7 +3024,8 @@ html {
 #tdf #tdf-data .page-content #tdf-dataNumbers li span {
   font-size: 50px;
   font-size: 3.125rem;
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   display: block;
 }
 #tdf #tdf-data .page-content #tdf-UI {
@@ -2984,6 +3075,229 @@ html {
 #tdf #tdf-data .page-content p:nth-of-type(3) {
   margin: 0 40px;
 }
+#tdf #tdf-design {
+  padding: 100px 0;
+  position: relative;
+  background: #000000;
+  color: #ffffff;
+  border-top: 6px solid #ffffff;
+}
+#tdf #tdf-design .page-content h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-size: 2rem;
+}
+#tdf #tdf-design .page-content h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #f5da3f;
+  line-height: 1.5em;
+}
+#tdf #tdf-design .page-content .design-infos {
+  font-size: 18px;
+  font-size: 1.125rem;
+  width: 720px;
+  color: #ffffff;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+#tdf #tdf-design .page-content ul li {
+  vertical-align: top;
+  margin-top: 45px;
+  display: inline-block;
+  width: 285px;
+  text-align: justify;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.3em;
+}
+.lt-ie9 #tdf #tdf-design .page-content ul li {
+  display: inline;
+  zoom: 1;
+}
+#tdf #tdf-design .page-content ul li:nth-of-type(2) {
+  width: 200px;
+  margin: 0 90px;
+}
+#tdf #tdf-design .page-content ul li span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #f5da3f;
+}
+#tdf #tdf-design .page-content ul li img {
+  display: block;
+  width: 200px;
+}
+#tdf #tdf-design .page-content div {
+  margin-top: 100px;
+  text-align: justify;
+}
+#tdf #tdf-design .page-content div span {
+  display: inline-block;
+  width: 275px;
+  vertical-align: top;
+}
+.lt-ie9 #tdf #tdf-design .page-content div span {
+  display: inline;
+  zoom: 1;
+}
+#tdf #tdf-design .page-content div span h4 {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #f5da3f;
+}
+#tdf #tdf-design .page-content div span p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.4em;
+}
+#tdf #tdf-design .page-content div img {
+  display: inline-block;
+  width: 640px;
+  vertical-align: top;
+}
+.lt-ie9 #tdf #tdf-design .page-content div img {
+  display: inline;
+  zoom: 1;
+}
+#tdf #tdf-design .page-content .design-screen {
+  position: relative;
+  width: 950px;
+  height: 413px;
+  margin-top: 80px;
+}
+#tdf #tdf-design .page-content .design-screen img {
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+#tdf #tdf-design .page-content .design-screen img:nth-of-type(1) {
+  position: absolute;
+  z-index: 30;
+  top: 60px;
+  left: 0;
+}
+#tdf #tdf-design .page-content .design-screen img:nth-of-type(2) {
+  position: absolute;
+  z-index: 20;
+  top: 30px;
+  left: 155px;
+}
+#tdf #tdf-design .page-content .design-screen img:nth-of-type(3) {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: 310px;
+}
+#tdf #tdf-design .page-content .design-context span {
+  margin-right: 35px;
+}
+#tdf #tdf-design .page-content .design-steps span {
+  margin-left: 35px;
+}
+#tdf #tdf-design .page-content .design-participation span {
+  margin-right: 35px;
+}
+#tdf #tdf-design .page-content .design-rank span {
+  margin-left: 35px;
+}
+#tdf #tdf-design .page-content #maillot {
+  width: 900px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+#tdf #tdf-design .page-content #maillot img {
+  display: inline-block;
+  margin: 0 30px;
+}
+.lt-ie9 #tdf #tdf-design .page-content #maillot img {
+  display: inline;
+  zoom: 1;
+}
+#tdf #tdf-thanks {
+  padding: 100px 0;
+  position: relative;
+  border-top: 6px solid #ffffff;
+}
+#tdf #tdf-thanks .page-content h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-size: 2rem;
+}
+#tdf #tdf-thanks .page-content p {
+  font-size: 16px;
+  font-size: 1rem;
+  width: 720px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  line-height: 1.4em;
+}
+#tdf #tdf-thanks .page-content ul:before {
+  content: '';
+  display: block;
+  margin: 40px auto;
+  width: 100px;
+  height: 1px;
+  background: #000000;
+}
+#tdf #tdf-thanks .page-content ul li {
+  display: inline-block;
+  width: 180px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.lt-ie9 #tdf #tdf-thanks .page-content ul li {
+  display: inline;
+  zoom: 1;
+}
+#tdf #tdf-thanks .page-content ul li a:nth-of-type(1) {
+  display: block;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+#tdf #tdf-thanks .page-content ul li a:nth-of-type(2) {
+  display: block;
+  color: #000000;
+  background: #ffffff;
+  width: 40px;
+  height: 30px;
+  padding-top: 10px;
+  margin: 10px auto;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 28px;
+  font-size: 1.750rem;
+  font-family: "Socialico";
+}
+#tdf #tdf-thanks .page-content ul li a:nth-of-type(2):hover {
+  background: #000000;
+  color: #ffffff;
+}
 #tdf #tdf-other {
   padding: 100px 0 0 0;
   position: relative;
@@ -3010,7 +3324,8 @@ html {
   text-decoration: underline;
 }
 #tdf #tdf-other .page-content .tdf-tweet b {
-  font-family: 'Conv_Gotham-Medium';
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   display: block;
   margin-top: 5px;
 }
@@ -3023,7 +3338,11 @@ html {
 #tdf #tdf-other .page-content #tdf-twitter {
   display: block;
   margin: 20px auto 100px auto;
-  width: 60px;
+  text-align: center;
+  font-size: 100px;
+  font-size: 6.250rem;
+  font-family: "Socialico";
+  color: #ffffff;
 }
 #tdf #tdf-other .page-content #tdf-award {
   text-align: center;

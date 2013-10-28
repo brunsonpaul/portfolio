@@ -125,7 +125,6 @@ $(document).ready(function () {
     kevinPortfolio.init();
     kevinPortfolio.initProjectsHome();
 
-    headerCenter();
     paginationCenter();
 
     $(window).on('resize',function(){
@@ -135,11 +134,6 @@ $(document).ready(function () {
     });
 
 });
-
-function headerCenter(){
-    var headerHeight = $('#header-content').innerHeight();
-    $("#header-content").css('margin-top',-headerHeight/2);
-};
 
 function paginationCenter(){
     var headerHeight = $('.onepage-pagination').innerHeight();
