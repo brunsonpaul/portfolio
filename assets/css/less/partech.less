@@ -1,8 +1,8 @@
-@font-face { font-family: 'Conv_Gotham-Book'; src: url('../font/Gotham/Gotham-Book.eot'); src: local('☺'), url('../font/Gotham/Gotham-Book.woff') format('woff'), url('../font/Gotham/Gotham-Book.ttf') format('truetype'), url('../font/Gotham/Gotham-Book.svg') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Conv_Gotham-Light'; src: url('../font/Gotham/Gotham-Light.eot'); src: local('☺'), url('../font/Gotham/Gotham-Light.woff') format('woff'), url('../font/Gotham/Gotham-Light.ttf') format('truetype'), url('../font/Gotham/Gotham-Light.svg') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Conv_Gotham-Thin'; src: url('../font/Gotham/Gotham-Thin.eot'); src: local('☺'), url('../font/Gotham/Gotham-Thin.woff') format('woff'), url('../font/Gotham/Gotham-Thin.ttf') format('truetype'), url('../font/Gotham/Gotham-Thin.svg') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Conv_Gotham-Bold'; src: url('../font/Gotham/Gotham-Bold.eot'); src: local('☺'), url('../font/Gotham/Gotham-Bold.woff') format('woff'), url('../font/Gotham/Gotham-Bold.ttf') format('truetype'), url('../font/Gotham/Gotham-Bold.svg') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Conv_Gotham-Medium'; src: url('../font/Gotham/Gotham-Medium.eot'); src: local('☺'), url('../font/Gotham/Gotham-Medium.woff') format('woff'), url('../font/Gotham/Gotham-Medium.ttf') format('truetype'), url('../font/Gotham/Gotham-Medium.svg') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Conv_Gotham-Book'; src: url('font/Gotham/Gotham-Book.eot'); src: local('☺'), url('font/Gotham/Gotham-Book.woff') format('woff'), url('font/Gotham/Gotham-Book.ttf') format('truetype'), url('font/Gotham/Gotham-Book.svg') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Conv_Gotham-Light'; src: url('font/Gotham/Gotham-Light.eot'); src: local('☺'), url('font/Gotham/Gotham-Light.woff') format('woff'), url('font/Gotham/Gotham-Light.ttf') format('truetype'), url('font/Gotham/Gotham-Light.svg') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Conv_Gotham-Thin'; src: url('font/Gotham/Gotham-Thin.eot'); src: local('☺'), url('font/Gotham/Gotham-Thin.woff') format('woff'), url('font/Gotham/Gotham-Thin.ttf') format('truetype'), url('font/Gotham/Gotham-Thin.svg') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Conv_Gotham-Bold'; src: url('font/Gotham/Gotham-Bold.eot'); src: local('☺'), url('font/Gotham/Gotham-Bold.woff') format('woff'), url('font/Gotham/Gotham-Bold.ttf') format('truetype'), url('font/Gotham/Gotham-Bold.svg') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Conv_Gotham-Medium'; src: url('font/Gotham/Gotham-Medium.eot'); src: local('☺'), url('font/Gotham/Gotham-Medium.woff') format('woff'), url('font/Gotham/Gotham-Medium.ttf') format('truetype'), url('font/Gotham/Gotham-Medium.svg') format('svg'); font-weight: normal; font-style: normal; }
 
 .gothamMedium() { font-family: 'Conv_Gotham-Medium'; }
 .gothamBook() { font-family: 'Conv_Gotham-Book'; }
@@ -19,7 +19,7 @@
 	
 	.sepPartech { display:block; border-top:1px dotted @partechColor1; width:100px; margin:40px auto; }
 	
-	#partech-introduction { background:@partechBG1; text-align:center; padding-top:100px;
+	#partech-introduction { text-align:center; padding-top:100px;
 		.page-content {
 			ul { margin:auto; .fontSize16(); 
 				li { .calcWidthKit(100/3%); .inline-block(); .gothamBook(); color:@partechColor2; vertical-align:top;
@@ -51,7 +51,7 @@
 		}
 	}
 
-	#partech-dragScreen { background:@partechBG1; padding:100px;  
+	#partech-dragScreen { padding:100px 0;  
 		.page-content {
 			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize20(); }
 	 		p { text-align:center; line-height:1.3em; .fontSize16(); .gothamBook(); color:@partechColor1; margin:10px auto 40px auto; width:550px; }
@@ -112,7 +112,7 @@
 		}
 	}	
 
-	footer { background:@partechBG1; text-align:center; padding:70px 0; .gothamBook(); display:block; 
+	footer { text-align:center; padding:70px 0; .gothamBook(); display:block; 
 		p:nth-of-type(1) { color:@partechColor1; .fontSize40(); }
 		p:nth-of-type(2) { color:@partechColor2; .fontSize18(); }
 	}

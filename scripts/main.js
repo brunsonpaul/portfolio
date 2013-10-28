@@ -40,4 +40,10 @@ window.kevinPortfolio = {
 $(document).ready(function () {
     'use strict';
     kevinPortfolio.init();
+    
 });
+
+function paginationCenter(){
+    var headerHeight = $('.onepage-pagination').innerHeight();
+    $(".onepage-pagination ").css('margin-top',-headerHeight/2);
+};
