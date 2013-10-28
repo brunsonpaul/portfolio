@@ -356,6 +356,7 @@ html {
 }
 section {
   padding: 8px 0;
+  min-width: 980px;
 }
 section .page-content {
   width: 950px;
@@ -777,7 +778,6 @@ section .page-content {
   margin: 40px auto;
 }
 #partech #partech-introduction {
-  background: #000000;
   text-align: center;
   padding-top: 100px;
 }
@@ -912,8 +912,7 @@ section .page-content {
   transition: all 1s 0s;
 }
 #partech #partech-dragScreen {
-  background: #000000;
-  padding: 100px;
+  padding: 100px 0;
 }
 #partech #partech-dragScreen .page-content h2 {
   font-family: 'Conv_Gotham-Medium';
@@ -1239,7 +1238,6 @@ section .page-content {
   transition-delay: 0.4s;
 }
 #partech footer {
-  background: #000000;
   text-align: center;
   padding: 70px 0;
   font-family: 'Conv_Gotham-Book';
@@ -2980,8 +2978,6 @@ section .page-content {
 #tdf #tdf-data {
   padding: 100px 0;
   position: relative;
-  background: #f5da3f;
-  color: #000000;
 }
 #tdf #tdf-data .page-content h2 {
   font-family: 'Lato', sans-serif;
