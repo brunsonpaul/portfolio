@@ -8,7 +8,10 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
     kevinPortfolio.Views.socialCoke = Backbone.View.extend({
 
         template: $('coucou'),
-        title: 'Social Coke'
+        title: 'Social Coke',
+        initialize: function(){
+        	console.log('Sociale Coke');
+        }
 
     });
 

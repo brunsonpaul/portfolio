@@ -8,7 +8,32 @@ html{
 
 .projects-container{
 	overflow:hidden;
+
+	-webkit-transform : translate(0px, 0px);
+	-moz-transform : translate(0px, 0px);
+	-ms-transform : translate(0px, 0px);
+	-o-transform : translate(0px, 0px);
+
+	&.no-transition{
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+	// Transition à voir
+	/*cubic-bezier(0.800, 0.200, 0.200, 1.000);
+	cubic-bezier(0.800, 0.200, 0.200, 1.000);
+	cubic-bezier(0.800, 0.200, 0.200, 1.000);
+	cubic-bezier(0.800, 0.200, 0.200, 1.000);
+	cubic-bezier(0.800, 0.200, 0.200, 1.000);*/
+	-webkit-transition: -webkit-transform .8s;
+	-moz-transition: -moz-transform .8s;
+	-ms-transition: -ms-transform .8s;
+	-o-transition: -o-transform .8s;
+	transition: transform .8s;
 }
+
 .project{
 	.inline-block();
 }

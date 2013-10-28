@@ -9,7 +9,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 
         template: $('coucou'),
         title: '100ans de Tour'
-
+        
     });
 
 })();

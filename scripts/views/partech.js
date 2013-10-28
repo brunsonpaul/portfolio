@@ -8,7 +8,10 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
     kevinPortfolio.Views.partech = Backbone.View.extend({
 
         template: $('partech'),
-        title: 'Partech'
+        title: 'Partech',
+        initialize: function(){
+        	console.log('partech');
+        }
 
     });
 
