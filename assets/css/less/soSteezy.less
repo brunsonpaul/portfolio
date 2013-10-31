@@ -12,6 +12,14 @@ body, .onepage-wrapper, html { display: block; position: static; padding: 0; wid
 	&:active { cursor:url('../img/identity/drag-active.png'), move; }
 }
 
+.border {
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
 #borderTop { z-index:9999; position:fixed; height:8px; background:@colorGold; }
 #borderBottom { z-index:9999; position:fixed; height:8px; background:@colorGold; }
 #borderLeft { z-index:9999; position:fixed; width:8px; background:@colorGold; }

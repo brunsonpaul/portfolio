@@ -26,13 +26,17 @@ window.kevinPortfolio = {
     //Charge la vu provenant du router
     loadView: function(pView) {
         // Si on est déjà sur une page projet on supprime sa vue chargé
-        if(this.activeView){
-            this.activeView.remove();
+        if(this.activeProjectView){
+            this.activeProjectView.remove();
         }
 
-        this.activeView = pView;
+        this.activeProjectView = pView;
 
         return this;
+    },
+
+    enterProject: function(){
+        this.activeProjectView.enterProject();
     }
 
 };

@@ -144,6 +144,13 @@ html {
 .dragCursor:active {
   cursor: url('../img/identity/drag-active.png'), move;
 }
+.border {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
 #borderTop {
   z-index: 9999;
   position: fixed;
@@ -392,11 +399,11 @@ section .page-content {
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);*/
 
-  -webkit-transition: -webkit-transform 0.8s;
-  -moz-transition: -moz-transform 0.8s;
-  -ms-transition: -ms-transform 0.8s;
-  -o-transition: -o-transform 0.8s;
-  transition: transform .8s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -ms-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
 }
 .projects-container.no-transition {
   -webkit-transition: none;
@@ -404,6 +411,12 @@ section .page-content {
   -ms-transition: none;
   -o-transition: none;
   transition: none;
+}
+.case-study-container section {
+  display: none;
+}
+.case-study-container section.shown {
+  display: block;
 }
 .project {
   display: inline-block;

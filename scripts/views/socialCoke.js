@@ -7,12 +7,20 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 
     kevinPortfolio.Views.socialCoke = Backbone.View.extend({
 
-        template: $('coucou'),
+        el: $('.case-study-container'),
+        caseStudyContainer: $('.case-study-container'),
+        caseStudyElem: $('section[data-case-study="social-coke"]'),
+        template: '',
         title: 'Social Coke',
+        templateFile: './templates/social-coke.html',
         initialize: function(){
-        	console.log('Sociale Coke');
+
+        },
+        enterProject: function(){
+            
+            var that = this;
+            this.caseStudyElem.css('display', 'block');
+
         }
-
     });
-
 })();
