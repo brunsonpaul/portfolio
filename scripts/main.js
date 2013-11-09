@@ -35,10 +35,6 @@ window.kevinPortfolio = {
         return this;
     },
 
-    enterProject: function(){
-        this.activeProjectView.enterProject();
-    }
-
 };
 
 $(document).ready(function () {

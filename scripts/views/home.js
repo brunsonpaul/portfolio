@@ -115,10 +115,11 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.homeProjectsContainer.css('margin-top', -this.windowHeight+'px');
             this.homeProjectsContainer.addClass('project-container-closed');
             
-            kevinPortfolio.enterProject();
+            kevinPortfolio.activeProjectView.enterProject();
 
             return false;
         },
+
         getActiveProjectName: function(){
 
             return this.projectMapping[this.currentProject];
