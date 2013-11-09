@@ -46,6 +46,21 @@ html{
 #tdfProject{ display:none
 }
 
+
+#theWholeProject { background:#141414 url('../img/the-whole/bg/the-whole-bg.jpg') center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:100%; .transition(0.7s);
+	div { position:absolute; top:0; left:0; right:0; bottom:0; color:@colorGold; text-align:center; .textUppercase(); 
+		p { display:block; position:absolute; z-index:10; width:50%; margin-left:-25%; left:50%; .fontSize16(); -webkit-transform: scale(1) scale3d(10, 10, 1); opacity:0; .transition(0.7s); -webkit-transition-delay:0.3s; 
+		}
+		img { margin:auto; height:70%; margin-top:10%; display:block; .transition(0.7s); }
+		
+
+	}
+		&:hover { background-size:50%; }
+		&:hover img{ -webkit-transform: scale(1) scale3d(0, 0, 1) }
+		// &:hover p{ -webkit-transform: scale(1) scale3d(1, 1, 1); opacity:1; }
+
+}
+
 #socialCokeProject{ background:url('../img/social-coke/bg/social-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
 	div { position:absolute; top:50%; left:0; right:0; margin-top:-192px; color:@colorGold; text-align:center; .textUppercase(); 
 		h1 { 

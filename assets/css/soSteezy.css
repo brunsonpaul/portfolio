@@ -520,6 +520,64 @@ section .page-content {
 #tdfProject {
   display: none;
 }
+#theWholeProject {
+  background: #141414 url('../img/the-whole/bg/the-whole-bg.jpg') center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+  -moz-transition: all 0.7s 0s;
+  -webkit-transition: all 0.7s 0s;
+  -ms-transition: all 0.7s 0s;
+  -khtml-transition: all 0.7s 0s;
+  transition: all 0.7s 0s;
+}
+#theWholeProject div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #b59663;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+#theWholeProject div p {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  margin-left: -25%;
+  left: 50%;
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-transform: scale(1) scale3d(10, 10, 1);
+  opacity: 0;
+  -moz-transition: all 0.7s 0s;
+  -webkit-transition: all 0.7s 0s;
+  -ms-transition: all 0.7s 0s;
+  -khtml-transition: all 0.7s 0s;
+  transition: all 0.7s 0s;
+  -webkit-transition-delay: 0.3s;
+}
+#theWholeProject div img {
+  margin: auto;
+  height: 70%;
+  margin-top: 10%;
+  display: block;
+  -moz-transition: all 0.7s 0s;
+  -webkit-transition: all 0.7s 0s;
+  -ms-transition: all 0.7s 0s;
+  -khtml-transition: all 0.7s 0s;
+  transition: all 0.7s 0s;
+}
+#theWholeProject:hover {
+  background-size: 50%;
+}
+#theWholeProject:hover img {
+  -webkit-transform: scale(1) scale3d(0, 0, 1);
+}
 #socialCokeProject {
   background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;
   -webkit-background-size: cover;
@@ -867,6 +925,7 @@ section .page-content {
   line-height: 1.3em;
 }
 #partech #partech-client .page-content p {
+  text-align: justify;
   line-height: 1.5em;
   vertical-align: top;
   display: inline-block;
@@ -2672,8 +2731,8 @@ section .page-content {
   display: inline-block;
   width: 285px;
   text-align: justify;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 1.3em;
 }
 .lt-ie9 #tdf #tdf-context .page-content ul li {
@@ -3149,6 +3208,11 @@ section .page-content {
 #theWhole #theWhole-introduction {
   padding: 100px 0 0 0;
   position: relative;
+  background: url('../img/the-whole/bg/the-whole-bg.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #theWhole #theWhole-introduction .page-content {
   text-align: center;
@@ -3167,7 +3231,6 @@ section .page-content {
   width: calc(33.333333333333336%);
   display: inline-block;
   vertical-align: top;
-  color: #646464;
 }
 .lt-ie9 #theWhole #theWhole-introduction .page-content ul li {
   display: inline;
@@ -3177,10 +3240,9 @@ section .page-content {
   display: block;
   text-transform: uppercase;
   font-family: 'Conv_Gotham-Medium';
-  color: #f9f9f9;
 }
 #theWhole #theWhole-introduction .page-content h1 {
-  width: 230px;
+  width: 243px;
   margin: 90px auto 0 auto;
 }
 #theWhole #theWhole-introduction .page-content h1 img {
@@ -3196,8 +3258,259 @@ section .page-content {
   font-size: 20px;
   font-size: 1.250rem;
   line-height: 1.3em;
-  margin: 40px auto;
+  margin: 40px auto 60px auto;
   width: 690px;
+}
+#theWhole #theWhole-introduction .page-content img {
+  display: block;
+  margin: auto;
+}
+#theWhole #theWhole-concept {
+  background: #050505;
+  padding: 100px 0;
+}
+#theWhole #theWhole-concept .page-content h2 {
+  font-family: 'Conv_Gotham-Medium';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-size: 2rem;
+}
+#theWhole #theWhole-concept .page-content h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.3em;
+  color: #646464;
+}
+#theWhole #theWhole-concept .page-content p {
+  margin-top: 40px;
+  text-align: justify;
+  line-height: 1.5em;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  width: 400px;
+}
+.lt-ie9 #theWhole #theWhole-concept .page-content p {
+  display: inline;
+  zoom: 1;
+}
+#theWhole #theWhole-concept .page-content p:nth-of-type(1) {
+  margin-right: 150px;
+}
+#theWhole #theWhole-concept .page-content img {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+#theWhole #theWhole-interface {
+  background: #141414;
+  padding: 100px 0;
+}
+#theWhole #theWhole-interface .page-content h2 {
+  font-family: 'Conv_Gotham-Medium';
+  text-transform: uppercase;
+  text-align: center;
+  color: #fc1f2f;
+  font-size: 20px;
+  font-size: 1.250rem;
+}
+#theWhole #theWhole-interface .page-content > p {
+  text-align: center;
+  line-height: 1.3em;
+  font-size: 16px;
+  font-size: 1rem;
+  width: 620px;
+  margin: 10px auto 40px auto;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content {
+  position: relative;
+  margin: 60px auto 100px auto;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content > img {
+  display: block;
+  width: 950px;
+  -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul {
+  margin-top: 80px;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li {
+  display: inline-block;
+  width: -moz-calc(33.333333333333336%);
+  width: -webkit-calc(33.333333333333336%);
+  width: -ms-calc(33.333333333333336%);
+  width: -khtml-calc(33.333333333333336%);
+  width: -o-calc(33.333333333333336%);
+  width: calc(33.333333333333336%);
+  text-align: center;
+  vertical-align: top;
+}
+.lt-ie9 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul li {
+  display: inline;
+  zoom: 1;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li img {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li h3 {
+  margin: 20px auto 10px auto;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #fc1f2f;
+  font-family: 'Conv_Gotham-Medium';
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li p {
+  width: 80%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 18px;
+  margin: auto;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu {
+  position: relative;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img {
+  display: block;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(1) {
+  margin-left: 75px;
+  -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(2) {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+}
+#theWhole #theWhole-element {
+  background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;
+  padding: 100px 0;
+}
+#theWhole #theWhole-element .page-content span {
+  display: inline-block;
+  vertical-align: top;
+  width: 235px;
+  margin-right: 7px;
+}
+.lt-ie9 #theWhole #theWhole-element .page-content span {
+  display: inline;
+  zoom: 1;
+}
+#theWhole #theWhole-element .page-content span h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+#theWhole #theWhole-element .page-content span h2 b {
+  display: block;
+  color: #fc1f2f;
+}
+#theWhole #theWhole-element .page-content span h2:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #646464;
+  margin: 30px 0;
+}
+#theWhole #theWhole-element .page-content span p {
+  line-height: 1.5em;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.lt-ie9 #theWhole #theWhole-element .page-content span p {
+  display: inline;
+  zoom: 1;
+}
+#theWhole #theWhole-element .page-content #element-img {
+  display: inline-block;
+  vertical-align: top;
+}
+.lt-ie9 #theWhole #theWhole-element .page-content #element-img {
+  display: inline;
+  zoom: 1;
+}
+#theWhole #theWhole-madeWith {
+  padding: 100px 0 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+#theWhole #theWhole-madeWith .page-content img {
+  display: block;
+  margin: auto;
+  width: 875px;
+  margin-bottom: 60px;
+}
+#theWhole #theWhole-madeWith .page-content h2 {
+  font-family: 'Conv_Gotham-Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #fc1f2f;
+}
+#theWhole #theWhole-madeWith .page-content ul {
+  margin-top: 40px;
+}
+#theWhole #theWhole-madeWith .page-content ul li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  vertical-align: top;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #646464;
+}
+.lt-ie9 #theWhole #theWhole-madeWith .page-content ul li {
+  display: inline;
+  zoom: 1;
+}
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(1) {
+  display: block;
+  color: #f9f9f9;
+  font-family: 'Conv_Gotham-Medium';
+  text-transform: uppercase;
+}
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) {
+  display: block;
+  color: #f9f9f9;
+  background: #fc1f2f;
+  padding: 9px 0 3px 0;
+  width: 40px;
+  margin: 10px auto;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  border-radius: 100%;
+  font-size: 28px;
+  font-size: 1.750rem;
+  font-family: "Socialico";
+}
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover {
+  color: #050505;
 }
 #theWhole footer {
   background: #050505;
@@ -3211,7 +3524,7 @@ section .page-content {
   font-size: 2.5rem;
 }
 #theWhole footer p:nth-of-type(2) {
-  color: #fc1f2f;
+  color: #646464;
   font-size: 18px;
   font-size: 1.125rem;
 }
