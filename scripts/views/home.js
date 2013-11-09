@@ -110,6 +110,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         // Entrer dans un projet
         enterProjectEvent: function(e){
             e.preventDefault();
+            
             $('.border').removeClass('close');
             $('.border').addClass('open');
             this.homeProjectsContainer.css('margin-top', -this.windowHeight+'px');

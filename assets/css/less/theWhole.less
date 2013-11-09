@@ -1,0 +1,95 @@
+@theWholeColor1:#f9f9f9;
+@theWholeColor2:#050505;
+@theWholeColor3:#141414;
+@theWholeColor4:#646464;
+@theWholeColor5:#fc1f2f;
+
+#theWhole { background:@theWholeColor3; color:@theWholeColor1; .gothamBook();
+	#theWhole-introduction { padding:100px 0 0 0; position:relative; background:url('../img/the-whole/bg/the-whole-bg.jpg') no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+		.page-content { text-align:center; 
+			ul { margin:auto; .fontSize16(); 
+				li { .calcWidthKit(100/3%); .inline-block(); vertical-align:top;
+					span { display:block; text-transform:uppercase; .gothamMedium(); }
+				}
+			}
+			h1 { width:243px; margin:90px auto 0 auto;
+				img { display:block; width:100%; }
+				span { display:none; }
+			}
+			p { color:@partechColor1; .gothamBook(); .fontSize20(); line-height:1.3em; margin:40px auto 60px auto; width:690px; }
+			img { display:block; margin:auto; }
+		}
+	}	
+
+	#theWhole-concept { background:@theWholeColor2; padding:100px 0;  
+		.page-content {
+			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; .fontSize32(); }
+			h3 { text-transform:uppercase; text-align:center; .fontSize16(); line-height:1.3em; color:@theWholeColor4; }
+			p { margin-top:40px; text-align:justify; line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12();  width:400px;
+				&:nth-of-type(1) { margin-right:150px; }
+			}	
+			img { display:block; margin:40px auto 0 auto; }		
+		}
+	}
+
+	#theWhole-interface { background:@theWholeColor3; padding:100px 0;  
+		.page-content {
+			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; color:@theWholeColor5; .fontSize20(); }
+			>p { text-align:center; line-height:1.3em; .fontSize16();  width:620px; margin:10px auto 40px auto; }
+			#theWhole-interface-content { position:relative; margin:60px auto 100px auto;
+				>img { display:block; width:950px; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); }
+				ul { margin-top:80px; 
+					li { .inline-block(); .calcWidthKit(100%/3); text-align:center; vertical-align:top;
+						img { display:block; width:200px; height:auto; margin:auto; }
+						h3 { margin:20px auto 10px auto; .textUppercase(); .fontSize14(); color:@theWholeColor5; .gothamMedium(); }
+						p { width:80%; .fontSize14(); line-height:18px; margin:auto; }
+					}
+				}
+			}
+			#theWhole-menu { position:relative;
+				img { display:block; 
+					&:nth-of-type(1) { margin-left:75px; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); }
+					&:nth-of-type(2) { position:absolute; top:300px; right:0px; }
+				}
+			}
+		}
+	}
+
+	#theWhole-element { background:@theWholeColor3 url('../img/the-whole/theWhole-patterns.jpg') repeat center center; padding:100px 0;  
+		.page-content {
+			span { .inline-block(); vertical-align:top; width:235px; margin-right:7px;
+				h2 { .fontSize32(); 
+					b { display:block; color:@theWholeColor5; }
+					&:after { content:''; display:block; width:50px; height:1px; background:@theWholeColor4; margin:30px 0; }
+				}
+				p { line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12(); }
+			}
+			#element-img { .inline-block();  vertical-align:top; }
+		}
+	}
+
+	#theWhole-madeWith { padding:100px 0 60px 0; position:relative; overflow:hidden;
+		.page-content {
+			img { display:block; margin:auto; width:875px; margin-bottom:60px; }
+			h2 { .gothamMedium(); .textUppercase(); text-align:center; .fontSize18(); color:@theWholeColor5; }
+			ul { margin-top:40px;
+				li { .inline-block(); width:25%; text-align:center; vertical-align:top; .fontSize12();  color:@theWholeColor4;
+					a { 
+						&:nth-of-type(1) { display:block; color:@theWholeColor1; .gothamMedium(); text-transform:uppercase;
+							&:hover { text-decoration:underline; }
+						}
+						&:nth-of-type(2) { display:block; color:@theWholeColor1; background:@theWholeColor5; padding:9px 0 3px 0; width:40px; margin:10px auto; .borderRadius(100%); .fontSize28(); .fontSocial(); 
+							&:hover { color:@theWholeColor2; }
+						}
+					}
+				}
+			}
+		}
+	}
+	footer { background:@theWholeColor2; text-align:center; padding:70px 0; display:block; 
+		p:nth-of-type(1) { color:@theWholeColor1; .fontSize40(); }
+		p:nth-of-type(2) { color:@theWholeColor4; .fontSize18(); }
+	}
+}
+
+

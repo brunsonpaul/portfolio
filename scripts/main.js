@@ -27,7 +27,7 @@ window.kevinPortfolio = {
     loadView: function(pView) {
         // Si on est déjà sur une page projet on supprime sa vue chargé
         if(this.activeProjectView){
-            this.activeProjectView.remove();
+            // this.activeProjectView.remove();
         }
 
         this.activeProjectView = pView;
