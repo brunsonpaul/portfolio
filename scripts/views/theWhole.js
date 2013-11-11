@@ -8,7 +8,10 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
     kevinPortfolio.Views.theWhole = Backbone.View.extend({
 
         template: $('coucou'),
-        title: 'The Whole'
+        title: 'The Whole',
+        initialize: function(){
+            
+        }
 
     });
 

@@ -18,22 +18,24 @@ window.kevinPortfolio = {
     activeProjectView: null,
     init: function () {
         'use strict';
+        this.homeView = new this.Views.HomeView();
         this.router = new this.Routers.ApplicationRouter();
         Backbone.history.start();
-        this.homeView = new this.Views.HomeView();
     },
 
     //Charge la vu provenant du router
     loadView: function(pView) {
-        // Si on est déjà sur une page projet on supprime sa vue chargé
-        if(this.activeProjectView){
-            // this.activeProjectView.remove();
-        }
 
         this.activeProjectView = pView;
 
         return this;
     },
+    enterProject: function() {
+        this.activeProjectView.caseStudyElem.css('display','block');
+    },
+    closeProject: function() {
+        this.activeProjectView.caseStudyElem.css('display','none');
+    }
 
 };
 

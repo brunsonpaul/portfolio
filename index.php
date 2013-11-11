@@ -36,6 +36,7 @@
     <div id='borderLeft' class="border close"></div>
     <div id='borderRight' class="border close"></div>
 
+
     <nav class="button-menu">
         <a href="#">
             <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
@@ -45,7 +46,6 @@
             </svg>
         </a>
     </nav> 
-
     <div class="projects-container dragCursor">
 
 
@@ -141,7 +141,7 @@
                 </div>
         </div><!--
         
-        --><div id='footer' class="project" data-project="footer">
+        --><div id='footer' class="project" data-project="thanks-for-watching">
             <footer>
                 <div class="wave1">        
                     <img src="assets/img/identity/wave-1.svg" alt=""> 
@@ -159,6 +159,8 @@
     <div class="case-study-container">
 
         <?php require('./templates/social-coke.php') ?>
+
+        <?php require('./templates/partech.php') ?>
 
     </div>
 

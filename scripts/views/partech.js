@@ -7,12 +7,14 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 
     kevinPortfolio.Views.partech = Backbone.View.extend({
 
-        template: $('partech'),
+        el: $('.case-study-container'),
+        caseStudyContainer: $('.case-study-container'),
+        caseStudyElem: $('section[data-case-study="partech"]'),
+        template: '',
         title: 'Partech',
         initialize: function(){
-        	console.log('partech');
-        }
 
+        }
     });
 
 })();

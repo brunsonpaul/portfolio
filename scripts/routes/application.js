@@ -8,18 +8,41 @@ kevinPortfolio.Routers = kevinPortfolio.Routers || {};
     kevinPortfolio.Routers.ApplicationRouter = Backbone.Router.extend({
 
 		routes:{
-			'partech': 'partechHandler',
-			'social-coke':'socialCokeHandler',
-			'100ansdetour':'_100ansDeTourHandler',
+			':project':'projectHandler',
+			':project/case-study':'caseStudyHandler'
+
 		},
-		partechHandler: function(){
-			kevinPortfolio.loadView(new kevinPortfolio.Views.partech());
+		projectHandler: function(project){
+			if(kevinPortfolio.homeView.isValidProjectName(project)){
+				this.loadView(project);
+				if(kevinPortfolio.homeView.projectOpenned){
+					kevinPortfolio.homeView.closeProjectAnim();
+				}
+				kevinPortfolio.homeView.slideToProject(project);
+			};
 		},
-		socialCokeHandler: function(){
-			kevinPortfolio.loadView(new kevinPortfolio.Views.socialCoke());
+		caseStudyHandler:function(project){
+			if(kevinPortfolio.homeView.isValidProjectName(project)){
+				this.loadView(project);
+				kevinPortfolio.homeView.slideToProject(project);
+				kevinPortfolio.homeView.enterProjectAnim();
+			};
 		},
-		_100ansDeTourHandler: function(){
-			kevinPortfolio.loadView(new kevinPortfolio.Views._100ansDeTour());
+		loadView: function(project){
+			switch(project){
+				case 'social-coke':
+					kevinPortfolio.loadView(new kevinPortfolio.Views.socialCoke());
+				break;
+				case 'partech':
+					kevinPortfolio.loadView(new kevinPortfolio.Views.partech());
+				break;
+				case 'the-whole':
+					kevinPortfolio.loadView(new kevinPortfolio.Views.theWhole());
+				break;
+				default:
+					kevinPortfolio.loadView(null);
+				break; 
+			}
 		}
     });
 

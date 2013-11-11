@@ -389,6 +389,8 @@ section .page-content {
 **/
 .projects-container {
   overflow: hidden;
+  position: fixed;
+  z-index: 6;
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
@@ -411,6 +413,10 @@ section .page-content {
   -ms-transition: none;
   -o-transition: none;
   transition: none;
+}
+.case-study-container {
+  position: relative;
+  z-index: 5;
 }
 .case-study-container section {
   display: none;
