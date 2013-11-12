@@ -13,7 +13,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         template: '',
         title: 'Partech',
         initialize: function(){
-
+            
         }
     });
 

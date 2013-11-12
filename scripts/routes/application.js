@@ -10,7 +10,6 @@ kevinPortfolio.Routers = kevinPortfolio.Routers || {};
 		routes:{
 			':project':'projectHandler',
 			':project/case-study':'caseStudyHandler'
-
 		},
 		projectHandler: function(project){
 			if(kevinPortfolio.homeView.isValidProjectName(project)){

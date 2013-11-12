@@ -12,7 +12,6 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         caseStudyElem: $('section[data-case-study="social-coke"]'),
         template: '',
         title: 'Social Coke',
-        templateFile: './templates/social-coke.php',
         initialize: function(){
 
         }
