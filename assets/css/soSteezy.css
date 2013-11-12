@@ -235,7 +235,7 @@ html {
   z-index: 9999;
   left: 50%;
   top: 58px;
-  margin-left: -17px;
+  margin-left: -20px;
   text-align: center;
 }
 .button-menu a {
@@ -264,7 +264,7 @@ html {
   position: fixed;
   left: 50%;
   top: 38px;
-  margin-left: -17px;
+  margin-left: -20px;
   text-align: center;
 }
 .button-close a {
@@ -461,26 +461,26 @@ section .page-content {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 20px;
-  margin: 20px auto 60px auto;
+  margin: 20px auto 0px auto;
   position: relative;
 }
 #home header #header-content p:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -45px;
+  content: '';
   display: block;
-  border-left: 1px dotted #b59663;
+  margin: 15px auto;
+  width: 1px;
   height: 35px;
+  border-left: 1px dotted #b59663;
 }
 #home header #header-content #discover {
-  display: inline-block;
+  display: block;
+  width: 260px;
+  margin: auto;
   font-size: 14px;
   font-size: 0.875rem;
   color: #b59663;
   border: 1px dotted #b59663;
-  left: 50%;
-  padding: 11px 20px;
+  padding: 11px 0px;
 }
 #home header #header-content #contact {
   font-size: 14px;
@@ -666,6 +666,68 @@ section .page-content {
   -ms-transition: all 0.7s 0s;
   -khtml-transition: all 0.7s 0s;
   transition: all 0.7s 0s;
+}
+#theWholeProject #theWholeSolarSystem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+#theWholeProject #theWholeSolarSystem img {
+  display: block;
+}
+#theWholeProject #theWholeSolarSystem #theWholePlanet {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#theWholeProject #theWholeSolarSystem #theWholePlanet a {
+  display: block;
+  width: 15%;
+  margin: auto;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  border-radius: 100%;
+}
+#theWholeProject #theWholeSolarSystem #theWholePlanet a img {
+  width: 100%;
+}
+#theWholeProject #theWholeSolarSystem #theWholeSolar {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#theWholeProject #theWholeSolarSystem #theWholeSolar img {
+  height: 80%;
+  margin: auto;
+}
+#theWholeProject #theWholeSolarSystem #theWholeFbPlanet {
+  display: none;
+}
+#theWholeProject #theWholeSolarSystem #theWholeTwPlanet {
+  display: none;
+}
+#theWholeProject #theWholeSolarSystem #theWholeLfPlanet {
+  display: none;
+}
+#theWholeProject #theWholeSolarSystem #theWholeScPlanet {
+  display: none;
+}
+#theWholeProject #theWholeSolarSystem #theWholeRssPlanet {
+  display: none;
+}
+#theWholeProject #theWholeSolarSystem #theWholePinPlanet {
+  display: none;
 }
 #socialCokeProject {
   background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;
@@ -3500,6 +3562,36 @@ section .page-content {
   position: absolute;
   top: 300px;
   right: 0px;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(3) {
+  position: absolute;
+  top: 920px;
+  left: 280px;
+  z-index: 99;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(4) {
+  position: absolute;
+  top: 664px;
+  left: 332px;
+  z-index: 99;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(5) {
+  position: absolute;
+  top: 213px;
+  left: 294px;
+  z-index: 99;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(6) {
+  position: absolute;
+  top: 80px;
+  left: 282px;
+  z-index: 99;
+}
+#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(7) {
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  z-index: 99;
 }
 #theWhole #theWhole-element {
   background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;

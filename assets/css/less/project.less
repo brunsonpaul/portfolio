@@ -13,10 +13,10 @@ html{
 				span { display:none; }
 				img { display:block; width:148px; margin:auto; }
 			}
-			p { .fontSize14(); line-height:20px; margin:20px auto 60px auto; position:relative;
-				&:after { content:""; position:absolute; left:50%; bottom:-45px; display:block; border-left:1px dotted @colorGold; height:35px; }
+			p { .fontSize14(); line-height:20px; margin:20px auto 0px auto; position:relative;
+				&:after { content:''; display:block; margin:15px auto; width:1px; height:35px; border-left:1px dotted @colorGold; }
 			}
-			#discover { display:inline-block; .fontSize14(); color:@colorGold; border:1px dotted @colorGold; left:50%; padding:11px 20px; }
+			#discover { display:block; width:260px; margin:auto; .fontSize14(); color:@colorGold; border:1px dotted @colorGold; padding:11px 0px; }
 			#contact { .fontSize14(); margin-top:40px;
 				li { display:inline-block; margin:0 25px;
 					a { color:@colorGold; position:relative; padding-bottom:5px; 
@@ -68,19 +68,37 @@ html{
 	}
 }
 
-
 #theWholeProject { background:#141414 url('../img/the-whole/bg/the-whole-bg.jpg') center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:100%; .transition(0.7s);
-	// div { position:absolute; top:0; left:0; right:0; bottom:0; color:@colorGold; text-align:center; .textUppercase(); 
-	// 	p { display:block; position:absolute; z-index:10; width:50%; margin-left:-25%; left:50%; .fontSize16(); -webkit-transform: scale(1) scale3d(10, 10, 1); opacity:0; .transition(0.7s); -webkit-transition-delay:0.3s; 
-	// 	}
-	// 	img { margin:auto; height:70%; margin-top:10%; display:block; .transition(0.7s); }
-		
-
-	// }
-	// 	&:hover { background-size:50%; }
-	// 	&:hover img{ -webkit-transform: scale(1) scale3d(0, 0, 1) }
-	// 	// &:hover p{ -webkit-transform: scale(1) scale3d(1, 1, 1); opacity:1; }
-
+	#theWholeSolarSystem{ position:absolute; top:0; left:0; bottom:0; right:0; text-align:center;
+		img { display:block; }
+		#theWholePlanet { position:absolute; z-index:99; top:0; left:0; bottom:0; right:0;
+			a { display:block; width:15%; margin:auto; .borderRadius(100%);
+				img { width:100%;
+				}
+			}
+		}
+		#theWholeSolar { position:absolute; z-index:1; top:0; left:0; bottom:0; right:0;
+			img { height:80%; margin:auto; }
+		}
+		#theWholeFbPlanet { display:none;
+			img { }
+		}
+		#theWholeTwPlanet { display:none;
+			img { }
+		}
+		#theWholeLfPlanet { display:none;
+			img { }
+		}
+		#theWholeScPlanet { display:none;
+			img { }
+		}
+		#theWholeRssPlanet { display:none;
+			img { }
+		}
+		#theWholePinPlanet { display:none;
+			img { }
+		}
+	}
 }
 
 #socialCokeProject{ background:url('../img/social-coke/bg/social-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
