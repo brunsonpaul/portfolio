@@ -71,12 +71,19 @@ html{
 #theWholeProject { background:#141414 url('../img/the-whole/bg/the-whole-bg.jpg') center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:100%; .transition(0.7s);
 	#theWholeSolarSystem{ position:absolute; top:0; left:0; bottom:0; right:0; text-align:center;
 		img { display:block; }
-		#theWholePlanet { position:absolute; z-index:99; top:0; left:0; bottom:0; right:0;
-			a { display:block; width:15%; margin:auto; .borderRadius(100%);
-				img { width:100%;
-				}
+		#theWholePlanet { position:absolute; z-index:99; top:0; left:0; bottom:0; right:0; 
+			a { display:block; width:15%; margin:auto; .borderRadius(100%); .transition(0.4s); -webkit-animation: lightplanet 3s 0 infinite linear;
+				img { width:100%; }
+				&:hover { .transition(0.4s); }
 			}
 		}
+		@-webkit-keyframes lightplanet { 
+			0% { box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); } 
+			30% { box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5); -moz-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5); -webkit-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5); } 
+			70% { box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); } 
+			100% { box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); } 
+		}
+
 		#theWholeSolar { position:absolute; z-index:1; top:0; left:0; bottom:0; right:0;
 			img { height:80%; margin:auto; }
 		}

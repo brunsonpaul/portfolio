@@ -695,9 +695,44 @@ section .page-content {
   -ms-border-radius: 100%;
   -khtml-border-radius: 100%;
   border-radius: 100%;
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  -webkit-animation: lightplanet 3s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholePlanet a img {
   width: 100%;
+}
+#theWholeProject #theWholeSolarSystem #theWholePlanet a:hover {
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+}
+@-webkit-keyframes lightplanet {
+  0% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  30% {
+    box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+  }
+  70% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
 }
 #theWholeProject #theWholeSolarSystem #theWholeSolar {
   position: absolute;
