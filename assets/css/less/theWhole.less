@@ -21,14 +21,14 @@
 		}
 	}	
 
-	#theWhole-concept { background:@theWholeColor2; padding:100px 0;  
+	#theWhole-concept { background:@theWholeColor2; padding:100px 0 100px 0;  
 		.page-content {
 			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; .fontSize32(); }
 			h3 { text-transform:uppercase; text-align:center; .fontSize16(); line-height:1.3em; color:@theWholeColor4; }
-			p { margin-top:40px; text-align:justify; line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12();  width:400px;
-				&:nth-of-type(1) { margin-right:150px; }
+			p { margin-top:40px; text-align:justify; line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12(); width:370px;
+				&:nth-of-type(1) { margin-right:210px; }
 			}	
-			img { display:block; margin:40px auto 0 auto; }		
+			img { display:block; margin:60px auto 0 auto; }		
 		}
 	}
 
@@ -36,19 +36,19 @@
 		.page-content {
 			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; color:@theWholeColor5; .fontSize20(); }
 			>p { text-align:center; line-height:1.3em; .fontSize16();  width:620px; margin:10px auto 40px auto; }
-			#theWhole-interface-content { position:relative; margin:60px auto 100px auto;
+			#theWhole-interface-content { position:relative; margin:60px auto 40px auto;
 				>img { display:block; width:950px; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); }
 				ul { margin-top:80px; 
-					li { .inline-block(); .calcWidthKit(100%/3); text-align:center; vertical-align:top;
-						img { display:block; width:200px; height:auto; margin:auto; }
-						h3 { margin:20px auto 10px auto; .textUppercase(); .fontSize14(); color:@theWholeColor5; .gothamMedium(); }
+					li { .inline-block(); .calcWidthKit(100%/3); text-align:center; vertical-align:top; 
+						img { display:block; width:200px; height:auto; margin:auto; border:solid 10px @partechBG1; .borderRadius(100%); .box-shadow(@x: 0px, @y:8px, @blur:8px, @alpha:0.3); .boxSizing(border-box); }
+						h3 { margin:30px auto 10px auto; .textUppercase(); .fontSize14(); color:@theWholeColor5; .gothamMedium(); }
 						p { width:80%; .fontSize14(); line-height:18px; margin:auto; }
 					}
 				}
 			}
 			#theWhole-menu { position:relative;
 				img { display:block; 
-					&:nth-of-type(1) { margin-left:75px; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); }
+					&:nth-of-type(1) { position:relative; z-index:2; }
 					&:nth-of-type(2) { position:absolute; top:300px; right:0px; }
 				}
 			}

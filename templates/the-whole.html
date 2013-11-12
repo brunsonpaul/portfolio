@@ -33,15 +33,24 @@
 <div id='borderRight' class="open"></div>
 
 
-        <nav class="button-menu" style='top:38px;'>
-            <a href="#">
-                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
-                    <rect fill="#b59663" width="18" height="1"/>
-                    <rect y="3" fill="#b59663" width="18" height="1"/>
-                    <rect y="6" fill="#b59663" width="18" height="1"/>
-                </svg>
-            </a>
-        </nav> 
+<nav class="button-close">
+    <a href="#">
+        <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.435px" height="13.435px" viewBox="0 0 13.435 13.435" enable-background="new 0 0 13.435 13.435" xml:space="preserve">
+            <rect x="6.218" y="-2.282" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.7175 -2.7825)" fill="#B59663" width="1" height="18"/>
+            <rect x="6.218" y="-2.282" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 16.2175 6.7175)" fill="#B59663" width="1" height="18"/>
+        </svg>
+    </a>
+</nav> 
+
+<nav class='pagination theWhole'>
+    <ul>
+        <li><a class='active' href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</nav>
 
 <section id='theWhole'>
     <article id='theWhole-introduction'>
@@ -65,7 +74,7 @@
                 <span>The Whole</span>
             </h1>
             <p>
-                The Whole est une interface qui réuni des flux d'informations issus de sources variées et les présente sous la forme d'un mur d'informations.<br/>Ce projet présente la particularité de la mise en place d'un système d'unification des APIs.
+                The Whole est une interface qui réuni des flux d'informations issus de sources variées et les présente sous la forme d'un mur d'informations.<br/>The Whole est pour le moment un projet en phase de conception.
             </p>
             <img src='../assets/img/the-whole/the-whole-mba.png' alt=''>
         </div>
@@ -76,10 +85,10 @@
             <h2>The Concept</h2>
             <h3>Connect and follow the world</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-             </p><!--
+                Le concept de The Whole est de proposer une plateforme qui unifie tout vos services sur une seul et même interface. Réseaux sociaux, flux rss, musique ou tout autre service serait disponible sur la même application et proposerait les mêmes fonctionnalités.
+            </p><!--
             !--><p>
-                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+                The Whole est pour le moment qu’un prototype, qui a été réalisé avec uniquement 6 services (Facebook, Twitter, Pinterest, Sound Cloud, Last Fm, Flux Rss). Mais il a été pensé que n’importe quel autre service pourrait être intégré.
             </p>   
             <img src='../assets/img/the-whole/the-whole-concept.png' alt=''>
         </div>
@@ -89,25 +98,32 @@
         <div class='page-content'> 
             <h2>The interface</h2>            
                 <p>
-                    To create a richly interactive storytelling experience, it was clear we needed a set of interface components that worked separately and together within a common visual theme.
+                    L’interface propose une navigation horizontale afin de présenter de façon clair, un nombre plus important de post qu’une navigation verticale aurait pu permettre.
                 </p>
             <div id='theWhole-interface-content'>
                 <img src='../assets/img/the-whole/the-whole-interface.png' alt=''>
                 <ul>
                     <li>
                         <img src='../assets/img/the-whole/the-whole-bookmark.png' alt=''>
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        <h3>Bookmarks</h3>
+                        <p>
+                            Sauvegardé vos posts favori en cliquant sur le bookmark qui apparait au survol du post.
+                        </p>
                     </li><!-- 
                     !--><li>
-                        <img src='../assets/img/the-whole/the-whole-fbInfos.png' alt=''>
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        <img src='../assets/img/the-whole/the-whole-twInfos.png' alt=''>
+                        <h3>News feed</h3>
+                        <p>
+                            La source de chaque post est identifiable grâce au design qui s’adapte en fonction du type de post.
+                        </p>
+
                     </li><!-- 
                     !--><li>
                         <img src='../assets/img/the-whole/the-whole-filtre.png' alt=''>
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        <h3>Filtre du flux</h3>
+                        <p>
+                            Contrôlé très facilement votre flux d’actualité grâce au filtre de la barre du menu.
+                        </p>
                     </li>
             </div>
             <div id='theWhole-menu'>
@@ -121,10 +137,10 @@
     <article id='theWhole-element' >
         <div class='page-content'>
             <span>
-                <h2><b>Clear</b>Components</h2>            
+                <h2><b>Clear</b>Elements</h2>            
                 <p>
-                    To create a richly interactive storytelling experience, it was clear we needed a set of interface components that worked separately and together within a common visual theme.<br/><br/>
-                    As with any interactive setting, we had to think through and fully design all the various states within each component across the digital experience.
+                    Il a été nécessaire de réaliser un ensemble d’éléments ayant un thème visuel commun pouvant marcher séparément et ensemble afin de créer une ambiance riche et interactive.<br/><br/>
+                    Chaque éléments a été réfléchi avant leur conception. J’ai ensuite eu le plaisir de concevoir et apporter de petits détails à chacun de ces composants.
                 </p>
             </span><!--
             !--><img id='element-img' src='../assets/img/the-whole/element.png' alt=''>
@@ -137,7 +153,7 @@
             <h2>A project made with ...</h2>
             <ul>
                 <li>
-                    <a href='http://bastien-lardeux.com/' target='_blank'>Robin Lambert</a>
+                    <a href='http://robinlambert.fr/' target='_blank'>Robin Lambert</a>
                     <a href='https://twitter.com/Robin_Lambert' target='_blank'>L</a>
                     Ux Ergonomie<br/>Conception
                 </li><!--
