@@ -39,6 +39,9 @@ kevinPortfolio.Routers = kevinPortfolio.Routers || {};
 				case 'the-whole':
 					kevinPortfolio.loadView(new kevinPortfolio.Views.theWhole());
 				break;
+				case '100ansdetour':
+					kevinPortfolio.loadView(new kevinPortfolio.Views._100ansDeTour());
+				break;
 				default:
 					kevinPortfolio.loadView(null);
 				break; 

@@ -15,13 +15,6 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         templateFile: './templates/social-coke.php',
         initialize: function(){
 
-        }/*,
-        enterProject: function(){
-            var that = this;
-            this.caseStudyElem.css('display', 'block');
-        },
-        leaveProject: function(){
-            this.caseStudyElem.css('display', 'none');
-        }*/
+        }
     });
 })();
