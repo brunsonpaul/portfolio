@@ -26,14 +26,9 @@ html{
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);*/
 	
-	-webkit-transition: all .8s;
-	-moz-transition: all .8s;
-	-ms-transition: all .8s;
-	-o-transition: all .8s;
-	transition: all .8s;
-
+	.transition(0.8s)
 }
-.case-study-container{
+.case-study-container{ display:block; margin:0; padding:0; 
 	position: relative;
 	z-index: 5;
 
@@ -47,24 +42,24 @@ html{
 	}
 
 }
-.project{
-	.inline-block();
-	position:relative; 
-}
+.project{ float:left; position:relative; }
 
 #home{
 	header { position:absolute; top:0; left:0; bottom:0; right:0;  color:@colorGold; text-align:center; background:@colorBlack;
-		#header-content { position:absolute; top:50%; margin-top:-204px; left:0; right:0; .textUppercase();
+		#header-content { position:absolute; top:50%; margin-top:-218px; left:0; right:0; .textUppercase(); 
 			h1 { 
 				span { display:none; }
 				img { display:block; width:148px; margin:auto; }
 			}
 			p { .fontSize14(); line-height:20px; margin:20px auto 0px auto; position:relative;
 				&:after { content:''; display:block; margin:15px auto; width:1px; height:35px; border-left:1px dotted @colorGold; }
+				a { color:@colorGold; 
+					&:hover { text-decoration:underline; }
+				}
 			}
 			#discover { display:block; width:260px; margin:auto; .fontSize14(); color:@colorGold; border:1px dotted @colorGold; padding:11px 0px; }
 			#contact { .fontSize14(); margin-top:40px;
-				li { display:inline-block; margin:0 25px;
+				li { .inline-block(); margin:0 25px;
 					a { color:@colorGold; position:relative; padding-bottom:5px; 
 						&:after { content:''; .transition(0.2s); position:absolute; left:0; bottom:0px; width:100%; height:0px; border-top:1px dotted @colorGold; }
 						&:hover:after { width:0; }
@@ -72,7 +67,7 @@ html{
 				} 
 			}
 			#social { margin-top:35px;
-				li { display:inline-block; margin:0 7.5px; .fontSocial();
+				li { .inline-block(); margin:0 7.5px; .fontSocial();
 					a { .transition(0.4s); color:@colorGold; .fontSize24(); display:block; width:34px; padding-top:7px; padding-bottom:3px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
 						&:hover {  border:solid 2px @colorGold; }
 					}
@@ -84,7 +79,11 @@ html{
 			}
 		}
 		#copyright { display:block; z-index:9999; position:absolute; bottom:48px; right:48px;
-			p { .fontSize13(); color:@colorGold; }
+			p { .fontSize13(); color:@colorGold; 
+				a { color:@colorGold; 
+					&:hover { text-decoration:underline; }
+				}
+			}
 		}
 	}
 }
@@ -131,22 +130,22 @@ html{
 			img { width:100%; }
 		}
 		#theWholeFbPlanet { .rotateKit(90deg); position:absolute; z-index:10; left:50%; top:50%;
-			img { position:absolute; width:20%; top:0; margin-top:-10%; left:50%; margin-left:-10%; -webkit-animation: planetanimation 60s 0 infinite linear; }
+			img { position:absolute; width:20%; top:0; margin-top:-10%; left:50%; margin-left:-10%; -webkit-animation: planetanimation 15s 0 infinite linear; }
 		}		
 		#theWholeTwPlanet { .rotateKit(-45deg); position:absolute; z-index:10; left:50%; top:50%;
-			img { position:absolute; width:12%; top:0; margin-top:-6%; left:50%; margin-left:-6%; -webkit-animation: planetanimation 50s 0 infinite linear; }
+			img { position:absolute; width:12%; top:0; margin-top:-6%; left:50%; margin-left:-6%; -webkit-animation: planetanimation 12s 0 infinite linear; }
 		}
 		#theWholeLfPlanet { .rotateKit(45deg); position:absolute; z-index:10; left:50%; top:50%;
-			img { position:absolute; width:7%; top:0; margin-top:-3.5%; left:50%; margin-left:-3.5%; -webkit-animation: planetanimation 40s 0 infinite linear; }
+			img { position:absolute; width:7%; top:0; margin-top:-3.5%; left:50%; margin-left:-3.5%; -webkit-animation: planetanimation 10s 0 infinite linear; }
 		}
 		#theWholeScPlanet { .rotateKit(-90deg); position:absolute; z-index:10; left:50%; top:50%;
-			img { position:absolute; width:13%; top:0; margin-top:-7%; left:50%; margin-left:-7%; -webkit-animation: planetanimation 35s 0 infinite linear; }
+			img { position:absolute; width:13%; top:0; margin-top:-7%; left:50%; margin-left:-7%; -webkit-animation: planetanimation 8s 0 infinite linear; }
 		}
 		#theWholeRssPlanet { .rotateKit(-180deg); position:absolute; z-index:10; left:50%; top:50%;
-			img { position:absolute; width:10%; top:0; margin-top:-5%; left:50%; margin-left:-5%; -webkit-animation: planetanimation 45s 0 infinite linear; }
+			img { position:absolute; width:10%; top:0; margin-top:-5%; left:50%; margin-left:-5%; -webkit-animation: planetanimation 11s 0 infinite linear; }
 		}
 		#theWholePinPlanet { position:absolute; z-index:10; left:50%; top:50%;
-			img { position:absolute; width:8%; top:0; margin-top:-4%; left:50%; margin-left:-4%; -webkit-animation: planetanimation 40s 0 infinite linear; }
+			img { position:absolute; width:8%; top:0; margin-top:-4%; left:50%; margin-left:-4%; -webkit-animation: planetanimation 7s 0 infinite linear; }
 		}
 		@-webkit-keyframes planetanimation { 0% { top:0%; left:50%; } 6.25% { top:12.5%; left:35%; } 12.5% { top:25%; left:30%; } 25% { top:50%; left:27%; } 37.5% { top:75%; left:30%; } 43.75% { top:87.5%; left:35%; } 50% { top:100%; left:50%; } 56.25% { top:87.5%; left:65%; } 62.5% { top:75.5%; left:70%; } 75% { top:50%; left:73%; } 87.5% { top:25%; left:70%; } 93.75% { top:12.5%; left:65%; } 100% { top:0%; left:50%; .rotateKit(360deg); } }
 		@-moz-keyframes planetanimation { 0% { top:0%; left:50%; } 6.25% { top:12.5%; left:35%; } 12.5% { top:25%; left:30%; } 25% { top:50%; left:27%; } 37.5% { top:75%; left:30%; } 43.75% { top:87.5%; left:35%; } 50% { top:100%; left:50%; } 56.25% { top:87.5%; left:65%; } 62.5% { top:75.5%; left:70%; } 75% { top:50%; left:73%; } 87.5% { top:25%; left:70%; } 93.75% { top:12.5%; left:65%; } 100% { top:0%; left:50%; .rotateKit(360deg); } }

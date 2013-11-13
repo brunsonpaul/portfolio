@@ -2,8 +2,6 @@
 
 body, html { .fontSize16(); background:@colorGold; margin: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
 html { height: 100%; }
-body {  -webkit-touch-callout: none; padding: 0; position: relative; margin: 0; height: 100%; -webkit-font-smoothing: antialiased; }
-body, .onepage-wrapper, html { display: block; position: static; padding: 0; width: 100%; height: 100%; }
 
 .userSelect { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
@@ -12,13 +10,7 @@ body, .onepage-wrapper, html { display: block; position: static; padding: 0; wid
 	&:active { cursor:url('../img/identity/drag-active.png'), move; }
 }
 
-.border {
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	transition: all 0.8s;
-}
+.border { .transition(0.8s); }
 
 #borderTop { z-index:9999; position:fixed; height:8px; background:@colorGold; }
 #borderBottom { z-index:9999; position:fixed; height:8px; background:@colorGold; }
@@ -68,7 +60,7 @@ body, .onepage-wrapper, html { display: block; position: static; padding: 0; wid
 	}
 }
 
-section { padding:8px 0; min-width:980px;
+section { min-width:980px; margin:0; border:none;
 	.page-content { width:950px; margin:auto; }
 }
 

@@ -116,23 +116,6 @@ html {
 html {
   height: 100%;
 }
-body {
-  -webkit-touch-callout: none;
-  padding: 0;
-  position: relative;
-  margin: 0;
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-body,
-.onepage-wrapper,
-html {
-  display: block;
-  position: static;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
 .userSelect {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -145,11 +128,11 @@ html {
   cursor: url('../img/identity/drag-active.png'), move;
 }
 .border {
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s;
+  -moz-transition: all 0.8s 0s;
+  -webkit-transition: all 0.8s 0s;
+  -ms-transition: all 0.8s 0s;
+  -khtml-transition: all 0.8s 0s;
+  transition: all 0.8s 0s;
 }
 #borderTop {
   z-index: 9999;
@@ -362,8 +345,9 @@ html {
   left: 0;
 }
 section {
-  padding: 8px 0;
   min-width: 980px;
+  margin: 0;
+  border: none;
 }
 section .page-content {
   width: 950px;
@@ -440,11 +424,11 @@ section .page-content {
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);*/
 
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -ms-transition: all .8s;
-  -o-transition: all .8s;
-  transition: all .8s;
+  -moz-transition: all 0.8s 0s;
+  -webkit-transition: all 0.8s 0s;
+  -ms-transition: all 0.8s 0s;
+  -khtml-transition: all 0.8s 0s;
+  transition: all 0.8s 0s;
 }
 .projects-container.no-transition {
   -webkit-transition: none;
@@ -454,6 +438,9 @@ section .page-content {
   transition: none;
 }
 .case-study-container {
+  display: block;
+  margin: 0;
+  padding: 0;
   position: relative;
   z-index: 5;
 }
@@ -464,12 +451,8 @@ section .page-content {
   display: block;
 }
 .project {
-  display: inline-block;
+  float: left;
   position: relative;
-}
-.lt-ie9 .project {
-  display: inline;
-  zoom: 1;
 }
 #home header {
   position: absolute;
@@ -484,7 +467,7 @@ section .page-content {
 #home header #header-content {
   position: absolute;
   top: 50%;
-  margin-top: -204px;
+  margin-top: -218px;
   left: 0;
   right: 0;
   text-transform: uppercase;
@@ -513,6 +496,12 @@ section .page-content {
   height: 35px;
   border-left: 1px dotted #b59663;
 }
+#home header #header-content p a {
+  color: #b59663;
+}
+#home header #header-content p a:hover {
+  text-decoration: underline;
+}
 #home header #header-content #discover {
   display: block;
   width: 260px;
@@ -531,6 +520,10 @@ section .page-content {
 #home header #header-content #contact li {
   display: inline-block;
   margin: 0 25px;
+}
+.lt-ie9 #home header #header-content #contact li {
+  display: inline;
+  zoom: 1;
 }
 #home header #header-content #contact li a {
   color: #b59663;
@@ -561,6 +554,10 @@ section .page-content {
   display: inline-block;
   margin: 0 7.5px;
   font-family: "Socialico";
+}
+.lt-ie9 #home header #header-content #social li {
+  display: inline;
+  zoom: 1;
 }
 #home header #header-content #social li a {
   -moz-transition: all 0.4s 0s;
@@ -596,6 +593,12 @@ section .page-content {
   font-size: 13px;
   font-size: 0.813rem;
   color: #b59663;
+}
+#home header #copyright p a {
+  color: #b59663;
+}
+#home header #copyright p a:hover {
+  text-decoration: underline;
 }
 #tdfProject {
   position: relative;
@@ -848,7 +851,7 @@ section .page-content {
   margin-top: -10%;
   left: 50%;
   margin-left: -10%;
-  -webkit-animation: planetanimation 60s 0 infinite linear;
+  -webkit-animation: planetanimation 15s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeTwPlanet {
   -webkit-transform: rotate(-45deg);
@@ -868,7 +871,7 @@ section .page-content {
   margin-top: -6%;
   left: 50%;
   margin-left: -6%;
-  -webkit-animation: planetanimation 50s 0 infinite linear;
+  -webkit-animation: planetanimation 12s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeLfPlanet {
   -webkit-transform: rotate(45deg);
@@ -888,7 +891,7 @@ section .page-content {
   margin-top: -3.5%;
   left: 50%;
   margin-left: -3.5%;
-  -webkit-animation: planetanimation 40s 0 infinite linear;
+  -webkit-animation: planetanimation 10s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeScPlanet {
   -webkit-transform: rotate(-90deg);
@@ -908,7 +911,7 @@ section .page-content {
   margin-top: -7%;
   left: 50%;
   margin-left: -7%;
-  -webkit-animation: planetanimation 35s 0 infinite linear;
+  -webkit-animation: planetanimation 8s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeRssPlanet {
   -webkit-transform: rotate(-180deg);
@@ -928,7 +931,7 @@ section .page-content {
   margin-top: -5%;
   left: 50%;
   margin-left: -5%;
-  -webkit-animation: planetanimation 45s 0 infinite linear;
+  -webkit-animation: planetanimation 11s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholePinPlanet {
   position: absolute;
@@ -943,7 +946,7 @@ section .page-content {
   margin-top: -4%;
   left: 50%;
   margin-left: -4%;
-  -webkit-animation: planetanimation 40s 0 infinite linear;
+  -webkit-animation: planetanimation 7s 0 infinite linear;
 }
 @-webkit-keyframes planetanimation {
   0% {
@@ -1494,6 +1497,10 @@ section .page-content {
   -ms-transition: all 0.4s 0s;
   -khtml-transition: all 0.4s 0s;
   transition: all 0.4s 0s;
+}
+.lt-ie9 #partech #partech-introduction .page-content a {
+  display: inline;
+  zoom: 1;
 }
 #partech #partech-introduction .page-content a:hover {
   background: #e6202f;
@@ -2472,6 +2479,10 @@ section .page-content {
   line-height: 1.3em;
   width: 290px;
 }
+.lt-ie9 #socialCoke #socialCoke-interest .page-content p {
+  display: inline;
+  zoom: 1;
+}
 #socialCoke #socialCoke-interest .page-content p:nth-of-type(2) {
   margin: 0 40px;
 }
@@ -2535,6 +2546,10 @@ section .page-content {
   font-size: 0.875rem;
   line-height: 1.3em;
   width: 290px;
+}
+.lt-ie9 #socialCoke #socialCoke-bottle .page-content p {
+  display: inline;
+  zoom: 1;
 }
 #socialCoke #socialCoke-bottle .page-content p:nth-of-type(2) {
   margin: 0 40px;

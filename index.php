@@ -63,8 +63,9 @@
                         <img src="assets/img/identity/logo-kevin-lagier.svg" alt="logo Kévin Lagier"> 
                     </h1>
                     <p>
-                        I'm a 22 years old student at Hétic & here,<br/>
-                        you can find my work selection
+                        I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
+                        I'm looking for an Art Director internship</br>
+                        From June to November 2014 in London.
                     </p>
                     <div id="discover">Drag to discover projects</div>
                     <ul id="contact">
@@ -87,11 +88,12 @@
                     </ul>
                 </div>
                 <div id="copyright">
-                    <p>© 2013 Kévin Lagier. Developed by Florentin Monteil</p>
+                    <p>© 2013 Kévin Lagier. Made with <a href='http://florentin-monteil.com' target='_blank'>Florentin Monteil</a></p>
                 </div>
             </header>
-        </div><!--
-        --><div id='tdfProject' class="project" data-project="100ansdetour">
+        </div>
+
+        <div id='tdfProject' class="project" data-project="100ansdetour">
                 <div>
                     <div id='date'>
                         <nav>
@@ -105,9 +107,9 @@
                         <span>View the case study</span>
                     </a>
                 </div>
-        </div><!--
+        </div>
 
-    --><div id='theWholeProject' class="project" data-project="the-whole">
+        <div id='theWholeProject' class="project" data-project="the-whole">
             <div id='theWholeSolarSystem'>
                <div id='theWholePlanet'>
                     <a href='#' class="enter-button">
@@ -136,21 +138,21 @@
                     <img src="assets/img/the-whole/bg/the-whole-solar.svg" alt="">
                 </div>
             </div>
+        </div>
 
-        </div><!--
-        --><div id='socialCokeProject' class="project" data-project="social-coke">
-                <div>
-                    <h1>
-                        <span>Partech</span>
-                        <img src="assets/img/social-coke/bg/social-coke.svg" alt="Social Coke"> 
-                    </h1>
-                    <p>#SocialCoke, ou comment transformer<br/>l’écriture sociale en message publicitaire.</p>
-                    <a href="#" class="enter-button">
-                        <span>View the case study</span>
-                        <span>View the case study</span>
-                    </a>
-                </div>    
-            <!--<img style='position:absolute; top:7%; right:12%;'src='assets/img/social-coke/bg/monkey-bg.png'>
+        <div id='socialCokeProject' class="project" data-project="social-coke">
+            <div>
+                <h1>
+                    <span>Partech</span>
+                    <img src="assets/img/social-coke/bg/social-coke.svg" alt="Social Coke"> 
+                </h1>
+                <p>#SocialCoke, ou comment transformer<br/>l’écriture sociale en message publicitaire.</p>
+                <a href="#" class="enter-button">
+                    <span>View the case study</span>
+                    <span>View the case study</span>
+                </a>
+            </div>    
+        <!--<img style='position:absolute; top:7%; right:12%;'src='assets/img/social-coke/bg/monkey-bg.png'>
             <img style='position:absolute; top:58%; left:41%;'src='assets/img/social-coke/bg/patate-bg.png'>
             <img style='position:absolute; bottom:23%; right:4%;'src='assets/img/social-coke/bg/drink-bg.png'>
             <img style='position:absolute; top:13%; left:29%;'src='assets/img/social-coke/bg/hello-bg.png'>
@@ -158,9 +160,9 @@
             <img style='position:absolute; top:37%; right:38%;'src='assets/img/social-coke/bg/pointRose-bg.png'>
             <img style='position:absolute; bottom:43%; right:33%;'src='assets/img/social-coke/bg/pointVert-bg.png'>
             <img style='position:absolute; bottom:36%; right:25%;'src='assets/img/social-coke/bg/pointJaune-bg.png'>!-->
-        </div><!--
+        </div>
 
-        --><div id='partechProject' class="project" data-project="partech">
+        <div id='partechProject' class="project" data-project="partech">
                 <div>
                     <h1>
                         <span>Partech</span>
@@ -176,9 +178,9 @@
                         <span>View the case study</span>
                     </a>
                 </div>
-        </div><!--
-        
-        --><div id='footer' class="project" data-project="thanks-for-watching">
+        </div>
+
+        <div id='footer' class="project" data-project="thanks-for-watching">
             <footer>
                 <div class="wave1">        
                     <img src="assets/img/identity/wave-1.svg" alt=""> 
