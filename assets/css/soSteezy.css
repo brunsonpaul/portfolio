@@ -613,7 +613,6 @@ section .page-content {
   margin: 0;
   padding: 0;
   display: block;
-  background: green;
 }
 #tdfProject #date nav ul {
   margin: 0;
@@ -722,53 +721,465 @@ section .page-content {
 #theWholeProject #theWholeSolarSystem #theWholePlanet {
   position: absolute;
   z-index: 99;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 50%;
+  top: 50%;
 }
 #theWholeProject #theWholeSolarSystem #theWholePlanet a {
   display: block;
-  width: 15%;
+  width: 100%;
   margin: auto;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -ms-border-radius: 100%;
   -khtml-border-radius: 100%;
   border-radius: 100%;
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
 }
 #theWholeProject #theWholeSolarSystem #theWholePlanet a img {
   width: 100%;
 }
+#theWholeProject #theWholeSolarSystem #theWholePlanet a:hover {
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  -webkit-animation: lightplanet 3s 0 infinite linear;
+  -moz-animation: lightplanet 3s 0 infinite linear;
+  animation: lightplanet 3s 0 infinite linear;
+}
+@-webkit-keyframes lightplanet {
+  0% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  30% {
+    box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+  }
+  70% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+}
+@-moz-keyframes lightplanet {
+  0% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  30% {
+    box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+  }
+  70% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+}
+@keyframes lightplanet {
+  0% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  30% {
+    box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(252, 31, 47, 0.5);
+  }
+  70% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5);
+  }
+}
 #theWholeProject #theWholeSolarSystem #theWholeSolar {
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 50%;
+  top: 50%;
 }
 #theWholeProject #theWholeSolarSystem #theWholeSolar img {
-  height: 80%;
-  margin: auto;
+  width: 100%;
 }
 #theWholeProject #theWholeSolarSystem #theWholeFbPlanet {
-  display: none;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+#theWholeProject #theWholeSolarSystem #theWholeFbPlanet img {
+  position: absolute;
+  width: 20%;
+  top: 0;
+  margin-top: -10%;
+  left: 50%;
+  margin-left: -10%;
+  -webkit-animation: planetanimation 60s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeTwPlanet {
-  display: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+#theWholeProject #theWholeSolarSystem #theWholeTwPlanet img {
+  position: absolute;
+  width: 12%;
+  top: 0;
+  margin-top: -6%;
+  left: 50%;
+  margin-left: -6%;
+  -webkit-animation: planetanimation 50s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeLfPlanet {
-  display: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+#theWholeProject #theWholeSolarSystem #theWholeLfPlanet img {
+  position: absolute;
+  width: 7%;
+  top: 0;
+  margin-top: -3.5%;
+  left: 50%;
+  margin-left: -3.5%;
+  -webkit-animation: planetanimation 40s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeScPlanet {
-  display: none;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+#theWholeProject #theWholeSolarSystem #theWholeScPlanet img {
+  position: absolute;
+  width: 13%;
+  top: 0;
+  margin-top: -7%;
+  left: 50%;
+  margin-left: -7%;
+  -webkit-animation: planetanimation 35s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholeRssPlanet {
-  display: none;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+#theWholeProject #theWholeSolarSystem #theWholeRssPlanet img {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  margin-top: -5%;
+  left: 50%;
+  margin-left: -5%;
+  -webkit-animation: planetanimation 45s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholePinPlanet {
-  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+#theWholeProject #theWholeSolarSystem #theWholePinPlanet img {
+  position: absolute;
+  width: 8%;
+  top: 0;
+  margin-top: -4%;
+  left: 50%;
+  margin-left: -4%;
+  -webkit-animation: planetanimation 40s 0 infinite linear;
+}
+@-webkit-keyframes planetanimation {
+  0% {
+    top: 0%;
+    left: 50%;
+  }
+  6.25% {
+    top: 12.5%;
+    left: 35%;
+  }
+  12.5% {
+    top: 25%;
+    left: 30%;
+  }
+  25% {
+    top: 50%;
+    left: 27%;
+  }
+  37.5% {
+    top: 75%;
+    left: 30%;
+  }
+  43.75% {
+    top: 87.5%;
+    left: 35%;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+  }
+  56.25% {
+    top: 87.5%;
+    left: 65%;
+  }
+  62.5% {
+    top: 75.5%;
+    left: 70%;
+  }
+  75% {
+    top: 50%;
+    left: 73%;
+  }
+  87.5% {
+    top: 25%;
+    left: 70%;
+  }
+  93.75% {
+    top: 12.5%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes planetanimation {
+  0% {
+    top: 0%;
+    left: 50%;
+  }
+  6.25% {
+    top: 12.5%;
+    left: 35%;
+  }
+  12.5% {
+    top: 25%;
+    left: 30%;
+  }
+  25% {
+    top: 50%;
+    left: 27%;
+  }
+  37.5% {
+    top: 75%;
+    left: 30%;
+  }
+  43.75% {
+    top: 87.5%;
+    left: 35%;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+  }
+  56.25% {
+    top: 87.5%;
+    left: 65%;
+  }
+  62.5% {
+    top: 75.5%;
+    left: 70%;
+  }
+  75% {
+    top: 50%;
+    left: 73%;
+  }
+  87.5% {
+    top: 25%;
+    left: 70%;
+  }
+  93.75% {
+    top: 12.5%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes planetanimation {
+  0% {
+    top: 0%;
+    left: 50%;
+  }
+  6.25% {
+    top: 12.5%;
+    left: 35%;
+  }
+  12.5% {
+    top: 25%;
+    left: 30%;
+  }
+  25% {
+    top: 50%;
+    left: 27%;
+  }
+  37.5% {
+    top: 75%;
+    left: 30%;
+  }
+  43.75% {
+    top: 87.5%;
+    left: 35%;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+  }
+  56.25% {
+    top: 87.5%;
+    left: 65%;
+  }
+  62.5% {
+    top: 75.5%;
+    left: 70%;
+  }
+  75% {
+    top: 50%;
+    left: 73%;
+  }
+  87.5% {
+    top: 25%;
+    left: 70%;
+  }
+  93.75% {
+    top: 12.5%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes planetanimation {
+  0% {
+    top: 0%;
+    left: 50%;
+  }
+  6.25% {
+    top: 12.5%;
+    left: 35%;
+  }
+  12.5% {
+    top: 25%;
+    left: 30%;
+  }
+  25% {
+    top: 50%;
+    left: 27%;
+  }
+  37.5% {
+    top: 75%;
+    left: 30%;
+  }
+  43.75% {
+    top: 87.5%;
+    left: 35%;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+  }
+  56.25% {
+    top: 87.5%;
+    left: 65%;
+  }
+  62.5% {
+    top: 75.5%;
+    left: 70%;
+  }
+  75% {
+    top: 50%;
+    left: 73%;
+  }
+  87.5% {
+    top: 25%;
+    left: 70%;
+  }
+  93.75% {
+    top: 12.5%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 #socialCokeProject {
   background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;
@@ -967,7 +1378,7 @@ section .page-content {
   top: 50%;
   margin-top: -6%;
   left: 50%;
-  margin-left: -7.5%;
+  margin-left: -10%;
 }
 @font-face {
   font-family: 'Conv_Gotham-Book';
@@ -3120,17 +3531,17 @@ section .page-content {
   margin-top: 100px;
   text-align: justify;
 }
-#tdf #tdf-design .page-content div span {
+#tdf #tdf-design .page-content div div {
   display: inline-block;
   width: 275px;
   vertical-align: top;
   margin-top: 20px;
 }
-.lt-ie9 #tdf #tdf-design .page-content div span {
+.lt-ie9 #tdf #tdf-design .page-content div div {
   display: inline;
   zoom: 1;
 }
-#tdf #tdf-design .page-content div span h4 {
+#tdf #tdf-design .page-content div div h4 {
   margin-bottom: 10px;
   display: block;
   font-size: 18px;
@@ -3138,7 +3549,7 @@ section .page-content {
   text-transform: uppercase;
   color: #f5da3f;
 }
-#tdf #tdf-design .page-content div span p {
+#tdf #tdf-design .page-content div div p {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4em;
@@ -3184,16 +3595,16 @@ section .page-content {
   top: 0px;
   left: 310px;
 }
-#tdf #tdf-design .page-content .design-context span {
+#tdf #tdf-design .page-content .design-context div {
   margin-right: 35px;
 }
-#tdf #tdf-design .page-content .design-steps span {
+#tdf #tdf-design .page-content .design-steps div {
   margin-left: 35px;
 }
-#tdf #tdf-design .page-content .design-participation span {
+#tdf #tdf-design .page-content .design-participation div {
   margin-right: 35px;
 }
-#tdf #tdf-design .page-content .design-rank span {
+#tdf #tdf-design .page-content .design-rank div {
   margin-left: 35px;
 }
 #tdf #tdf-design .page-content #maillot {
@@ -3638,25 +4049,25 @@ section .page-content {
   background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;
   padding: 100px 0;
 }
-#theWhole #theWhole-element .page-content span {
+#theWhole #theWhole-element .page-content div {
   display: inline-block;
   vertical-align: top;
   width: 235px;
   margin-right: 7px;
 }
-.lt-ie9 #theWhole #theWhole-element .page-content span {
+.lt-ie9 #theWhole #theWhole-element .page-content div {
   display: inline;
   zoom: 1;
 }
-#theWhole #theWhole-element .page-content span h2 {
+#theWhole #theWhole-element .page-content div h2 {
   font-size: 32px;
   font-size: 2rem;
 }
-#theWhole #theWhole-element .page-content span h2 b {
+#theWhole #theWhole-element .page-content div h2 b {
   display: block;
   color: #fc1f2f;
 }
-#theWhole #theWhole-element .page-content span h2:after {
+#theWhole #theWhole-element .page-content div h2:after {
   content: '';
   display: block;
   width: 50px;
@@ -3664,14 +4075,14 @@ section .page-content {
   background: #646464;
   margin: 30px 0;
 }
-#theWhole #theWhole-element .page-content span p {
+#theWhole #theWhole-element .page-content div p {
   line-height: 1.5em;
   vertical-align: top;
   display: inline-block;
   font-size: 12px;
   font-size: 0.75rem;
 }
-.lt-ie9 #theWhole #theWhole-element .page-content span p {
+.lt-ie9 #theWhole #theWhole-element .page-content div p {
   display: inline;
   zoom: 1;
 }

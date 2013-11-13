@@ -71,6 +71,7 @@
                             Contrôlé très facilement votre flux d’actualité grâce au filtre de la barre du menu.
                         </p>
                     </li>
+                </ul>
             </div>
             <div id='theWhole-menu'>
                 <img src='./assets/img/the-whole/the-whole-menu.png' alt=''>
@@ -86,13 +87,13 @@
 
     <article id='theWhole-element' >
         <div class='page-content'>
-            <span>
+            <div>
                 <h2><b>Clear</b>Elements</h2>            
                 <p>
                     Il a été nécessaire de réaliser un ensemble d’éléments ayant un thème visuel commun pouvant marcher séparément et ensemble afin de créer une ambiance riche et interactive.<br/><br/>
                     Chaque éléments a été réfléchi avant leur conception. J’ai ensuite eu le plaisir de concevoir et apporter de petits détails à chacun de ces composants.
                 </p>
-            </span><!--
+            </div><!--
             !--><img id='element-img' src='./assets/img/the-whole/element.png' alt=''>
         </div>
     </article>
@@ -131,6 +132,3 @@
         <p>Thank you for watching</p>
     </footer>
 </section>
-
-</body>
-</html>

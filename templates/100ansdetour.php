@@ -127,40 +127,40 @@
             </div> 
 
             <div class='design-context'>
-                <span>
+                <div>
                     <h4>Context</h4>
                     <p>
                         La partie Context du site, permet de découvrir les différents tracés du Tour, de revivre chaque étape, les villes traversées, les kilomètres parcourus en chiffre et en images !
                     </p>
-                </span><!--
+                </div><!--
                 !--><img src='./assets/img/100ansdetour/context.jpg' alt=''>
             </div>
             <div class='design-steps'>
                 <img src='./assets/img/100ansdetour/steps.jpg' alt=''><!--
-                !--><span>
+                !--><div>
                     <h4>Steps</h4>
                     <p>
                         Chaque étape du tour est ici représentée selon sa catégorie mais également selon la distance parcourue. Retrouvez également les coureurs qui ont animé le Tour de France et leurs victoires.
                     </p>
-                </span>
+                </div>
             </div>
             <div class='design-participation'>
-                <span>
+                <div>
                     <h4>Participation</h4>
                     <p>
-                        Les coureurs sont ici présentés selon leur pays d'origine. On mesure ainsi l'internationalisation du Tour au fil des années et le succès grandissant de la Grande Boucle..</p>
+                        Les coureurs sont ici présentés selon leur pays d'origine. On mesure ainsi l'internationalisation du Tour au fil des années et le succès grandissant de la Grande Boucle.
                     </p>
-                </span><!--
+                </div><!--
                 !--><img src='./assets/img/100ansdetour/participation.jpg' alt=''>
             </div>
             <div class='design-rank'>
                 <img src='./assets/img/100ansdetour/rank.jpg' alt=''><!--
-                !--><span>
+                !--><div>
                     <h4>Rating</h4>
                     <p>
                         Retrouvez l'intégralité des classements pour l'année choisie, le temps des coureurs et leur nationalité. Ainsi que les coureurs qui se sont distingués pour leur performance au général, au sprint ou en montagne.
                     </p>
-                </span>
+                </div>
             </div>
         </div>
     </article>

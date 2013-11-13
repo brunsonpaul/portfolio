@@ -45,6 +45,70 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.homeProjectsContainer.css('width', this.windowWidth*projectNumber + 'px');
             projects.css('width', this.windowWidth +'px');
             projects.css('height', this.windowHeight +'px');
+            $('#theWholePlanet').css(
+                {
+                    height: this.windowHeight/4.5 +'px',
+                    width: this.windowHeight/4.5 +'px',
+                    marginLeft:-(this.windowHeight/4.5)/2 +'px',
+                    marginTop:-((this.windowHeight/4.5)/2-40) +'px',
+                }
+            );
+            $('#theWholeSolar').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );            
+            $('#theWholeFbPlanet').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );            
+            $('#theWholeTwPlanet').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );          
+            $('#theWholeLfPlanet').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );        
+            $('#theWholeScPlanet').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );
+            $('#theWholeRssPlanet').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );
+            $('#theWholePinPlanet').css(
+                {
+                    height: this.windowHeight/1.35 +'px',
+                    width: this.windowHeight/1.35 +'px',
+                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                }
+            );
 
         },
 

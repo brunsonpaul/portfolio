@@ -78,6 +78,7 @@
                 <img src='./assets/img/social-coke/btn-tweet.svg' alt=''>
                 <img src='./assets/img/social-coke/btn-tweet-hover.svg' alt=''>
             </a>
+        </div>
     </article>
 
     <article id='socialCoke-interest'>
@@ -131,7 +132,7 @@
                 <li>
                     <a href='http://bastien-lardeux.com/' target='_blank'>Maxime Bigot</a>
                     <a href='https://twitter.com/dolly_pr4ne' target='_blank'>L</a>
-                    Développement</br>
+                    Développement<br/>
                     Illustration
                 </li><!--
                 !--><li>
