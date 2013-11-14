@@ -138,6 +138,7 @@
                     <img src="assets/img/the-whole/bg/the-whole-solar.svg" alt="">
                 </div>
             </div>
+            <div id="nirvana"></div>
         </div>
 
         <div id='socialCokeProject' class="project" data-project="social-coke">
