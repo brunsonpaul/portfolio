@@ -225,7 +225,7 @@ html {
   z-index: 9999;
   left: 50%;
   top: 58px;
-  margin-left: -20px;
+  margin-left: -19px;
   text-align: center;
 }
 .button-menu a {
@@ -250,11 +250,11 @@ html {
   border: solid 2px #b59663;
 }
 .button-close {
-  z-index: 9999;
   position: fixed;
+  z-index: 9999;
   left: 50%;
   top: 38px;
-  margin-left: -20px;
+  margin-left: -19px;
   text-align: center;
 }
 .button-close a {
@@ -265,9 +265,9 @@ html {
   transition: all 0.4s 0s;
   color: #b59663;
   display: block;
-  width: 36px;
-  padding-top: 10px;
-  height: 26px;
+  width: 34px;
+  height: 28px;
+  padding-top: 6px;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -399,16 +399,16 @@ section .page-content {
   opacity: 1;
 }
 .pagination.tdf {
-  margin-top: -53px;
+  margin-top: -103px;
 }
 .pagination.theWhole {
-  margin-top: -53px;
+  margin-top: -86px;
 }
 .pagination.socialCoke {
-  margin-top: -104px;
+  margin-top: -120px;
 }
 .pagination.partech {
-  margin-top: -87px;
+  margin-top: -103px;
 }
 .projects-container {
   overflow: hidden;
@@ -1433,9 +1433,20 @@ section .page-content {
   padding-top: 100px;
 }
 #partech #partech-introduction .page-content ul {
+  opacity: 0;
   margin: auto;
   font-size: 16px;
   font-size: 1rem;
+  -moz-transition: all 2s 0s;
+  -webkit-transition: all 2s 0s;
+  -ms-transition: all 2s 0s;
+  -khtml-transition: all 2s 0s;
+  transition: all 2s 0s;
+  -moz-transition-delay: 2s;
+  -webkit-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -khtml-transition-delay: 2s;
+  transition-delay: 2s;
 }
 #partech #partech-introduction .page-content ul li {
   width: -moz-calc(33.333333333333336%);
@@ -1459,8 +1470,19 @@ section .page-content {
   text-transform: uppercase;
 }
 #partech #partech-introduction .page-content h1 {
+  opacity: 0;
   width: 250px;
   margin: 90px auto 0 auto;
+  -moz-transition: all 2s 0s;
+  -webkit-transition: all 2s 0s;
+  -ms-transition: all 2s 0s;
+  -khtml-transition: all 2s 0s;
+  transition: all 2s 0s;
+  -moz-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -khtml-transition-delay: 1s;
+  transition-delay: 1s;
 }
 #partech #partech-introduction .page-content h1 img {
   display: block;
@@ -1470,14 +1492,26 @@ section .page-content {
   display: none;
 }
 #partech #partech-introduction .page-content p {
+  opacity: 0;
   color: #ffffff;
   font-size: 20px;
   font-size: 1.250rem;
   line-height: 1.3em;
   margin: auto;
   width: 630px;
+  -moz-transition: all 2s 0s;
+  -webkit-transition: all 2s 0s;
+  -ms-transition: all 2s 0s;
+  -khtml-transition: all 2s 0s;
+  transition: all 2s 0s;
+  -moz-transition-delay: 2s;
+  -webkit-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -khtml-transition-delay: 2s;
+  transition-delay: 2s;
 }
 #partech #partech-introduction .page-content a {
+  opacity: 0;
   display: inline-block;
   background: #e8f603;
   font-size: 14px;
@@ -1497,6 +1531,16 @@ section .page-content {
   -ms-transition: all 0.4s 0s;
   -khtml-transition: all 0.4s 0s;
   transition: all 0.4s 0s;
+  -moz-transition: all 2s 0s;
+  -webkit-transition: all 2s 0s;
+  -ms-transition: all 2s 0s;
+  -khtml-transition: all 2s 0s;
+  transition: all 2s 0s;
+  -moz-transition-delay: 2s;
+  -webkit-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -khtml-transition-delay: 2s;
+  transition-delay: 2s;
 }
 .lt-ie9 #partech #partech-introduction .page-content a {
   display: inline;
@@ -1507,12 +1551,47 @@ section .page-content {
   color: #ffffff;
 }
 #partech #partech-introduction .page-content .sepPartech {
+  opacity: 0;
   margin: 10px auto 40px auto;
+  -moz-transition: all 2s 0s;
+  -webkit-transition: all 2s 0s;
+  -ms-transition: all 2s 0s;
+  -khtml-transition: all 2s 0s;
+  transition: all 2s 0s;
+  -moz-transition-delay: 2s;
+  -webkit-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -khtml-transition-delay: 2s;
+  transition-delay: 2s;
 }
 #partech #partech-introduction .page-content #partechCinemaDisplay {
+  opacity: 0;
   width: 950px;
   margin: auto;
   display: block;
+  -moz-transition: all 2s 0s;
+  -webkit-transition: all 2s 0s;
+  -ms-transition: all 2s 0s;
+  -khtml-transition: all 2s 0s;
+  transition: all 2s 0s;
+}
+#partech #partech-introduction.active .page-content ul {
+  opacity: 1;
+}
+#partech #partech-introduction.active .page-content h1 {
+  opacity: 1;
+}
+#partech #partech-introduction.active .page-content p {
+  opacity: 1;
+}
+#partech #partech-introduction.active .page-content a {
+  opacity: 1;
+}
+#partech #partech-introduction.active .page-content .sepPartech {
+  opacity: 1;
+}
+#partech #partech-introduction.active .page-content #partechCinemaDisplay {
+  opacity: 1;
 }
 #partech #partech-client {
   background: #191919;
@@ -1555,6 +1634,7 @@ section .page-content {
   color: #ffffff;
 }
 #partech #partech-client .page-content img {
+  opacity: 0;
   display: block;
   margin: 40px auto 0 auto;
   -moz-transition: all 1s 0s;
@@ -1562,6 +1642,9 @@ section .page-content {
   -ms-transition: all 1s 0s;
   -khtml-transition: all 1s 0s;
   transition: all 1s 0s;
+}
+#partech #partech-client.active .page-content img {
+  opacity: 1;
 }
 #partech #partech-dragScreen {
   padding: 100px 0;
@@ -1590,10 +1673,11 @@ section .page-content {
   width: 950px;
 }
 #partech #partech-dragScreen .page-content .toDrag .dragCursorPartech {
+  left: 10px;
+  opacity: 0;
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: 26%;
   width: 38px;
   height: 38px;
   background: url('../img/partech/drag-cursor.png') no-repeat center center;
@@ -1602,9 +1686,14 @@ section .page-content {
   -ms-transition: all 1s 0s;
   -khtml-transition: all 1s 0s;
   transition: all 1s 0s;
+  -moz-transition-delay: 2.6s;
+  -webkit-transition-delay: 2.6s;
+  -ms-transition-delay: 2.6s;
+  -khtml-transition-delay: 2.6s;
+  transition-delay: 2.6s;
 }
 #partech #partech-dragScreen .page-content .toDrag .dragScreenArrow {
-  width: 942px;
+  width: 0;
   display: block;
   padding-top: 31px;
   left: 0;
@@ -1615,8 +1704,14 @@ section .page-content {
   -ms-transition: all 1.4s 0s;
   -khtml-transition: all 1.4s 0s;
   transition: all 1.4s 0s;
+  -moz-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  -khtml-transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 #partech #partech-dragScreen .page-content .toDrag .dragScreenArrow .dragPoint {
+  opacity: 0;
   width: 5px;
   height: 5px;
   position: absolute;
@@ -1628,8 +1723,14 @@ section .page-content {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
 }
 #partech #partech-dragScreen .page-content .toDrag .dragScreenArrow .dragArrow {
+  opacity: 0;
   position: absolute;
   right: 0;
   top: 16px;
@@ -1637,13 +1738,19 @@ section .page-content {
   width: 7px;
   height: 7px;
   background: url('../img/partech/arrow.png') no-repeat center center;
-  -moz-transition: all 0.5s 0s;
-  -webkit-transition: all 0.5s 0s;
-  -ms-transition: all 0.5s 0s;
-  -khtml-transition: all 0.5s 0s;
-  transition: all 0.5s 0s;
+  -moz-transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -ms-transition: all 0.4s 0s;
+  -khtml-transition: all 0.4s 0s;
+  transition: all 0.4s 0s;
+  -moz-transition-delay: 1.8s;
+  -webkit-transition-delay: 1.8s;
+  -ms-transition-delay: 1.8s;
+  -khtml-transition-delay: 1.8s;
+  transition-delay: 1.8s;
 }
 #partech #partech-dragScreen .page-content .partech-screen {
+  opacity: 0;
   position: relative;
   margin: 40px auto 0 auto;
   width: 950px;
@@ -1654,6 +1761,11 @@ section .page-content {
   -ms-transition: all 1.4s 0s;
   -khtml-transition: all 1.4s 0s;
   transition: all 1.4s 0s;
+  -moz-transition-delay: 2.2s;
+  -webkit-transition-delay: 2.2s;
+  -ms-transition-delay: 2.2s;
+  -khtml-transition-delay: 2.2s;
+  transition-delay: 2.2s;
 }
 #partech #partech-dragScreen .page-content .partech-screen img:nth-of-type(1) {
   display: block;
@@ -1667,6 +1779,21 @@ section .page-content {
   top: 41px;
   left: 149px;
 }
+#partech #partech-dragScreen.active .page-content .toDrag .dragCursorPartech {
+  opacity: 1;
+}
+#partech #partech-dragScreen.active .page-content .toDrag .dragScreenArrow {
+  width: 942px;
+}
+#partech #partech-dragScreen.active .page-content .toDrag .dragScreenArrow .dragPoint {
+  opacity: 1;
+}
+#partech #partech-dragScreen.active .page-content .toDrag .dragScreenArrow .dragArrow {
+  opacity: 1;
+}
+#partech #partech-dragScreen.active .page-content .partech-screen {
+  opacity: 1;
+}
 #partech #partech-sketch {
   background: #000000 url('../img/partech/dark-grid.png');
   border-top: solid 1px #191919;
@@ -1674,8 +1801,17 @@ section .page-content {
   padding: 100px 0;
 }
 #partech #partech-sketch .page-content img {
+  opacity: 0;
   display: block;
   margin: auto;
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+}
+#partech #partech-sketch.active .page-content img {
+  opacity: 1;
 }
 #partech #partech-mobile {
   background: #191919;
@@ -1735,8 +1871,8 @@ section .page-content {
   height: auto;
 }
 #partech #partech-mobile .page-content .mobileScreen ul li:nth-of-type(1) {
-  left: 2%;
-  margin: 0;
+  left: 50%;
+  margin-left: -10%;
   z-index: 1;
   -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
   -khtml-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -1744,15 +1880,15 @@ section .page-content {
   -moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
   -o-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
   box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition-delay: 0.8s;
   -moz-transition-delay: 0.8s;
-  -o-transition-delay: 0.8s;
+  -webkit-transition-delay: 0.8s;
   -ms-transition-delay: 0.8s;
+  -khtml-transition-delay: 0.8s;
   transition-delay: 0.8s;
 }
 #partech #partech-mobile .page-content .mobileScreen ul li:nth-of-type(2) {
-  left: 20%;
-  margin: 0;
+  left: 50%;
+  margin-left: -10%;
   z-index: 2;
   -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
   -khtml-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -1760,18 +1896,18 @@ section .page-content {
   -moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
   -o-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
   box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
-  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
   -ms-transition-delay: 0.4s;
+  -khtml-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
 #partech #partech-mobile .page-content .mobileScreen ul li:nth-of-type(3) {
   z-index: 3;
 }
 #partech #partech-mobile .page-content .mobileScreen ul li:nth-of-type(4) {
-  left: 60%;
-  margin: 0;
+  left: 50%;
+  margin-left: -10%;
   z-index: 2;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   -khtml-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -1779,15 +1915,15 @@ section .page-content {
   -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
-  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
   -ms-transition-delay: 0.4s;
+  -khtml-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
 #partech #partech-mobile .page-content .mobileScreen ul li:nth-of-type(5) {
-  left: 78%;
-  margin: 0;
+  left: 50%;
+  margin-left: -10%;
   z-index: 1;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   -khtml-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -1795,11 +1931,27 @@ section .page-content {
   -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition-delay: 0.8s;
   -moz-transition-delay: 0.8s;
-  -o-transition-delay: 0.8s;
+  -webkit-transition-delay: 0.8s;
   -ms-transition-delay: 0.8s;
+  -khtml-transition-delay: 0.8s;
   transition-delay: 0.8s;
+}
+#partech #partech-mobile.active .page-content .mobileScreen ul li:nth-of-type(1) {
+  left: 2%;
+  margin: 0;
+}
+#partech #partech-mobile.active .page-content .mobileScreen ul li:nth-of-type(2) {
+  left: 20%;
+  margin: 0;
+}
+#partech #partech-mobile.active .page-content .mobileScreen ul li:nth-of-type(4) {
+  left: 60%;
+  margin: 0;
+}
+#partech #partech-mobile.active .page-content .mobileScreen ul li:nth-of-type(5) {
+  left: 78%;
+  margin: 0;
 }
 #partech #partech-ui {
   background: #191919;
@@ -1873,18 +2025,49 @@ section .page-content {
   margin: 0 2.5% 0 0;
 }
 #partech #partech-ui .page-content ul li img {
+  opacity: 0;
   width: 100%;
   display: block;
-  -moz-transition: all 1s 0s;
-  -webkit-transition: all 1s 0s;
-  -ms-transition: all 1s 0s;
-  -khtml-transition: all 1s 0s;
-  transition: all 1s 0s;
-  -webkit-transition-delay: 0.4s;
-  -moz-transition-delay: 0.4s;
-  -o-transition-delay: 0.4s;
-  -ms-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -moz-transition: all 1.5s 0s;
+  -webkit-transition: all 1.5s 0s;
+  -ms-transition: all 1.5s 0s;
+  -khtml-transition: all 1.5s 0s;
+  transition: all 1.5s 0s;
+}
+#partech #partech-ui.active {
+  background: #191919;
+  padding: 0 0 100px 0;
+}
+#partech #partech-ui.active .page-content ul li {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  border: solid 12px #000000;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.lt-ie9 #partech #partech-ui.active .page-content ul li {
+  display: inline;
+  zoom: 1;
+}
+#partech #partech-ui.active .page-content ul li img {
+  opacity: 1;
 }
 #partech footer {
   text-align: center;

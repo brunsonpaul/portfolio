@@ -1,4 +1,15 @@
 <section id='socialCoke' data-case-study="social-coke">
+    <nav class="pagination socialCoke">
+        <ul>
+            <li><a class='active' href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
     <article id='socialCoke-introduction'>
         <div class="page-content">
             <ul>

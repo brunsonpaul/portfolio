@@ -1,4 +1,14 @@
 <section id='tdf' data-case-study="100ansdetour">
+    <nav class="pagination tdf">
+        <ul>
+            <li><a class='active' href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
     <article id='tdf-introduction'>
         <div class="page-content">
             <ul>

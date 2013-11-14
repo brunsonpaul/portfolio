@@ -1,4 +1,14 @@
 <section id='partech' data-case-study="partech">
+    <nav class="pagination partech">
+        <ul>
+            <li><a class='active' href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
     <article id='partech-introduction'>
         <div class='page-content'>
             <ul>
@@ -73,13 +83,13 @@
             <h2>Responsive Design</h2>
             <p>Le web mobile étant de plus en plus important, il était nécessaire de s'adapter aux nouvelles modalités de consultation.</p>
             <div class="mobileScreen">
-                <img id="partech-iphone" src='./assets/img/partech/partech-iphone.png' alt="Iphone">
+                <img id="partech-iphone" src='./assets/img/partech/partech-iphone.png' alt="Iphone screen Partech">
                 <ul>
-                    <li><img src='./assets/img/partech/partech-iphone-screen4.png' alt="Partech mobile"></li><!--
-                !--><li><img src='./assets/img/partech/partech-iphone-screen2.png' alt="Partech mobile"></li><!--
-                !--><li><img src='./assets/img/partech/partech-iphone-screen1.png' alt="Partech mobile"></li><!--
-                !--><li><img src='./assets/img/partech/partech-iphone-screen3.png' alt="Partech mobile"></li><!--
-                !--><li><img src='./assets/img/partech/partech-iphone-screen5.png' alt="Partech mobile"></li><!--
+                    <li><img src='./assets/img/partech/partech-iphone-screen4.png' alt="Partech mobile 4"></li><!--
+                !--><li><img src='./assets/img/partech/partech-iphone-screen2.png' alt="Partech mobile 2"></li><!--
+                !--><li><img src='./assets/img/partech/partech-iphone-screen1.png' alt="Partech mobile 1"></li><!--
+                !--><li><img src='./assets/img/partech/partech-iphone-screen3.png' alt="Partech mobile 3"></li><!--
+                !--><li><img src='./assets/img/partech/partech-iphone-screen5.png' alt="Partech mobile 5"></li><!--
                 !-->
                 </ul>
             </div>
@@ -92,10 +102,10 @@
             <h2>UI Element</h2>
             <p>Création d'éléments graphiques pour faciliter la consultation du site aux personnes ayant peu de compétences en informatique.</p>
             <ul>
-                <li><img src='./assets/img/partech/ui1.png' alt='UI Element'></li><!--
-            !--><li><img src='./assets/img/partech/ui2.png' alt='UI Element'></li><!--
-            !--><li><img src='./assets/img/partech/ui3.png' alt='UI Element'></li><!--
-            !--><li><img src='./assets/img/partech/ui4.png' alt='UI Element'></li><!--
+                <li><img src='./assets/img/partech/ui1.png' alt='UI Element 1'></li><!--
+            !--><li><img src='./assets/img/partech/ui2.png' alt='UI Element 2'></li><!--
+            !--><li><img src='./assets/img/partech/ui3.png' alt='UI Element 3'></li><!--
+            !--><li><img src='./assets/img/partech/ui4.png' alt='UI Element 4'></li><!--
             !-->
             </ul>
         </div>

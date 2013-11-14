@@ -1,4 +1,13 @@
 <section id='theWhole' data-case-study="the-whole">
+    <nav class="pagination theWhole">
+        <ul>
+            <li><a class='active' href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
     <article id='theWhole-introduction'>
         <div class="page-content">
             <ul>

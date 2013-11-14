@@ -21,23 +21,33 @@
 	
 	#partech-introduction { text-align:center; padding-top:100px;
 		.page-content {
-			ul { margin:auto; .fontSize16(); 
+			ul { opacity:0; margin:auto; .fontSize16(); .transition(2s); .transitionDelay(2s);
 				li { .calcWidthKit(100/3%); .inline-block();  color:@partechColor2; vertical-align:top;
 					span { display:block; color:@partechColor1; .gothamMedium(); text-transform:uppercase; }
 				}
 			}
-			h1 { width:250px; margin:90px auto 0 auto;
+			h1 { opacity:0; width:250px; margin:90px auto 0 auto; .transition(2s); .transitionDelay(1s);
 				img { display:block; width:100%; }
 				span { display:none; }
 			}
-			p { color:@partechColor1;  .fontSize20(); line-height:1.3em; margin:auto; width:630px; }
-			a { .inline-block(); background:@partechColor3; .fontSize14(); .gothamMedium(); color:@partechBG1; text-transform:uppercase; padding:10px 26px 6px 26px; margin:40px auto; .borderRadius(17.5px); .transition(0.4s);
+			p { opacity:0; color:@partechColor1;  .fontSize20(); line-height:1.3em; margin:auto; width:630px;  .transition(2s); .transitionDelay(2s); }
+			a { opacity:0; .inline-block(); background:@partechColor3; .fontSize14(); .gothamMedium(); color:@partechBG1; text-transform:uppercase; padding:10px 26px 6px 26px; margin:40px auto; .borderRadius(17.5px); .transition(0.4s); .transition(2s); .transitionDelay(2s);
 				&:hover { background:@partechColor4; color:@partechColor1; }
 			}
-			.sepPartech { margin:10px auto 40px auto; }	
-			#partechCinemaDisplay { width:950px; margin:auto; display:block; }
+			.sepPartech { opacity:0; margin:10px auto 40px auto; .transition(2s); .transitionDelay(2s); }	
+			#partechCinemaDisplay { opacity:0; width:950px; margin:auto; display:block; .transition(2s); }
 		}
 	}
+	#partech-introduction.active { 
+		.page-content {
+			ul { opacity:1; }
+			h1 { opacity:1; }
+			p { opacity:1; }
+			a { opacity:1; }
+			.sepPartech { opacity:1; }	
+			#partechCinemaDisplay { opacity:1; }
+		}
+	}	
 
 	#partech-client { background:@partechBG2; padding:100px 0;  
 		.page-content {
@@ -47,7 +57,12 @@
 				&:nth-of-type(1) { margin-right:150px; }
 				span { color:@partechColor1; }
 			}
-			img { display:block; margin:40px auto 0 auto; .transition(1s); }
+			img { opacity:0; display:block; margin:40px auto 0 auto; .transition(1s); }
+		}
+	}	
+	#partech-client.active { 
+		.page-content {
+			img { opacity:1; }
 		}
 	}
 
@@ -56,22 +71,40 @@
 			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize20(); }
 	 		p { text-align:center; line-height:1.3em; .fontSize16();  color:@partechColor1; margin:10px auto 40px auto; width:550px; }
 			.toDrag { position:relative; height:38px; margin:auto; width:950px; 
-				.dragCursorPartech { cursor:pointer; position:absolute; top:0; left:26%; width:38px; height:38px; background:url('../img/partech/drag-cursor.png') no-repeat center center; .transition(1s); }
-				.dragScreenArrow { width:942px; display:block; padding-top:31px; left:0; height:7px; background:url('../img/partech/trait.png') repeat-x center center; .transition(1.4s); 
-					.dragPoint { width:5px; height:5px; position:absolute; left:0; top:17px; background:@partechColor1; .borderRadius(5px); }
-					.dragArrow { position:absolute; right:0; top:16px; background:@partechColor1; width:7px; height:7px; background:url('../img/partech/arrow.png') no-repeat center center; .transition(0.5s); }
+				.dragCursorPartech { left:10px; opacity:0; cursor:pointer; position:absolute; top:0; width:38px; height:38px; background:url('../img/partech/drag-cursor.png') no-repeat center center; .transition(1s); .transitionDelay(2.6s); }
+				.dragScreenArrow { width:0; display:block; padding-top:31px; left:0; height:7px; background:url('../img/partech/trait.png') repeat-x center center; .transition(1.4s); .transitionDelay(0.4s);
+					.dragPoint { opacity:0; width:5px; height:5px; position:absolute; left:0; top:17px; background:@partechColor1; .borderRadius(5px); .transition(0.4s); }
+					.dragArrow { opacity:0; position:absolute; right:0; top:16px; background:@partechColor1; width:7px; height:7px; background:url('../img/partech/arrow.png') no-repeat center center; .transition(0.4s); .transitionDelay(1.8s); }
 				}
 			}
-			.partech-screen { position:relative; margin:40px auto 0 auto; width:950px; height:566px; overflow:hidden; .transition(1.4s); 
+			.partech-screen { opacity:0; position:relative; margin:40px auto 0 auto; width:950px; height:566px; overflow:hidden; .transition(1.4s); .transitionDelay(2.2s); 
 				img:nth-of-type(1) { display:block; z-index:2; position:absolute; }
 				img:nth-of-type(2) { display:block; z-index:1; position:absolute; top:41px; left:149px; }
 			}
+		}
+	}	
+	#partech-dragScreen.active {  
+		.page-content {
+	 		p {  }
+			.toDrag { 
+				.dragCursorPartech { opacity:1; }
+				.dragScreenArrow { width:942px;  
+					.dragPoint { opacity:1; }
+					.dragArrow { opacity:1; }
+				}
+			}
+			.partech-screen { opacity:1; }
 		}
 	}
 
 	#partech-sketch { background:@partechBG1 url('../img/partech/dark-grid.png'); border-top:solid 1px @partechBG2; border-bottom:solid 1px @partechBG2; padding:100px 0;
 		.page-content { 
-			img { display:block; margin:auto; }
+			img { opacity:0; display:block; margin:auto; .transition(1s); }
+		}
+	}
+	#partech-sketch.active {
+		.page-content { 
+			img { opacity:1; }
 		}
 	}
 
@@ -85,11 +118,27 @@
 					li { width:20%; display:block; position:absolute; left:50%; margin-left:-10%; .transition(1s); 
 						img { display:block; width:100%; height:auto; } 
 					}
-					li:nth-of-type(1) { left:2%; margin:0; z-index:1; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); -webkit-transition-delay:0.8s; -moz-transition-delay:0.8s; -o-transition-delay:0.8s; -ms-transition-delay:0.8s; transition-delay:0.8s;  }
-					li:nth-of-type(2) { left:20%; margin:0; z-index:2; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); -webkit-transition-delay:0.4s; -moz-transition-delay:0.4s; -o-transition-delay:0.4s; -ms-transition-delay:0.4s; transition-delay:0.4s; }
+					li:nth-of-type(1) { left:50%; margin-left:-10%; z-index:1; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); .transitionDelay(0.8s); }
+					li:nth-of-type(2) { left:50%; margin-left:-10%; z-index:2; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); .transitionDelay(0.4s); }
 					li:nth-of-type(3) { z-index:3; }
-					li:nth-of-type(4) { left:60%; margin:0; z-index:2; .box-shadow(@x: 4px, @y:4px, @blur:4px, @alpha:0.3); -webkit-transition-delay:0.4s; -moz-transition-delay:0.4s; -o-transition-delay:0.4s; -ms-transition-delay:0.4s; transition-delay:0.4s;  }
-					li:nth-of-type(5) { left:78%; margin:0; z-index:1; .box-shadow(@x: 4px, @y:4px, @blur:4px, @alpha:0.3); -webkit-transition-delay:0.8s; -moz-transition-delay:0.8s; -o-transition-delay:0.8s; -ms-transition-delay:0.8s; transition-delay:0.8s;  }					
+					li:nth-of-type(4) { left:50%; margin-left:-10%; z-index:2; .box-shadow(@x: 4px, @y:4px, @blur:4px, @alpha:0.3); .transitionDelay(0.4s); }
+					li:nth-of-type(5) { left:50%; margin-left:-10%; z-index:1; .box-shadow(@x: 4px, @y:4px, @blur:4px, @alpha:0.3); .transitionDelay(0.8s); }					
+				}
+			}	
+		}
+	}
+	#partech-mobile.active { 
+		.page-content { 
+			.mobileScreen {  
+				#partech-iphone {  }	
+				ul {
+					li { 
+						img { } 
+					}
+					li:nth-of-type(1) { left:2%; margin:0; }
+					li:nth-of-type(2) { left:20%; margin:0; }
+					li:nth-of-type(4) { left:60%; margin:0; }
+					li:nth-of-type(5) { left:78%; margin:0; }					
 				}
 			}	
 		}
@@ -106,7 +155,16 @@
 					&:nth-of-type(2) {  margin:0 5%; }
 					&:nth-of-type(3) { margin:0 5% 0 0; }
 					&:nth-of-type(4) {  margin:0 2.5% 0 0; }
-					img { width:100%;  display:block; .transition(1s); -webkit-transition-delay:0.4s; -moz-transition-delay:0.4s; -o-transition-delay:0.4s; -ms-transition-delay:0.4s; transition-delay:0.4s; }
+					img { opacity:0; width:100%;  display:block; .transition(1.5s); }
+				}
+			}
+		}
+	}
+	#partech-ui.active { background:@partechBG2; padding:0 0 100px 0;
+		.page-content {
+			ul { 
+				li { .inline-block; width:20%; height:auto; border:solid 12px @partechBG1; .borderRadius(100%); background:rgba(0,0,0,0.3); .box-shadow(@x: 0px, @y:8px, @blur:8px, @alpha:0.3); .boxSizing(border-box); 
+					img { opacity:1; }
 				}
 			}
 		}
