@@ -32,9 +32,11 @@ window.kevinPortfolio = {
     },
     enterProject: function() {
         this.activeProjectView.caseStudyElem.css('display','block');
+        this.activeProjectView.enterProject();
     },
     closeProject: function() {
         this.activeProjectView.caseStudyElem.css('display','none');
+        $(window).unbind('scroll');
     }
 
 };
