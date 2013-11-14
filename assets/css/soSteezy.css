@@ -4056,11 +4056,11 @@ section .page-content {
 #theWhole #theWhole-introduction .page-content p {
   color: #ffffff;
   font-family: 'Conv_Gotham-Book';
-  font-size: 20px;
-  font-size: 1.250rem;
-  line-height: 1.3em;
-  margin: 40px auto 60px auto;
-  width: 690px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4em;
+  margin: 40px auto 100px auto;
+  width: 600px;
 }
 #theWhole #theWhole-introduction .page-content img {
   display: block;
@@ -4103,8 +4103,21 @@ section .page-content {
   margin-right: 210px;
 }
 #theWhole #theWhole-concept .page-content img {
+  opacity: 0;
   display: block;
   margin: 60px auto 0 auto;
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+}
+#theWhole #theWhole-concept.active {
+  background: #050505;
+  padding: 100px 0 100px 0;
+}
+#theWhole #theWhole-concept.active .page-content img {
+  opacity: 1;
 }
 #theWhole #theWhole-interface {
   background: #141414;
@@ -4142,6 +4155,8 @@ section .page-content {
 }
 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul {
   margin-top: 80px;
+  text-align: center;
+  position: relative;
 }
 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul li {
   display: inline-block;
@@ -4151,8 +4166,12 @@ section .page-content {
   width: -khtml-calc(33.333333333333336%);
   width: -o-calc(33.333333333333336%);
   width: calc(33.333333333333336%);
-  text-align: center;
   vertical-align: top;
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
 }
 .lt-ie9 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul li {
   display: inline;
@@ -4183,6 +4202,17 @@ section .page-content {
   box-sizing: border-box;
 }
 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul li h3 {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  -moz-transition-delay: 1.5s;
+  -webkit-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -khtml-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+  opacity: 0;
   margin: 30px auto 10px auto;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -4192,11 +4222,64 @@ section .page-content {
   font-family: 'Conv_Gotham-Medium';
 }
 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul li p {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  -moz-transition-delay: 1.5s;
+  -webkit-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -khtml-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+  opacity: 0;
   width: 80%;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
   margin: auto;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(1) {
+  position: relative;
+  z-index: 10;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  margin-left: -webkit-calc(-16.666666666666668%);
+  top: 0;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(2) img {
+  opacity: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -moz-transition: all 1.3s 0s;
+  -webkit-transition: all 1.3s 0s;
+  -ms-transition: all 1.3s 0s;
+  -khtml-transition: all 1.3s 0s;
+  transition: all 1.3s 0s;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(3) {
+  position: absolute;
+  right: 50%;
+  margin-right: -webkit-calc(-16.666666666666668%);
+  top: 0;
+}
+#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(3) img {
+  opacity: 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -moz-transition: all 1.3s 0s;
+  -webkit-transition: all 1.3s 0s;
+  -ms-transition: all 1.3s 0s;
+  -khtml-transition: all 1.3s 0s;
+  transition: all 1.3s 0s;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu {
   position: relative;
@@ -4209,39 +4292,155 @@ section .page-content {
   z-index: 2;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(2) {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  opacity: 0;
   position: absolute;
   top: 300px;
-  right: 0px;
+  right: -20px;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(3) {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  -moz-transition-delay: 2s;
+  -webkit-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -khtml-transition-delay: 2s;
+  transition-delay: 2s;
+  opacity: 0;
   position: absolute;
-  top: 920px;
+  top: 930px;
   left: 280px;
   z-index: 99;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(4) {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  -moz-transition-delay: 1.5s;
+  -webkit-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -khtml-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+  opacity: 0;
   position: absolute;
-  top: 664px;
+  top: 674px;
   left: 332px;
   z-index: 99;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(5) {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  -moz-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -khtml-transition-delay: 1s;
+  transition-delay: 1s;
+  opacity: 0;
   position: absolute;
-  top: 213px;
+  top: 203px;
   left: 294px;
   z-index: 99;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(6) {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  -khtml-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 0;
   position: absolute;
-  top: 80px;
+  top: 70px;
   left: 282px;
   z-index: 99;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(7) {
+  -moz-transition: all 1s 0s;
+  -webkit-transition: all 1s 0s;
+  -ms-transition: all 1s 0s;
+  -khtml-transition: all 1s 0s;
+  transition: all 1s 0s;
+  opacity: 0;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 180px;
   z-index: 99;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-interface-content ul li:nth-of-type(2) {
+  left: 0;
+  margin: 0;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-interface-content ul li:nth-of-type(2) img {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-interface-content ul li:nth-of-type(3) {
+  right: 0;
+  margin: 0;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-interface-content ul li:nth-of-type(3) img {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-interface-content ul li h3 {
+  opacity: 1;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-interface-content ul li p {
+  opacity: 1;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu {
+  position: relative;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img {
+  display: block;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img:nth-of-type(2) {
+  opacity: 1;
+  right: 0px;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img:nth-of-type(3) {
+  opacity: 1;
+  top: 920px;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img:nth-of-type(4) {
+  opacity: 1;
+  top: 664px;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img:nth-of-type(5) {
+  opacity: 1;
+  top: 213px;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img:nth-of-type(6) {
+  opacity: 1;
+  top: 80px;
+}
+#theWhole #theWhole-interface.active .page-content #theWhole-menu img:nth-of-type(7) {
+  opacity: 1;
+  top: 20px;
 }
 #theWhole #theWhole-element {
   background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;
@@ -4297,11 +4496,29 @@ section .page-content {
   position: relative;
   overflow: hidden;
 }
-#theWhole #theWhole-madeWith .page-content img {
-  display: block;
-  margin: auto;
+#theWhole #theWhole-madeWith .page-content #macbook-theWhole {
   width: 875px;
   margin-bottom: 60px;
+  position: relative;
+}
+#theWhole #theWhole-madeWith .page-content #macbook-theWhole img {
+  display: block;
+  margin: auto;
+}
+#theWhole #theWhole-madeWith .page-content #macbook-theWhole img:nth-of-type(1) {
+  width: 100%;
+}
+#theWhole #theWhole-madeWith .page-content #macbook-theWhole img:nth-of-type(2) {
+  -moz-transition: all 1.5s 0s;
+  -webkit-transition: all 1.5s 0s;
+  -ms-transition: all 1.5s 0s;
+  -khtml-transition: all 1.5s 0s;
+  transition: all 1.5s 0s;
+  opacity: 0;
+  position: absolute;
+  width: 569px;
+  top: 36px;
+  left: 154px;
 }
 #theWhole #theWhole-madeWith .page-content h2 {
   font-family: 'Conv_Gotham-Medium';
@@ -4355,6 +4572,9 @@ section .page-content {
 }
 #theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover {
   color: #050505;
+}
+#theWhole #theWhole-madeWith.active .page-content #macbook-theWhole img:nth-of-type(2) {
+  opacity: 1;
 }
 #theWhole footer {
   background: #050505;
