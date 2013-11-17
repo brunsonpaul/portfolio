@@ -30,8 +30,10 @@
                 <span>Partech</span>
             </h1>
             <span class="sepPartech"></span>
-            <p>Production of the graphism and the development of a static website for the design office Partech. Site responsive, create with HTML 5 / CSS 3, Javascript and Flash.</p>
-            <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
+            <p>
+                Production of the graphism and the development of a static website for the design office Partech. Site responsive, create with HTML 5 / CSS 3, Javascript and Flash.
+                <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
+            </p>
             <img id='partechCinemaDisplay' src='./assets/img/partech/partech-cinema-display.png' alt="partech cinema display">
         </div>
     </article>

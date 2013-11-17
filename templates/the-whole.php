@@ -8,6 +8,7 @@
             <li><a href="#"></a></li>
         </ul>
     </nav>
+    <div id='theWhole-bg'></div>
     <article id='theWhole-introduction'>
         <div class="page-content">
             <ul>
@@ -25,7 +26,7 @@
                 </li>
             </ul>
             <h1>
-                <img src='./assets/img/the-whole/the-whole-logo.png' alt="The Whole logo">
+                <img src='./assets/img/the-whole/the-whole-logo.svg' alt="The Whole logo">
                 <span>The Whole</span>
             </h1>
             <p>
@@ -59,20 +60,20 @@
                 <img src='./assets/img/the-whole/the-whole-interface.png' alt=''>
                 <ul>
                     <li>
-                        <img src='./assets/img/the-whole/the-whole-bookmark.png' alt=''>
-                        <h3>Bookmarks</h3>
-                        <p>
-                            Sauvegardé vos posts favori en cliquant sur le bookmark qui apparait au survol du post.
-                        </p>
-                    </li><!-- 
-                    !--><li>
                         <img src='./assets/img/the-whole/the-whole-twInfos.png' alt=''>
                         <h3>News feed</h3>
                         <p>
                             La source de chaque post est identifiable grâce au design qui s’adapte en fonction du type de post.
                         </p>
-
                     </li><!-- 
+                    !-->
+                    <li>
+                        <img src='./assets/img/the-whole/the-whole-bookmark.png' alt=''>
+                        <h3>Bookmarks</h3>
+                        <p>
+                            Sauvegardé vos posts favori en cliquant sur le bookmark qui apparait au survol du post.
+                        </p>
+                    </li><!--
                     !--><li>
                         <img src='./assets/img/the-whole/the-whole-filtre.png' alt=''>
                         <h3>Filtre du flux</h3>
@@ -109,7 +110,10 @@
 
     <article id='theWhole-madeWith'>
         <div class="page-content">
-            <img src='./assets/img/the-whole/the-whole-macbook-air.png' alt=''>
+            <div id='macbook-theWhole'>
+                <img src='./assets/img/the-whole/the-whole-macbook-air.png' alt=''>
+                <img src='./assets/img/the-whole/the-whole-macbook-air-screen.png' alt=''>
+            </div>
             <h2>A project made with ...</h2>
             <ul>
                 <li>

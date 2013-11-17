@@ -26,8 +26,8 @@
                 </li>
             </ul>
             <h1>
-                <img src='./assets/img/100ansdetour/pignon.svg' alt=''>
-                100 ans de Tour
+                <img id='pignon' src='./assets/img/100ansdetour/pignon.svg' alt=''>
+                <span>100 ans de Tour</span>
             </h1>
             <p>
                 Projet de data-visualization sur les 100 ans du Tour de France . À quelques mois de la 100ème édition, la Grande Boucle a retenu tout notre intérêt. Un sujet qui plus est fascinant sur le plan des données à explorer. 100 ans de données à parcourir entre classements, parcours ou encore coureurs de légende.
