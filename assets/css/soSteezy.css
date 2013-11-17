@@ -1065,7 +1065,15 @@ section .page-content {
   -khtml-transition: all 0.7s 0s;
   transition: all 0.7s 0s;
 }
-#theWholeProject #rocket {
+#theWholeProject #space-anim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+#theWholeProject #space-anim #rocket {
   position: absolute;
   width: 2.2%;
   -webkit-animation: rocket 30s 0 infinite linear;
@@ -1073,7 +1081,7 @@ section .page-content {
   -o-animation: rocket 30s 0 infinite linear;
   animation: rocket 30s 0 infinite linear;
 }
-#theWholeProject #rocket img {
+#theWholeProject #space-anim #rocket img {
   display: block;
   width: 100%;
 }
@@ -1229,7 +1237,7 @@ section .page-content {
     transform: rotate(65deg);
   }
 }
-#theWholeProject #astronaut {
+#theWholeProject #space-anim #astronaut {
   position: absolute;
   width: 2.2%;
   -webkit-animation: astronaut 50s 0 infinite linear;
@@ -1237,7 +1245,7 @@ section .page-content {
   -o-animation: astronaut 50s 0 infinite linear;
   animation: astronaut 50s 0 infinite linear;
 }
-#theWholeProject #astronaut img {
+#theWholeProject #space-anim #astronaut img {
   display: block;
   width: 100%;
 }
@@ -1317,97 +1325,97 @@ section .page-content {
     transform: rotate(3600deg);
   }
 }
-#theWholeProject #meteor1 {
+#theWholeProject #space-anim #meteor1 {
   position: absolute;
   width: 5%;
   top: -5%;
   left: -10%;
   -webkit-animation: meteor 150s 0 infinite linear;
 }
-#theWholeProject #meteor1 img {
+#theWholeProject #space-anim #meteor1 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor2 {
+#theWholeProject #space-anim #meteor2 {
   position: absolute;
   width: 2%;
   top: -15%;
   left: 55%;
   -webkit-animation: meteor 140s 0 infinite linear;
 }
-#theWholeProject #meteor2 img {
+#theWholeProject #space-anim #meteor2 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor3 {
+#theWholeProject #space-anim #meteor3 {
   position: absolute;
   width: 4%;
   top: -90%;
-  left: 7%;
+  left: 40%;
   -webkit-animation: meteor 160s 0 infinite linear;
 }
-#theWholeProject #meteor3 img {
+#theWholeProject #space-anim #meteor3 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor4 {
+#theWholeProject #space-anim #meteor4 {
   position: absolute;
   width: 6%;
   top: -80%;
   left: 3%;
   -webkit-animation: meteor 170s 0 infinite linear;
 }
-#theWholeProject #meteor4 img {
+#theWholeProject #space-anim #meteor4 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor5 {
+#theWholeProject #space-anim #meteor5 {
   position: absolute;
   width: 2%;
   top: -40%;
   left: 60%;
   -webkit-animation: meteor 155s 0 infinite linear;
 }
-#theWholeProject #meteor5 img {
+#theWholeProject #space-anim #meteor5 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor6 {
+#theWholeProject #space-anim #meteor6 {
   position: absolute;
   width: 4%;
   top: -50%;
   left: 15%;
   -webkit-animation: meteor 185s 0 infinite linear;
 }
-#theWholeProject #meteor6 img {
+#theWholeProject #space-anim #meteor6 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor7 {
+#theWholeProject #space-anim #meteor7 {
   position: absolute;
   width: 4%;
   top: -15%;
   left: 80%;
   -webkit-animation: meteor 210s 0 infinite linear;
 }
-#theWholeProject #meteor7 img {
+#theWholeProject #space-anim #meteor7 img {
   display: block;
   width: 100%;
 }
-#theWholeProject #meteor8 {
+#theWholeProject #space-anim #meteor8 {
   position: absolute;
   width: 3%;
   top: -25%;
   left: 7%;
   -webkit-animation: meteor 130s 0 infinite linear;
 }
-#theWholeProject #meteor8 img {
+#theWholeProject #space-anim #meteor8 img {
   display: block;
   width: 100%;
 }
 @-webkit-keyframes meteor {
   100% {
-    margin-left: 50%;
+    margin-left: 40%;
     margin-top: 100%;
     -webkit-transform: rotate(720deg);
     -moz-transform: rotate(720deg);
@@ -7383,8 +7391,8 @@ section .page-content {
 }
 #theWhole #theWhole-madeWith .page-content #macbook-theWhole {
   width: 875px;
-  margin-bottom: 60px;
   position: relative;
+  margin: 0 auto 60px auto;
 }
 #theWhole #theWhole-madeWith .page-content #macbook-theWhole img {
   display: block;

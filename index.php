@@ -139,18 +139,20 @@
         </div>
 
         <div id='theWholeProject' class="project" data-project="the-whole">
-            <div id='rocket'><img src="assets/img/the-whole/bg/the-whole-rocket.svg" alt=""></div>            
-            
-            <div id='astronaut'><img src="assets/img/the-whole/bg/the-whole-astronaut.svg" alt=""></div>
-            
-            <div id='meteor1'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-            <div id='meteor2'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
-            <div id='meteor3'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
-            <div id='meteor4'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-            <div id='meteor5'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
-            <div id='meteor6'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-            <div id='meteor7'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
-            <div id='meteor8'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
+            <div id='space-anim'>
+                <div id='rocket'><img src="assets/img/the-whole/bg/the-whole-rocket.svg" alt=""></div>            
+                
+                <div id='astronaut'><img src="assets/img/the-whole/bg/the-whole-astronaut.svg" alt=""></div>
+                
+                <div id='meteor1'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor2'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
+                <div id='meteor3'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor4'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor5'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor6'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor7'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
+                <div id='meteor8'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
+            </div>
             
             <div id='theWholeSolarSystem'>
                <div id='theWholePlanet'>
