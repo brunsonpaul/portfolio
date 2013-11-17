@@ -151,7 +151,10 @@
                 <div id='meteor5'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
                 <div id='meteor6'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
                 <div id='meteor7'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
-                <div id='meteor8'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor8'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>                
+                <div id='meteor9'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor10'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor11'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
             </div>
             
             <div id='theWholeSolarSystem'>

@@ -1238,12 +1238,14 @@ section .page-content {
   }
 }
 #theWholeProject #space-anim #astronaut {
+  right: 35%;
+  top: -10%;
   position: absolute;
   width: 2.2%;
-  -webkit-animation: astronaut 50s 0 infinite linear;
-  -mos-animation: astronaut 50s 0 infinite linear;
-  -o-animation: astronaut 50s 0 infinite linear;
-  animation: astronaut 50s 0 infinite linear;
+  -webkit-animation: astronaut 50s 15s infinite linear;
+  -mos-animation: astronaut 50s 15s infinite linear;
+  -o-animation: astronaut 50s 15s infinite linear;
+  animation: astronaut 50s 15s infinite linear;
 }
 #theWholeProject #space-anim #astronaut img {
   display: block;
@@ -1328,9 +1330,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor1 {
   position: absolute;
   width: 5%;
-  top: -5%;
+  top: -10%;
   left: -10%;
-  -webkit-animation: meteor 150s 0 infinite linear;
+  -webkit-animation: meteor 150s 6s infinite linear;
+  -moz-animation: meteor 150s 6s infinite linear;
+  -o-animation: meteor 150s 6s infinite linear;
+  animation: meteor 150s 6s infinite linear;
 }
 #theWholeProject #space-anim #meteor1 img {
   display: block;
@@ -1339,9 +1344,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor2 {
   position: absolute;
   width: 2%;
-  top: -15%;
+  top: -10%;
   left: 55%;
-  -webkit-animation: meteor 140s 0 infinite linear;
+  -webkit-animation: meteor 140s 23s infinite linear;
+  -moz-animation: meteor 140s 23s infinite linear;
+  -o-animation: meteor 140s 23s infinite linear;
+  animation: meteor 140s 23s infinite linear;
 }
 #theWholeProject #space-anim #meteor2 img {
   display: block;
@@ -1350,9 +1358,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor3 {
   position: absolute;
   width: 4%;
-  top: -90%;
+  top: -10%;
   left: 40%;
-  -webkit-animation: meteor 160s 0 infinite linear;
+  -webkit-animation: meteor 160s 8s infinite linear;
+  -moz-animation: meteor 160s 8s infinite linear;
+  -o-animation: meteor 160s 8s infinite linear;
+  animation: meteor 160s 8s infinite linear;
 }
 #theWholeProject #space-anim #meteor3 img {
   display: block;
@@ -1361,9 +1372,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor4 {
   position: absolute;
   width: 6%;
-  top: -80%;
-  left: 3%;
-  -webkit-animation: meteor 170s 0 infinite linear;
+  top: -10%;
+  left: -4%;
+  -webkit-animation: meteor 170s 35s infinite linear;
+  -moz-animation: meteor 170s 35s infinite linear;
+  -o-animation: meteor 170s 35s infinite linear;
+  animation: meteor 170s 35s infinite linear;
 }
 #theWholeProject #space-anim #meteor4 img {
   display: block;
@@ -1372,9 +1386,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor5 {
   position: absolute;
   width: 2%;
-  top: -40%;
+  top: -10%;
   left: 60%;
-  -webkit-animation: meteor 155s 0 infinite linear;
+  -webkit-animation: meteor 155s 35s infinite linear;
+  -moz-animation: meteor 155s 35s infinite linear;
+  -o-animation: meteor 155s 35s infinite linear;
+  animation: meteor 155s 35s infinite linear;
 }
 #theWholeProject #space-anim #meteor5 img {
   display: block;
@@ -1383,9 +1400,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor6 {
   position: absolute;
   width: 4%;
-  top: -50%;
+  top: -10%;
   left: 15%;
-  -webkit-animation: meteor 185s 0 infinite linear;
+  -webkit-animation: meteor 185s 12s infinite linear;
+  -moz-animation: meteor 185s 12s infinite linear;
+  -o-animation: meteor 185s 12s infinite linear;
+  animation: meteor 185s 12s infinite linear;
 }
 #theWholeProject #space-anim #meteor6 img {
   display: block;
@@ -1394,9 +1414,12 @@ section .page-content {
 #theWholeProject #space-anim #meteor7 {
   position: absolute;
   width: 4%;
-  top: -15%;
+  top: -10%;
   left: 80%;
-  -webkit-animation: meteor 210s 0 infinite linear;
+  -webkit-animation: meteor 210s 50s infinite linear;
+  -moz-animation: meteor 210s 50s infinite linear;
+  -o-animation: meteor 210s 50s infinite linear;
+  animation: meteor 210s 50s infinite linear;
 }
 #theWholeProject #space-anim #meteor7 img {
   display: block;
@@ -1405,11 +1428,56 @@ section .page-content {
 #theWholeProject #space-anim #meteor8 {
   position: absolute;
   width: 3%;
-  top: -25%;
+  top: -10%;
   left: 7%;
-  -webkit-animation: meteor 130s 0 infinite linear;
+  -webkit-animation: meteor 120s 0 infinite linear;
+  -moz-animation: meteor 120s 0 infinite linear;
+  -o-animation: meteor 120s 0 infinite linear;
+  animation: meteor 120s 0 infinite linear;
 }
 #theWholeProject #space-anim #meteor8 img {
+  display: block;
+  width: 100%;
+}
+#theWholeProject #space-anim #meteor9 {
+  position: absolute;
+  width: 5%;
+  top: -10%;
+  left: 55%;
+  -webkit-animation: meteor 130s 100s infinite linear;
+  -moz-animation: meteor 130s 100s infinite linear;
+  -o-animation: meteor 130s 100s infinite linear;
+  animation: meteor 130s 100s infinite linear;
+}
+#theWholeProject #space-anim #meteor9 img {
+  display: block;
+  width: 100%;
+}
+#theWholeProject #space-anim #meteor10 {
+  position: absolute;
+  width: 2%;
+  top: -10%;
+  left: 8%;
+  -webkit-animation: meteor 130s 90s infinite linear;
+  -moz-animation: meteor 130s 90s infinite linear;
+  -o-animation: meteor 130s 90s infinite linear;
+  animation: meteor 130s 90s infinite linear;
+}
+#theWholeProject #space-anim #meteor10 img {
+  display: block;
+  width: 100%;
+}
+#theWholeProject #space-anim #meteor11 {
+  position: absolute;
+  width: 3%;
+  top: -10%;
+  left: 20%;
+  -webkit-animation: meteor 130s 110s infinite linear;
+  -moz-animation: meteor 130s 110s infinite linear;
+  -o-animation: meteor 130s 110s infinite linear;
+  animation: meteor 130s 110s infinite linear;
+}
+#theWholeProject #space-anim #meteor11 img {
   display: block;
   width: 100%;
 }
