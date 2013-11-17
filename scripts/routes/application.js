@@ -22,6 +22,11 @@ kevinPortfolio.Routers = kevinPortfolio.Routers || {};
 		},
 		caseStudyHandler:function(project){
 			if(kevinPortfolio.homeView.isValidProjectName(project)){
+				if(kevinPortfolio.homeView.projectOpenned){
+					kevinPortfolio.homeView.closeProjectAnim();
+					console.log('close-project');
+					kevinPortfolio.closeProject();
+				}
 				this.loadView(project);
 				kevinPortfolio.homeView.slideToProject(project);
 				kevinPortfolio.homeView.enterProjectAnim();

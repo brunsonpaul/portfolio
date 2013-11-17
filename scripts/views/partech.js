@@ -27,7 +27,8 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                 that.positionsArticle.push($(article).offset().top);
 
             });
-
+            $(this.articles[0]).addClass('active');
+            delete this.positionsArticle[0];
             this.scrollAnims();
 
         },

@@ -186,7 +186,6 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         },
         //Animation d'entré
         enterProjectAnim: function(){
-            this.projectOpenned = true;
             $('.border').removeClass('close');
             $('.border').addClass('open');
             this.homeProjectsContainer.css('margin-top', -this.windowHeight+'px');
@@ -202,11 +201,10 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.homeProjectsContainer.css('position', 'fixed');
 
             var that = this;
-
             this.homeProjectsContainer.one('transitionend', function(){
-                that.projectOpenned = false;
                 kevinPortfolio.closeProject();
             });
+            
         },
         slideToProject: function(pProject){
             this.currentProject = this.getProjectNumberByName(pProject);
