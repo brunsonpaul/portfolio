@@ -8,6 +8,7 @@
             <li><a href="#"></a></li>
         </ul>
     </nav>
+    <div id='theWhole-bg'></div>
     <article id='theWhole-introduction'>
         <div class="page-content">
             <ul>

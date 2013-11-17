@@ -4,27 +4,28 @@
 @theWholeColor4:#646464;
 @theWholeColor5:#fc1f2f;
 
-#theWhole { background:@theWholeColor3; color:@theWholeColor1; .gothamBook();
-	#theWhole-introduction { padding:100px 0 0 0; position:relative; background:url('../img/the-whole/bg/the-whole-bg.jpg') no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+#theWhole { color:@theWholeColor1; .gothamThin();
+	#theWhole-bg { position:fixed; z-index:-1; top:0; left:0; bottom:0; right:0; background:#141414 url('../img/the-whole/bg/the-whole-bg.jpg') center bottom; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:100%; .transition(0.7s); }
+	#theWhole-introduction { padding:100px 0 0 0; position:relative;
 		.page-content { text-align:center; 
 			ul { margin:auto; .fontSize16(); 
 				li { .calcWidthKit(100/3%); .inline-block(); vertical-align:top;
-					span { display:block; text-transform:uppercase; .gothamMedium(); }
+					span { display:block; text-transform:uppercase; .gothamBook(); }
 				}
 			}
 			h1 { width:243px; margin:90px auto 0 auto;
 				img { display:block; width:100%; }
 				span { display:none; }
 			}
-			p { color:@partechColor1; .gothamBook(); .fontSize16(); line-height:1.4em; margin:40px auto 100px auto; width:600px; }
+			p { color:@partechColor1; .fontSize18(); line-height:1.4em; margin:40px auto 100px auto; width:630px; }
 			img { display:block; margin:auto; }
 		}
 	}	
 
 	#theWhole-concept { background:@theWholeColor2; padding:100px 0 100px 0;  
 		.page-content {
-			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; .fontSize32(); }
-			h3 { text-transform:uppercase; text-align:center; .fontSize16(); line-height:1.3em; color:@theWholeColor4; }
+			h2 { .gothamBook(); text-transform:uppercase; text-align:center; .fontSize32(); }
+			h3 { .gothamLight(); text-transform:uppercase; text-align:center; .fontSize16(); line-height:1.3em; color:@theWholeColor4; }
 			p { margin-top:40px; text-align:justify; line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12(); width:370px;
 				&:nth-of-type(1) { margin-right:210px; }
 			}	
@@ -39,16 +40,18 @@
 
 	#theWhole-interface { background:@theWholeColor3; padding:100px 0;  
 		.page-content {
-			h2 { .gothamMedium(); text-transform:uppercase; text-align:center; color:@theWholeColor5; .fontSize20(); }
+			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@theWholeColor5; .fontSize20(); }
 			>p { text-align:center; line-height:1.3em; .fontSize16();  width:620px; margin:10px auto 40px auto; }
 			#theWhole-interface-content { position:relative; margin:60px auto 40px auto;
 				>img { display:block; width:950px; .box-shadow(@x: -4px, @y:4px, @blur:4px, @alpha:0.3); }
 				ul { margin-top:80px; text-align:center; position:relative;
 					li { .inline-block(); .calcWidthKit(100%/3); vertical-align:top; .transition(1s);
 						img { display:block; width:200px; height:auto; margin:auto; border:solid 10px @partechBG1; .borderRadius(100%); .box-shadow(@x: 0px, @y:8px, @blur:8px, @alpha:0.3); .boxSizing(border-box); }
-						h3 { .transition(1s); .transitionDelay(1.5s); opacity:0; margin:30px auto 10px auto; .textUppercase(); .fontSize14(); color:@theWholeColor5; .gothamMedium(); }
+						h3 { .transition(1s); .transitionDelay(1.5s); opacity:0; margin:30px auto 10px auto; .textUppercase(); .fontSize14(); color:@theWholeColor5; .gothamBook(); }
 						p { .transition(1s); .transitionDelay(1.5s); opacity:0; width:80%; .fontSize14(); line-height:18px; margin:auto; }
-						&:nth-of-type(1) { position:relative; z-index:10; }
+						&:nth-of-type(1) { position:relative; z-index:10; 
+							img { opacity:0; .transition(1.3s); }
+						}
 						&:nth-of-type(2) { position:absolute; left:50%; margin-left:-webkit-calc(-100%/6); top:0; 
 							img { opacity:0; .rotateKit(90deg); .transition(1.3s); }
 						}
@@ -77,6 +80,9 @@
 				>img { }
 				ul { 
 					li { 
+						&:nth-of-type(1) { 
+							img { opacity:1; }
+						}
 						&:nth-of-type(2) { left:0; margin:0; 
 							img { opacity:1; .rotateKit(0deg); }
 						}
@@ -106,7 +112,7 @@
 	#theWhole-element { background:@theWholeColor3 url('../img/the-whole/theWhole-patterns.jpg') repeat center center; padding:100px 0;  
 		.page-content {
 			div { .inline-block(); vertical-align:top; width:235px; margin-right:7px;
-				h2 { .fontSize32(); 
+				h2 { .fontSize32(); .gothamBook();
 					b { display:block; color:@theWholeColor5; }
 					&:after { content:''; display:block; width:50px; height:1px; background:@theWholeColor4; margin:30px 0; }
 				}
@@ -116,7 +122,7 @@
 		}
 	}
 
-	#theWhole-madeWith { padding:100px 0 60px 0; position:relative; overflow:hidden;
+	#theWhole-madeWith { background:@theWholeColor3; padding:100px 0 60px 0; position:relative; overflow:hidden;
 		.page-content {
 			#macbook-theWhole { width:875px; margin-bottom:60px; position:relative;
 				img { display:block; margin:auto; 
@@ -124,11 +130,11 @@
 					&:nth-of-type(2) { .transition(1.5s); opacity:0; position:absolute; width:569px; top:36px; left:154px; }
 				}
 			}
-			h2 { .gothamMedium(); .textUppercase(); text-align:center; .fontSize18(); color:@theWholeColor5; }
+			h2 { .gothamBook(); .textUppercase(); text-align:center; .fontSize18(); color:@theWholeColor5; }
 			ul { margin-top:40px;
 				li { .inline-block(); width:25%; text-align:center; vertical-align:top; .fontSize12();  color:@theWholeColor4;
 					a { 
-						&:nth-of-type(1) { display:block; color:@theWholeColor1; .gothamMedium(); text-transform:uppercase;
+						&:nth-of-type(1) { display:block; color:@theWholeColor1; .gothamBook(); text-transform:uppercase;
 							&:hover { text-decoration:underline; }
 						}
 						&:nth-of-type(2) { display:block; color:@theWholeColor1; background:@theWholeColor5; padding:9px 0 3px 0; width:40px; margin:10px auto; .borderRadius(100%); .fontSize28(); .fontSocial(); 
@@ -151,7 +157,7 @@
 	}
 
 	footer { background:@theWholeColor2; text-align:center; padding:70px 0; display:block; 
-		p:nth-of-type(1) { color:@theWholeColor1; .fontSize40(); }
+		p:nth-of-type(1) { color:@theWholeColor1; .fontSize40(); .gothamLight(); }
 		p:nth-of-type(2) { color:@theWholeColor4; .fontSize18(); }
 	}
 }
