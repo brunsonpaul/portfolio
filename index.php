@@ -67,7 +67,11 @@
                     </p>
                     <div id="discover">
                         <span></span>
-                        <b>Drag to discover projects</b>
+                        <b>
+                            <img src="assets/img/identity/arrow.png" alt=""> 
+                            Drag to discover projects
+                            <img src="assets/img/identity/arrow.png" alt=""> 
+                        </b>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -99,26 +103,48 @@
         </div>
 
         <div id='tdfProject' class="project" data-project="100ansdetour">
-<!--             <div id='fixie'>
-                <a href='#' class='enter-button'>
-                    <img src="assets/img/100ansdetour/bg/fixie.svg" alt="">
-                </a>
-            </div> --><!-- 
-            <div id='logo-bg'>
-                <img src="assets/img/100ansdetour/bg/100ansdetour.svg" alt="">
+            <div id='tdfBgContent'>
+                <h1>
+                    <img id='pignon' src='./assets/img/100ansdetour/pignon.svg' alt=''>
+                    Tour de France
+                    <span>100 ans de Tour</span>
+                </h1>
+                <div id='fixie'>
+                    <a href='#' class='enter-button'>
+                        <img src="assets/img/100ansdetour/fixie.svg" alt="">
+                    </a>                
+                </div>
+                <div id='tdfDrag'>
+                    <div id='tdfDragCursor'>
+                        <span>Drag</span>
+                        <img src='./assets/img/100ansdetour/arrow.svg' alt=''>
+                    </div>
+                    <div id='tdfDragEnd'></div>
+                </div>
+            </div>
+            <!--
+            <div id='contentTdfBg'>
+                <div id='logo-bg'>
+                    <img src="assets/img/100ansdetour/bg/100ansdetour-yellow.svg" alt="">
+                </div>
+                <div id='fixie'>
+                    <a href='#' class='enter-button'>
+                        <img src="assets/img/100ansdetour/bg/fixie.svg" alt="">
+                    </a>
+                </div>
             </div>
             <div id='hill'>
                 <img src="assets/img/100ansdetour/bg/hill.svg" alt="">
             </div>
             <div id='mountain'>
                 <img src="assets/img/100ansdetour/bg/moutain.svg" alt="">
-            </div> -->
-<!--             <div id='flagStart'>
+            </div> 
+            <div id='flagStart'>
                 <img src="assets/img/100ansdetour/bg/flag-start.svg" alt="">
             </div>            
             <div id='flagEnd'>
                 <img src="assets/img/100ansdetour/bg/flag-end.svg" alt="">
-            </div> --><!-- 
+            </div>
             <div id='clouds'>
                 <img src="assets/img/100ansdetour/bg/cloud1.svg" alt="">
                 <img src="assets/img/100ansdetour/bg/cloud2.svg" alt="">
@@ -127,8 +153,8 @@
                 <img src="assets/img/100ansdetour/bg/cloud5.svg" alt="">
                 <img src="assets/img/100ansdetour/bg/cloud6.svg" alt="">
                 <img src="assets/img/100ansdetour/bg/cloud1.svg" alt="">
-            </div>
- -->
+            </div> -->
+ 
                 <div id='date'>
                     <nav>
                         <ul>
@@ -191,9 +217,9 @@
         </div>
 
         <div id='socialCokeProject' class="project" data-project="social-coke">
-            <div>
+            <!--<div>
                 <h1>
-                    <span>Partech</span>
+                    <span>Social Coke</span>
                     <img src="assets/img/social-coke/bg/social-coke.svg" alt="Social Coke"> 
                 </h1>
                 <p>#SocialCoke, ou comment transformer<br/>l’écriture sociale en message publicitaire.</p>
@@ -201,33 +227,31 @@
                     <span>View the case study</span>
                     <span>View the case study</span>
                 </a>
-            </div>    
-        <!--<img style='position:absolute; top:7%; right:12%;'src='assets/img/social-coke/bg/monkey-bg.png'>
+            </div>  !-->  
+        <img style='position:absolute; top:7%; right:12%;'src='assets/img/social-coke/bg/monkey-bg.png'>
             <img style='position:absolute; top:58%; left:41%;'src='assets/img/social-coke/bg/patate-bg.png'>
             <img style='position:absolute; bottom:23%; right:4%;'src='assets/img/social-coke/bg/drink-bg.png'>
             <img style='position:absolute; top:13%; left:29%;'src='assets/img/social-coke/bg/hello-bg.png'>
             <img style='position:absolute; bottom:38%; right:41%;'src='assets/img/social-coke/bg/goutte-bg.png'>
             <img style='position:absolute; top:37%; right:38%;'src='assets/img/social-coke/bg/pointRose-bg.png'>
             <img style='position:absolute; bottom:43%; right:33%;'src='assets/img/social-coke/bg/pointVert-bg.png'>
-            <img style='position:absolute; bottom:36%; right:25%;'src='assets/img/social-coke/bg/pointJaune-bg.png'>!-->
+            <img style='position:absolute; bottom:36%; right:25%;'src='assets/img/social-coke/bg/pointJaune-bg.png'>
         </div>
 
         <div id='partechProject' class="project" data-project="partech">
-                <div>
-                    <h1>
-                        <span>Partech</span>
-                        <img src="assets/img/partech/bg/partech.svg" alt="Partech"> 
-                    </h1>
-                    <p>
-                        Corporate website for Partech, a design office specializing<br/>
-                        in manufactured chairlifts, in industrial<br/>
-                        equipment and mountain.
-                    </p>
-                    <a href="#" class="enter-button">
-                        <span>View the case study</span>
-                        <span>View the case study</span>
-                    </a>
-                </div>
+            <div>
+                <h1>
+                    Partech
+                </h1>
+                <p>
+                    Corporate website for Partech, a design office<br/>
+                    specializing in manufactured chairlifts, in industrial<br/>
+                    equipment and mountain.
+                </p>
+                <a href="#" class="enter-button">
+                    View the case study
+                </a>
+            </div>
         </div>
 
         <div id='footer' class="project" data-project="thanks-for-watching">
