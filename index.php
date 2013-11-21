@@ -44,8 +44,8 @@
             </svg>
         </a>
     </nav> 
+<div class="wrapper-projects-container" style="width:100%;heigt:100%;position:relative;overflow:hidden;">
     <div class="projects-container dragCursor">
-
 
         <div id='home' class="project active" data-project="home">
             <header>
@@ -239,6 +239,7 @@
             </footer>
         </div>
     </div>
+</div>
     <div class="transition-div">
         
     </div>
