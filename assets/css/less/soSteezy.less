@@ -1,13 +1,13 @@
 @import "helper.less";
 
-body, html { .fontSize16(); background:@colorGold; margin: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
+body, html { .fontSize16(); background:@colorBlack; margin: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
 html { height: 100%; }
 
 .userSelect { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
 .dragCursor { 
-	&:hover { cursor:url('../img/identity/drag.png'), move; }
-	&:active { cursor:url('../img/identity/drag-active.png'), move; }
+	&:hover { cursor:url('../img/identity/drag.png') 20 11, move; }
+	&:active { cursor:url('../img/identity/drag-active.png') 20 11, move; }
 }
 
 .border { .transition(0.8s); }
@@ -34,14 +34,16 @@ html { height: 100%; }
 	img { display:block; width:100%; }
 }
 
-.button-menu { position:fixed; z-index:9999; left:50%; top:58px; margin-left:-19px; text-align:center;
-	a { .transition(0.4s); color:@colorGold; display:block; width:34px; height:28px; padding-top:6px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.3); 
+.button-menu { position:fixed; z-index:9999; left:50%; top:58px; margin-left:-20px; text-align:center;
+	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
+		svg { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-9px; margin-top:-3.5px; }
 		&:hover {  border:solid 2px @colorGold; }
 	}
 }
 
-.button-close { position:fixed; z-index:9999; left:50%; top:38px; margin-left:-19px; text-align:center;
-	a { .transition(0.4s); color:@colorGold; display:block; width:34px; height:28px; padding-top:6px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.3); 
+.button-close { position:fixed; z-index:9999; left:50%; top:38px; margin-left:-20px; text-align:center;
+	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
+		svg { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-9px; margin-top:-3.5px; }
 		&:hover {  border:solid 2px @colorGold; }
 	}
 }

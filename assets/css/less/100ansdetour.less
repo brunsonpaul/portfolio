@@ -186,17 +186,31 @@
 	}
 			
 	#tdf-other { padding:100px 0 0 0; position:relative; background:@tdfColor1; color:@tdfColor2; border-top:6px solid @tdfColor2;
-		.page-content { 
-			.tdf-tweet{ position:absolute; width:340px; top:100px; left:50%; text-align:center; .fontSize14();
-				span { color:@tdfColor3; }
-				a { color:@tdfColor3; 
-					&:hover { text-decoration:underline }
+		.page-content {
+			h2 { .lato400(); color:@tdfColor2; .textUppercase(); text-align:center; .fontSize20(); }
+			#tdf-ask { margin:60px auto 80px auto;
+				ul {
+					li { margin-bottom:40px; .inline-block(); width:30%; vertical-align:top; text-align:center; .fontSize14();
+						b { display:block; .textUppercase(); color:@tdfColor3; margin-bottom:10px; }
+						a { .fontSize12(); .lato400(); display:block; color:@tdfColor1; background:@tdfColor2; width:90px; margin:20px auto 0 auto; padding:7px 0; .borderRadius(4px); 
+							&:hover { background:@tdfColor3; }
+						}
+						&:nth-of-type(3n+2) { margin:0 5% 40px 5%; }
+					}
 				}
-				b { .lato400(); display:block; margin-top:5px; }
 			}
-			#tdf-tweetLeft { margin-left:-455px; }
-			#tdf-tweetRight { margin-left:115px; }
-			#tdf-twitter { display:block; margin:0px auto 100px auto; text-align:center; font-size:100px; font-size:6.250rem; .fontSocial(); color:@tdfColor2; }
+			#tdf-onTwitter { position:relative; margin:0px auto 100px auto; 
+				.tdf-tweet { width:340px; text-align:center; .fontSize14(); position:absolute;
+					span { color:@tdfColor3; }
+					a { color:@tdfColor3; 
+						&:hover { text-decoration:underline }
+					}
+					b { .lato400(); display:block; margin-top:5px; }
+				}
+				#tdf-tweetLeft { top:0; left:0; }
+				#tdf-tweetRight { top:0; right:0; }
+				#tdf-twitter { display:block; text-align:center; font-size:6.250rem; .fontSocial(); color:@tdfColor2; }
+		 	}
 		 	#tdf-award { text-align:center;
 		 		li { .inline-block(); width:170px;
 		 			&:nth-of-type(1) { margin-right:30px;
