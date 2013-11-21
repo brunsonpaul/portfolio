@@ -212,15 +212,55 @@
 
     <article id='tdf-other'>
         <div class="page-content">
-            <div id='tdf-tweetLeft' class='tdf-tweet'>
-                Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href=''>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
-                <b>Thibault Jorge - @madebytj</b>
-            </div>            
-            <div id='tdf-tweetRight' class='tdf-tweet'>
-                Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href=''>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
-                <b>Thibault Jorge - @madebytj</b>
+            <h2>They talk about us</h2>
+            <div id='tdf-ask'>
+                <ul>
+                    <li>
+                        <b>Huffingtonpost</b>
+                        C'est une mine d'or pour tous les amoureux de statistiques et de classements. Le site 100ansdetour.fr a effectué un colossal travail de compilation de données [ ... ]
+                        <a href='http://www.huffingtonpost.fr/2013/06/29/tour-de-france-2013-cyclisme-meilleur-pire-du-web_n_3502291.html?#62_data-tour-de-france' target='_blank'>See article</a>
+                    </li><!--
+                    !--><li>
+                        <b>Codrops</b>
+                        A beautifully designed hommage to celebrate 100 years of the Tour de France. Some great effects and a brilliant way to present data made us pick this website for this week's inspiration.
+                        <a href='http://tympanus.net/codrops/collective/collective-74/' target='_blank'>See article</a>
+                    </li><!--
+                    !--><li>
+                        <b>Webdesignermag</b>
+                        The Tour de France is one of the most famous cycling tests in the world. This site celebrates 100 years of the race with an imaginative and interactive look at the facts and figures [ ... ]
+                        <a href='http://www.webdesignermag.co.uk/site-of-the-week/site-of-the-week-100-ans-de-tour/' target='_blank'>See article</a>
+                    </li><!--
+                    !--><li>
+                        <b>Design Spartan</b>
+                        Je ne comprendrais jamais ce qui intéresse tant les gens dans le Tour de France, mais ce site web mérite de l’attention [ ... ]
+                        <a href='http://designspartan.com/info_generale/5-sites-riches-et-originaux-que-vous-noublierez-pas-14/' target='_blank'>See article</a>
+                    </li><!--
+                    !--><li>
+                        <b>Blog du webdesign</b>
+                        Le Tour de France fête ses 100 ans !<br/>Pour l'occasion découvrez un site qui fait la rétrospective des 100 dernières années du Tour [ ... ]
+                        <a href='http://www.blogduwebdesign.com/inspiration-webdesign/5-sites-navigation-concept-original-81/1020' target='_blank'>See article</a>
+                    </li><!--
+                    !--><li>
+                        <b>John's Graphisme</b>
+                        Whaouu, ça faisait un petit moment que je n’avais pas fait un article dans cette thématique, les sites qui envoient du poney [ ... ]
+                        <a href='http://www.jonathan-menet.fr/blog/2013/07/23/le-site-qui-envoie-du-poney-mort-e37-100-ans-de-tour/' target='_blank'>See article</a>
+                    </li>    
             </div>
-            <div id='tdf-twitter'>L</div>
+            <div id='tdf-onTwitter'>
+                <div id='tdf-twitter'>L</div>
+                <div id='tdf-tweetLeft' class='tdf-tweet'>
+                    <div>
+                        Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href=''>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
+                        <b>Thibault Jorge - @madebytj</b>
+                    </div>
+                </div>            
+                <div id='tdf-tweetRight' class='tdf-tweet'>
+                    <div>
+                        Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href=''>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
+                        <b>Thibault Jorge - @madebytj</b>
+                    </div>
+                </div>
+            </div>
             <ul id='tdf-award'>
                 <li>
                     <a href="http://www.thefwa.com/site/100-ans-de-tour?search=tour" target="_blank">
