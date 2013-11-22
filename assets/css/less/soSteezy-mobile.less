@@ -29,15 +29,19 @@ header { position:relative; display:block; .boxSizing(border-box); width:90%; bo
 			}
 		} 
 	}
-	#social { margin:10% auto; 
-		li { .inline-block(); margin:0 7.5px; .fontSocial();
-			a { .transition(0.4s); color:@colorGold; .fontSize24(); display:block; width:34px; padding-top:7px; padding-bottom:3px; .borderRadius(100%;); border:solid 2px rgba(181,150,99,0.4); 
-				&:hover {  border:solid 2px @colorGold; }
+	#social { margin:10% 5%; 
+		li { .inline-block(); margin:0 4%;
+			&:first-child{ margin:0 4% 0 0; }
+			&:last-child{ margin:0 0 0 4%; }
+			a { position:relative; width:36px; height:36px; .rotateKit(45deg); color:@colorGold; .fontSize24(); display:block; border:solid 2px rgba(181,150,99,0.3);  
+				&:hover { border:solid 2px @colorGold; }
+				span { display:none; }
+				svg { display:block; .rotateKit(-45deg); position:absolute; left:50%; top:50%; }
 			}
-			#twitter { }
-			#behance { }
-			#dribbble { }
-			#linkedin {  }
+			#twitter svg { margin-left:-9px; margin-top:-7px; }
+			#behance svg { margin-left:-10px; margin-top:-6px; }
+			#dribbble svg { margin-left:-8px; margin-top:-8px; }
+			#linkedin svg { margin-left:-7px; margin-top:-8px; }
 		}
 	}
 }

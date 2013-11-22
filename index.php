@@ -19,7 +19,7 @@
     <meta property="og:description" content="Kevin Lagier, graphic design, art direction" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://lagier-kevin.com" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.svg" />
 
 </head>
 
