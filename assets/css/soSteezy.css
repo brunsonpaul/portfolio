@@ -911,14 +911,15 @@ section .page-content {
 }
 #tdfProject {
   position: relative;
-  background: #f5da3f url('../img/100ansdetour/tdfPatterns.jpg') top center repeat;
 }
 #tdfProject #tdfBgContent {
   z-index: 99;
   position: absolute;
   width: 100%;
-  top: 50%;
-  margin-top: -255px;
+  height: 100%;
+  top: 0%;
+  /*margin-top:-255px;*/
+  background: #f5da3f url('../img/100ansdetour/tdfPatterns.jpg') top center repeat;
 }
 #tdfProject #tdfBgContent h1 {
   font-family: 'Lato', sans-serif;
@@ -1120,6 +1121,11 @@ section .page-content {
   left: 8px;
   bottom: 8px;
   right: 8px;
+  z-index: 100;
+  display: none;
+}
+#tdfProject #date.active {
+  display: block;
 }
 #tdfProject #date nav {
   margin: 0;
@@ -1160,7 +1166,7 @@ section .page-content {
   top: 0;
   left: -1px;
   display: block;
-  width: 2px;
+  width: 3px;
   height: 100%;
   background: #000000;
 }

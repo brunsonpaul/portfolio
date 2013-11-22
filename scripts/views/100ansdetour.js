@@ -14,13 +14,16 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         positionsArticle: [],
         articles: [],
         mousePositionX:0,
+
         initialize: function(){
             this.articles = this.caseStudyElem.find('article');
             var screenHeight = (kevinPortfolio.homeView.windowHeight - 16)
             var height = screenHeight/6;
             $('#date li').css('height', height);
+            this.reinit();
             this.initEnterProjectAction();
         },
+
         initEnterProjectAction: function(){
 
             var dragCursor = $("#tdfDragCursor");
@@ -78,7 +81,11 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 
                         dragCursor.css('margin-left', slideSpace - dragWidth + "px");
                         velo.css('margin-left', slideSpace - dragWidth + "px");
-                        that.enterProject();
+                        $('.border').toggleClass('close open');
+                        $('#borderTop').on('webkitTransitionEnd', function(e){
+                            $(this).unbind('webkitTransitionEnd');
+                            that.enterProjectAnim();
+                        });
                         return false;
                     }
 
@@ -89,8 +96,16 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 
             });
         },
-        enterProject: function(){
+        enterProjectAnim: function(){
 
+            var that = this;
+            $("#date").addClass('active');
+
+            this.animateDate(that.enterProject);
+
+        },
+        animateDate:function(callback){
+            var that = this;
             var listeElem = $("#date").find('li');
             var k = 0;
             var time = 15;
@@ -98,6 +113,9 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                 if(k==listeElem.length)
                 {
                     clearInterval(t);
+                    if(callback){
+                        callback.call(that);
+                    }
                     return true;
                 }
 
@@ -105,8 +123,14 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                 k++;
                 return true;
             },time);
-            
+        },
+        enterProject: function(){
             var that = this;
+            this.animateDate(function(){});
+            this.displayProject();
+            $('#tdfBgContent').css('display', 'none');
+            this.caseStudyElem.css('display', 'block');
+            
             _.each(this.articles, function(article){
                 that.positionsArticle.push($(article).offset().top);
             });
@@ -117,7 +141,9 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.scrollAnims();
 
         },
-        
+        displayProject: function(){
+            kevinPortfolio.router.navigate('//100ansdetour/case-study');
+        },
         scrollAnims: function(){
             var that = this;
             $(window).on('scroll', function(){
@@ -136,6 +162,9 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 
             }); 
 
+        },
+        reinit: function(){
+            // TODO
         },
         disableTransition: function($elem){
             $elem.removeClass('no-transition');
