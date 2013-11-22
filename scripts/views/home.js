@@ -29,10 +29,11 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 				that.windowResized();
             });
 
-            $('.button-menu a').on('click', function(e){
+            // A mettre dans chaque projet pour gérer les différents effets
+/*            $('.button-menu a').on('click', function(e){
                 e.preventDefault();
                 that.closeProjectEvent();
-            });
+            });*/
 
         },
 
@@ -118,7 +119,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.windowWidth = $(window).width();
             this.windowHeight = $(window).height();
             this.intervalDragProject = this.windowWidth/5;
-            this.homeProjectsContainer.css('margin-left', -this.currentProject * this.windowWidth);
+            // this.homeProjectsContainer.css('margin-left', -this.currentProject * this.windowWidth);
             this.setProjectsSize();
 
         },
@@ -127,7 +128,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
         projectMapping:[],
         mousePositionX: null,
         currentProject:0,
-
+        isSliderActive: true,
         initProjectsHome: function(){
             var that = this;
 
@@ -135,21 +136,31 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.homeProjectsContainer.find('img').on('dragstart',function(){return false;});
             this.homeProjectsContainer.find('a').on('dragstart',function(){return false;});
 
+            // Mapping des projets
             _.each($(this.homeProjectClass), function(project){
-
                 that.projectMapping.push($(project).attr('data-project'));
+            });
 
+            // Prevent du drag des projets sur les éléments avec pour class noSlide
+            $(".noSlide").on('click',function(e){e.preventDefault()});
+            $(".noSlide").on('mousedown', function(e){
+                that.disableSlider(e);
+                $(document).on('mouseup',function(e){
+                    that.enableSlider(e);
+                    $(this).unbind('mouseup');
+                });
             });
 
             $(this.homeProjectClass).on('mousedown',function(e){
 
+                if(!that.isSliderActive) return false;
                 that.mousePositionX = e.clientX;
                 that.homeProjectsContainer.addClass('no-transition');
 
                 $(document).on('mousemove', function(e){
 
                     var position = -that.currentProject*that.windowWidth + e.clientX-that.mousePositionX;
-                    that.homeProjectsContainer.css('-webkit-transform','translate('+ position +'px, 0px)');
+                    that.homeProjectsContainer.css('-webkit-transform','translate3d('+ position +'px, 0px, 0px)');
 
                 });
 
@@ -184,33 +195,18 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             kevinPortfolio.router.navigate('//' + this.getActiveProjectName(), {trigger: true})
             return false;
         },
-        //Animation d'entré
-        enterProjectAnim: function(){
-            $('.border').removeClass('close');
-            $('.border').addClass('open');
-            this.homeProjectsContainer.css('margin-top', -this.windowHeight+'px');
-            this.homeProjectsContainer.addClass('project-container-closed');
-            this.homeProjectsContainer.css('position', 'relative');
-            kevinPortfolio.enterProject();
-        },
-        closeProjectAnim: function(){
-            $('.border').removeClass('open');
-            $('.border').addClass('close');
-            this.homeProjectsContainer.css('margin-top', '0px');
-            this.homeProjectsContainer.removeClass('project-container-closed');
-            this.homeProjectsContainer.css('position', 'fixed');
-
-            var that = this;
-            this.homeProjectsContainer.one('transitionend', function(){
-                kevinPortfolio.closeProject();
-            });
-            
-        },
         slideToProject: function(pProject){
             this.currentProject = this.getProjectNumberByName(pProject);
-            this.homeProjectsContainer.css('-webkit-transform','translate('+ -this.currentProject * this.windowWidth +'px, 0px)');
+            /*
+
+                TODO PREFIXER
+
+             */
+            this.homeProjectsContainer.css('-webkit-transform','translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)');
         },
         // Helpers
+
+        // Récupère le nom du projet actif en fonction de currentProject pour le routage 
         getActiveProjectName: function(){
             return this.projectMapping[this.currentProject];
         },
@@ -224,6 +220,12 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             }
 
             return false;
+        },
+        disableSlider: function(e){
+            this.isSliderActive = false;
+        },
+        enableSlider: function(e){
+            this.isSliderActive = true;
         }
 	});
 })();

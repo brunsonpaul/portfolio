@@ -83,7 +83,9 @@ a{text-decoration:none;}
 
 .rotateKit(@deg) { -webkit-transform: rotate(@deg); -moz-transform: rotate(@deg); -o-transform: rotate(@deg); -ms-transform: rotate(@deg); transform: rotate(@deg); }
 
-.transition(@timer) { -moz-transition:all @timer 0s; -webkit-transition:all @timer 0s; -ms-transition:all @timer 0s; -khtml-transition:all @timer 0s; transition:all @timer 0s; }
+.transition(@timer) { -moz-transition:all @timer; -webkit-transition:all @timer; -ms-transition:all @timer; -khtml-transition:all @timer; transition:all @timer; }
+
+.no-transition(){-webkit-transition: none;-moz-transition: none;-ms-transition: none;-o-transition: none;transition: none;}
 
 .transitionDelay(@time) { -moz-transition-delay:@time; -webkit-transition-delay:@time; -ms-transition-delay:@time; -khtml-transition-delay:@time; transition-delay:@time; }
 

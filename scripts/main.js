@@ -29,16 +29,8 @@ window.kevinPortfolio = {
         this.activeProjectView = pView;
 
         return this;
-    },
-    enterProject: function() {
-        this.activeProjectView.caseStudyElem.css('display','block');
-        this.activeProjectView.enterProject();
-    },
-    closeProject: function() {
-        this.activeProjectView.caseStudyElem.css('display','none');
-        $(window).unbind('scroll');
     }
-
+    
 };
 
 $(document).ready(function () {

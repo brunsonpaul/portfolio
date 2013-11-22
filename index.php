@@ -130,12 +130,12 @@
                     <span>100 ans de Tour</span>
                 </h1>
                 <div id='fixie'>
-                    <a href='#' class='enter-button'>
+                    <a href='#' class="noSlide enter-elem">
                         <img src="assets/img/100ansdetour/fixie.svg" alt="">
                     </a>                
                 </div>
                 <div id='tdfDrag'>
-                    <div id='tdfDragCursor'>
+                    <div id='tdfDragCursor' class="noSlide">
                         <span>Drag it</span>
                         <img src='./assets/img/100ansdetour/arrow.svg' alt=''>
                     </div>

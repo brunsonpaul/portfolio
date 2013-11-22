@@ -209,11 +209,11 @@ header #contact li a {
 }
 header #contact li a:after {
   content: '';
-  -moz-transition: all 0.2s 0s;
-  -webkit-transition: all 0.2s 0s;
-  -ms-transition: all 0.2s 0s;
-  -khtml-transition: all 0.2s 0s;
-  transition: all 0.2s 0s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -khtml-transition: all 0.2s;
+  transition: all 0.2s;
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -237,11 +237,11 @@ header #social li {
   zoom: 1;
 }
 header #social li a {
-  -moz-transition: all 0.4s 0s;
-  -webkit-transition: all 0.4s 0s;
-  -ms-transition: all 0.4s 0s;
-  -khtml-transition: all 0.4s 0s;
-  transition: all 0.4s 0s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -khtml-transition: all 0.4s;
+  transition: all 0.4s;
   color: #b59663;
   font-size: 24px;
   font-size: 1.500rem;
