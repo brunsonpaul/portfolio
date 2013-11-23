@@ -324,6 +324,7 @@ html {
   letter-spacing: 0.1rem;
 }
 #loader {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -333,19 +334,19 @@ html {
   background: #b59663;
   text-align: center;
 }
-#loader div {
+#loader #load {
   position: absolute;
   left: 50%;
   top: 50%;
   margin-top: -204px;
   margin-left: -125px;
 }
-#loader div img {
+#loader #load img {
   display: block;
   height: 120px;
   margin: auto;
 }
-#loader div p {
+#loader #load p {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #111111;
@@ -353,7 +354,7 @@ html {
   font-size: 0.875rem;
   margin: 30px auto;
 }
-#loader div span {
+#loader #load span {
   position: relative;
   display: block;
   width: 250px;
@@ -361,12 +362,614 @@ html {
   margin: auto;
   background: #fbfbfb;
 }
-#loader div span span {
+#loader #load span span {
   position: absolute;
   width: 50%;
   background: #111111;
   top: 0;
   left: 0;
+}
+#loader #tuto {
+  position: absolute;
+  margin-top: -50px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 93px;
+}
+#loader #tuto p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+#loader #tuto #dragging {
+  left: 50%;
+  position: absolute;
+  clip: rect(0, 149px, 95px, 0);
+  margin-left: -225px;
+}
+#loader #tuto #dragging #dragCursorTuto {
+  top: 28px;
+  left: 55px;
+  width: 39px;
+  height: 23px;
+  position: absolute;
+  background: url('../img/identity/drag-tuto.png') center top no-repeat;
+  -webkit-animation: cursortuto 15s infinite linear;
+  -moz-animation: cursortuto 15s infinite linear;
+  -o-animation: cursortuto 15s infinite linear;
+  animation: cursortuto 15s infinite linear;
+}
+#loader #tuto #dragging img {
+  display: block;
+  margin: auto;
+}
+#loader #tuto #dragging #dragAnim {
+  position: absolute;
+  height: 51px;
+  width: 398px;
+  top: 14px;
+  -webkit-animation: browers 15s infinite linear;
+  -moz-animation: browers 15s infinite linear;
+  -o-animation: browers 15s infinite linear;
+  animation: browers 15s infinite linear;
+}
+#loader #tuto #dragging #dragAnim span {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  width: 90px;
+  height: 49px;
+  border: 1px solid #111111;
+}
+#loader #tuto #dragging #dragAnim span:last-child {
+  margin: 0;
+}
+#loader #tuto #keyboard {
+  left: 50%;
+  top: 15px;
+  margin-left: 100px;
+  position: absolute;
+  margin-left: 40px;
+}
+#loader #tuto #keyboard span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #111111;
+}
+.lt-ie9 #loader #tuto #keyboard span {
+  display: inline;
+  zoom: 1;
+}
+#loader #tuto #keyboard span:nth-of-type(1) {
+  -webkit-animation: keyboard 4s 1s infinite linear;
+  -moz-animation: keyboard 4s 1s infinite linear;
+  -o-animation: keyboard 4s 1s infinite linear;
+  animation: keyboard 4s 1s infinite linear;
+}
+#loader #tuto #keyboard span:nth-of-type(2) {
+  -webkit-animation: keyboard 4s 2s infinite linear;
+  -moz-animation: keyboard 4s 2s infinite linear;
+  -o-animation: keyboard 4s 2s infinite linear;
+  animation: keyboard 4s 2s infinite linear;
+}
+#loader #tuto #keyboard span:nth-of-type(3) {
+  -webkit-animation: keyboard 4s 4s infinite linear;
+  -moz-animation: keyboard 4s 4s infinite linear;
+  -o-animation: keyboard 4s 4s infinite linear;
+  animation: keyboard 4s 4s infinite linear;
+}
+#loader #tuto #keyboard span:nth-of-type(4) {
+  -webkit-animation: keyboard 4s 3s infinite linear;
+  -moz-animation: keyboard 4s 3s infinite linear;
+  -o-animation: keyboard 4s 3s infinite linear;
+  animation: keyboard 4s 3s infinite linear;
+}
+@-webkit-keyframes browers {
+  0% {
+    left: 29px;
+  }
+  12% {
+    left: 29px;
+  }
+  15% {
+    left: -73px;
+  }
+  27% {
+    left: -73px;
+  }
+  30% {
+    left: -175px;
+  }
+  42% {
+    left: -175px;
+  }
+  45% {
+    left: -277px;
+  }
+  57% {
+    left: -277px;
+  }
+  60% {
+    left: -175px;
+  }
+  72% {
+    left: -175px;
+  }
+  75% {
+    left: -73px;
+  }
+  87% {
+    left: -73px;
+  }
+  90% {
+    left: 29px;
+  }
+  100% {
+    left: 29px;
+  }
+}
+@-moz-keyframes browers {
+  0% {
+    left: 29px;
+  }
+  12% {
+    left: 29px;
+  }
+  15% {
+    left: -73px;
+  }
+  27% {
+    left: -73px;
+  }
+  30% {
+    left: -175px;
+  }
+  42% {
+    left: -175px;
+  }
+  45% {
+    left: -277px;
+  }
+  57% {
+    left: -277px;
+  }
+  60% {
+    left: -175px;
+  }
+  72% {
+    left: -175px;
+  }
+  75% {
+    left: -73px;
+  }
+  87% {
+    left: -73px;
+  }
+  90% {
+    left: 29px;
+  }
+  100% {
+    left: 29px;
+  }
+}
+@-o-keyframes browers {
+  0% {
+    left: 29px;
+  }
+  12% {
+    left: 29px;
+  }
+  15% {
+    left: -73px;
+  }
+  27% {
+    left: -73px;
+  }
+  30% {
+    left: -175px;
+  }
+  42% {
+    left: -175px;
+  }
+  45% {
+    left: -277px;
+  }
+  57% {
+    left: -277px;
+  }
+  60% {
+    left: -175px;
+  }
+  72% {
+    left: -175px;
+  }
+  75% {
+    left: -73px;
+  }
+  87% {
+    left: -73px;
+  }
+  90% {
+    left: 29px;
+  }
+  100% {
+    left: 29px;
+  }
+}
+@keyframes browers {
+  0% {
+    left: 29px;
+  }
+  12% {
+    left: 29px;
+  }
+  15% {
+    left: -73px;
+  }
+  27% {
+    left: -73px;
+  }
+  30% {
+    left: -175px;
+  }
+  42% {
+    left: -175px;
+  }
+  45% {
+    left: -277px;
+  }
+  57% {
+    left: -277px;
+  }
+  60% {
+    left: -175px;
+  }
+  72% {
+    left: -175px;
+  }
+  75% {
+    left: -73px;
+  }
+  87% {
+    left: -73px;
+  }
+  90% {
+    left: 29px;
+  }
+  100% {
+    left: 29px;
+  }
+}
+@-webkit-keyframes cursortuto {
+  0% {
+    left: 55px;
+  }
+  10% {
+    left: 55px;
+  }
+  11% {
+    left: 65px;
+  }
+  12% {
+    left: 55px;
+  }
+  25% {
+    left: 55px;
+  }
+  26% {
+    left: 65px;
+  }
+  27% {
+    left: 55px;
+  }
+  40% {
+    left: 55px;
+  }
+  41% {
+    left: 65px;
+  }
+  42% {
+    left: 55px;
+  }
+  55% {
+    left: 55px;
+  }
+  56% {
+    left: 45px;
+  }
+  57% {
+    left: 55px;
+  }
+  70% {
+    left: 55px;
+  }
+  71% {
+    left: 45px;
+  }
+  72% {
+    left: 55px;
+  }
+  85% {
+    left: 55px;
+  }
+  86% {
+    left: 45px;
+  }
+  87% {
+    left: 55px;
+  }
+  100% {
+    left: 55px;
+  }
+}
+@-moz-keyframes cursortuto {
+  0% {
+    left: 55px;
+  }
+  10% {
+    left: 55px;
+  }
+  11% {
+    left: 65px;
+  }
+  12% {
+    left: 55px;
+  }
+  25% {
+    left: 55px;
+  }
+  26% {
+    left: 65px;
+  }
+  27% {
+    left: 55px;
+  }
+  40% {
+    left: 55px;
+  }
+  41% {
+    left: 65px;
+  }
+  42% {
+    left: 55px;
+  }
+  55% {
+    left: 55px;
+  }
+  56% {
+    left: 45px;
+  }
+  57% {
+    left: 55px;
+  }
+  70% {
+    left: 55px;
+  }
+  71% {
+    left: 45px;
+  }
+  72% {
+    left: 55px;
+  }
+  85% {
+    left: 55px;
+  }
+  86% {
+    left: 45px;
+  }
+  87% {
+    left: 55px;
+  }
+  100% {
+    left: 55px;
+  }
+}
+@-o-keyframes cursortuto {
+  0% {
+    left: 55px;
+  }
+  10% {
+    left: 55px;
+  }
+  11% {
+    left: 65px;
+  }
+  12% {
+    left: 55px;
+  }
+  25% {
+    left: 55px;
+  }
+  26% {
+    left: 65px;
+  }
+  27% {
+    left: 55px;
+  }
+  40% {
+    left: 55px;
+  }
+  41% {
+    left: 65px;
+  }
+  42% {
+    left: 55px;
+  }
+  55% {
+    left: 55px;
+  }
+  56% {
+    left: 45px;
+  }
+  57% {
+    left: 55px;
+  }
+  70% {
+    left: 55px;
+  }
+  71% {
+    left: 45px;
+  }
+  72% {
+    left: 55px;
+  }
+  85% {
+    left: 55px;
+  }
+  86% {
+    left: 45px;
+  }
+  87% {
+    left: 55px;
+  }
+  100% {
+    left: 55px;
+  }
+}
+@keyframes cursortuto {
+  0% {
+    left: 55px;
+  }
+  10% {
+    left: 55px;
+  }
+  11% {
+    left: 65px;
+  }
+  12% {
+    left: 55px;
+  }
+  25% {
+    left: 55px;
+  }
+  26% {
+    left: 65px;
+  }
+  27% {
+    left: 55px;
+  }
+  40% {
+    left: 55px;
+  }
+  41% {
+    left: 65px;
+  }
+  42% {
+    left: 55px;
+  }
+  55% {
+    left: 55px;
+  }
+  56% {
+    left: 45px;
+  }
+  57% {
+    left: 55px;
+  }
+  70% {
+    left: 55px;
+  }
+  71% {
+    left: 45px;
+  }
+  72% {
+    left: 55px;
+  }
+  85% {
+    left: 55px;
+  }
+  86% {
+    left: 45px;
+  }
+  87% {
+    left: 55px;
+  }
+  100% {
+    left: 55px;
+  }
+}
+@-webkit-keyframes keyboard {
+  0% {
+    border: 1px solid #111111;
+  }
+  1% {
+    border: 1px solid #111111;
+  }
+  2% {
+    border: 1px solid #fbfbfb;
+  }
+  10% {
+    border: 1px solid #fbfbfb;
+  }
+  11% {
+    border: 1px solid #111111;
+  }
+  100% {
+    border: 1px solid #111111;
+  }
+}
+@-moz-keyframes keyboard {
+  0% {
+    border: 1px solid #111111;
+  }
+  1% {
+    border: 1px solid #111111;
+  }
+  2% {
+    border: 1px solid #fbfbfb;
+  }
+  10% {
+    border: 1px solid #fbfbfb;
+  }
+  11% {
+    border: 1px solid #111111;
+  }
+  100% {
+    border: 1px solid #111111;
+  }
+}
+@-o-keyframes keyboard {
+  0% {
+    border: 1px solid #111111;
+  }
+  1% {
+    border: 1px solid #111111;
+  }
+  2% {
+    border: 1px solid #fbfbfb;
+  }
+  10% {
+    border: 1px solid #fbfbfb;
+  }
+  11% {
+    border: 1px solid #111111;
+  }
+  100% {
+    border: 1px solid #111111;
+  }
+}
+@keyframes keyboard {
+  0% {
+    border: 1px solid #111111;
+  }
+  1% {
+    border: 1px solid #111111;
+  }
+  2% {
+    border: 1px solid #fbfbfb;
+  }
+  10% {
+    border: 1px solid #fbfbfb;
+  }
+  11% {
+    border: 1px solid #111111;
+  }
+  100% {
+    border: 1px solid #111111;
+  }
 }
 section {
   min-width: 980px;
@@ -516,8 +1119,6 @@ section .page-content {
 }
 #home header #header-content {
   position: absolute;
-  top: 50%;
-  margin-top: -218px;
   left: 0;
   right: 0;
   text-transform: uppercase;
@@ -754,7 +1355,7 @@ section .page-content {
 }
 #home header #header-content #social li {
   display: inline-block;
-  margin: 0 13px;
+  margin: 0 20px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -857,6 +1458,17 @@ section .page-content {
 #home header #copyright p a:hover {
   text-decoration: underline;
 }
+@media screen and (max-height: 705px) {
+  #header-content {
+    top: 128px;
+  }
+}
+@media screen and (min-height: 705px) {
+  #header-content {
+    top: 50%;
+    margin-top: -218px;
+  }
+}
 #home:hover header .wave1 {
   opacity: 1;
 }
@@ -918,18 +1530,22 @@ section .page-content {
   width: 100%;
   height: 100%;
   top: 0%;
-  /*margin-top:-255px;*/
   background: #f5da3f url('../img/100ansdetour/tdfPatterns.jpg') top center repeat;
 }
-#tdfProject #tdfBgContent h1 {
+#tdfProject #tdfBgContent #tdfContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#tdfProject #tdfBgContent #tdfContent h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 20px;
   font-size: 1.250rem;
-  margin: 60px auto 20px auto;
+  margin: 0px auto 20px auto;
   text-align: center;
 }
-#tdfProject #tdfBgContent h1 #pignon {
+#tdfProject #tdfBgContent #tdfContent h1 #pignon {
   display: block;
   width: 100px;
   margin: 10px auto 20px auto;
@@ -974,7 +1590,7 @@ section .page-content {
     transform: rotate(360deg);
   }
 }
-#tdfProject #tdfBgContent h1 span {
+#tdfProject #tdfBgContent #tdfContent h1 span {
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -984,7 +1600,7 @@ section .page-content {
   font-weight: 700;
   margin-top: 10px;
 }
-#tdfProject #tdfBgContent #tdfDrag {
+#tdfProject #tdfBgContent #tdfContent #tdfDrag {
   position: relative;
   width: 430px;
   height: 1px;
@@ -992,7 +1608,7 @@ section .page-content {
   background: #ffffff;
   margin: auto;
 }
-#tdfProject #tdfBgContent #tdfDrag #tdfDragCursor {
+#tdfProject #tdfBgContent #tdfContent #tdfDrag #tdfDragCursor {
   top: -18px;
   cursor: pointer;
   z-index: 5;
@@ -1026,11 +1642,11 @@ section .page-content {
   -ms-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
 }
-#tdfProject #tdfBgContent #tdfDrag #tdfDragCursor span {
+#tdfProject #tdfBgContent #tdfContent #tdfDrag #tdfDragCursor span {
   display: block;
   padding-left: 25px;
 }
-#tdfProject #tdfBgContent #tdfDrag #tdfDragCursor img {
+#tdfProject #tdfBgContent #tdfContent #tdfDrag #tdfDragCursor img {
   position: absolute;
   display: block;
   top: 10px;
@@ -1086,7 +1702,7 @@ section .page-content {
     right: 30px;
   }
 }
-#tdfProject #tdfBgContent #tdfDrag #tdfDragEnd {
+#tdfProject #tdfBgContent #tdfContent #tdfDrag #tdfDragEnd {
   position: absolute;
   right: -5px;
   top: -5px;
@@ -1106,14 +1722,13 @@ section .page-content {
   box-sizing: border-box;
   border: solid 3px #ffffff;
 }
-#tdfProject #tdfBgContent #fixie {
+#tdfProject #tdfBgContent #tdfContent #fixie {
   width: 500px;
   margin: 70px auto 30px auto;
 }
-#tdfProject #tdfBgContent #fixie img {
+#tdfProject #tdfBgContent #tdfContent #fixie img {
   display: block;
   width: 200px;
-  /*margin-left:-35px;*/
 }
 #tdfProject #date {
   position: absolute;
@@ -1238,6 +1853,17 @@ section .page-content {
 }
 #tdfProject #date nav ul .flipOn .flip .card .back {
   color: orange;
+}
+@media screen and (max-height: 705px) {
+  #tdfContent {
+    top: 128px;
+  }
+}
+@media screen and (min-height: 705px) {
+  #tdfContent {
+    top: 50%;
+    margin-top: -207px;
+  }
 }
 #theWholeProject {
   background: #141414 url('../img/the-whole/bg/the-whole-bg.jpg') center bottom;
@@ -4168,8 +4794,8 @@ section .page-content {
   width: 100%;
   margin-top: -210px;
 }
-#socialCokeProject #socialCokeBgContent h1 {
-  text-indent: -9999px;
+#socialCokeProject #socialCokeBgContent h1 span {
+  display: none;
 }
 #socialCokeProject #socialCokeBgContent h1 img {
   display: block;

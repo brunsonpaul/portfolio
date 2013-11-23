@@ -24,17 +24,37 @@
 </head>
 
 <body class="userSelect">
-
-    <!--
-    <div id="loader">
-        <div>
+    
+   <div id="loader">
+        <div id='load'>
             <img src="assets/img/identity/logo-kevin-lagier-black.svg" alt="logo Kévin Lagier"> 
             <p>Loading ...</p>
             <span>      
                 <span></span>
             </span>
         </div>
-    </div> !--> 
+        <div id='tuto'>
+            <div id='dragging'>
+                <img src="assets/img/identity/browser.png" alt="Browser"> 
+                <div id='dragCursorTuto'></div>
+                <div id='dragAnim'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Navigate by dragging</p>
+
+            </div>
+            <div id='keyboard'>
+                <span></span><br/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>Navigate with your keyboard</p>
+            </div>
+        </div>
+    </div>
 
     <div id='borderTop' class="border close"></div>
     <div id='borderBottom' class="border close"></div>
@@ -124,22 +144,24 @@
 
         <div id='tdfProject' class="project" data-project="100ansdetour">
             <div id='tdfBgContent'>
-                <h1>
-                    <img id='pignon' src='./assets/img/100ansdetour/pignon.svg' alt=''>
-                    Tour de France
-                    <span>100 ans de Tour</span>
-                </h1>
-                <div id='fixie'>
-                    <a href='#' class="noSlide enter-elem">
-                        <img src="assets/img/100ansdetour/fixie.svg" alt="">
-                    </a>                
-                </div>
-                <div id='tdfDrag'>
-                    <div id='tdfDragCursor' class="noSlide">
-                        <span>Drag it</span>
-                        <img src='./assets/img/100ansdetour/arrow.svg' alt=''>
+                <div id="tdfContent">
+                    <h1>
+                        <img id='pignon' src='./assets/img/100ansdetour/pignon.svg' alt=''>
+                        Tour de France
+                        <span>100 ans de Tour</span>
+                    </h1>
+                    <div id='fixie'>
+                        <a href='#' class="noSlide enter-elem">
+                            <img src="assets/img/100ansdetour/fixie.svg" alt="">
+                        </a>                
                     </div>
-                    <div id='tdfDragEnd'></div>
+                    <div id='tdfDrag'>
+                        <div id='tdfDragCursor' class="noSlide">
+                            <span>Drag it</span>
+                            <img src='./assets/img/100ansdetour/arrow.svg' alt=''>
+                        </div>
+                        <div id='tdfDragEnd'></div>
+                    </div>
                 </div>
             </div> 
             <div id='date'>
@@ -204,7 +226,7 @@
         <div id='socialCokeProject' class="project" data-project="social-coke">
             <div id='socialCokeBgContent'>
                 <h1>
-                    Social Coke
+                    <span>Social Coke</span>
                     <img src='./assets/img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
                 </h1>
                 <p>
