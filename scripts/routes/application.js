@@ -1,53 +1,60 @@
-/*global kevinPortfolio, Backbone*/
+/*global app, Backbone*/
 
-kevinPortfolio.Routers = kevinPortfolio.Routers || {};
+app.Routers = app.Routers || {};
 
 (function () {
     'use strict';
 
-    kevinPortfolio.Routers.ApplicationRouter = Backbone.Router.extend({
+    app.Routers.ApplicationRouter = Backbone.Router.extend({
 
 		routes:{
 			':project':'projectHandler',
 			':project/case-study':'caseStudyHandler'
 		},
 		projectHandler: function(project){
-			if(kevinPortfolio.homeView.isValidProjectName(project)){
-				this.loadView(project);
-				if(kevinPortfolio.homeView.projectOpenned){
-					kevinPortfolio.homeView.closeProjectAnim();
+			if(app.homeView.isValidProjectName(project)){
+
+				if(app.activeProjectView){
+					app.activeProjectView.leaveProject();
 				}
-				kevinPortfolio.homeView.slideToProject(project);
+
+				this.loadView(project);
+				app.homeView.slideToProject(project);
+
 			};
 		},
 		caseStudyHandler:function(project){
-/*			if(kevinPortfolio.homeView.isValidProjectName(project)){
-				if(kevinPortfolio.homeView.projectOpenned){
-					kevinPortfolio.homeView.closeProjectAnim();
-					console.log('close-project');
-					kevinPortfolio.closeProject();
+			if(app.isCaseStudyActive()){
+				// TODO
+				return false;
+			}
+			if(app.activeProjectView){
+				if(app.activeProjectView.name == project && !app.activeCaseStudy){
+					app.activeProjectView.enterProjectAnim();
+					return true;
 				}
-				this.loadView(project);
-				kevinPortfolio.homeView.slideToProject(project);
-				kevinPortfolio.homeView.enterProjectAnim();
-			};*/
+			}
+
+			this.loadView(project);
+			app.activeProjectView.enterFromRouter();
+
 		},
 		loadView: function(project){
 			switch(project){
 				case 'social-coke':
-					kevinPortfolio.loadView(new kevinPortfolio.Views.socialCoke());
+					app.loadView(new app.Views.socialCoke());
 				break;
 				case 'partech':
-					kevinPortfolio.loadView(new kevinPortfolio.Views.partech());
+					app.loadView(new app.Views.partech());
 				break;
 				case 'the-whole':
-					kevinPortfolio.loadView(new kevinPortfolio.Views.theWhole());
+					app.loadView(new app.Views.theWhole());
 				break;
 				case '100ansdetour':
-					kevinPortfolio.loadView(new kevinPortfolio.Views._100ansDeTour());
+					app.loadView(new app.Views._100ansDeTour());
 				break;
 				default:
-					kevinPortfolio.loadView(null);
+					app.loadView(null);
 				break; 
 			}
 		}

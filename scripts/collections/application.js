@@ -1,13 +1,13 @@
-/*global kevinPortfolio, Backbone*/
+/*global app, Backbone*/
 
-kevinPortfolio.Collections = kevinPortfolio.Collections || {};
+app.Collections = app.Collections || {};
 
 (function () {
     'use strict';
 
-    kevinPortfolio.Collections.ApplicationCollection = Backbone.Collection.extend({
+    app.Collections.ApplicationCollection = Backbone.Collection.extend({
 
-        model: kevinPortfolio.Models.ApplicationModel
+        model: app.Models.ApplicationModel
 
     });
 

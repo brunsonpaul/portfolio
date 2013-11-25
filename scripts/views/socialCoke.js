@@ -1,11 +1,11 @@
-/*global kevinPortfolio, Backbone, JST*/
+/*global app, Backbone, JST*/
 
-kevinPortfolio.Views = kevinPortfolio.Views || {};
+app.Views = app.Views || {};
 
 (function () {
     'use strict';
 
-    kevinPortfolio.Views.socialCoke = Backbone.View.extend({
+    app.Views.socialCoke = Backbone.View.extend({
 
         el: $('.case-study-container'),
         caseStudyContainer: $('.case-study-container'),

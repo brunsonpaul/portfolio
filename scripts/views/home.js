@@ -1,19 +1,18 @@
-/*global kevinPortfolio, Backbone, JST*/
+/*global app, Backbone, JST*/
 
-kevinPortfolio.Views = kevinPortfolio.Views || {};
+app.Views = app.Views || {};
 
 (function () {
     'use strict';
 
 	//------ HOME -----------//
-	kevinPortfolio.Views.HomeView = Backbone.View.extend({
+	app.Views.HomeView = Backbone.View.extend({
 
 		homeProjectsContainer: $('.projects-container'),
 		homeProjectClass: '.project',
 		windowWidth: $(window).width(),
 		windowHeight: $(window).height(),
     	intervalDragProject: null,
-        el: $('.projects-container'),
         events: {
             "click .enter-button" : "enterProjectEvent",
         },
@@ -22,18 +21,12 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
 			// Initialise les projets
 			this.setProjectsSize();
 			this.initProjectsHome();
-		   	this.intervalDragProject = this.windowWidth/5;
+            this.intervalDragProject = this.windowWidth/5;
 
             var that = this;
 			$(window).on('resize',function(){
 				that.windowResized();
             });
-
-            // A mettre dans chaque projet pour gérer les différents effets
-/*            $('.button-menu a').on('click', function(e){
-                e.preventDefault();
-                that.closeProjectEvent();
-            });*/
 
         },
 
@@ -119,6 +112,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             this.windowWidth = $(window).width();
             this.windowHeight = $(window).height();
             this.intervalDragProject = this.windowWidth/5;
+            // TODO resize horizontal
             // this.homeProjectsContainer.css('margin-left', -this.currentProject * this.windowWidth);
             this.setProjectsSize();
 
@@ -183,29 +177,27 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             }
             this.mousePositionX = 0;
 
-            kevinPortfolio.router.navigate( '//' + this.getActiveProjectName(), {trigger: true});
+            app.router.navigate( '/' + this.getActiveProjectName(), {trigger: true});
 
         },
         enterProjectEvent: function(e){
             e.preventDefault();
-            kevinPortfolio.router.navigate('//' + this.getActiveProjectName() + '/case-study', {trigger: true})
+            app.router.navigate('/' + this.getActiveProjectName() + '/case-study', {trigger: true})
             return false;
         },
         closeProjectEvent: function(e){
-            kevinPortfolio.router.navigate('//' + this.getActiveProjectName(), {trigger: true})
+            app.router.navigate('/' + this.getActiveProjectName(), {trigger: true})
             return false;
         },
         slideToProject: function(pProject){
             this.currentProject = this.getProjectNumberByName(pProject);
             /*
-
                 TODO PREFIXER
-
              */
             this.homeProjectsContainer.css('-webkit-transform','translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)');
         },
-        // Helpers
 
+        // Helpers
         // Récupère le nom du projet actif en fonction de currentProject pour le routage 
         getActiveProjectName: function(){
             return this.projectMapping[this.currentProject];
@@ -214,7 +206,6 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             return _.indexOf(this.projectMapping, pName);
         },
         isValidProjectName: function(pName){
-
             if(_.indexOf(this.projectMapping, pName)>=0){
                 return true;
             }
@@ -222,9 +213,11 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             return false;
         },
         disableSlider: function(e){
+            this.homeProjectsContainer.removeClass('dragCursor');
             this.isSliderActive = false;
         },
         enableSlider: function(e){
+            this.homeProjectsContainer.addClass('dragCursor');
             this.isSliderActive = true;
         }
 	});

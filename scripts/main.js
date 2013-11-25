@@ -1,7 +1,7 @@
-/*global kevinPortfolio, $*/
+/*global app, $*/
 
 
-window.kevinPortfolio = {
+window.app = {
     Models: {
 
     },
@@ -16,11 +16,14 @@ window.kevinPortfolio = {
     },
     homeView: null,
     activeProjectView: null,
+    activeCaseStudy: false,
     init: function () {
         'use strict';
         this.homeView = new this.Views.HomeView();
         this.router = new this.Routers.ApplicationRouter();
         Backbone.history.start();
+        // à mettre à la fin du loader
+        $('#home').addClass('entered');
     },
 
     //Charge la vu provenant du router
@@ -29,13 +32,20 @@ window.kevinPortfolio = {
         this.activeProjectView = pView;
 
         return this;
+
+    },
+    isCaseStudyActive: function() {
+        return this.activeCaseStudy;
+    },
+    setCaseStudyActive: function(param) {
+        this.activeCaseStudy = param;
+        return true;
     }
-    
 };
 
 $(document).ready(function () {
     'use strict';
-    kevinPortfolio.init();
+    app.init();
     
 });
 
