@@ -1355,7 +1355,7 @@ section .page-content {
 }
 #home header #header-content #social li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 15px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -2289,6 +2289,39 @@ section .page-content {
   width: 100%;
 }
 @-webkit-keyframes meteor {
+  100% {
+    margin-left: 40%;
+    margin-top: 100%;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+@-moz-keyframes meteor {
+  100% {
+    margin-left: 40%;
+    margin-top: 100%;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+@-o-keyframes meteor {
+  100% {
+    margin-left: 40%;
+    margin-top: 100%;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+@keyframes meteor {
   100% {
     margin-left: 40%;
     margin-top: 100%;
@@ -6314,20 +6347,29 @@ section .page-content {
   color: #00c4ff;
 }
 #socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2) {
+  position: relative;
   display: block;
   color: #f0e2c7;
   background: #231f20;
-  padding: 9px 0 3px 0;
   width: 40px;
+  height: 40px;
   margin: 10px auto;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -ms-border-radius: 100%;
   -khtml-border-radius: 100%;
   border-radius: 100%;
-  font-size: 28px;
-  font-size: 1.750rem;
-  font-family: "Socialico";
+}
+#socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2) svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -9px;
+  margin-top: -7px;
+}
+#socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2) svg g path {
+  fill: #f9f9f9;
 }
 #socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2):hover {
   background: #00c4ff;
@@ -7571,24 +7613,34 @@ section .page-content {
   text-decoration: underline;
 }
 #tdf #tdf-thanks .page-content ul li a:nth-of-type(2) {
+  position: relative;
   display: block;
-  color: #000000;
   background: #ffffff;
-  padding: 9px 0 3px 0;
   width: 40px;
+  height: 40px;
   margin: 10px auto;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -khtml-border-radius: 30px;
-  border-radius: 30px;
-  font-size: 28px;
-  font-size: 1.750rem;
-  font-family: "Socialico";
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  border-radius: 100%;
+}
+#tdf #tdf-thanks .page-content ul li a:nth-of-type(2) svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -9px;
+  margin-top: -7px;
+}
+#tdf #tdf-thanks .page-content ul li a:nth-of-type(2) svg g path {
+  fill: #000000;
 }
 #tdf #tdf-thanks .page-content ul li a:nth-of-type(2):hover {
   background: #000000;
-  color: #ffffff;
+}
+#tdf #tdf-thanks .page-content ul li a:nth-of-type(2):hover svg g path {
+  fill: #ffffff;
 }
 #tdf #tdf-other {
   padding: 100px 0 0 0;
@@ -7687,12 +7739,14 @@ section .page-content {
   top: 0;
   right: 0;
 }
-#tdf #tdf-other .page-content #tdf-onTwitter #tdf-twitter {
+#tdf #tdf-other .page-content #tdf-onTwitter #tdf-twitter svg {
   display: block;
-  text-align: center;
-  font-size: 6.250rem;
-  font-family: "Socialico";
-  color: #ffffff;
+  width: 80px;
+  height: 62px;
+  margin: auto;
+}
+#tdf #tdf-other .page-content #tdf-onTwitter #tdf-twitter svg g path {
+  fill: #ffffff;
 }
 #tdf #tdf-other .page-content #tdf-award {
   text-align: center;
@@ -8331,23 +8385,31 @@ section .page-content {
   text-decoration: underline;
 }
 #theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) {
+  position: relative;
   display: block;
-  color: #f9f9f9;
   background: #fc1f2f;
-  padding: 9px 0 3px 0;
   width: 40px;
+  height: 40px;
   margin: 10px auto;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -ms-border-radius: 100%;
   -khtml-border-radius: 100%;
   border-radius: 100%;
-  font-size: 28px;
-  font-size: 1.750rem;
-  font-family: "Socialico";
+}
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -9px;
+  margin-top: -7px;
+}
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) svg g path {
+  fill: #f9f9f9;
 }
 #theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover {
-  color: #050505;
+  background: #050505;
 }
 #theWhole #theWhole-madeWith.active .page-content #macbook-theWhole img:nth-of-type(2) {
   opacity: 1;

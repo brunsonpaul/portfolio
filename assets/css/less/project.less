@@ -75,7 +75,7 @@ html{
 				} 
 			}
 			#social { opacity:0; .transition(1s); .transitionDelay(6.1s); margin-top:35px;
-				li { .inline-block(); margin:0 20px; .rotateKit(90deg); .transition(1s); .transitionDelay(6.1s);
+				li { .inline-block(); margin:0 15px; .rotateKit(90deg); .transition(1s); .transitionDelay(6.1s);
 					a { position:relative; width:36px; height:36px; .rotateKit(45deg);.transition(0.4s); color:@colorGold; .fontSize24(); display:block; border:solid 2px rgba(181,150,99,0.3);  
 						&:hover { border:solid 2px @colorGold; }
 						span { display:none; }
@@ -262,12 +262,10 @@ html{
 			img { display:block; width:100%; }
 		}
 	}
-
-	@-webkit-keyframes meteor { 
-		0% { }
-		100% { margin-left:40%; margin-top:100%; .rotateKit(720deg); }
-	}
-
+	@-webkit-keyframes meteor { 0% { } 100% { margin-left:40%; margin-top:100%; .rotateKit(720deg); } }
+	@-moz-keyframes meteor { 0% { } 100% { margin-left:40%; margin-top:100%; .rotateKit(720deg); } }
+	@-o-keyframes meteor { 0% { } 100% { margin-left:40%; margin-top:100%; .rotateKit(720deg); } }
+	@keyframes meteor { 0% { } 100% { margin-left:40%; margin-top:100%; .rotateKit(720deg); } }
 
 	#theWholeSolarSystem{ position:absolute; top:0; left:0; bottom:0; right:0; text-align:center;
 		img { display:block; }
@@ -281,7 +279,6 @@ html{
 		@-moz-keyframes lightplanet { 0% { -moz-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); } 50% { -moz-box-shadow: 0px 0px 30px 20px rgba(252, 31, 47, 0.5); } 100% { -moz-box-shadow: 0px 0px 30px 0px rgba(252, 31, 47, 0.5); } }
 		@-o-keyframes lightplanet { 0% { -o-box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); } 50% { -o-box-shadow: 0px 0px 30px 20px rgba(252, 31, 47, 0.5); } 100% { -o-box-shadow: 0px 0px 30px 0px rgba(252, 31, 47, 0.5); } }
 		@keyframes lightplanet { 0% { box-shadow: 0px 0px 30px 1px rgba(252, 31, 47, 0.5); } 50% { box-shadow: 0px 0px 30px 20px rgba(252, 31, 47, 0.5); } 100% { box-shadow: 0px 0px 30px 0px rgba(252, 31, 47, 0.5); } }
-		
 
 		#theWholeSolar { position:absolute; z-index:1; left:50%; top:50%;
 			img { width:100%; }

@@ -197,8 +197,15 @@
 						&:nth-of-type(1) { display:block; color:@tdfColor1; .lato700(); .fontSize14(); 
 							&:hover { text-decoration:underline; }
 						}
-						&:nth-of-type(2) { display:block; color:@tdfColor1; background:@tdfColor2; padding:9px 0 3px 0; width:40px; margin:10px auto; .borderRadius(30px); .fontSize28(); .fontSocial(); 
-							&:hover {  background:@tdfColor1; color:@tdfColor2; }
+						&:nth-of-type(2) { position:relative; display:block; background:@tdfColor2; width:40px; height:40px; margin:10px auto; .borderRadius(100%);
+							svg { display:block; position:absolute; top:50%; left:50%; margin-left:-9px; margin-top:-7px; 
+								g { path { fill:@tdfColor1; } }
+							}
+							&:hover {  background:@tdfColor1;
+								svg { 
+									g { path { fill:@tdfColor2; } }
+								}					
+							}
 						}
 					}
 				}
@@ -230,7 +237,11 @@
 				}
 				#tdf-tweetLeft { top:0; left:0; }
 				#tdf-tweetRight { top:0; right:0; }
-				#tdf-twitter { display:block; text-align:center; font-size:6.250rem; .fontSocial(); color:@tdfColor2; }
+				#tdf-twitter {
+					svg { display:block; width:80px; height:62px; margin:auto;
+						g { path { fill:@tdfColor2; } }
+					}
+				}
 		 	}
 		 	#tdf-award { text-align:center;
 		 		li { .inline-block(); width:170px;

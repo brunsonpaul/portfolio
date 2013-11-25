@@ -51,7 +51,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                     height: this.windowHeight/4.5 +'px',
                     width: this.windowHeight/4.5 +'px',
                     marginLeft:-(this.windowHeight/4.5)/2 +'px',
-                    marginTop:-((this.windowHeight/4.5)/2-30) +'px',
+                    marginTop:-((this.windowHeight/4.5)/2-40) +'px',
                 }
             );
             $('#theWholeSolar').css(
@@ -59,7 +59,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                     height: this.windowHeight/1.35 +'px',
                     width: this.windowHeight/1.35 +'px',
                     marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-30) +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
                 }
             );            
             $('#theWholeFbPlanet').css(
@@ -67,7 +67,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                     height: this.windowHeight/1.35 +'px',
                     width: this.windowHeight/1.35 +'px',
                     marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-30) +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
                 }
             );            
             $('#theWholeTwPlanet').css(
@@ -75,7 +75,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                     height: this.windowHeight/1.35 +'px',
                     width: this.windowHeight/1.35 +'px',
                     marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-30) +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
                 }
             );          
             $('#theWholeLfPlanet').css(
@@ -83,7 +83,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
                     height: this.windowHeight/1.35 +'px',
                     width: this.windowHeight/1.35 +'px',
                     marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-30) +'px',
+                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
                 }
             );        
             $('#theWholeScPlanet').css(
