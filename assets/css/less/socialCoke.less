@@ -145,7 +145,10 @@
 						&:nth-of-type(1) { display:block; .fontSize14(); color:@socialBG2; .dinMedium(); text-transform:uppercase;
 							&:hover {  color:@socialColor2; }
 						}
-						&:nth-of-type(2) { display:block; color:@socialBG1; background:@socialBG2; padding:9px 0 3px 0; width:40px; margin:10px auto; .borderRadius(100%); .fontSize28(); .fontSocial(); 
+						&:nth-of-type(2) { position:relative; display:block; color:@socialBG1; background:@socialBG2; width:40px; height:40px; margin:10px auto; .borderRadius(100%);
+							svg { display:block; position:absolute; top:50%; left:50%; margin-left:-9px; margin-top:-7px; 
+								g { path { fill:@theWholeColor1; } }
+							}
 							&:hover {  background:@socialColor2; }
 						}
 					}
