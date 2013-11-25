@@ -108,7 +108,7 @@ kevinPortfolio.Views = kevinPortfolio.Views || {};
             var that = this;
             var listeElem = $("#date").find('li');
             var k = 0;
-            var time = 15;
+            var time = 7;
             var t = setInterval(function(){
                 if(k==listeElem.length)
                 {
