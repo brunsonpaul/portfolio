@@ -94,12 +94,6 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Socialico";
-  src: url("font/socialico/Socialico.eot?") format("eot"), url("font/socialico/Socialico.woff") format("woff"), url("font/socialico/Socialico.ttf") format("truetype"), url("font/socialico/Socialico.svg#Socialico") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 body,
 html {
   font-size: 16px;
