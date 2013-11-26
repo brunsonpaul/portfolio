@@ -14,9 +14,9 @@ app.Routers = app.Routers || {};
 		projectHandler: function(project){
 			if(app.homeView.isValidProjectName(project)){
 
-				if(app.activeProjectView){
+/*				if(app.activeProjectView){
 					app.activeProjectView.leaveProject();
-				}
+				}*/
 
 				this.loadView(project);
 				app.homeView.slideToProject(project);
