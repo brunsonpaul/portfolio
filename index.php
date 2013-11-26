@@ -63,22 +63,20 @@
     <div id='borderRight' class="border close"></div>
     
     <div class="closeLayout"></div>
-
+    
     <nav class="button-menu">
-        <a href="#">
+        <a href="#" class="close-button">
             <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
                 <rect fill="#b59663" width="18" height="1"/>
                 <rect y="3" fill="#b59663" width="18" height="1"/>
                 <rect y="6" fill="#b59663" width="18" height="1"/>
-            </svg>        
-        <!-- 
-        <a href="#" class="close-button">    
-           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.435px" height="13.435px" viewBox="0 0 13.435 13.435" enable-background="new 0 0 13.435 13.435" xml:space="preserve">
+            </svg>
+            <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.435px" height="13.435px" viewBox="0 0 13.435 13.435" enable-background="new 0 0 13.435 13.435" xml:space="preserve">
                 <rect x="6.217" y="-2.282" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.7825 6.7175)" fill="#B59663" width="1" height="18"/>
                 <rect x="6.217" y="-2.282" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.7175 -2.7825)" fill="#B59663" width="1" height="18"/>
             </svg> -->
         </a>
-    </nav> 
+    </nav>
 <div class="wrapper-projects-container" style="width:100%;heigt:100%;position:relative;overflow:hidden;">
     <div class="projects-container dragCursor">
         <div id='home' class="project active" data-project="home">
