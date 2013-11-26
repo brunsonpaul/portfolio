@@ -66,7 +66,7 @@
     
     <nav class="button-menu">
         <a href="#" class="close-button">
-            <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
                 <rect fill="#b59663" width="18" height="1"/>
                 <rect y="3" fill="#b59663" width="18" height="1"/>
                 <rect y="6" fill="#b59663" width="18" height="1"/>
