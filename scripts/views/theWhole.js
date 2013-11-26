@@ -1,11 +1,11 @@
-/*global kevinPortfolio, Backbone, JST*/
+/*global app, Backbone, JST*/
 
-kevinPortfolio.Views = kevinPortfolio.Views || {};
+app.Views = app.Views || {};
 
 (function () {
     'use strict';
 
-    kevinPortfolio.Views.theWhole = Backbone.View.extend({
+    app.Views.theWhole = Backbone.View.extend({
 
         template: $('coucou'),
         caseStudyContainer: $('.case-study-container'),

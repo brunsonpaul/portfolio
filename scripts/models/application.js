@@ -1,11 +1,11 @@
-/*global kevinPortfolio, Backbone*/
+/*global app, Backbone*/
 
-kevinPortfolio.Models = kevinPortfolio.Models || {};
+app.Models = app.Models || {};
 
 (function () {
     'use strict';
 
-    kevinPortfolio.Models.ApplicationModel = Backbone.Model.extend({
+    app.Models.ApplicationModel = Backbone.Model.extend({
     		
     });
 
