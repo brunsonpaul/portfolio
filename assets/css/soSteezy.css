@@ -1549,7 +1549,7 @@ section .page-content {
   margin: 0px auto 20px auto;
   text-align: center;
 }
-#tdfProject #tdfBgContent #tdfContent h1 #pignonProjet {
+#tdfProject #tdfBgContent #tdfContent h1 .pignonProjet {
   display: block;
   width: 100px;
   margin: 10px auto 20px auto;
@@ -7054,7 +7054,7 @@ section .page-content {
   font-size: 1.500rem;
   margin: 60px auto 20px auto;
 }
-#tdf #tdf-introduction .page-content h1 #pignonProjet {
+#tdf #tdf-introduction .page-content h1 #pignon {
   display: block;
   width: 100px;
   margin: 10px auto 20px auto;

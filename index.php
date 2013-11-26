@@ -152,7 +152,7 @@
             <div id='tdfBgContent'>
                 <div id="tdfContent">
                     <h1>
-                        <img id='pignonProjet' src='./assets/img/100ansdetour/pignon.svg' alt=''>
+                        <img class='pignonProjet' src='./assets/img/100ansdetour/pignon.svg' alt=''>
                         Tour de France
                         <span>100 ans de Tour</span>
                     </h1>
@@ -273,7 +273,7 @@
             </div>
         </div>
 
-        <div id='footer' class="project" data-project="thanks-for-watching">
+        <div id='footer' class="project" data-project="thanks">
             <footer>
                 <div class="wave1">        
                     <img src="assets/img/identity/wave-1.svg" alt=""> 
