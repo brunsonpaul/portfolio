@@ -192,7 +192,7 @@
     </article>
             
     <footer>
-        <p>That’s all folk</p>
+        <p>That’s all folks</p>
         <p>Thank you for watching</p>
     </footer>
 </section>
