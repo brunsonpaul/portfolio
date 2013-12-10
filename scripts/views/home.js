@@ -23,11 +23,15 @@ app.Views = app.Views || {};
 			this.initProjectsHome();
             this.intervalDragProject = this.windowWidth/5;
 
-            var that = this;
-			$(window).on('resize',function(){
-				that.windowResized();
-            });
 
+            var that = this;
+            $(window).on('resize',function(){
+                that.windowResized();
+            });
+            $('.enter-button').on("click", function(e){
+                that.enterProjectEvent(e);
+            });
+            
         },
 
         setProjectsSize: function(){
@@ -175,14 +179,17 @@ app.Views = app.Views || {};
             } else if(pEvent.clientX<this.mousePositionX-200 && this.currentProject != this.projectMapping.length-1){
                 this.currentProject++;
             }
+
             this.mousePositionX = 0;
 
-            app.router.navigate( '/' + this.getActiveProjectName(), {trigger: true});
-
+            // Hack pour déclencher l'event du router en cas de non changement de projet
+            Backbone.history.fragment = null;
+            app.router.navigate(this.getActiveProjectName(), {trigger:true});
         },
         enterProjectEvent: function(e){
             e.preventDefault();
-            app.router.navigate('/' + this.getActiveProjectName() + '/case-study', {trigger: true})
+            app.getActiveView().enterProjectAnim();
+            // app.router.navigate('/' + this.getActiveProjectName() + '/case-study', {trigger: true})
             return false;
         },
         closeProjectEvent: function(e){

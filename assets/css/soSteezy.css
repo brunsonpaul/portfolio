@@ -4817,6 +4817,28 @@ section .page-content {
     transform: rotate(1080deg);
   }
 }
+#theWholeProject.closed #space-anim {
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+}
+#theWholeProject.closed #theWholeSolarSystem {
+  -webkit-transition: all 1.2s;
+  -moz-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -o-transition: all 1.2s;
+  transition: all 1.2s;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+}
 #socialCokeProject {
   background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;
   -webkit-background-size: cover;
@@ -7835,6 +7857,24 @@ section .page-content {
 #theWhole #theWhole-introduction {
   padding: 100px 0 0 0;
   position: relative;
+  overflow: hidden;
+}
+#theWhole #theWhole-introduction .page-content {
+  -webkit-transition: -webkit-transform 0.8s;
+  -moz-transition: -moz-transform 0.8s;
+  -ms-transition: -ms-transform 0.8s;
+  -o-transition: -o-transform 0.8s;
+  transition: all 1s;
+  -webkit-transform: scale(200, 200);
+  -moz-transform: scale(200, 200);
+  -ms-transform: scale(200, 200);
+  -o-transform: scale(200, 200);
+}
+#theWhole #theWhole-introduction.active .page-content {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
 }
 #theWhole #theWhole-introduction .page-content {
   text-align: center;

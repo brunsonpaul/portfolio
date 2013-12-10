@@ -40,6 +40,9 @@ window.app = {
     setCaseStudyActive: function(param) {
         this.activeCaseStudy = param;
         return true;
+    },
+    getActiveView: function(){
+        return this.activeProjectView;
     }
 };
 

@@ -181,6 +181,7 @@
         </div>
 
         <div id='theWholeProject' class="project" data-project="the-whole">
+            <div id="theWhole-bg"></div>
             <div id='space-anim'>
                 <div id='rocket'><img src="assets/img/the-whole/bg/the-whole-rocket.svg" alt=""></div>            
                 <div id='astronaut'><img src="assets/img/the-whole/bg/the-whole-astronaut.svg" alt=""></div>
