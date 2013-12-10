@@ -333,6 +333,32 @@ html{
 		@-o-keyframes planetlfm { 0% { top:0%; left:50%; } 5.125% { top:6.25%; left:39%; } 8.25% { top:12.5%; left:35%; } 13.5% { top:25%; left:30%; } 18.75% { top:37.5%; left:28%; } 25% { top:50%; left:27%; } 31.25% { top:62.5%; left:28%; } 36.5% { top:75%; left:30%; } 41.75% { top:87.5%; left:35%; } 44.875% { top:93.75%; left:39%; } 50% { top:100%; left:50%; } 55.125% { top:93.75%; left:61%; } 58.25% { top:87.5%; left:65%; } 63.5% { top:75%; left:70%; } 68.75% { top:62.5%; left:72%; } 75% { top:50%; left:73%; } 81.25% { top:37.5%; left:72%; } 86.5% { top:25%; left:70%; } 91.75% { top:12.5%; left:65%; }  94.875% { top:6.25%; left:61%; } 100% { top:0%; left:50%; .rotateKit(1080deg); } }
 		@keyframes planetlfm { 0% { top:0%; left:50%; } 5.125% { top:6.25%; left:39%; } 8.25% { top:12.5%; left:35%; } 13.5% { top:25%; left:30%; } 18.75% { top:37.5%; left:28%; } 25% { top:50%; left:27%; } 31.25% { top:62.5%; left:28%; } 36.5% { top:75%; left:30%; } 41.75% { top:87.5%; left:35%; } 44.875% { top:93.75%; left:39%; } 50% { top:100%; left:50%; } 55.125% { top:93.75%; left:61%; } 58.25% { top:87.5%; left:65%; } 63.5% { top:75%; left:70%; } 68.75% { top:62.5%; left:72%; } 75% { top:50%; left:73%; } 81.25% { top:37.5%; left:72%; } 86.5% { top:25%; left:70%; } 91.75% { top:12.5%; left:65%; }  94.875% { top:6.25%; left:61%; } 100% { top:0%; left:50%; .rotateKit(1080deg); } }
 	}
+
+	&.closed {
+		#space-anim{
+			-webkit-transition: all 0.7s;
+			-moz-transition: all 0.7s;
+			-ms-transition: all 0.7s;
+			-o-transition: all 0.7s;
+			transition: all 0.7s;
+			-webkit-transform : scale(0, 0);
+			-moz-transform : scale(0, 0);
+			-ms-transform : scale(0, 0);
+			-o-transform : scale(0, 0);
+		}
+		#theWholeSolarSystem{
+			-webkit-transition: all 1.2s;
+			-moz-transition: all 1.2s;
+			-ms-transition: all 1.2s;
+			-o-transition: all 1.2s;
+			transition: all 1.2s;
+			-webkit-transform : scale(0, 0);
+			-moz-transform : scale(0, 0);
+			-ms-transform : scale(0, 0);
+			-o-transform : scale(0, 0);
+		}
+	}
+
 }
 
 #socialCokeProject{ background:url('../img/social-coke/bg/social-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;

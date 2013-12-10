@@ -12,11 +12,12 @@ app.Routers = app.Routers || {};
 			':project/case-study':'caseStudyHandler'
 		},
 		projectHandler: function(project){
+
 			if(app.homeView.isValidProjectName(project)){
 
-/*				if(app.activeProjectView){
+				if(app.activeProjectView && app.activeCaseStudy){
 					app.activeProjectView.leaveProject();
-				}*/
+				}
 
 				this.loadView(project);
 				app.homeView.slideToProject(project);
