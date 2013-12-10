@@ -260,7 +260,8 @@
                         <b>John's Graphisme</b>
                         Whaouu, ça faisait un petit moment que je n’avais pas fait un article dans cette thématique, les sites qui envoient du poney [ ... ]
                         <a href='http://www.jonathan-menet.fr/blog/2013/07/23/le-site-qui-envoie-du-poney-mort-e37-100-ans-de-tour/' target='_blank'>See article</a>
-                    </li>    
+                    </li>   
+                </ul> 
             </div>
             <div id='tdf-onTwitter'>
                 <div id='tdf-twitter'>

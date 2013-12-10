@@ -94,7 +94,7 @@
                     </h1>
                     <p>
                         I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
-                        I'm looking for an Art Director internship</br>
+                        I'm looking for an Art Director internship<br/>
                         From June to November 2014 in London.
                     </p>
                     <div id="discover">
@@ -152,7 +152,7 @@
             <div id='tdfBgContent'>
                 <div id="tdfContent">
                     <h1>
-                        <img id='pignon' src='./assets/img/100ansdetour/pignon.svg' alt=''>
+                        <img class='pignonProjet' src='./assets/img/100ansdetour/pignon.svg' alt=''>
                         Tour de France
                         <span>100 ans de Tour</span>
                     </h1>
@@ -247,14 +247,14 @@
             </div>
 
     
-        <img style='position:absolute; top:7%; right:12%;'src='assets/img/social-coke/bg/monkey-bg.png'>
-            <img style='position:absolute; top:58%; left:31%;'src='assets/img/social-coke/bg/patate-bg.png'>
-            <img style='position:absolute; bottom:23%; right:4%;'src='assets/img/social-coke/bg/drink-bg.png'>
-            <img style='position:absolute; top:13%; left:29%;'src='assets/img/social-coke/bg/hello-bg.png'>
-            <img style='position:absolute; bottom:38%; left:11%;'src='assets/img/social-coke/bg/goutte-bg.png'>
-            <img style='position:absolute; top:37%; left:18%;'src='assets/img/social-coke/bg/pointRose-bg.png'>
-            <img style='position:absolute; bottom:43%; right:33%;'src='assets/img/social-coke/bg/pointVert-bg.png'>
-            <img style='position:absolute; bottom:36%; right:25%;'src='assets/img/social-coke/bg/pointJaune-bg.png'>
+        <img style='position:absolute; top:7%; right:12%;' src='assets/img/social-coke/bg/monkey-bg.png' alt="">
+            <img style='position:absolute; top:58%; left:31%;' src='assets/img/social-coke/bg/patate-bg.png' alt="">
+            <img style='position:absolute; bottom:23%; right:4%;' src='assets/img/social-coke/bg/drink-bg.png' alt="">
+            <img style='position:absolute; top:13%; left:29%;'src='assets/img/social-coke/bg/hello-bg.png' alt="">
+            <img style='position:absolute; bottom:38%; left:11%;' src='assets/img/social-coke/bg/goutte-bg.png' alt="">
+            <img style='position:absolute; top:37%; left:18%;' src='assets/img/social-coke/bg/pointRose-bg.png' alt="">
+            <img style='position:absolute; bottom:43%; right:33%;' src='assets/img/social-coke/bg/pointVert-bg.png' alt="">
+            <img style='position:absolute; bottom:36%; right:25%;' src='assets/img/social-coke/bg/pointJaune-bg.png' alt="">
 
         </div>
 
@@ -274,7 +274,7 @@
             </div>
         </div>
 
-        <div id='footer' class="project" data-project="thanks-for-watching">
+        <div id='footer' class="project" data-project="thanks">
             <footer>
                 <div class="wave1">        
                     <img src="assets/img/identity/wave-1.svg" alt=""> 
