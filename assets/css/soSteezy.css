@@ -5045,7 +5045,7 @@ section .page-content {
 }
 #partech #partech-introduction {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 112px;
 }
 #partech #partech-introduction .page-content ul {
   opacity: 0;
@@ -5193,7 +5193,7 @@ section .page-content {
 }
 #partech #partech-client {
   background: #191919;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #partech #partech-client .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -5246,7 +5246,7 @@ section .page-content {
   opacity: 1;
 }
 #partech #partech-dragScreen {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #partech #partech-dragScreen .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -5397,7 +5397,7 @@ section .page-content {
   background: #000000 url('../img/partech/dark-grid.png');
   border-top: solid 1px #191919;
   border-bottom: solid 1px #191919;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #partech #partech-sketch .page-content img {
   opacity: 0;
@@ -5414,7 +5414,7 @@ section .page-content {
 }
 #partech #partech-mobile {
   background: #191919;
-  padding: 100px 0 50px 0;
+  padding: 112px 0 50px 0;
 }
 #partech #partech-mobile .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -5795,7 +5795,7 @@ section .page-content {
   color: #231f20;
 }
 #socialCoke #socialCoke-introduction {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   overflow-y: hidden;
 }
@@ -6122,7 +6122,7 @@ section .page-content {
   width: 310px;
 }
 #socialCoke #socialCoke-idea {
-  padding: 100px 0 0 0;
+  padding: 112px 0 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -7033,7 +7033,7 @@ section .page-content {
   font-weight: 300;
 }
 #tdf #tdf-introduction {
-  padding: 100px 0 0 0;
+  padding: 112px 0 0 0;
   position: relative;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -7123,7 +7123,7 @@ section .page-content {
   margin: 60px auto 0 auto;
 }
 #tdf #tdf-context {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -7264,7 +7264,7 @@ section .page-content {
   top: 0;
 }
 #tdf #tdf-data {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -7371,7 +7371,7 @@ section .page-content {
   opacity: 1;
 }
 #tdf #tdf-design {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -7576,7 +7576,7 @@ section .page-content {
   right: 0;
 }
 #tdf #tdf-thanks {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   border-top: 6px solid #ffffff;
   font-family: 'Lato', sans-serif;
@@ -7669,7 +7669,7 @@ section .page-content {
   fill: #ffffff;
 }
 #tdf #tdf-other {
-  padding: 100px 0 0 0;
+  padding: 112px 0 0 0;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -7855,9 +7855,9 @@ section .page-content {
   transition: all 0.7s;
 }
 #theWhole #theWhole-introduction {
-  padding: 100px 0 224px 0;
   position: relative;
   overflow: hidden;
+  min-height: 705px;
 }
 #theWhole #theWhole-introduction.active .page-content ul {
   opacity: 1;
@@ -7888,7 +7888,7 @@ section .page-content {
   text-align: center;
 }
 #theWhole #theWhole-introduction .page-content ul {
-  margin: auto;
+  margin: 112px auto 0 auto;
   font-size: 16px;
   font-size: 1rem;
   opacity: 0;
@@ -8046,7 +8046,7 @@ section .page-content {
 }
 #theWhole #theWhole-interface {
   background: #141414;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #theWhole #theWhole-interface .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -8380,7 +8380,7 @@ section .page-content {
 }
 #theWhole #theWhole-element {
   background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #theWhole #theWhole-element .page-content div {
   display: inline-block;
@@ -8430,7 +8430,7 @@ section .page-content {
 }
 #theWhole #theWhole-madeWith {
   background: #141414;
-  padding: 100px 0 60px 0;
+  padding: 112px 0 60px 0;
   position: relative;
   overflow: hidden;
 }

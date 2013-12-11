@@ -6,7 +6,7 @@
 
 #theWhole { color:@theWholeColor1; .gothamThin();
 	#theWhole-bg { position:fixed; z-index:-1; top:0; left:0; bottom:0; right:0; background:#141414 url('../img/the-whole/bg/the-whole-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; .transition(0.7s); }
-	#theWhole-introduction { padding:100px 0 224px 0; position:relative; overflow: hidden;
+	#theWhole-introduction { position:relative; overflow: hidden; min-height:705px;
 		&.active{
 			.page-content{ 
 				ul { opacity:1; -webkit-transform : scale(1, 1); -moz-transform : scale(1, 1); -ms-transform : scale(1, 1); -o-transform : scale(1, 1); }
@@ -16,7 +16,7 @@
 			}
 		}
 		.page-content { text-align:center;
-			ul { margin:auto; .fontSize16(); opacity:0; .easeTransition(0.8s); -webkit-transform : scale(200, 200);-moz-transform : scale(200, 200); -ms-transform : scale(200, 200); -o-transform : scale(200, 200);
+			ul { margin:112px auto 0 auto; .fontSize16(); opacity:0; .easeTransition(0.8s); -webkit-transform : scale(200, 200);-moz-transform : scale(200, 200); -ms-transform : scale(200, 200); -o-transform : scale(200, 200);
 				li { .calcWidthKit(100/3%); .inline-block(); vertical-align:top;
 					span { display:block; text-transform:uppercase; .gothamBook(); }
 				}
@@ -46,7 +46,7 @@
 		}
 	}
 
-	#theWhole-interface { background:@theWholeColor3; padding:100px 0;  
+	#theWhole-interface { background:@theWholeColor3; padding:112px 0 100px 0; 
 		.page-content {
 			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@theWholeColor5; .fontSize20(); }
 			>p { text-align:center; line-height:1.3em; .fontSize16();  width:620px; margin:10px auto 40px auto; }
@@ -117,7 +117,7 @@
 		}
 	}
 
-	#theWhole-element { background:@theWholeColor3 url('../img/the-whole/theWhole-patterns.jpg') repeat center center; padding:100px 0;  
+	#theWhole-element { background:@theWholeColor3 url('../img/the-whole/theWhole-patterns.jpg') repeat center center; padding:112px 0 100px 0;  
 		.page-content {
 			div { .inline-block(); vertical-align:top; width:235px; margin-right:7px;
 				h2 { .fontSize32(); .gothamBook();
@@ -130,7 +130,7 @@
 		}
 	}
 
-	#theWhole-madeWith { background:@theWholeColor3; padding:100px 0 60px 0; position:relative; overflow:hidden;
+	#theWhole-madeWith { background:@theWholeColor3; padding:112px 0 60px 0; position:relative; overflow:hidden;
 		.page-content { 
 			#macbook-theWhole { width:875px; position:relative; margin:0 auto 60px auto;
 				img { display:block; margin:auto; 

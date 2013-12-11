@@ -107,6 +107,12 @@ app.Views = app.Views || {};
                     marginTop:-((this.windowHeight/1.35)/2-40) +'px',
                 }
             );
+            $('#theWhole-introduction').css(
+                {
+                    height: this.windowHeight+'px',
+                }
+            );
+
 
         },
 
