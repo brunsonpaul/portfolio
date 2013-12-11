@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta name="author" content="Kévin LAGIER" />
+
     <meta name="description" content="Kevin Lagier, graphic design, art direction" />
     <meta name="keywords" content="web, digital, design, graphic" />
     <link rel="icon" type="image/x-icon" href="assets/img/identity/favicon.png" />
@@ -283,6 +284,7 @@
                     <img src="assets/img/identity/wave-2.svg" alt=""> 
                 </div>
                 <img id='footerLogo' src="assets/img/identity/logo-kevin-lagier.svg" alt="logo Kévin Lagier"> 
+                <link rel="author" href="https://plus.google.com/+LagierKévin" />
             </footer>
         </div>
     </div>
