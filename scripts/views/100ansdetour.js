@@ -215,6 +215,7 @@ app.Views = app.Views || {};
             $('.border').addClass('open');
             app.homeView.homeProjectsContainer.css('display', 'none');
             this.caseStudyElem.css('display', 'block');
+            this.enterProject();
         },
         disableTransition: function($elem){
             $elem.removeClass('no-transition');

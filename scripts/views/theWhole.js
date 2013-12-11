@@ -72,6 +72,12 @@ app.Views = app.Views || {};
             });
         },
         enterFromRouter: function(){
+            $('.border').removeClass('close');
+            $('.border').addClass('open');
+            this.caseStudyElem.css({display:"block"});
+            this.enterProject();
+            app.homeView.homeProjectsContainer.css('display', 'none');
+            $("#theWhole-introduction").addClass("active");
 
         },
         enterProject: function(){
