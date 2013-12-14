@@ -53,58 +53,58 @@ app.Views = app.Views || {};
             );
             $('#theWholeSolar').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );            
             $('#theWholeFbPlanet').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );            
             $('#theWholeTwPlanet').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );          
             $('#theWholeLfPlanet').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );        
             $('#theWholeScPlanet').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );
             $('#theWholeRssPlanet').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );
             $('#theWholePinPlanet').css(
                 {
-                    height: this.windowHeight/1.35 +'px',
-                    width: this.windowHeight/1.35 +'px',
-                    marginLeft:-(this.windowHeight/1.35)/2 +'px',
-                    marginTop:-((this.windowHeight/1.35)/2-40) +'px',
+                    height: this.windowHeight/1.38 +'px',
+                    width: this.windowHeight/1.38 +'px',
+                    marginLeft:-(this.windowHeight/1.38)/2 +'px',
+                    marginTop:-((this.windowHeight/1.38)/2-40) +'px',
                 }
             );
             $('#theWhole-introduction').css(

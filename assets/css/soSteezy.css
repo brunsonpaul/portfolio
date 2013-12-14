@@ -122,11 +122,11 @@ html {
   cursor: url('../img/identity/drag-active.png') 20 11, move;
 }
 .border {
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  -khtml-transition: all 0.8s;
-  transition: all 0.8s;
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
 }
 #borderTop {
   z-index: 9999;
@@ -1049,6 +1049,7 @@ section .page-content {
   -moz-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   /*cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
@@ -1182,9 +1183,9 @@ section .page-content {
   font-size: 0.875rem;
   color: #b59663;
 }
-#home header #header-content #discover b {
+#home header #header-content #discover div {
+  letter-spacing: 0.05rem;
   position: relative;
-  letter-spacing: 0;
   opacity: 0;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -1485,7 +1486,7 @@ section .page-content {
 #home.entered header #header-content p:after {
   height: 35px;
 }
-#home.entered header #header-content #discover b {
+#home.entered header #header-content #discover div {
   opacity: 1;
 }
 #home.entered header #header-content #discover span:nth-of-type(1) {
@@ -4818,26 +4819,28 @@ section .page-content {
   }
 }
 #theWholeProject.closed #space-anim {
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  transition: all 0.7s;
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
+  -webkit-transform: rotate(90deg) scale(0, 0);
+  -moz-transform: rotate(90deg) scale(0, 0);
+  -ms-transform: rotate(90deg) scale(0, 0);
+  -o-transform: rotate(90deg) scale(0, 0);
+  transform: rotate(90deg) scale(0, 0);
 }
 #theWholeProject.closed #theWholeSolarSystem {
-  -webkit-transition: all 1.2s;
   -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
   -ms-transition: all 1.2s;
-  -o-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
   transition: all 1.2s;
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
+  -webkit-transform: rotate(90deg) scale(0, 0);
+  -moz-transform: rotate(90deg) scale(0, 0);
+  -ms-transform: rotate(90deg) scale(0, 0);
+  -o-transform: rotate(90deg) scale(0, 0);
+  transform: rotate(90deg) scale(0, 0);
 }
 #socialCokeProject {
   background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;

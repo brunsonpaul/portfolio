@@ -100,9 +100,9 @@
                     </p>
                     <div id="discover">
                         <span></span>
-                        <b>
+                        <div>
                             Drag to discover projects
-                        </b>
+                        </div>
                         <span></span>
                         <span></span>
                         <span></span>
