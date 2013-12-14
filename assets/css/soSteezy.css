@@ -5035,7 +5035,7 @@ section .page-content {
 }
 #partech {
   background: #000000;
-  font-family: 'Conv_Gotham-Thin';
+  font-family: 'Conv_Gotham-Light';
 }
 #partech .sepPartech {
   display: block;
@@ -5204,7 +5204,6 @@ section .page-content {
   font-size: 2rem;
 }
 #partech #partech-client .page-content h3 {
-  font-family: 'Conv_Gotham-Light';
   text-transform: uppercase;
   text-align: center;
   color: #e8f603;
@@ -5677,7 +5676,6 @@ section .page-content {
   color: #ffffff;
   font-size: 40px;
   font-size: 2.5rem;
-  font-family: 'Conv_Gotham-Light';
 }
 #partech footer p:nth-of-type(2) {
   color: #b2b2b1;
@@ -7834,7 +7832,7 @@ section .page-content {
 }
 #theWhole {
   color: #f9f9f9;
-  font-family: 'Conv_Gotham-Thin';
+  font-family: 'Conv_Gotham-Light';
 }
 #theWhole #theWhole-bg {
   position: fixed;
@@ -8002,7 +8000,6 @@ section .page-content {
   font-size: 2rem;
 }
 #theWhole #theWhole-concept .page-content h3 {
-  font-family: 'Conv_Gotham-Light';
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -8516,8 +8513,8 @@ section .page-content {
 #theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) svg g path {
   fill: #f9f9f9;
 }
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover {
-  background: #050505;
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover svg g path {
+  fill: #050505;
 }
 #theWhole #theWhole-madeWith.active .page-content #macbook-theWhole img:nth-of-type(2) {
   opacity: 1;
@@ -8532,7 +8529,6 @@ section .page-content {
   color: #f9f9f9;
   font-size: 40px;
   font-size: 2.5rem;
-  font-family: 'Conv_Gotham-Light';
 }
 #theWhole footer p:nth-of-type(2) {
   color: #646464;

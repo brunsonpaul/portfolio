@@ -18,7 +18,7 @@
 @partechBG2:#191919;
 
 
-#partech { background:@partechBG1; .gothamThin();
+#partech { background:@partechBG1; .gothamLight();
 	
 	.sepPartech { display:block; border-top:1px dotted @partechColor1; width:100px; margin:40px auto; }
 	
@@ -54,7 +54,7 @@
 	#partech-client { background:@partechBG2; padding:112px 0 100px 0;  
 		.page-content {
 			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@partechColor1; .fontSize32(); }
-			h3 { .gothamLight(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize16(); line-height:1.3em; }
+			h3 { text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize16(); line-height:1.3em; }
 			p { text-align:justify; line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12();  width:400px; color:@partechColor2;
 				&:nth-of-type(1) { margin-right:150px; }
 				span { color:@partechColor1; }
@@ -173,7 +173,7 @@
 	}	
 
 	footer { text-align:center; padding:70px 0;  display:block; 
-		p:nth-of-type(1) { color:@partechColor1; .fontSize40(); .gothamLight(); }
+		p:nth-of-type(1) { color:@partechColor1; .fontSize40(); }
 		p:nth-of-type(2) { color:@partechColor2; .fontSize18(); }
 	}
 }
