@@ -36,7 +36,7 @@
         </div>
     </article>
     
-    <article id='theWhole-concept' class='animation-on-scroll' data-start-margin='0'>
+    <article id='theWhole-concept' class='animation-on-scroll' data-start-margin='-112'>
         <div class='page-content'>
             <h2>The Concept</h2>
             <h3>Connect and follow the world</h3>
@@ -58,7 +58,7 @@
                 </p>
             <div id='theWhole-interface-content'>
                 <img src='./assets/img/the-whole/the-whole-interface.png' alt=''>
-                <ul>
+                <ul class='animation-on-scroll' data-start-margin='-300'>
                     <li>
                         <img src='./assets/img/the-whole/the-whole-twInfos.png' alt=''>
                         <h3>News feed</h3>
@@ -85,12 +85,12 @@
             </div>
             <div id='theWhole-menu'>
                 <img src='./assets/img/the-whole/the-whole-menu.png' alt=''>
-                <img src='./assets/img/the-whole/the-whole-safari.png' alt=''>
-                <img src='./assets/img/the-whole/arrow-palette.png' alt=''>
-                <img src='./assets/img/the-whole/arrow-api.png' alt=''>
-                <img src='./assets/img/the-whole/arrow-rss.png' alt=''>
-                <img src='./assets/img/the-whole/arrow-bookmarks.png' alt=''>
-                <img src='./assets/img/the-whole/arrow-profil.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='-350' src='./assets/img/the-whole/the-whole-safari.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='-450' src='./assets/img/the-whole/arrow-palette.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='-450' src='./assets/img/the-whole/arrow-api.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='-350' src='./assets/img/the-whole/arrow-rss.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='-350' src='./assets/img/the-whole/arrow-bookmarks.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='-350' src='./assets/img/the-whole/arrow-profil.png' alt=''>
             </div>            
         </div>
     </article>
@@ -108,7 +108,7 @@
         </div>
     </article>
 
-    <article id='theWhole-madeWith'>
+    <article id='theWhole-madeWith' class='animation-on-scroll' data-start-margin='-112' >
         <div class="page-content">
             <div id='macbook-theWhole'>
                 <img src='./assets/img/the-whole/the-whole-macbook-air.png' alt=''>

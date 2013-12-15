@@ -61,7 +61,7 @@
                     Cent ans de parcours, de classements et d'anecdotes, soit de nombreuses analyses et statistiques possibles.
                 </li>
             </ul>
-            <div id='maillot'>
+            <div id='maillot' class='animation-on-scroll' data-start-margin='-350'>
                 <img src='./assets/img/100ansdetour/maillot-jaune.svg' alt=''>
                 <img src='./assets/img/100ansdetour/maillot-blanc.svg' alt=''>
                 <img src='./assets/img/100ansdetour/maillot-vert.svg' alt=''>
