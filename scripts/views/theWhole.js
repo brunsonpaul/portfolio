@@ -11,13 +11,9 @@ app.Views = app.Views || {};
         caseStudyElem: $('section[data-case-study="the-whole"]'),
         title: 'The Whole',
         name: 'the-whole',
-        positionsArticle: [],
-        articles: [],
         
         initialize: function(){
 
-            this.articles = this.caseStudyElem.find('article');
-            
         },
         initEnterProjectAction: function(){
 
@@ -48,6 +44,7 @@ app.Views = app.Views || {};
 
         },
         leaveProject: function(){
+
             var that = this;
             $('.closeLayout').css('height', '100%');
             $('.closeLayout').animate({opacity:1},1000, function(){
@@ -72,6 +69,7 @@ app.Views = app.Views || {};
             });
         },
         enterFromRouter: function(){
+
             $('.border').removeClass('close');
             $('.border').addClass('open');
             this.caseStudyElem.css({display:"block"});
@@ -83,34 +81,7 @@ app.Views = app.Views || {};
         enterProject: function(){
 
             app.setCaseStudyActive(true);
-
-            this.scrollAnims();
-
-        },
-        scrollAnims: function(){
-            var that = this;
-
-            _.each(this.articles, function(article){
-
-                that.positionsArticle.push($(article).offset().top);
-
-            });
-
-            $(window).on('scroll', function(){
-
-                _.each(that.positionsArticle, function(positionArticle, key){
-
-                    if(positionArticle<$(document).scrollTop()){
-
-                        $(that.articles[key]).addClass('active');
-
-                        delete that.positionsArticle[key];
-
-                    }
-
-                });
-
-            }); 
+            app.initScrollAnims();
 
         },
         getName: function(){

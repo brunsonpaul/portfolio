@@ -11,8 +11,6 @@ app.Views = app.Views || {};
         caseStudyElem: $('section[data-case-study="100ansdetour"]'),
         title: '100ans de Tour',
         name: '100ansdetour',
-        positionsArticle: [],
-        articles: [],
         mousePositionX:0,
 
         initialize: function(){
@@ -24,7 +22,6 @@ app.Views = app.Views || {};
                 app.router.navigate('/'+that.name, {trigger: true});
             });
 
-            this.articles = this.caseStudyElem.find('article');
             var screenHeight = (app.homeView.windowHeight - 16)
             var height = screenHeight/6;
             $('#date li').css('height', height);
@@ -35,6 +32,7 @@ app.Views = app.Views || {};
         // Elements de la page d'accueil
         dragCursor: $("#tdfDragCursor"),
         velo: $('.enter-elem img'),
+
         initEnterProjectAction: function(){
 
             var that = this;
@@ -165,7 +163,8 @@ app.Views = app.Views || {};
             $(this.articles[0]).addClass('active');
             delete this.positionsArticle[0];
 
-            this.scrollAnims();
+            app.initScrollAnims();
+
         },
 
         leaveProject: function(){
@@ -192,24 +191,7 @@ app.Views = app.Views || {};
 
             });
         },
-        scrollAnims: function(){
-            var that = this;
-            $(window).on('scroll', function(){
 
-                _.each(that.positionsArticle, function(positionArticle, key){
-
-                    if(positionArticle<$(document).scrollTop()){
-
-                        $(that.articles[key]).addClass('active');
-
-                        delete that.positionsArticle[key];
-
-                    }
-
-                });
-
-            }); 
-        },
         enterFromRouter: function(){
             $('.border').removeClass('close');
             $('.border').addClass('open');
@@ -217,12 +199,15 @@ app.Views = app.Views || {};
             this.caseStudyElem.css('display', 'block');
             this.enterProject();
         },
+
         disableTransition: function($elem){
             $elem.removeClass('no-transition');
         },
+
         enableTransition: function($elem){
             $elem.addClass('no-transition');
         },
+
         getName: function(){
             return this.name;
         }

@@ -9,7 +9,7 @@
         </ul>
     </nav>
     <div id='theWhole-bg'></div>
-    <article id='theWhole-introduction'>
+    <article id='theWhole-introduction' class='animation-on-scroll' data-start-margin='0'>
         <div class="page-content">
             <ul>
                 <li>
@@ -36,7 +36,7 @@
         </div>
     </article>
     
-    <article id='theWhole-concept' >
+    <article id='theWhole-concept' class='animation-on-scroll' data-start-margin='0'>
         <div class='page-content'>
             <h2>The Concept</h2>
             <h3>Connect and follow the world</h3>
@@ -50,7 +50,7 @@
         </div>
     </article>
 
-    <article id='theWhole-interface' >
+    <article id='theWhole-interface'>
         <div class='page-content'> 
             <h2>The interface</h2>            
                 <p>

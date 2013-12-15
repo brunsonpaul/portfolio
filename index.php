@@ -260,6 +260,7 @@
         </div>
 
         <div id='partechProject' class="project" data-project="partech">
+            <div class="partechEnterLayout"></div>
             <div>
                 <h1>
                     Partech
@@ -308,7 +309,6 @@
     <script src="scripts/vendor/jquery/jquery.js"></script>
     <script src="scripts/vendor/underscore/underscore.js"></script>
     <script src="scripts/vendor/backbone/backbone.js"></script>
-    <script src="scripts/vendor/dragdealer.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/main.js -->
@@ -319,7 +319,6 @@
     <script src="scripts/views/partech.js"></script>
     <script src="scripts/views/socialCoke.js"></script>
     <script src="scripts/views/theWhole.js"></script>
-    <script src="scripts/collections/application.js"></script>
     <!-- endbuild -->
 
     <script type="text/javascript">
