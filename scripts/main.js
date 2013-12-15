@@ -53,17 +53,14 @@ window.app = {
         _.each(this.articles, function(article){
 
             $article = $(article);
-
-            that.positionsArticle.push($article.offset().top + parseInt($article.attr('data-start-margin')));
+            that.positionsArticle.push($article.offset().top + $article.height() + parseInt($article.attr('data-start-margin')));
 
         });
 
         $(window).on('scroll', function(){
 
-
             _.each(that.positionsArticle, function(positionArticle, key){
-
-                if(positionArticle<$(document).scrollTop()){
+                if(positionArticle<$(document).scrollTop() + that.homeView.windowHeight){
 
                     $(that.articles[key]).addClass('active');
 

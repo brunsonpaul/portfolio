@@ -179,7 +179,7 @@ app.Views = app.Views || {};
             });
         },
         sliderHandler: function(pEvent){
-
+            var _currentProject = this.currentProject;
             if(pEvent.clientX>this.mousePositionX+200 && this.currentProject != 0){
                 this.currentProject--;
             } else if(pEvent.clientX<this.mousePositionX-200 && this.currentProject != this.projectMapping.length-1){
@@ -189,8 +189,14 @@ app.Views = app.Views || {};
             this.mousePositionX = 0;
 
             // Hack pour déclencher l'event du router en cas de non changement de projet
+            if(this.currentProject == _currentProject){
+                this.slideToProject(this.getActiveProjectName());
+                return true;
+            }
+
             Backbone.history.fragment = null;
             app.router.navigate(this.getActiveProjectName(), {trigger:true});
+
         },
         enterProjectEvent: function(e){
             e.preventDefault();

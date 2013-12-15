@@ -14,38 +14,29 @@ app.Views = app.Views || {};
         title: 'Social Coke',
         model: null,
         initialize: function(){
-            // _.bindAll(this);
-            console.log("initialize");
-/*            var $socialCokeForm = $("#socialCokeForm");
-            $socialCokeForm.on("submit", function(e){
+
+            this.initEnterProjectAction();
+
+        },
+        initEnterProjectAction: function(){
+
+            var that = this;
+            var $socialCokeForm = $("#socialCokeForm");
+            var $inputText = $socialCokeForm.find('input[type="text"]');
+            var pseudoText;
+
+            $socialCokeForm.submit(function(e){
                 e.preventDefault();
-                var pseudoText = $socialCokeForm.find('input[type="text"]').val();
-                alert("submit");
+                pseudoText = $inputText.val();
                 $socialCokeForm.append('<div id="pseudoSocialCoke">'+ pseudoText +'</div>');
                 return false;
+
             });
-*/
-            // this.initEnterProjectAction();
-        },
-        events:{
-            "focus input": "initEnterProjectAction"
-        },
-       initEnterProjectAction: function(e){
-            e.preventDefault();
-            console.log("OKKKKK");
-            return false;
-/*            var that = this;
-            var $socialCokeForm = $("#socialCokeForm");
-            var pseudoText;
-            $socialCokeForm.on("keypress", function(e){
-                if(e.keyCode == 13){
-                    $socialCokeForm.submit();
-                }
-            });*/
 
         },
 
         enterProjectAnim: function(){
+
             var that = this;
             $('#date').addClass('active');
             $('.border').removeClass('close');
