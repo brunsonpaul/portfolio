@@ -5022,6 +5022,15 @@ section .page-content {
   left: 50%;
   margin-left: -10%;
 }
+#pseudoSocialCoke {
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: 'PFDinDisplayProRegular';
+  color: #00c4ff;
+  display: block;
+  border: none;
+}
 @font-face {
   font-family: 'Conv_Gotham-Book';
   src: url('font/Gotham/Gotham-Book.eot');
