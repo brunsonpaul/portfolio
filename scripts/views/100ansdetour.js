@@ -155,14 +155,6 @@ app.Views = app.Views || {};
                 $('#date').removeClass('active');
             }, false);
 
-            
-            _.each(this.articles, function(article){
-                that.positionsArticle.push($(article).offset().top);
-            });
-
-            $(this.articles[0]).addClass('active');
-            delete this.positionsArticle[0];
-
             app.initScrollAnims();
 
         },

@@ -241,7 +241,7 @@
                     Ou comment transformer l’écriture sociale<br/>
                     en message publicitaire.
                 </p>
-                <form method="post" action="traitement.php">
+                <form method="get" id="socialCokeForm">
                     <input type="text" name="pseudo" placeholder="Entrez votre pseudo" />
                     <input type="submit" value="GO" />
                 </form>
