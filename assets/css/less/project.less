@@ -1,15 +1,7 @@
 html{
 	// overflow: hidden;
 }
-.projects-container{
-	overflow:hidden;
-	position: fixed;
-	z-index: 6;
-	
-	-webkit-transform : translate(0px, 0px);
-	-moz-transform : translate(0px, 0px);
-	-ms-transform : translate(0px, 0px);
-	-o-transform : translate(0px, 0px);
+.projects-container{ overflow:hidden; position:fixed; z-index:6; -webkit-transform : translate(0px, 0px); -moz-transform : translate(0px, 0px); -ms-transform : translate(0px, 0px); -o-transform : translate(0px, 0px); transform : translate(0px, 0px);
 
 	&.no-transition{
 		.no-transition();
@@ -24,17 +16,12 @@ html{
 	
 	.transition(0.8s)
 }
-.case-study-container{ display:block; margin:0; padding:0; 
-	position: relative;
-	z-index: 5;
-
+.case-study-container{ display:block; margin:0; padding:0; position: relative; z-index: 5;
 	section{
 		display: none;
-
 		&.shown{
 			display: block;
 		}
-
 	}
 
 }
@@ -56,7 +43,7 @@ html{
 				}
 			}
 			#discover { position:relative; display:block; width:260px; margin:auto; .fontSize14(); color:@colorGold;
-				b { position:relative; letter-spacing:0; opacity:0; .transition(1s); .transitionDelay(3.1s); 
+				div { letter-spacing:0.05rem; position:relative; opacity:0; .transition(1s); .transitionDelay(3.1s); 
 				}
 				span { display:block; 
 					&:nth-of-type(1) { .transition(0.8s); .transitionDelay(1.5s); margin:auto; width:0; height:11px; border-top:1px dotted @colorGold; }
@@ -117,7 +104,7 @@ html{
 				a { }
 			}
 			#discover { 
-				b { opacity:1; }
+				div { opacity:1; }
 				span {
 					&:nth-of-type(1) { width:260px; }
 					&:nth-of-type(2) { height:40px; }
@@ -335,28 +322,8 @@ html{
 	}
 
 	&.closed {
-		#space-anim{
-			-webkit-transition: all 0.7s;
-			-moz-transition: all 0.7s;
-			-ms-transition: all 0.7s;
-			-o-transition: all 0.7s;
-			transition: all 0.7s;
-			-webkit-transform : scale(0, 0);
-			-moz-transform : scale(0, 0);
-			-ms-transform : scale(0, 0);
-			-o-transform : scale(0, 0);
-		}
-		#theWholeSolarSystem{
-			-webkit-transition: all 1.2s;
-			-moz-transition: all 1.2s;
-			-ms-transition: all 1.2s;
-			-o-transition: all 1.2s;
-			transition: all 1.2s;
-			-webkit-transform : scale(0, 0);
-			-moz-transform : scale(0, 0);
-			-ms-transform : scale(0, 0);
-			-o-transform : scale(0, 0);
-		}
+		#space-anim{ .transition(1.2s); -webkit-transform :rotate(90deg) scale(0, 0); -moz-transform:rotate(90deg) scale(0, 0); -ms-transform:rotate(90deg) scale(0, 0); -o-transform:rotate(90deg) scale(0, 0); transform:rotate(90deg) scale(0, 0); }
+		#theWholeSolarSystem{ .transition(1.2s); -webkit-transform :rotate(90deg) scale(0, 0); -moz-transform:rotate(90deg) scale(0, 0); -ms-transform:rotate(90deg) scale(0, 0); -o-transform:rotate(90deg) scale(0, 0); transform:rotate(90deg) scale(0, 0); }
 	}
 
 }

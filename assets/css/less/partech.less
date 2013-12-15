@@ -18,11 +18,11 @@
 @partechBG2:#191919;
 
 
-#partech { background:@partechBG1; .gothamThin();
+#partech { background:@partechBG1; .gothamLight();
 	
 	.sepPartech { display:block; border-top:1px dotted @partechColor1; width:100px; margin:40px auto; }
 	
-	#partech-introduction { text-align:center; padding-top:100px;
+	#partech-introduction { text-align:center; padding-top:112px;
 		.page-content {
 			ul { opacity:0; margin:auto; .fontSize16(); .transition(2s); .transitionDelay(2s);
 				li { .calcWidthKit(100/3%); .inline-block();  color:@partechColor2; vertical-align:top;
@@ -51,10 +51,10 @@
 		}
 	}	
 
-	#partech-client { background:@partechBG2; padding:100px 0;  
+	#partech-client { background:@partechBG2; padding:112px 0 100px 0;  
 		.page-content {
 			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@partechColor1; .fontSize32(); }
-			h3 { .gothamLight(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize16(); line-height:1.3em; }
+			h3 { text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize16(); line-height:1.3em; }
 			p { text-align:justify; line-height:1.5em; vertical-align:top; .inline-block(); .fontSize12();  width:400px; color:@partechColor2;
 				&:nth-of-type(1) { margin-right:150px; }
 				span { color:@partechColor1; }
@@ -68,7 +68,7 @@
 		}
 	}
 
-	#partech-dragScreen { padding:100px 0;  
+	#partech-dragScreen { padding:112px 0 100px 0;  
 		.page-content {
 			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize20(); }
 	 		p { text-align:center; line-height:1.3em; .fontSize16();  color:@partechColor1; margin:10px auto 40px auto; width:550px; }
@@ -99,7 +99,7 @@
 		}
 	}
 
-	#partech-sketch { background:@partechBG1 url('../img/partech/dark-grid.png'); border-top:solid 1px @partechBG2; border-bottom:solid 1px @partechBG2; padding:100px 0;
+	#partech-sketch { background:@partechBG1 url('../img/partech/dark-grid.png'); border-top:solid 1px @partechBG2; border-bottom:solid 1px @partechBG2; padding:112px 0 100px 0;
 		.page-content { 
 			img { opacity:0; display:block; margin:auto; .transition(1s); }
 		}
@@ -110,7 +110,7 @@
 		}
 	}
 
-	#partech-mobile { background:@partechBG2; padding:100px 0 50px 0;
+	#partech-mobile { background:@partechBG2; padding:112px 0 50px 0;
 		.page-content { 
 			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize20(); }
 	 		p { text-align:center; line-height:1.3em; .fontSize16();  width:550px; color:@partechColor1; margin:10px auto 40px auto; }
@@ -173,7 +173,7 @@
 	}	
 
 	footer { text-align:center; padding:70px 0;  display:block; 
-		p:nth-of-type(1) { color:@partechColor1; .fontSize40(); .gothamLight(); }
+		p:nth-of-type(1) { color:@partechColor1; .fontSize40(); }
 		p:nth-of-type(2) { color:@partechColor2; .fontSize18(); }
 	}
 }

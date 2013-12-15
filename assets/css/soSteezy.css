@@ -122,11 +122,11 @@ html {
   cursor: url('../img/identity/drag-active.png') 20 11, move;
 }
 .border {
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  -khtml-transition: all 0.8s;
-  transition: all 0.8s;
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
 }
 #borderTop {
   z-index: 9999;
@@ -1049,6 +1049,7 @@ section .page-content {
   -moz-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   /*cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
 	cubic-bezier(0.800, 0.200, 0.200, 1.000);
@@ -1182,9 +1183,9 @@ section .page-content {
   font-size: 0.875rem;
   color: #b59663;
 }
-#home header #header-content #discover b {
+#home header #header-content #discover div {
+  letter-spacing: 0.05rem;
   position: relative;
-  letter-spacing: 0;
   opacity: 0;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -1485,7 +1486,7 @@ section .page-content {
 #home.entered header #header-content p:after {
   height: 35px;
 }
-#home.entered header #header-content #discover b {
+#home.entered header #header-content #discover div {
   opacity: 1;
 }
 #home.entered header #header-content #discover span:nth-of-type(1) {
@@ -4818,26 +4819,28 @@ section .page-content {
   }
 }
 #theWholeProject.closed #space-anim {
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -ms-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  transition: all 0.7s;
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
+  -webkit-transform: rotate(90deg) scale(0, 0);
+  -moz-transform: rotate(90deg) scale(0, 0);
+  -ms-transform: rotate(90deg) scale(0, 0);
+  -o-transform: rotate(90deg) scale(0, 0);
+  transform: rotate(90deg) scale(0, 0);
 }
 #theWholeProject.closed #theWholeSolarSystem {
-  -webkit-transition: all 1.2s;
   -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
   -ms-transition: all 1.2s;
-  -o-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
   transition: all 1.2s;
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
+  -webkit-transform: rotate(90deg) scale(0, 0);
+  -moz-transform: rotate(90deg) scale(0, 0);
+  -ms-transform: rotate(90deg) scale(0, 0);
+  -o-transform: rotate(90deg) scale(0, 0);
+  transform: rotate(90deg) scale(0, 0);
 }
 #socialCokeProject {
   background: url('../img/social-coke/bg/social-bg.jpg') no-repeat center;
@@ -5056,7 +5059,7 @@ section .page-content {
 }
 #partech {
   background: #000000;
-  font-family: 'Conv_Gotham-Thin';
+  font-family: 'Conv_Gotham-Light';
 }
 #partech .sepPartech {
   display: block;
@@ -5066,7 +5069,7 @@ section .page-content {
 }
 #partech #partech-introduction {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 112px;
 }
 #partech #partech-introduction .page-content ul {
   opacity: 0;
@@ -5214,7 +5217,7 @@ section .page-content {
 }
 #partech #partech-client {
   background: #191919;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #partech #partech-client .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -5225,7 +5228,6 @@ section .page-content {
   font-size: 2rem;
 }
 #partech #partech-client .page-content h3 {
-  font-family: 'Conv_Gotham-Light';
   text-transform: uppercase;
   text-align: center;
   color: #e8f603;
@@ -5267,7 +5269,7 @@ section .page-content {
   opacity: 1;
 }
 #partech #partech-dragScreen {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #partech #partech-dragScreen .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -5418,7 +5420,7 @@ section .page-content {
   background: #000000 url('../img/partech/dark-grid.png');
   border-top: solid 1px #191919;
   border-bottom: solid 1px #191919;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #partech #partech-sketch .page-content img {
   opacity: 0;
@@ -5435,7 +5437,7 @@ section .page-content {
 }
 #partech #partech-mobile {
   background: #191919;
-  padding: 100px 0 50px 0;
+  padding: 112px 0 50px 0;
 }
 #partech #partech-mobile .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -5698,7 +5700,6 @@ section .page-content {
   color: #ffffff;
   font-size: 40px;
   font-size: 2.5rem;
-  font-family: 'Conv_Gotham-Light';
 }
 #partech footer p:nth-of-type(2) {
   color: #b2b2b1;
@@ -5816,7 +5817,7 @@ section .page-content {
   color: #231f20;
 }
 #socialCoke #socialCoke-introduction {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   overflow-y: hidden;
 }
@@ -6143,7 +6144,7 @@ section .page-content {
   width: 310px;
 }
 #socialCoke #socialCoke-idea {
-  padding: 100px 0 0 0;
+  padding: 112px 0 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -7054,7 +7055,7 @@ section .page-content {
   font-weight: 300;
 }
 #tdf #tdf-introduction {
-  padding: 100px 0 0 0;
+  padding: 112px 0 0 0;
   position: relative;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -7144,7 +7145,7 @@ section .page-content {
   margin: 60px auto 0 auto;
 }
 #tdf #tdf-context {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -7285,7 +7286,7 @@ section .page-content {
   top: 0;
 }
 #tdf #tdf-data {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -7392,7 +7393,7 @@ section .page-content {
   opacity: 1;
 }
 #tdf #tdf-design {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -7597,7 +7598,7 @@ section .page-content {
   right: 0;
 }
 #tdf #tdf-thanks {
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
   position: relative;
   border-top: 6px solid #ffffff;
   font-family: 'Lato', sans-serif;
@@ -7690,7 +7691,7 @@ section .page-content {
   fill: #ffffff;
 }
 #tdf #tdf-other {
-  padding: 100px 0 0 0;
+  padding: 112px 0 0 0;
   position: relative;
   background: #000000;
   color: #ffffff;
@@ -7855,7 +7856,7 @@ section .page-content {
 }
 #theWhole {
   color: #f9f9f9;
-  font-family: 'Conv_Gotham-Thin';
+  font-family: 'Conv_Gotham-Light';
 }
 #theWhole #theWhole-bg {
   position: fixed;
@@ -7876,9 +7877,9 @@ section .page-content {
   transition: all 0.7s;
 }
 #theWhole #theWhole-introduction {
-  padding: 100px 0 224px 0;
   position: relative;
   overflow: hidden;
+  min-height: 705px;
 }
 #theWhole #theWhole-introduction.active .page-content ul {
   opacity: 1;
@@ -7909,7 +7910,7 @@ section .page-content {
   text-align: center;
 }
 #theWhole #theWhole-introduction .page-content ul {
-  margin: auto;
+  margin: 112px auto 0 auto;
   font-size: 16px;
   font-size: 1rem;
   opacity: 0;
@@ -8023,7 +8024,6 @@ section .page-content {
   font-size: 2rem;
 }
 #theWhole #theWhole-concept .page-content h3 {
-  font-family: 'Conv_Gotham-Light';
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -8067,7 +8067,7 @@ section .page-content {
 }
 #theWhole #theWhole-interface {
   background: #141414;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #theWhole #theWhole-interface .page-content h2 {
   font-family: 'Conv_Gotham-Book';
@@ -8401,7 +8401,7 @@ section .page-content {
 }
 #theWhole #theWhole-element {
   background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;
-  padding: 100px 0;
+  padding: 112px 0 100px 0;
 }
 #theWhole #theWhole-element .page-content div {
   display: inline-block;
@@ -8451,7 +8451,7 @@ section .page-content {
 }
 #theWhole #theWhole-madeWith {
   background: #141414;
-  padding: 100px 0 60px 0;
+  padding: 112px 0 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -8537,8 +8537,8 @@ section .page-content {
 #theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) svg g path {
   fill: #f9f9f9;
 }
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover {
-  background: #050505;
+#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover svg g path {
+  fill: #050505;
 }
 #theWhole #theWhole-madeWith.active .page-content #macbook-theWhole img:nth-of-type(2) {
   opacity: 1;
@@ -8553,7 +8553,6 @@ section .page-content {
   color: #f9f9f9;
   font-size: 40px;
   font-size: 2.5rem;
-  font-family: 'Conv_Gotham-Light';
 }
 #theWhole footer p:nth-of-type(2) {
   color: #646464;
