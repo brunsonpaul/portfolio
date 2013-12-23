@@ -36,7 +36,7 @@
         </div>
     </article>
     
-    <article id='theWhole-concept' class='animation-on-scroll' data-start-margin='0'>
+    <article id='theWhole-concept' class='animation-on-scroll' data-start-margin='150'>
         <div class='page-content'>
             <h2>The Concept</h2>
             <h3>Connect and follow the world</h3>
@@ -58,7 +58,7 @@
                 </p>
             <div id='theWhole-interface-content'>
                 <img src='./assets/img/the-whole/the-whole-interface.png' alt=''>
-                <ul class='animation-on-scroll' data-start-margin='0'>
+                <ul class='animation-on-scroll' data-start-margin='50'>
                     <li>
                         <img src='./assets/img/the-whole/the-whole-twInfos.png' alt=''>
                         <h3>News feed</h3>
@@ -85,12 +85,12 @@
             </div>
             <div id='theWhole-menu'>
                 <img src='./assets/img/the-whole/the-whole-menu.png' alt=''>
-                <img class='animation-on-scroll' data-start-margin='0' src='./assets/img/the-whole/the-whole-safari.png' alt=''>
-                <img class='animation-on-scroll' data-start-margin='0' src='./assets/img/the-whole/arrow-palette.png' alt=''>
-                <img class='animation-on-scroll' data-start-margin='0' src='./assets/img/the-whole/arrow-api.png' alt=''>
-                <img class='animation-on-scroll' data-start-margin='0' src='./assets/img/the-whole/arrow-rss.png' alt=''>
-                <img class='animation-on-scroll' data-start-margin='0' src='./assets/img/the-whole/arrow-bookmarks.png' alt=''>
-                <img class='animation-on-scroll' data-start-margin='0' src='./assets/img/the-whole/arrow-profil.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='100' src='./assets/img/the-whole/the-whole-safari.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='100' src='./assets/img/the-whole/arrow-palette.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='100' src='./assets/img/the-whole/arrow-api.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='100' src='./assets/img/the-whole/arrow-rss.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='100' src='./assets/img/the-whole/arrow-bookmarks.png' alt=''>
+                <img class='animation-on-scroll' data-start-margin='100' src='./assets/img/the-whole/arrow-profil.png' alt=''>
             </div>            
         </div>
     </article>

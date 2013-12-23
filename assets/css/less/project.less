@@ -336,7 +336,7 @@ html{
 		}
 		p { .lavanderiaRegular(); .fontSize24();  margin-top:30px; }
 		form { 
-			input[type=text] { margin:20px auto; text-align:center; .fontSize14(); .dinRegular(); color:@socialBG1; display:block; background:@socialBG2; border:none; .borderRadius(8px); padding:15px 35px; }
+			input[type=text] { margin:20px auto; text-align:center; .fontSize14(); .dinThin(); color:@socialBG1; display:block; background:@socialBG2; border:none; .borderRadius(8px); padding:10px 0px; width:210px; }
 			::-webkit-input-placeholder { color:@socialBG1; }
 			::-moz-placeholder { color:@socialBG1; }
 			:-ms-input-placeholder { color:@socialBG1; } 
@@ -367,22 +367,25 @@ html{
 }
 
 #partechProject{ background:@colorBlack url('../img/partech/bg/partech-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-	div.partechEnterLayout{ position:absolute; z-index:100; top:0; left:0; margin-top: 0; width: 100%; height:0%; opacity:0; background:black;
-		-webkit-transition: opacity 1.5s;
-		-moz-transition: opacity 1.5s;
-		-ms-transition: opacity 1.5s;
-		-o-transition: opacity 1.5s;
-		transition: opacity 1.5s;
+	div.partechEnterLayout{ position:absolute; z-index:100; top:0; left:0; margin-top: 0; width: 100%; height:0%; opacity:0; background:#000; -webkit-transition: opacity 1.5s; -moz-transition: opacity 1.5s; -ms-transition: opacity 1.5s; -o-transition: opacity 1.5s; transition: opacity 1.5s;
 		&.active{opacity:1; height:100%}
 	}
 	div { z-index:99; position:absolute; top:50%; left:0; right:0; margin-top:-170px; color:@colorGold; text-align:center;
-		h1 { color:@colorWhite; .fontSize18(); text-transform:uppercase; letter-spacing:8px;
+		h1 { .gothamBook(); color:@colorWhite; .fontSize18(); text-transform:uppercase; letter-spacing:8px;
 			&:after { content:''; display:block; width:50px; border-bottom:1px dotted @colorWhite; margin:20px auto; }
 		}
-		p { .textUppercase(); .fontLight(); .fontSize12(); line-height:1.5em; margin:0px auto 20px auto; position:relative; color:@colorWhite;
+		p { .textUppercase(); .gothamBook(); .fontSize10(); line-height:1.8em; margin:0px auto 20px auto; position:relative; color:@colorWhite;
 		}
-		a { text-transform:uppercase; letter-spacing:3px; color:@colorWhite; display:block; .fontSize12(); border:1px dotted @colorWhite; width:240px; margin:20px auto; padding:16px 0 14px 0;
-			&:hover { .fontBold(); background:@colorWhite; color:@colorBlack; }
+		a { .gothamBook(); .textUppercase(); .transition(0.5s); position:relative; color:@colorWhite; display:block; .fontSize12(); border:1px solid @colorWhite; width:250px; margin:20px auto; height:43px;
+			span { display:block; position:absolute; width:100%; .transition(0.5s); 
+				&:nth-of-type(1) { top:50%; margin-top:-7px; } 
+				&:nth-of-type(2) { .gothamMedium(); top:auto; bottom:0; opacity:0; color:@colorBlack; margin-top:-5px; } 
+
+			}
+			&:hover { background:@colorWhite; 
+				span:nth-of-type(1) { opacity:0; top:0; }
+				span:nth-of-type(2) { bottom:50%; margin-bottom:-7px; opacity:1; }
+			}
 		}
 	}
 }

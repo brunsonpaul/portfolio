@@ -61,7 +61,7 @@
                     Cent ans de parcours, de classements et d'anecdotes, soit de nombreuses analyses et statistiques possibles.
                 </li>
             </ul>
-            <div id='maillot' class='animation-on-scroll' data-start-margin='-350'>
+            <div id='maillot' class='animation-on-scroll' data-start-margin='50'>
                 <img src='./assets/img/100ansdetour/maillot-jaune.svg' alt=''>
                 <img src='./assets/img/100ansdetour/maillot-blanc.svg' alt=''>
                 <img src='./assets/img/100ansdetour/maillot-vert.svg' alt=''>
@@ -95,7 +95,7 @@
             <p class="dataDescription">
                 La récupération de données pour les 100 ans du Tour de France a été un travail de longue haleine. Nous avons du faire des choix et des concessions. Il a été difficile de trouver les informations que nous recherchions, notamment pour les premières éditions de la Grande Boucle.
             </p>
-            <ul id='tdf-UI'>
+            <ul id='tdf-UI' class='animation-on-scroll' data-start-margin='50'>
                 <li>
                     <img src='./assets/img/100ansdetour/tdf-ui1.png' alt=''>
                 </li><!--
@@ -130,13 +130,13 @@
                 Un design flat, aux couleurs du Tour de France, pour travailler en vectorielle et manipuler plus facilement les intéractions des éléments. Une interface full screen, où l'on navigue d'année en année, pour découvrir les différentes analyses de chaque éditions du Tour.
             </p>
 
-            <div class='design-screen'>
+            <div class='design-screen animation-on-scroll' data-start-margin='50'>
                 <img src='./assets/img/100ansdetour/home.jpg' alt=''>  
                 <img src='./assets/img/100ansdetour/date.jpg' alt=''>  
                 <img src='./assets/img/100ansdetour/comparative.jpg' alt=''>  
             </div> 
 
-            <div class='design-context'>
+            <div class='design-context animation-on-scroll' data-start-margin='50'>
                 <div>
                     <h4>Context</h4>
                     <p>
@@ -145,7 +145,7 @@
                 </div><!--
                 !--><img src='./assets/img/100ansdetour/context.jpg' alt=''>
             </div>
-            <div class='design-steps'>
+            <div class='design-steps animation-on-scroll' data-start-margin='50'>
                 <img src='./assets/img/100ansdetour/steps.jpg' alt=''><!--
                 !--><div>
                     <h4>Steps</h4>
@@ -154,7 +154,7 @@
                     </p>
                 </div>
             </div>
-            <div class='design-participation'>
+            <div class='design-participation animation-on-scroll' data-start-margin='50'>
                 <div>
                     <h4>Participation</h4>
                     <p>
@@ -163,7 +163,7 @@
                 </div><!--
                 !--><img src='./assets/img/100ansdetour/participation.jpg' alt=''>
             </div>
-            <div class='design-rank'>
+            <div class='design-rank animation-on-scroll' data-start-margin='50'>
                 <img src='./assets/img/100ansdetour/rank.jpg' alt=''><!--
                 !--><div>
                     <h4>Rating</h4>

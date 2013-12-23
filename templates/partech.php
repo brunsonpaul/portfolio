@@ -51,15 +51,15 @@
                 Doté d’un outil performant en conception, Logiciel 3D, calculs en éléments finis. Nos atouts sont fondés sur le sérieux, la motivation, l’expérience et l’écoute des clients.<br/>
                 Partech s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
             </p>   
-            <img src='./assets/img/partech/back-rack-sketch.png' alt="Back Rack">
+            <img class='animation-on-scroll' data-start-margin='50' src='./assets/img/partech/back-rack-sketch.png' alt="Back Rack">
         </div>
     </article>
 
-    <article id='partech-dragScreen'>
+    <article id='partech-dragScreen' class='animation-on-scroll' data-start-margin='-300'>
         <div class='page-content'>
             <h2>Horizontal navigation</h2>
             <p>Une navigation originale permettant de présenter un grand nombre de projets et laisse les visiteurs s’imprégner de l’ambiance.</p>
-            <div class="toDrag">
+            <div class="toDrag" >
                 <div class="dragCursorPartech">
                 </div>
                 <div class="dragScreenArrow">
@@ -74,13 +74,13 @@
         </div>
     </article>
 
-    <article id="partech-sketch">
+    <article id="partech-sketch" class="animation-on-scroll" data-start-margin='200'>
         <div class="page-content">
             <img src='./assets/img/partech/spad-rail-sketch.png' alt="Sketch Spad Rail">
         </div>
     </article>
 
-    <article id="partech-mobile">
+    <article id="partech-mobile" class='animation-on-scroll' data-start-margin='0'>
         <div class="page-content">
             <h2>Responsive Design</h2>
             <p>Le web mobile étant de plus en plus important, il était nécessaire de s'adapter aux nouvelles modalités de consultation.</p>
@@ -98,7 +98,7 @@
         </div>
     </article>
 
-    <article id='partech-ui'>
+    <article id='partech-ui' class='animation-on-scroll' data-start-margin='50'>
         <div class="sep"></div>
         <div class="page-content">
             <h2>UI Element</h2>

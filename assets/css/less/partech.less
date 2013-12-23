@@ -22,9 +22,9 @@
 	
 	.sepPartech { display:block; border-top:1px dotted @partechColor1; width:100px; margin:40px auto; }
 	
-	#partech-introduction { text-align:center; padding-top:112px;
+	#partech-introduction { position:relative; text-align:center; min-height:850px;
 		.page-content {
-			ul { opacity:0; margin:auto; .fontSize16(); .transition(2s); .transitionDelay(2s);
+			ul { opacity:0; margin:auto; .fontSize16(); .transition(2s); .transitionDelay(2s); padding-top:112px;
 				li { .calcWidthKit(100/3%); .inline-block();  color:@partechColor2; vertical-align:top;
 					span { display:block; color:@partechColor1; .gothamBook(); text-transform:uppercase; }
 				}
@@ -38,7 +38,7 @@
 				&:hover { background:@partechColor4; color:@partechColor1; }
 			}
 			.sepPartech { opacity:0; margin:10px auto 40px auto; .transition(2s); .transitionDelay(2s); }	
-			#partechCinemaDisplay { opacity:0; width:950px; margin:auto; display:block; .transition(2s); }
+			#partechCinemaDisplay { position:absolute; left:50%; margin-left:-475px; bottom:0; opacity:0; width:950px; display:block; .transition(2s); }
 		}
 	}
 	#partech-introduction.active { 
@@ -62,9 +62,9 @@
 			img { opacity:0; display:block; margin:40px auto 0 auto; .transition(1s); }
 		}
 	}	
-	#partech-client.active { 
+	#partech-client { 
 		.page-content {
-			img { opacity:1; }
+			img.active { opacity:1; }
 		}
 	}
 

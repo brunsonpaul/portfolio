@@ -271,7 +271,8 @@
                     equipment and mountain.
                 </p>
                 <a href="#" class="enter-button">
-                    View the case study
+                    <span>View the case study</span>
+                    <span>View the case study</span>
                 </a>
             </div>
         </div>

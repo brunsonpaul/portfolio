@@ -112,7 +112,16 @@ app.Views = app.Views || {};
                     height: this.windowHeight+'px',
                 }
             );
-
+            $('#tdf-introduction').css(
+                {
+                    height: this.windowHeight+'px',
+                }
+            );
+            $('#partech-introduction').css(
+                {
+                    height: this.windowHeight+'px',
+                }
+            );
 
         },
 
