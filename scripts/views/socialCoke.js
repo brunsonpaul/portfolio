@@ -6,13 +6,17 @@ app.Views = app.Views || {};
     'use strict';
 
     app.Views.socialCoke = Backbone.View.extend({
-        // el: $('#socialCokeForm'),
-        // el: $('.case-study-container'),
+
         caseStudyContainer: $('.case-study-container'),
         caseStudyElem: $('section[data-case-study="social-coke"]'),
         template: '',
         title: 'Social Coke',
         model: null,
+        pseudoPositions:{},
+        $pseudoSocialCoke: $("#pseudoSocialCoke"),
+        widthPseudo: 0,
+        $socialCokeForm: $("#socialCokeForm"),
+        $inputText: $("#socialCokeForm").find('input[type="text"]'),
         initialize: function(){
 
             this.initEnterProjectAction();
@@ -21,14 +25,21 @@ app.Views = app.Views || {};
         initEnterProjectAction: function(){
 
             var that = this;
-            var $socialCokeForm = $("#socialCokeForm");
-            var $inputText = $socialCokeForm.find('input[type="text"]');
+
             var pseudoText;
 
-            $socialCokeForm.submit(function(e){
+            this.pseudoPositions.top = that.$inputText.offset().top;
+            this.$socialCokeForm.submit(function(e){
                 e.preventDefault();
-                pseudoText = $inputText.val();
-                $socialCokeForm.append('<div id="pseudoSocialCoke">'+ pseudoText +'</div>');
+                pseudoText = that.$inputText.val();
+
+                that.$pseudoSocialCoke.text(pseudoText);
+                that.$pseudoSocialCoke.css({zIndex: 1000, position:"fixed",top: that.pseudoPositions.top + 31 + "px"});
+                that.widthPseudo = that.$pseudoSocialCoke.width();
+                that.$pseudoSocialCoke.css({left:"50%", marginLeft: - that.widthPseudo/2 + "px"})
+
+                that.enterProjectAnim();
+
                 return false;
 
             });
@@ -38,6 +49,7 @@ app.Views = app.Views || {};
         enterProjectAnim: function(){
 
             var that = this;
+            this.$socialCokeForm.fadeOut("slow");
             $('#date').addClass('active');
             $('.border').removeClass('close');
             $('.border').addClass('open');
