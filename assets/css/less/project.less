@@ -1,21 +1,16 @@
-html{
-	// overflow: hidden;
-}
-.projects-container{ overflow:hidden; position:fixed; z-index:6; -webkit-transform : translate(0px, 0px); -moz-transform : translate(0px, 0px); -ms-transform : translate(0px, 0px); -o-transform : translate(0px, 0px); transform : translate(0px, 0px);
+.wrapper-projects-container {  }
 
+.wrapper-projects-container.open { margin-top:75px; 
+	.project { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3); opacity:0.3;
+	 }
+}
+
+.projects-container{ .transition(0.8s); overflow:hidden; position:fixed; z-index:6; -webkit-transform : translate(0px, 0px); -moz-transform : translate(0px, 0px); -ms-transform : translate(0px, 0px); -o-transform : translate(0px, 0px); transform : translate(0px, 0px);
 	&.no-transition{
 		.no-transition();
 	}
-
-	// Transition à voir
-	/*cubic-bezier(0.800, 0.200, 0.200, 1.000);
-	cubic-bezier(0.800, 0.200, 0.200, 1.000);
-	cubic-bezier(0.800, 0.200, 0.200, 1.000);
-	cubic-bezier(0.800, 0.200, 0.200, 1.000);
-	cubic-bezier(0.800, 0.200, 0.200, 1.000);*/
-	
-	.transition(0.8s)
 }
+
 .case-study-container{ display:block; margin:0; padding:0; position: relative; z-index: 5;
 	section{
 		display: none;
@@ -25,10 +20,11 @@ html{
 	}
 
 }
+
 .project{ float:left; position:relative; }
 
 #home{
-	header { position:absolute; top:0; left:0; bottom:0; right:0;  color:@colorGold; text-align:center; background:@colorBlack;
+	header { position:absolute; top:0; left:0; bottom:0; right:0; color:@colorGold; text-align:center; background:@colorBlack;
 		.wave1 { opacity:0; .transition(1s); .transitionDelay(7.1s); }
 		.wave2 { opacity:0; .transition(1s); .transitionDelay(7.1s); }
 		#header-content { position:absolute; left:0; right:0; .textUppercase(); 

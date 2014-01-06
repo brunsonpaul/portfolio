@@ -78,9 +78,23 @@
             </svg> -->
         </a>
     </nav>
-<div class="wrapper-projects-container" style="width:100%;heigt:100%;position:relative;overflow:hidden;">
+
+    <menu>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li><!--
+                !--><li><a href="#">100 ans de Tour</a></li><!--
+                !--><li><a href="#">The Whole</a></li><!--
+                !--><li><a href="#">Social Coke</a></li><!--
+                !--><li><a href="#">Partech</a></li><!--
+                !--><li><a href="#">Footer</a></li>
+            </ul>
+        </nav>
+    </menu>
+
+<div class="wrapper-projects-container" >
     <div class="projects-container dragCursor">
-        <div id='home' class="project active" data-project="home">
+        <div id='home' class="project active" data-project="about">
             <header>
                 <div class="wave1">        
                     <img src="assets/img/identity/wave-1.svg" alt=""> 

@@ -1,6 +1,6 @@
 @import "helper.less";
 
-body, html { .fontSize16(); background:@colorBlack; margin: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
+body, html { min-width:950px; .fontSize16(); background:@colorBlack; margin: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
 html { height: 100%; }
 
 .userSelect { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
@@ -25,6 +25,10 @@ html { height: 100%; }
 #borderBottom.open { bottom:0; left:0; right:0; }
 #borderLeft.open { top:0; left:0; bottom:0; }
 #borderRight.open { top:0; right:0; bottom:0; }
+#borderTop.menu { top:95px; left:20px; right:20px; }
+#borderBottom.menu { bottom:-75px; left:20px; right:20px; }
+#borderLeft.menu { top:95px; left:20px; bottom:-75px; }
+#borderRight.menu { top:95px; right:20px; bottom:-75px; }
 
 .closeLayout{position:fixed; top:0; left:0; width:100%; height:0%; background: @colorGold; z-index:1000; opacity:0;}
 
@@ -41,6 +45,7 @@ html { height: 100%; }
 		&:hover {  border:solid 2px @colorGold; }
 	}
 }
+.button-menu.open { top:133px; }
 
 .button-close { position:fixed; z-index:9999; left:50%; top:38px; margin-left:-20px; text-align:center;
 	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
@@ -102,7 +107,6 @@ section { min-width:980px; margin:0; border:none;
 	.page-content { width:950px; margin:auto; }
 }
 
-
 .pagination { position:fixed; right:38px; top:50%; z-index: 5; list-style: none; margin:0; padding:0;
 	li { text-align: center; padding:0; 
 		a { padding:15px 0; width: 4px; height: 4px; display: block; 
@@ -115,6 +119,25 @@ section { min-width:980px; margin:0; border:none;
 .pagination.theWhole { margin-top:-86px; }
 .pagination.socialCoke { margin-top:-120px; }
 .pagination.partech { margin-top:-103px; }
+
+menu { position:fixed; top:-75px; left:0; right:0; z-index:9999; padding:0; margin:0; border:none; border-bottom:1px solid @colorGold;
+	nav {
+		ul { display:block; background:@colorWhite; 
+			li { .inline-block(); .calcWidthKit(100%/6); .boxSizin(border-box); text-align:center; border-right:1px solid @colorGold;
+				&:last-child { border:none; }
+				a { position:relative; .transition(0.4s); display:block; padding:30px 0; .textUppercase(); .fontSize12(); color:@colorGold; 
+					&:hover { color:@colorBlack; background:@colorGold; 
+						&:before { width:49px; margin-left:-24.5px; border-bottom:1px dotted @colorBlack; }
+						&:after { border:1px solid @colorBlack; .rotateKit(135deg); }
+					}
+					&:before { .transition(0.4s); content:''; display:block; position:absolute; margin-top:-15px; left:50%; margin-left:-12.5px; width:25px; border-bottom:1px dotted @colorGold; }
+					&:after { .transition(0.4s); content:''; display:block; position:absolute; margin-top:10px; left:50%; margin-left:-4px; width:8px; height:8px; .rotateKit(45deg); .boxSizin(border-box); border:1px solid @colorGold; }
+				}
+			}
+		}
+	}
+}
+menu.open { top:0; }
 
 @import "project.less";
 
