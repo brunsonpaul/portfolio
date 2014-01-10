@@ -325,7 +325,7 @@
 }
 
 #socialCokeProject{ background:url('../img/social-coke/bg/social-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-	#socialCokeBgContent { text-align:center; position:absolute; top:50%; width:100%; margin-top:-210px; 
+	#socialCokeBgContent { z-index:10; text-align:center; position:absolute; top:50%; width:100%; margin-top:-210px; 
 		h1 { 
 			span { display:none; }
 			img { display:block; width:230px; margin:auto; }
@@ -342,24 +342,24 @@
 			}
 		}
 	}
-
-
-	// div { position:absolute; top:50%; left:0; right:0; margin-top:-192px; color:@colorGold; text-align:center; .textUppercase(); 
-	// 	h1 { 
-	// 		span { display:none; }
-	// 		img { display:block; height:98px; margin:auto; }
-	// 	}
-	// 	p { .fontSize12(); line-height:1.5em; margin:30px auto 20px auto; position:relative;
-	// 	}
-	// 	a { .transition(0.4s); position:absolute; display:block; .fontSize16(); border:1px dotted @colorGold; left:50%; margin-left:-107px; width:212px; height:38px; clip:rect(0,214px,40px,0);
-	// 		span:nth-of-type(1) { .transition(0.4s); position:absolute; display:block; width:100%; top:50%; margin-top:-9px; color:@colorGold; }
-	// 		span:nth-of-type(2) { .transition(0.4s); position:absolute; display:block; width:100%; bottom:-16px; color:@socialBG1; opacity:0; }
-	// 		&:hover { background:@colorGold; border:1px dotted @socialBG1; 
-	// 			span:nth-of-type(1) { top:-16px; margin-top:0; opacity:0; }
-	// 			span:nth-of-type(2) { bottom:50%; margin-bottom:-10px; opacity:1; }
-	// 		}
-	// 	}
-	// }
+	#parallax { position:absolute; top:0; left:0; bottom:0; right:0; z-index:1;
+		.layer { position:absolute !important;
+			img { display:block; width:100%; height:auto; }
+		}
+		.layer:nth-of-type(1) { top:7% !important; left:62% !important; width:130px !important; height:125px !important; }
+		.layer:nth-of-type(2) { top:58% !important; left:31% !important; width:93px !important; height:117px !important; }
+		.layer:nth-of-type(3) { top:77% !important; left:60% !important; width:146px !important; height:109px !important; }
+		.layer:nth-of-type(4) { top:13% !important; left:29% !important; width:157px !important; height:87px !important; }
+		.layer:nth-of-type(5) { top:62% !important; left:11% !important; width:72px !important; height:59px !important; }
+		.layer:nth-of-type(6) { top:37% !important; left:18% !important; width:55px !important; height:64px !important; }
+		.layer:nth-of-type(7) { top:47% !important; left:83% !important; width:45px !important; height:47px !important; }
+		.layer:nth-of-type(8) { top:64% !important; left:75% !important; width:50px !important; height:53px !important; }
+		.layer:nth-of-type(9) { top:36% !important; left:66% !important; width:117px !important; height:82px !important; }
+		.layer:nth-of-type(10) { top:17% !important; left:78% !important; width:120px !important; height:78px !important; }
+		.layer:nth-of-type(11) { top:77% !important; left:18% !important; width:147px !important; height:77px !important; }
+		.layer:nth-of-type(12) { top:13% !important; left:10% !important; width:91px !important; height:79px !important; }
+		.layer:nth-of-type(13) { top:43% !important; left:30% !important; width:45px !important; height:34px !important; }
+	}
 }
 
 #partechProject{ background:@colorBlack url('../img/partech/bg/partech-bg.jpg') no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;

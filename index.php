@@ -261,16 +261,47 @@
                 </form>
             </div>
 
-    
-        <img style='position:absolute; top:7%; right:12%;' src='assets/img/social-coke/bg/monkey-bg.png' alt="">
-            <img style='position:absolute; top:58%; left:31%;' src='assets/img/social-coke/bg/patate-bg.png' alt="">
-            <img style='position:absolute; bottom:23%; right:4%;' src='assets/img/social-coke/bg/drink-bg.png' alt="">
-            <img style='position:absolute; top:13%; left:29%;'src='assets/img/social-coke/bg/hello-bg.png' alt="">
-            <img style='position:absolute; bottom:38%; left:11%;' src='assets/img/social-coke/bg/goutte-bg.png' alt="">
-            <img style='position:absolute; top:37%; left:18%;' src='assets/img/social-coke/bg/pointRose-bg.png' alt="">
-            <img style='position:absolute; bottom:43%; right:33%;' src='assets/img/social-coke/bg/pointVert-bg.png' alt="">
-            <img style='position:absolute; bottom:36%; right:25%;' src='assets/img/social-coke/bg/pointJaune-bg.png' alt="">
-
+            <div id="parallax">
+                <div class="layer" data-depth="3.00">
+                    <img src='assets/img/social-coke/bg/monkey-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.80">
+                   <img src='assets/img/social-coke/bg/patate-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="4.10">
+                   <img src='assets/img/social-coke/bg/drink-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.50">
+                   <img src='assets/img/social-coke/bg/hello-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="2.8">
+                   <img src='assets/img/social-coke/bg/goutte-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.40">
+                   <img src='assets/img/social-coke/bg/pointRose-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.70">
+                   <img src='assets/img/social-coke/bg/pointVert-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="4.50">
+                   <img src='assets/img/social-coke/bg/pointJaune-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.30">
+                   <img src='assets/img/social-coke/bg/cool-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.90">
+                   <img src='assets/img/social-coke/bg/love-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="4.10">
+                   <img src='assets/img/social-coke/bg/king-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.70">
+                   <img src='assets/img/social-coke/bg/piou-bg.png' alt="">
+                </div>
+                <div class="layer" data-depth="3.20">
+                   <img src='assets/img/social-coke/bg/pointBlanc-bg.png' alt="">
+                </div>
+            </div>
         </div>
 
         <div id='partechProject' class="project" data-project="partech">
@@ -336,6 +367,12 @@
     <script src="scripts/views/socialCoke.js"></script>
     <script src="scripts/views/theWhole.js"></script>
     <!-- endbuild -->
+
+    <!-- Parallax -->
+    <script src="scripts/jquery.parallax.js"></script>
+    <script>
+        $('#parallax').parallax();
+    </script>
 
     <script type="text/javascript">
 
