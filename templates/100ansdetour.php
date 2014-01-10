@@ -270,40 +270,40 @@
                     </svg>
                 </div>
                 <div id='tdf-tweetLeft' class='tdf-tweet'>
-                    <!--<div>
+                    <div class="tweetAnimationOne">
                         Really cool dataviz on the 100 Tour de France "La grande rétrospective du Tour de France" - <a href='http://100ansdetour.fr' target='_blank'>http://100ansdetour.fr/</a>  <span>#100ansdetour</span> <span>#webdesign</span>
                         <b>Thibault Jorge - @madebytj</b>
-                    </div>!-->
-                    <!-- <div>
+                    </div>
+                    <div class="tweetAnimationTwo">
                         100 ans de Tour : un site de data visualisation sur les données des tours de France <a href='http://100ansdetour.fr' target='_blank'>http://bit.ly/16om4rI</a> Boulot monstre
                         <b>JP Cabaroc ‏- @Cabaroc</b>
-                    </div> -->
-                    <!-- <div>
+                    </div>
+                    <div class="tweetAnimationThree">
                         100 Tours. The complete history is at <a href='http://100ansdetour.fr' target='_blank'>http://100ansdetour.fr</a> with all data about the stages, results, … Beautifully done. Bookmarked!
                         <b>Veerle Pieters ‏- @vpieters</b>
-                    </div> -->
-                    <div>
+                    </div>
+                    <div class="tweetAnimationFour">
                         A découvrir pour son graphisme réussi : la grande rétrospective du Tour de France <span>#TDF</span> - <a href='http://100ansdetour.fr' target='_blank'>http://100ansdetour.fr/</a> <span>#100ansdetour</span>
                         <b>Jean-renaud DACLIN ‏- @jrdaclin</b>
                     </div>
 
                 </div>            
                 <div id='tdf-tweetRight' class='tdf-tweet'>
-                    <!--<div>
+                    <div class="tweetAnimationFive">
                         La grande rétrospective du Tour de France<br/> 
                         <span>#TDF</span> <a href='http://100ansdetour.fr' target='_blank'>http://www.100ansdetour.fr</a> <span>#100ansdetour</span><br/>
                         WOW !!!
                         <b>Francois Pumir - @fpumir</b>
-                    </div>!-->
-                    <!--<div>
+                    </div>
+                    <div class="tweetAnimationSix">
                         Le site des 100 ans du tour de France: 1 visualisation interactive de données très bien faite ! <a href='http://100ansdetour.fr' target='_blank'>http://100ansdetour.fr</a> (via <span>@johnsgraphisme</span>)
                         <b>Céline Rouquié ‏- @CelineRouquie</b>
-                    </div> -->
-                    <!-- <div>
+                    </div>
+                    <div class="tweetAnimationSeven">
                         Encore du beau travail de #dataviz de l'<span>@hetic</span> <a href='http://100ansdetour.fr' target='_blank'>http://100ansdetour.fr/</a> 
                         <b>Benoit Gaillat ‏- @Benoit_Gaillat</b>
-                    </div> -->
-                    <div>
+                    </div>
+                    <div class="tweetAnimationHeight">
                         Le site des 100 ans du Tour de France ! A voir absolument ! <a href='http://100ansdetour.fr' target='_blank'>http://100ansdetour.fr</a> <span>#tourdefrance</span> <span>#design</span> via <span>@johnsgraphisme</span>                        
                         <b>Montres LIP ‏- @lipwatches</b>
                     </div>

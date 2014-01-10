@@ -229,6 +229,7 @@
 			}
 			#tdf-onTwitter { position:relative; margin:0px auto 100px auto; 
 				.tdf-tweet { width:340px; text-align:center; .fontSize14(); position:absolute;
+					div { top:0; position:absolute; opacity:0; }
 					span { color:@tdfColor3; }
 					a { color:@tdfColor3; 
 						&:hover { text-decoration:underline }
@@ -242,7 +243,40 @@
 						g { path { fill:@tdfColor2; } }
 					}
 				}
+				.tweetAnimationOne { -webkit-animation:tweet-animation-one 25s 0 infinite linear; -moz-animation:tweet-animation-one 25s 0 infinite linear; -o-animation:tweet-animation-one 25s 0 infinite linear; animation:tweet-animation-one 25s 0 infinite linear; }
+				.tweetAnimationTwo { -webkit-animation:tweet-animation-two 25s 0 infinite linear; -moz-animation:tweet-animation-two 25s 0 infinite linear; -o-animation:tweet-animation-two 25s 0 infinite linear; animation:tweet-animation-two 25s 0 infinite linear; }
+				.tweetAnimationThree { -webkit-animation:tweet-animation-three 25s 0 infinite linear; -moz-animation:tweet-animation-three 25s 0 infinite linear; -o-animation:tweet-animation-three 25s 0 infinite linear; animation:tweet-animation-three 25s 0 infinite linear; }
+				.tweetAnimationFour { -webkit-animation:tweet-animation-four 25s 0 infinite linear; -moz-animation:tweet-animation-four 25s 0 infinite linear; -o-animation:tweet-animation-four 25s 0 infinite linear; animation:tweet-animation-four 25s 0 infinite linear; }
+				.tweetAnimationFive { -webkit-animation:tweet-animation-one 25s 3.125s infinite linear; -moz-animation:tweet-animation-one 25s 3.125s infinite linear; -o-animation:tweet-animation-one 25s 3.125s infinite linear; animation:tweet-animation-one 25s 3.125s infinite linear; }
+				.tweetAnimationSix { -webkit-animation:tweet-animation-two 25s 3.125s infinite linear; -moz-animation:tweet-animation-two 25s 3.125s infinite linear; -o-animation:tweet-animation-two 25s 3.125s infinite linear; animation:tweet-animation-two 25s 3.125s infinite linear; }
+				.tweetAnimationSeven { -webkit-animation:tweet-animation-three 25s 3.125s infinite linear; -moz-animation:tweet-animation-three 25s 3.125s infinite linear; -o-animation:tweet-animation-three 25s 3.125s infinite linear; animation:tweet-animation-three 25s 3.125s infinite linear; }
+				.tweetAnimationHeight { -webkit-animation:tweet-animation-four 25s 3.125s infinite linear; -moz-animation:tweet-animation-four 25s 3.125s infinite linear; -o-animation:tweet-animation-four 25s 3.125s infinite linear; animation:tweet-animation-four 25s 3.125s infinite linear; }
 		 	}
+			
+			@-webkit-keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; }  21% { margin-top:0px; opacity:1; }  25% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; } }
+			@-webkit-keyframes tweet-animation-two { 0% { margin-top:30px; opacity:0; }  25% { margin-top:30px; opacity:0; } 29% { margin-top:0px; opacity:1; }  46% { margin-top:0px; opacity:1; }  50% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; }  }
+			@-webkit-keyframes tweet-animation-three { 0% { margin-top:30px; opacity:0; } 50% { margin-top:30px; opacity:0; } 54% { margin-top:0px; opacity:1; } 71% { margin-top:0px; opacity:1; } 75% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+			@-webkit-keyframes tweet-animation-four { 0% { margin-top:30px; opacity:0; } 75% { margin-top:30px; opacity:0; } 79% { margin-top:0px; opacity:1; } 96% { margin-top:0px; opacity:1; } 100% { margin-top:-30px; opacity:0; } }
+			@-webkit-keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; } 21% { margin-top:0px; opacity:1; } 25% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+
+			@-moz-keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; }  21% { margin-top:0px; opacity:1; }  25% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; } }
+			@-moz-keyframes tweet-animation-two { 0% { margin-top:30px; opacity:0; }  25% { margin-top:30px; opacity:0; } 29% { margin-top:0px; opacity:1; }  46% { margin-top:0px; opacity:1; }  50% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; }  }
+			@-moz-keyframes tweet-animation-three { 0% { margin-top:30px; opacity:0; } 50% { margin-top:30px; opacity:0; } 54% { margin-top:0px; opacity:1; } 71% { margin-top:0px; opacity:1; } 75% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+			@-moz-keyframes tweet-animation-four { 0% { margin-top:30px; opacity:0; } 75% { margin-top:30px; opacity:0; } 79% { margin-top:0px; opacity:1; } 96% { margin-top:0px; opacity:1; } 100% { margin-top:-30px; opacity:0; } }
+			@-moz-keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; } 21% { margin-top:0px; opacity:1; } 25% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+
+			@-o-keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; }  21% { margin-top:0px; opacity:1; }  25% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; } }
+			@-o-keyframes tweet-animation-two { 0% { margin-top:30px; opacity:0; }  25% { margin-top:30px; opacity:0; } 29% { margin-top:0px; opacity:1; }  46% { margin-top:0px; opacity:1; }  50% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; }  }
+			@-o-keyframes tweet-animation-three { 0% { margin-top:30px; opacity:0; } 50% { margin-top:30px; opacity:0; } 54% { margin-top:0px; opacity:1; } 71% { margin-top:0px; opacity:1; } 75% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+			@-o-keyframes tweet-animation-four { 0% { margin-top:30px; opacity:0; } 75% { margin-top:30px; opacity:0; } 79% { margin-top:0px; opacity:1; } 96% { margin-top:0px; opacity:1; } 100% { margin-top:-30px; opacity:0; } }
+			@-o-keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; } 21% { margin-top:0px; opacity:1; } 25% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+
+			@keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; }  21% { margin-top:0px; opacity:1; }  25% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; } }
+			@keyframes tweet-animation-two { 0% { margin-top:30px; opacity:0; }  25% { margin-top:30px; opacity:0; } 29% { margin-top:0px; opacity:1; }  46% { margin-top:0px; opacity:1; }  50% { margin-top:-30px; opacity:0; }  100% { margin-top:30px; opacity:0; }  }
+			@keyframes tweet-animation-three { 0% { margin-top:30px; opacity:0; } 50% { margin-top:30px; opacity:0; } 54% { margin-top:0px; opacity:1; } 71% { margin-top:0px; opacity:1; } 75% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+			@keyframes tweet-animation-four { 0% { margin-top:30px; opacity:0; } 75% { margin-top:30px; opacity:0; } 79% { margin-top:0px; opacity:1; } 96% { margin-top:0px; opacity:1; } 100% { margin-top:-30px; opacity:0; } }
+			@keyframes tweet-animation-one { 0% { margin-top:30px; opacity:0; } 4% { margin-top:0px; opacity:1; } 21% { margin-top:0px; opacity:1; } 25% { margin-top:-30px; opacity:0; } 100% { margin-top:30px; opacity:0; } }
+
 		 	#tdf-award { text-align:center;
 		 		li { .inline-block(); width:170px;
 		 			&:nth-of-type(1) { margin-right:30px;
