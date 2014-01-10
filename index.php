@@ -301,6 +301,9 @@
                 <div class="layer" data-depth="3.20">
                    <img src='assets/img/social-coke/bg/pointBlanc-bg.png' alt="">
                 </div>
+                <div class="layer" data-depth="3.50">
+                   <img src='assets/img/social-coke/bg/wizz-bg.png' alt="">
+                </div>
             </div>
         </div>
 

@@ -5121,8 +5121,8 @@ menu.open {
   height: 64px !important;
 }
 #socialCokeProject #parallax .layer:nth-of-type(7) {
-  top: 47% !important;
-  left: 83% !important;
+  top: 43% !important;
+  left: 30% !important;
   width: 45px !important;
   height: 47px !important;
 }
@@ -5157,10 +5157,16 @@ menu.open {
   height: 79px !important;
 }
 #socialCokeProject #parallax .layer:nth-of-type(13) {
-  top: 43% !important;
-  left: 30% !important;
+  top: 47% !important;
+  left: 83% !important;
   width: 45px !important;
   height: 34px !important;
+}
+#socialCokeProject #parallax .layer:nth-of-type(14) {
+  top: 83% !important;
+  left: 84% !important;
+  width: 91px !important;
+  height: 56px !important;
 }
 #partechProject {
   background: #111111 url('../img/partech/bg/partech-bg.jpg') no-repeat center;
