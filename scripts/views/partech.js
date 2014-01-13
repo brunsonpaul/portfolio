@@ -36,7 +36,6 @@ app.Views = app.Views || {};
 
                 $(document).on('mousemove', function(e){
                     var windowWidth = $(window).width();
-                    console.log(windowWidth);
                     if(windowWidth>slideSpace){
                         position =(e.clientX-((windowWidth-slideSpace)/2));
                     } else {
