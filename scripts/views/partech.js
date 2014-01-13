@@ -13,6 +13,59 @@ app.Views = app.Views || {};
         template: '',
         title: 'Partech',
         name: 'partech',
+
+        // Elements du case study
+        dragCursorPartech: $(".dragCursorPartech"),
+        partechScreen: $('#partechScreenImg'),
+
+        dragScreen: function(){
+            var that = this;
+            var dragWidth = Math.round(that.dragCursorPartech.width());
+            var slideSpace = ($('.toDrag').width())-22;
+            var mouseMinPos = (app.homeView.windowWidth - slideSpace)/2;
+            var mouseMaxPos = mouseMinPos + slideSpace;
+            var position;
+            var startingPoint;
+            var dragScreenIndice = 990/slideSpace;
+            
+            that.dragCursorPartech.on('mousedown', function(e){
+                
+                startingPoint = parseInt(that.dragCursorPartech.css('margin-left').split('px')[0]);
+
+                position = parseInt(that.dragCursorPartech.css('margin-left').split('px')[0]);
+
+                $(document).on('mousemove', function(e){
+                    var windowWidth = $(window).width();
+                    console.log(windowWidth);
+                    if(windowWidth>slideSpace){
+                        position =(e.clientX-((windowWidth-slideSpace)/2));
+                    } else {
+                        position =(e.clientX);
+                    }
+
+                    if(position>slideSpace - dragWidth){
+                        that.dragCursorPartech.css('margin-left', slideSpace - dragWidth + "px");
+                        return false;
+                    } else if(position<0){
+                        that.dragCursorPartech.css('margin-left', 0 + "px");
+                        return false;
+                    }
+                    that.dragCursorPartech.css('margin-left', position + "px");
+                    that.partechScreen.css('margin-left', -position/dragScreenIndice + "px");
+                });
+                $(document).on('mouseup', function(e){
+
+                    position = parseInt(that.dragCursorPartech.css('margin-left').split('px')[0]);
+
+                    $(document).unbind('mouseup');
+                    $(document).unbind('mousemove');
+                    
+                    that.dragCursorPartech.css('margin-left', position + "px");
+                    that.partechScreen.css('margin-left', -position/dragScreenIndice + "px");
+                });
+            });
+        },
+
         initialize: function(){
             $("#partechProject .enter-button").on("click", this.enterProjectAnim);
         },
@@ -82,6 +135,7 @@ app.Views = app.Views || {};
 
             app.setCaseStudyActive(true);
             app.initScrollAnims();
+            this.dragScreen();
 
         },
         getName: function(){

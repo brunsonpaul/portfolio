@@ -69,7 +69,7 @@
             </div>
             <div class="partech-screen">
                 <img src='./assets/img/partech/safari-window.png' alt="Safari Window">
-                <img src='./assets/img/partech/drag-screen.png' alt="Screen partech">
+                <img id='partechScreenImg' src='./assets/img/partech/drag-screen.png' alt="Screen partech">
             </div>
         </div>
     </article>

@@ -5598,16 +5598,11 @@ menu.open {
   width: 38px;
   height: 38px;
   background: url('../img/partech/drag-cursor.png') no-repeat center center;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -ms-transition: all 1s;
-  -khtml-transition: all 1s;
-  transition: all 1s;
-  -moz-transition-delay: 2.6s;
-  -webkit-transition-delay: 2.6s;
-  -ms-transition-delay: 2.6s;
-  -khtml-transition-delay: 2.6s;
-  transition-delay: 2.6s;
+  -webkit-transition: opacity 1s 2.6s;
+  -moz-transition: opacity 1s 2.6s;
+  -ms-transition: opacity 1s 2.6s;
+  -o-transition: opacity 1s 2.6s;
+  transition: opacity 1s 2.6s;
 }
 #partech #partech-dragScreen .page-content .toDrag .dragScreenArrow {
   width: 0;
@@ -6712,7 +6707,7 @@ menu.open {
   margin-top: -7px;
 }
 #socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2) svg g path {
-  fill: #f9f9f9;
+  fill: #f0e2c7;
 }
 #socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2):hover {
   background: #00c4ff;
@@ -6722,7 +6717,7 @@ menu.open {
   bottom: -120px;
   left: 0;
   display: block;
-  width: 100px;
+  width: 139px;
   -webkit-animation: poisson 10s 2.4s infinite linear;
   -moz-animation: poisson 10s 2.4s infinite linear;
   -o-animation: poisson 10s 2.4s infinite linear;
