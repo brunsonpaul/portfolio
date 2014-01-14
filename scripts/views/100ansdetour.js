@@ -196,6 +196,9 @@ app.Views = app.Views || {};
                 $('#date').removeClass('active');
             }, false);
 
+            $('.button-menu').removeClass('open');
+            $('.button-menu').addClass('close');
+
             app.initScrollAnims();
             this.dataIncrease();
         },
@@ -221,6 +224,9 @@ app.Views = app.Views || {};
                     that.dragCursor.css('margin-left', 0 + "px");
                 });
             });
+
+            $('.button-menu').removeClass('close');
+            $('.button-menu').addClass('open');
         },
 
         enterFromRouter: function(){

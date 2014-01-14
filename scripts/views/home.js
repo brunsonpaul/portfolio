@@ -145,6 +145,10 @@ app.Views = app.Views || {};
         initProjectsHome: function(){
             var that = this;
 
+            $('.button-menu').removeClass('open');
+            $('.button-menu').removeClass('close');
+            $('.button-menu').addClass('openMenu');
+
             // Prevent le drag des images et des a
             this.homeProjectsContainer.find('img').on('dragstart',function(){return false;});
             this.homeProjectsContainer.find('a').on('dragstart',function(){return false;});
