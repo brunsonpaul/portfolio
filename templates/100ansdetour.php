@@ -80,15 +80,15 @@
             </h3>
             <ul id='tdf-dataNumbers'>
                 <li>
-                    <span>2 142</span>
+                    <span id="nb-etapes" class='animation-on-scroll' data-start-margin='50'>0</span>
                     étapes
                 </li><!--
                 !--><li>
-                    <span>345 093</span>
+                    <span id="nb-parcours" class='animation-on-scroll' data-start-margin='50'>0</span>
                     km parcourus
                 </li><!--
                 !--><li>
-                    <span>8 745</span> 
+                    <span id="nb-participants" class='animation-on-scroll' data-start-margin='50'>0</span> 
                     participants
                 </li>
             </ul>

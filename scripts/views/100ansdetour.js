@@ -118,6 +118,49 @@ app.Views = app.Views || {};
 
         },
 
+        etapesIncrease: function(){
+            var nbEtapes = $('#nb-etapes.active');
+            var nbParcours = $('#nb-parcours.active');
+            var nbParticipants = $('#nb-participants.active');
+
+            $({someValue: 0}).animate({someValue: 2001}, {
+                duration: 3000,
+                easing:'swing',
+                step: function() { 
+                  nbEtapes.text(Math.round(this.someValue));
+                }
+            });
+            $({someValue: 0}).animate({someValue: 426068}, {
+                duration: 3000,
+                easing:'swing',
+                step: function() { 
+                  nbParcours.text(Math.round(this.someValue));
+                }
+            });
+            $({someValue: 0}).animate({someValue: 13947}, {
+                duration: 3000,
+                easing:'swing',
+                step: function() { 
+                  nbParticipants.text(Math.round(this.someValue));
+                }
+            });
+        },
+
+
+        dataIncrease: function(){
+            var that = this;
+            var run = false;
+
+            $(window).on('scroll', function(){
+                if ($('#nb-etapes').hasClass('active') && run == false) {
+                    that.etapesIncrease();
+                    run = true;
+                }
+            });
+        },
+
+
+
         // Direction true ouvrir, false fermer
         animateDate:function(callback, direction){
             var that = this;
@@ -156,7 +199,7 @@ app.Views = app.Views || {};
             }, false);
 
             app.initScrollAnims();
-
+            this.dataIncrease();
         },
 
         leaveProject: function(){

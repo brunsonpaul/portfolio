@@ -15,8 +15,12 @@ window.app = {
         this.homeView = new this.Views.HomeView();
         this.router = new this.Routers.ApplicationRouter();
         Backbone.history.start();
+        
         // à mettre à la fin du loader
+        // $('#loader').addClass('loaded');
+        // $('#loader').delay(6800).fadeOut(1800);
         $('#home').addClass('entered');
+
     },
 
     //Charge la vu provenant du router
@@ -78,6 +82,6 @@ window.app = {
 $(document).ready(function () {
     'use strict';
     app.init();
-    
+
 });
 

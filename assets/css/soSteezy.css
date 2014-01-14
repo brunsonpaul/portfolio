@@ -368,6 +368,11 @@ html {
   top: 50%;
   margin-top: -204px;
   margin-left: -125px;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -khtml-transition: all 0.8s;
+  transition: all 0.8s;
 }
 #loader #load img {
   display: block;
@@ -404,6 +409,7 @@ html {
   left: 0;
   right: 0;
   height: 93px;
+  opacity: 0;
 }
 #loader #tuto p {
   margin-top: 10px;
@@ -494,6 +500,83 @@ html {
   -moz-animation: keyboard 4s 3s infinite linear;
   -o-animation: keyboard 4s 3s infinite linear;
   animation: keyboard 4s 3s infinite linear;
+}
+#loader.loaded #load {
+  opacity: 0;
+}
+#loader.loaded #tuto {
+  -webkit-animation: tuto-load 6s 0.8s linear forwards;
+  -moz-animation: tuto-load 6s 0.8s linear forwards;
+  -o-animation: tuto-load 6s 0.8s linear forwards;
+  animation: tuto-load 6s 0.8s linear forwards;
+}
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @-webkit-keyframes browers {
   0% {
