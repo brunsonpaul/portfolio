@@ -193,22 +193,22 @@ html {
   right: 0;
   bottom: 0;
 }
-#borderTop.menu {
+#borderTop.openMenu {
   top: 95px;
   left: 20px;
   right: 20px;
 }
-#borderBottom.menu {
+#borderBottom.openMenu {
   bottom: -75px;
   left: 20px;
   right: 20px;
 }
-#borderLeft.menu {
+#borderLeft.openMenu {
   top: 95px;
   left: 20px;
   bottom: -75px;
 }
-#borderRight.menu {
+#borderRight.openMenu {
   top: 95px;
   right: 20px;
   bottom: -75px;
@@ -287,7 +287,45 @@ html {
   border: solid 2px #b59663;
 }
 .button-menu.openMenu {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
   top: 133px;
+  margin-left: -20px;
+  text-align: center;
+}
+.button-menu.openMenu a {
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -khtml-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #b59663;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: solid 2px rgba(181, 150, 99, 0.3);
+}
+.button-menu.openMenu a svg {
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin-left: -9px;
+  margin-top: -3.5px;
+}
+.button-menu.openMenu a:hover {
+  border: solid 2px #b59663;
 }
 .button-menu.close {
   position: fixed;
@@ -1261,13 +1299,13 @@ menu nav ul li a:after {
   box-sizing: border-box;
   border: 1px solid #b59663;
 }
-menu.open {
+menu.openMenu {
   top: 0;
 }
-.wrapper-projects-container.open {
+.wrapper-projects-container.openMenu {
   margin-top: 75px;
 }
-.wrapper-projects-container.open .project {
+.wrapper-projects-container.openMenu .project {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3);
   opacity: 0.3;
