@@ -246,21 +246,18 @@ html {
   width: 100%;
 }
 .button-menu {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
   -moz-transition: all 0.8s;
   -webkit-transition: all 0.8s;
   -ms-transition: all 0.8s;
   -khtml-transition: all 0.8s;
   transition: all 0.8s;
-}
-.button-menu.open {
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 58px;
   margin-left: -20px;
   text-align: center;
 }
-.button-menu.open a {
+.button-menu a {
   position: relative;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -278,7 +275,10 @@ html {
   height: 36px;
   border: solid 2px rgba(181, 150, 99, 0.3);
 }
-.button-menu.open a svg {
+.button-menu a:hover {
+  border: solid 2px #b59663;
+}
+.button-menu a svg:nth-of-type(1) {
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -290,83 +290,7 @@ html {
   margin-left: -9px;
   margin-top: -3.5px;
 }
-.button-menu.open a:hover {
-  border: solid 2px #b59663;
-}
-.button-menu.open a svg:nth-of-type(2) {
-  opacity: 0;
-}
-.button-menu.openMenu {
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 133px;
-  margin-left: -20px;
-  text-align: center;
-}
-.button-menu.openMenu a {
-  position: relative;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -moz-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -khtml-transition: all 0.4s;
-  transition: all 0.4s;
-  color: #b59663;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border: solid 2px rgba(181, 150, 99, 0.3);
-}
-.button-menu.openMenu a svg {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  left: 50%;
-  top: 50%;
-  margin-left: -9px;
-  margin-top: -3.5px;
-}
-.button-menu.openMenu a:hover {
-  border: solid 2px #b59663;
-}
-.button-menu.openMenu a svg:nth-of-type(1) {
-  opacity: 0;
-}
-.button-menu.close {
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 38px;
-  margin-left: -20px;
-  text-align: center;
-}
-.button-menu.close a {
-  position: relative;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -moz-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -khtml-transition: all 0.4s;
-  transition: all 0.4s;
-  color: #b59663;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border: solid 2px rgba(181, 150, 99, 0.3);
-}
-.button-menu.close a svg {
+.button-menu a svg:nth-of-type(2) {
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -378,10 +302,22 @@ html {
   margin-left: -6.717px;
   margin-top: -6.717px;
 }
-.button-menu.close a:hover {
-  border: solid 2px #b59663;
+.button-menu.open {
+  top: 58px;
 }
-.button-menu.close a svg:nth-of-type(1) {
+.button-menu.open svg:nth-of-type(2) {
+  opacity: 0;
+}
+.button-menu.openMenu {
+  top: 133px;
+}
+.button-menu.openMenu svg:nth-of-type(1) {
+  opacity: 0;
+}
+.button-menu.close {
+  top: 38px;
+}
+.button-menu.close svg:nth-of-type(1) {
   opacity: 0;
 }
 #resize {
