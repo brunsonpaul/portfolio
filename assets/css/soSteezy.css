@@ -1267,11 +1267,11 @@ menu.openMenu {
   transition: all 1.2s;
 }
 .wrapper-projects-container .project {
-  -moz-transition: all 1.2s;
-  -webkit-transition: all 1.2s;
-  -ms-transition: all 1.2s;
-  -khtml-transition: all 1.2s;
-  transition: all 1.2s;
+  -webkit-transition: opacity 1.2s;
+  -moz-transition: opacity 1.2s;
+  -ms-transition: opacity 1.2s;
+  -o-transition: opacity 1.2s;
+  transition: opacity 1.2s;
 }
 .wrapper-projects-container.openMenu {
   margin-top: 75px;
