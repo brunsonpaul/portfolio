@@ -221,9 +221,7 @@ app.Views = app.Views || {};
                     $('.border').addClass('close');
                     that.velo.css('margin-left', 0 + "px");
                     that.dragCursor.css('margin-left', 0 + "px");
-
                 });
-
             });
         },
 
