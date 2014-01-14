@@ -142,12 +142,48 @@ app.Views = app.Views || {};
         mousePositionX: null,
         currentProject:0,
         isSliderActive: true,
+        initMenu: function(){
+            $('.button-menu').on('click', function(){
+                var that = $('.button-menu');
+
+                if (that.hasClass('open')) {
+                    that.removeClass('open');
+                    that.addClass('openMenu');
+
+                    $('#borderTop').removeClass('close');
+                    $('#borderTop').addClass('openMenu');
+                    $('#borderBottom').removeClass('close');
+                    $('#borderBottom').addClass('openMenu');
+                    $('#borderLeft').removeClass('close');
+                    $('#borderLeft').addClass('openMenu');
+                    $('#borderRight').removeClass('close');
+                    $('#borderRight').addClass('openMenu');
+
+                    $('menu').addClass('openMenu');
+                    $('.wrapper-projects-container').addClass('openMenu');
+
+                } else if (that.hasClass('openMenu')) {
+                    that.removeClass('openMenu');
+                    that.addClass('open');
+
+                    $('#borderTop').addClass('close');
+                    $('#borderTop').removeClass('openMenu');
+                    $('#borderBottom').addClass('close');
+                    $('#borderBottom').removeClass('openMenu');
+                    $('#borderLeft').addClass('close');
+                    $('#borderLeft').removeClass('openMenu');
+                    $('#borderRight').addClass('close');
+                    $('#borderRight').removeClass('openMenu');
+
+                    $('menu').removeClass('openMenu');
+                    $('.wrapper-projects-container').removeClass('openMenu');
+                };
+            });
+        },
         initProjectsHome: function(){
             var that = this;
 
-            $('.button-menu').removeClass('open');
-            $('.button-menu').removeClass('close');
-            $('.button-menu').addClass('openMenu');
+            this.initMenu();
 
             // Prevent le drag des images et des a
             this.homeProjectsContainer.find('img').on('dragstart',function(){return false;});
