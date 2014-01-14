@@ -245,7 +245,7 @@ html {
   display: block;
   width: 100%;
 }
-.button-menu {
+.button-menu.open {
   position: fixed;
   z-index: 9999;
   left: 50%;
@@ -253,7 +253,7 @@ html {
   margin-left: -20px;
   text-align: center;
 }
-.button-menu a {
+.button-menu.open a {
   position: relative;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -271,7 +271,7 @@ html {
   height: 36px;
   border: solid 2px rgba(181, 150, 99, 0.3);
 }
-.button-menu a svg {
+.button-menu.open a svg {
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -283,13 +283,13 @@ html {
   margin-left: -9px;
   margin-top: -3.5px;
 }
-.button-menu a:hover {
+.button-menu.open a:hover {
   border: solid 2px #b59663;
 }
-.button-menu.open {
+.button-menu.openMenu {
   top: 133px;
 }
-.button-close {
+.button-menu.close {
   position: fixed;
   z-index: 9999;
   left: 50%;
@@ -297,7 +297,7 @@ html {
   margin-left: -20px;
   text-align: center;
 }
-.button-close a {
+.button-menu.close a {
   position: relative;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -315,7 +315,7 @@ html {
   height: 36px;
   border: solid 2px rgba(181, 150, 99, 0.3);
 }
-.button-close a svg {
+.button-menu.close a svg {
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -327,7 +327,7 @@ html {
   margin-left: -6.717px;
   margin-top: -6.717px;
 }
-.button-close a:hover {
+.button-menu.close a:hover {
   border: solid 2px #b59663;
 }
 #resize {

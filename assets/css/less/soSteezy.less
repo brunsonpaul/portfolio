@@ -39,15 +39,15 @@ html { height: 100%; }
 	img { display:block; width:100%; }
 }
 
-.button-menu { position:fixed; z-index:9999; left:50%; top:58px; margin-left:-20px; text-align:center;
+.button-menu.open { position:fixed; z-index:9999; left:50%; top:58px; margin-left:-20px; text-align:center;
 	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
 		svg { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-9px; margin-top:-3.5px; }
 		&:hover {  border:solid 2px @colorGold; }
 	}
 }
-.button-menu.open { top:133px; }
+.button-menu.openMenu { top:133px; }
 
-.button-close { position:fixed; z-index:9999; left:50%; top:38px; margin-left:-20px; text-align:center;
+.button-menu.close { position:fixed; z-index:9999; left:50%; top:38px; margin-left:-20px; text-align:center;
 	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
 		svg { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-6.717px; margin-top:-6.717px; }
 		&:hover {  border:solid 2px @colorGold; }
