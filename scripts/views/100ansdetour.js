@@ -159,8 +159,6 @@ app.Views = app.Views || {};
             });
         },
 
-
-
         // Direction true ouvrir, false fermer
         animateDate:function(callback, direction){
             var that = this;
