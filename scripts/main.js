@@ -16,10 +16,15 @@ window.app = {
         this.router = new this.Routers.ApplicationRouter();
         Backbone.history.start();
         
-        // à mettre à la fin du loader
-        // $('#loader').addClass('loaded');
-        // $('#loader').delay(6800).fadeOut(1800);
         $('#home').addClass('entered');
+        $('#borderTop').removeClass('open');
+        $('#borderBottom').removeClass('open');
+        $('#borderLeft').removeClass('open');
+        $('#borderRight').removeClass('open');     
+        $('#borderTop').addClass('close');
+        $('#borderBottom').addClass('close');
+        $('#borderLeft').addClass('close');
+        $('#borderRight').addClass('close');
 
     },
 

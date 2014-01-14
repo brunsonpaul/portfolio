@@ -64,14 +64,14 @@ html { height: 100%; }
 }
 
 #loader { display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:9999; background:@colorGold; text-align:center;
-	#load { position:absolute; left:50%; top:50%; margin-top:-204px; margin-left:-125px; .transition(0.8s);
+	#load { position:absolute; left:50%; top:50%; margin-top:-204px; margin-left:-125px; .transition(0.8s); opacity:0;
 		img { display:block; height:120px; margin:auto; }
 		p { .textUppercase(); color:@colorBlack; .fontSize14(); margin:30px auto; }
 		span { position:relative; display:block; width:250px; height:1px; margin:auto; background:@colorWhite;
 			span { position:absolute; width:50%; background:@colorBlack; top:0; left:0; }
 		}
 	}
-	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px; opacity:0;
+	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px; opacity:1;
 		p { margin-top:10px; text-transform:uppercase; .fontSize14(); }
 		#dragging { left:50%; position:absolute; clip:rect(0,149px,95px,0); margin-left:-225px;
 			#dragCursorTuto { top:28px; left:55px; width:39px; height:23px; position:absolute; background:url('../img/identity/drag-tuto.png') center top no-repeat; -webkit-animation: cursortuto 15s infinite linear; -moz-animation: cursortuto 15s infinite linear; -o-animation: cursortuto 15s infinite linear; animation: cursortuto 15s infinite linear; }
@@ -137,7 +137,7 @@ section { min-width:980px; margin:0; border:none;
 .pagination.socialCoke { margin-top:-120px; }
 .pagination.partech { margin-top:-103px; }
 
-menu { position:fixed; top:-75px; left:0; right:0; z-index:9999; padding:0; margin:0; border:none; border-bottom:1px solid @colorGold; .transition(1.2s);
+menu { position:fixed; top:-75px; left:0; right:0; min-width:980px; z-index:9999; padding:0; margin:0; border:none; border-bottom:1px solid @colorGold; .transition(1.2s);
 	nav {
 		ul { display:block; background:@colorWhite; 
 			li { .inline-block(); .calcWidthKit(100%/6); .boxSizin(border-box); text-align:center; border-right:1px solid @colorGold;

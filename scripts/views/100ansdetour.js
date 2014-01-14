@@ -71,6 +71,10 @@ app.Views = app.Views || {};
                     that.velo.css('margin-left', position + "px");
                     that.dragCursor.css('margin-left', position + "px");
 
+                    var degree = ($("#tdfDragCursor").css("margin-left").replace("px", ""));
+                    $('#fixie-wheel1').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                    $('#fixie-wheel2').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                    $('#fixie-pedal').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
                 });
 
                 $(document).on('mouseup', function(e){
@@ -103,9 +107,14 @@ app.Views = app.Views || {};
 
                     that.dragCursor.css('margin-left', "0px");
                     that.velo.css('margin-left', "0px");
-
+                    var degree = ($("#tdfDragCursor").css("margin-left").replace("px", ""));
+                    while (degree>0) { 
+                       $('#fixie-wheel1').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                        $('#fixie-wheel2').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                        $('#fixie-pedal').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                        degree--;
+                    }                     
                 });
-
             });
         },
 
@@ -123,7 +132,7 @@ app.Views = app.Views || {};
             var nbParcours = $('#nb-parcours.active');
             var nbParticipants = $('#nb-participants.active');
 
-            $({someValue: 0}).animate({someValue: 2001}, {
+            $({someValue: 3000}).animate({someValue: 1}, {
                 duration: 3000,
                 easing:'swing',
                 step: function() { 

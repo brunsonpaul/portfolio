@@ -363,6 +363,7 @@ html {
   -ms-transition: all 0.8s;
   -khtml-transition: all 0.8s;
   transition: all 0.8s;
+  opacity: 0;
 }
 #loader #load img {
   display: block;
@@ -399,7 +400,7 @@ html {
   left: 0;
   right: 0;
   height: 93px;
-  opacity: 0;
+  opacity: 1;
 }
 #loader #tuto p {
   margin-top: 10px;
@@ -1143,6 +1144,7 @@ menu {
   top: -75px;
   left: 0;
   right: 0;
+  min-width: 980px;
   z-index: 9999;
   padding: 0;
   margin: 0;
@@ -1964,8 +1966,32 @@ menu.openMenu {
 #tdfProject #tdfBgContent #tdfContent #fixie {
   width: 500px;
   margin: 70px auto 30px auto;
+  position: relative;
 }
-#tdfProject #tdfBgContent #tdfContent #fixie img {
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-wheel1 {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 80px;
+}
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-wheel2 {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 120px;
+  width: 80px;
+}
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-pedal {
+  display: block;
+  position: absolute;
+  left: 76px;
+  bottom: 24px;
+  width: 30px;
+}
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-body {
   display: block;
   width: 200px;
 }

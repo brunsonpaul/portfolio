@@ -58,10 +58,10 @@
         </div>
     </div>
 
-    <div id='borderTop' class="border close"></div>
-    <div id='borderBottom' class="border close"></div>
-    <div id='borderLeft' class="border close"></div>
-    <div id='borderRight' class="border close"></div>
+    <div id='borderTop' class="border open"></div>
+    <div id='borderBottom' class="border open"></div>
+    <div id='borderLeft' class="border open"></div>
+    <div id='borderRight' class="border open"></div>
     
     <div class="closeLayout"></div>
     
@@ -173,7 +173,10 @@
                     </h1>
                     <div id='fixie'>
                         <div class="noSlide enter-elem">
-                            <img src="assets/img/100ansdetour/fixie.svg" alt="">
+                            <img id='fixie-pedal' src="assets/img/100ansdetour/pedal.svg" alt="">
+                            <img id='fixie-wheel1' src="assets/img/100ansdetour/wheel.svg" alt="">
+                            <img id='fixie-wheel2' src="assets/img/100ansdetour/wheel.svg" alt="">
+                            <img id='fixie-body' src="assets/img/100ansdetour/fixie-body.svg" alt="">
                         </div>                
                     </div>
                     <div id='tdfDrag'>
