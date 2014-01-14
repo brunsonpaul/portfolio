@@ -58,10 +58,10 @@
         </div>
     </div>
 
-    <div id='borderTop' class="border open"></div>
-    <div id='borderBottom' class="border open"></div>
-    <div id='borderLeft' class="border open"></div>
-    <div id='borderRight' class="border open"></div>
+    <div id='borderTop' class="border close"></div>
+    <div id='borderBottom' class="border close"></div>
+    <div id='borderLeft' class="border close"></div>
+    <div id='borderRight' class="border close"></div>
     
     <div class="closeLayout"></div>
     
