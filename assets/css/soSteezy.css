@@ -249,11 +249,11 @@ html {
   position: fixed;
   z-index: 9999;
   left: 50%;
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  -khtml-transition: all 0.8s;
-  transition: all 0.8s;
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
   margin-left: -20px;
   text-align: center;
 }
@@ -1148,6 +1148,11 @@ menu {
   margin: 0;
   border: none;
   border-bottom: 1px solid #b59663;
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
 }
 menu nav ul {
   display: block;
@@ -1253,6 +1258,20 @@ menu nav ul li a:after {
 }
 menu.openMenu {
   top: 0;
+}
+.wrapper-projects-container {
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.wrapper-projects-container .project {
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
 }
 .wrapper-projects-container.openMenu {
   margin-top: 75px;
