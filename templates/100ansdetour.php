@@ -6,7 +6,7 @@
             <li><a href="#tdf-data"></a></li>
             <li><a href="#tdf-design"></a></li>
             <li><a href="#tdf-thanks"></a></li>
-            <li><a href="#tdf-award"></a></li>
+            <li><a href="#tdf-other"></a></li>
         </ul>
     </nav>
     <article id='tdf-introduction'>
