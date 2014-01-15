@@ -80,5 +80,11 @@ $(document).ready(function () {
     'use strict';
     app.init();
 
+    setTimeout(function() {
+      
+      $('#loader').fadeOut();
+
+    }, 2000);
+
 });
 
