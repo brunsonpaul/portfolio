@@ -42,7 +42,7 @@ app.Views = app.Views || {};
                 that.enterProject();
             });
         },
- activeAnchor: function(){
+        activeAnchor: function(){
             var article2 = ($("#theWhole-concept").offset().top)-1;
             var article3 = ($("#theWhole-interface").offset().top)-1;
             var article4 = ($("#theWhole-element").offset().top)-1;
