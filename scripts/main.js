@@ -16,7 +16,7 @@ window.app = {
         this.router = new this.Routers.ApplicationRouter();
         Backbone.history.start();
         
-        $('#home').addClass('entered');
+        // $('#home').addClass('entered');
 
     },
 
@@ -95,6 +95,8 @@ $(window).load(function() {
       
         $('#loader').fadeOut();
 
+        $('#home').addClass('entered');
+
         }, 3000);
 
     }else{
@@ -102,6 +104,8 @@ $(window).load(function() {
         setTimeout(function() {
       
         $('#loader').fadeOut();
+
+        $('#home').addClass('entered');
 
         }, 1000);
 
