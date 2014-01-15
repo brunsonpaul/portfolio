@@ -97,7 +97,7 @@ $(window).load(function() {
 
         $('#home').addClass('entered');
 
-        }, 3000);
+        }, 6000);
 
     }else{
 
