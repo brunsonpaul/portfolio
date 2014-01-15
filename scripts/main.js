@@ -85,8 +85,6 @@ $(document).ready(function () {
 
 $(window).load(function() {
 
-    console.log('chargé');
-
     var isNew = $('#loader').attr('data-new');
 
     if(isNew == 'true'){
@@ -109,9 +107,7 @@ $(window).load(function() {
 
         }, 1000);
 
-    }
-
-    
+    } 
 
 });
 
