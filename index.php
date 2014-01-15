@@ -1,3 +1,14 @@
+<?php
+
+$new_visitor = empty($_COOKIE['cookie']) ? true : false;
+
+$cookie = time();
+
+setcookie('cookie', $cookie);
+
+?>
+
+
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
@@ -29,10 +40,13 @@
 
 <body class="userSelect">
     
-   <div id="loader">
+   <div id="loader" data-new="<?php echo $new_visitor ? 'true' : 'false'; ?>">
         <div id='load'>
             <p>Loading ...</p>
         </div>
+
+        <?php if($new_visitor) : ?>
+
         <div id='tuto'>
             <div id='dragging'>
                 <img src="assets/img/identity/browser.png" alt="Browser"> 
@@ -54,6 +68,9 @@
                 <p>Navigate with your keyboard</p>
             </div>
         </div>
+
+    <?php endif; ?>
+
     </div>
 
     <div id='borderTop' class="border close"></div>

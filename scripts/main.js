@@ -80,11 +80,34 @@ $(document).ready(function () {
     'use strict';
     app.init();
 
-    setTimeout(function() {
-      
-      $('#loader').fadeOut();
+});
 
-    }, 2000);
+
+$(window).load(function() {
+
+    console.log('chargé');
+
+    var isNew = $('#loader').attr('data-new');
+
+    if(isNew == 'true'){
+
+        setTimeout(function() {
+      
+        $('#loader').fadeOut();
+
+        }, 3000);
+
+    }else{
+
+        setTimeout(function() {
+      
+        $('#loader').fadeOut();
+
+        }, 1000);
+
+    }
+
+    
 
 });
 
