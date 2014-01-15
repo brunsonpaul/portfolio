@@ -1,12 +1,12 @@
 <section id='tdf' data-case-study="100ansdetour">
     <nav class="pagination tdf">
         <ul>
-            <li><a class='active' href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a class='active' href="#tdf-introduction"></a></li>
+            <li><a href="#tdf-context"></a></li>
+            <li><a href="#tdf-data"></a></li>
+            <li><a href="#tdf-design"></a></li>
+            <li><a href="#tdf-thanks"></a></li>
+            <li><a href="#tdf-award"></a></li>
         </ul>
     </nav>
     <article id='tdf-introduction'>

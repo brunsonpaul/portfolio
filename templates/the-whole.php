@@ -1,11 +1,11 @@
 <section id='theWhole' data-case-study="the-whole">
     <nav class="pagination theWhole">
         <ul>
-            <li><a class='active' href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a class='active' href="#theWhole-introduction"></a></li>
+            <li><a href="#theWhole-concept"></a></li>
+            <li><a href="#theWhole-interface"></a></li>
+            <li><a href="#theWhole-element"></a></li>
+            <li><a href="#theWhole-madeWith"></a></li>
         </ul>
     </nav>
     <div id='theWhole-bg'></div>

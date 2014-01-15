@@ -132,22 +132,22 @@ app.Views = app.Views || {};
             var nbParcours = $('#nb-parcours.active');
             var nbParticipants = $('#nb-participants.active');
 
-            $({someValue: 3000}).animate({someValue: 1}, {
-                duration: 3000,
+            $({someValue: 0}).animate({someValue: 2001}, {
+                duration: 2000,
                 easing:'swing',
                 step: function() { 
                   nbEtapes.text(Math.round(this.someValue));
                 }
             });
             $({someValue: 0}).animate({someValue: 426068}, {
-                duration: 3000,
+                duration: 2000,
                 easing:'swing',
                 step: function() { 
                   nbParcours.text(Math.round(this.someValue));
                 }
             });
             $({someValue: 0}).animate({someValue: 13947}, {
-                duration: 3000,
+                duration: 2000,
                 easing:'swing',
                 step: function() { 
                   nbParticipants.text(Math.round(this.someValue));

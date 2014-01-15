@@ -1,13 +1,13 @@
 <section id='socialCoke' data-case-study="social-coke">
     <nav class="pagination socialCoke">
         <ul>
-            <li><a class='active' href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a class='active' href="#socialCoke-introduction"></a></li>
+            <li><a href="#socialCoke-context"></a></li>
+            <li><a href="#socialCoke-idea"></a></li>
+            <li><a href="#socialCoke-interest"></a></li>
+            <li><a href="#socialCoke-universe"></a></li>
+            <li><a href="#socialCoke-bottle"></a></li>
+            <li><a href="#socialCoke-madeWith"></a></li>
         </ul>
     </nav>
     <article id='socialCoke-introduction'>

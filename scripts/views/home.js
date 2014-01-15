@@ -34,6 +34,16 @@ app.Views = app.Views || {};
             
         },
 
+        scrollTo: function(){
+           $(".pagination ul li a").click(function(e) {
+                var href = $(this).attr('href');
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 2000);
+            });
+        },
+
         setProjectsSize: function(){
             var projects = this.homeProjectsContainer.find(this.homeProjectClass);
             var projectNumber = projects.length;
@@ -184,6 +194,7 @@ app.Views = app.Views || {};
             var that = this;
 
             this.initMenu();
+            this.scrollTo();
 
             // Prevent le drag des images et des a
             this.homeProjectsContainer.find('img').on('dragstart',function(){return false;});

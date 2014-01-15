@@ -17,14 +17,6 @@ window.app = {
         Backbone.history.start();
         
         $('#home').addClass('entered');
-        $('#borderTop').removeClass('open');
-        $('#borderBottom').removeClass('open');
-        $('#borderLeft').removeClass('open');
-        $('#borderRight').removeClass('open');     
-        $('#borderTop').addClass('close');
-        $('#borderBottom').addClass('close');
-        $('#borderLeft').addClass('close');
-        $('#borderRight').addClass('close');
 
     },
 

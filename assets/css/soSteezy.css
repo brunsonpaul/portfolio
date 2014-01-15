@@ -1127,6 +1127,15 @@ section .page-content {
   -webkit-opacity: 1;
   opacity: 1;
 }
+.pagination li a:hover:before {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
 .pagination.tdf {
   margin-top: -103px;
 }
