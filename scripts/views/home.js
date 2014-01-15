@@ -33,6 +33,16 @@ app.Views = app.Views || {};
             
         },
 
+        scrollTo: function(){
+           $(".pagination ul li a").click(function(e) {
+                var href = $(this).attr('href');
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 2000);
+            });
+        },
+
         setProjectsSize: function(){
             var projects = this.homeProjectsContainer.find(this.homeProjectClass);
             var projectNumber = projects.length;
@@ -141,8 +151,49 @@ app.Views = app.Views || {};
         mousePositionX: null,
         currentProject:0,
         isSliderActive: true,
+        initMenu: function(){
+            $('.button-menu').on('click', function(){
+                var that = $('.button-menu');
+
+                if (that.hasClass('open')) {
+                    that.removeClass('open');
+                    that.addClass('openMenu');
+
+                    $('#borderTop').removeClass('close');
+                    $('#borderTop').addClass('openMenu');
+                    $('#borderBottom').removeClass('close');
+                    $('#borderBottom').addClass('openMenu');
+                    $('#borderLeft').removeClass('close');
+                    $('#borderLeft').addClass('openMenu');
+                    $('#borderRight').removeClass('close');
+                    $('#borderRight').addClass('openMenu');
+
+                    $('menu').addClass('openMenu');
+                    $('.wrapper-projects-container').addClass('openMenu');
+
+                } else if (that.hasClass('openMenu')) {
+                    that.removeClass('openMenu');
+                    that.addClass('open');
+
+                    $('#borderTop').addClass('close');
+                    $('#borderTop').removeClass('openMenu');
+                    $('#borderBottom').addClass('close');
+                    $('#borderBottom').removeClass('openMenu');
+                    $('#borderLeft').addClass('close');
+                    $('#borderLeft').removeClass('openMenu');
+                    $('#borderRight').addClass('close');
+                    $('#borderRight').removeClass('openMenu');
+
+                    $('menu').removeClass('openMenu');
+                    $('.wrapper-projects-container').removeClass('openMenu');
+                };
+            });
+        },
         initProjectsHome: function(){
             var that = this;
+
+            this.initMenu();
+            this.scrollTo();
 
             // Prevent le drag des images et des a
             this.homeProjectsContainer.find('img').on('dragstart',function(){return false;});

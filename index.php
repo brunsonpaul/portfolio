@@ -16,6 +16,8 @@
     <link rel="icon" type="image/x-icon" href="assets/img/identity/favicon.png" />
     <link rel="stylesheet" href="assets/css/soSteezy.css" type="text/css" media="screen" />
 
+    <script src="scripts/views/pace.js"></script>
+
     <meta property="og:title" content="Kévin Lagier Portfolio" />
     <meta property="og:description" content="Kevin Lagier, graphic design, art direction" />
     <meta property="og:type" content="website" />
@@ -29,11 +31,7 @@
     
    <div id="loader">
         <div id='load'>
-            <img src="assets/img/identity/logo-kevin-lagier-black.svg" alt="logo Kévin Lagier"> 
             <p>Loading ...</p>
-            <span>      
-                <span></span>
-            </span>
         </div>
         <div id='tuto'>
             <div id='dragging'>
@@ -65,17 +63,17 @@
     
     <div class="closeLayout"></div>
     
-    <nav class="button-menu">
+    <nav class="button-menu open">
         <a href="#" class="close-button">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
                 <rect fill="#b59663" width="18" height="1"/>
                 <rect y="3" fill="#b59663" width="18" height="1"/>
                 <rect y="6" fill="#b59663" width="18" height="1"/>
             </svg>
-            <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.435px" height="13.435px" viewBox="0 0 13.435 13.435" enable-background="new 0 0 13.435 13.435" xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.435px" height="13.435px" viewBox="0 0 13.435 13.435" enable-background="new 0 0 13.435 13.435" xml:space="preserve">
                 <rect x="6.217" y="-2.282" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.7825 6.7175)" fill="#B59663" width="1" height="18"/>
                 <rect x="6.217" y="-2.282" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.7175 -2.7825)" fill="#B59663" width="1" height="18"/>
-            </svg> -->
+            </svg>
         </a>
     </nav>
 
@@ -173,7 +171,10 @@
                     </h1>
                     <div id='fixie'>
                         <div class="noSlide enter-elem">
-                            <img src="assets/img/100ansdetour/fixie.svg" alt="">
+                            <img id='fixie-pedal' src="assets/img/100ansdetour/pedal.svg" alt="">
+                            <img id='fixie-wheel1' src="assets/img/100ansdetour/wheel.svg" alt="">
+                            <img id='fixie-wheel2' src="assets/img/100ansdetour/wheel.svg" alt="">
+                            <img id='fixie-body' src="assets/img/100ansdetour/fixie-body.svg" alt="">
                         </div>                
                     </div>
                     <div id='tdfDrag'>

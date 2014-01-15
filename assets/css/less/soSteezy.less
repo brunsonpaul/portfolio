@@ -25,10 +25,10 @@ html { height: 100%; }
 #borderBottom.open { bottom:0; left:0; right:0; }
 #borderLeft.open { top:0; left:0; bottom:0; }
 #borderRight.open { top:0; right:0; bottom:0; }
-#borderTop.menu { top:95px; left:20px; right:20px; }
-#borderBottom.menu { bottom:-75px; left:20px; right:20px; }
-#borderLeft.menu { top:95px; left:20px; bottom:-75px; }
-#borderRight.menu { top:95px; right:20px; bottom:-75px; }
+#borderTop.openMenu { top:95px; left:20px; right:20px; }
+#borderBottom.openMenu { bottom:-75px; left:20px; right:20px; }
+#borderLeft.openMenu { top:95px; left:20px; bottom:-75px; }
+#borderRight.openMenu { top:95px; right:20px; bottom:-75px; }
 
 .closeLayout{position:fixed; top:0; left:0; width:100%; height:0%; background: @colorGold; z-index:1000; opacity:0;}
 
@@ -39,34 +39,42 @@ html { height: 100%; }
 	img { display:block; width:100%; }
 }
 
-.button-menu { position:fixed; z-index:9999; left:50%; top:58px; margin-left:-20px; text-align:center;
-	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
-		svg { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-9px; margin-top:-3.5px; }
+.button-menu { position:fixed; z-index:9999; left:50%; .transition(1.2s); margin-left:-20px; text-align:center; 
+	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3);
 		&:hover {  border:solid 2px @colorGold; }
+		svg:nth-of-type(1) { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-9px; margin-top:-3.5px; }
+		svg:nth-of-type(2) { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-6.717px; margin-top:-6.717px; }
 	}
 }
-.button-menu.open { top:133px; }
 
-.button-close { position:fixed; z-index:9999; left:50%; top:38px; margin-left:-20px; text-align:center;
-	a { position:relative; .rotateKit(45deg); .transition(0.4s); color:@colorGold; display:block; width:36px; height:36px; border:solid 2px rgba(181,150,99,0.3); 
-		svg { position:absolute; .rotateKit(-45deg); left:50%; top:50%; margin-left:-6.717px; margin-top:-6.717px; }
-		&:hover {  border:solid 2px @colorGold; }
-	}
+.button-menu.open { top:58px; 
+	svg:nth-of-type(2) { opacity:0; }
+}
+
+.button-menu.openMenu { top:133px; 
+	svg:nth-of-type(1) { opacity:0; }
+}
+
+.button-menu.close { top:38px;
+	svg:nth-of-type(1) { opacity:0; }
 }
 
 #resize { display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:99999; background:@colorGold; text-align:center;
 	p { position:absolute; width:100%; margin-top:-30px; top:50%; .fontSize30(); .textUppercase(); }
 }
 
-#loader { display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:9999; background:@colorGold; text-align:center;
-	#load { position:absolute; left:50%; top:50%; margin-top:-204px; margin-left:-125px;
-		img { display:block; height:120px; margin:auto; }
-		p { .textUppercase(); color:@colorBlack; .fontSize14(); margin:30px auto; }
-		span { position:relative; display:block; width:250px; height:1px; margin:auto; background:@colorWhite;
-			span { position:absolute; width:50%; background:@colorBlack; top:0; left:0; }
-		}
+.pace{ position:absolute; top:50%; left:50%; margin-left:-125px; width:250px; background:@colorWhite; z-index:999;
+	.pace-progress { background:@colorBlack; z-index:2000; height: 1px; .transition(1s); 
 	}
-	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px;
+}
+
+.pace-inactive { display: none; }
+
+#loader { position:fixed; top:0; left:0; bottom:0; right:0; z-index:9; background:@colorGold; text-align:center; 
+	#load { background: url('../img/identity/logo-kevin-lagier-black.svg') no-repeat center top; background-size: 100%; width:148px; height:120px; position:absolute; left:50%; top:50%; margin-left:-74px; margin-top:-200px;
+		p { position:absolute; bottom:-43px; .textUppercase(); color:@colorBlack; .fontSize14(); width:100%; }
+	}
+	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px; 
 		p { margin-top:10px; text-transform:uppercase; .fontSize14(); }
 		#dragging { left:50%; position:absolute; clip:rect(0,149px,95px,0); margin-left:-225px;
 			#dragCursorTuto { top:28px; left:55px; width:39px; height:23px; position:absolute; background:url('../img/identity/drag-tuto.png') center top no-repeat; -webkit-animation: cursortuto 15s infinite linear; -moz-animation: cursortuto 15s infinite linear; -o-animation: cursortuto 15s infinite linear; animation: cursortuto 15s infinite linear; }
@@ -87,6 +95,41 @@ html { height: 100%; }
 		}
 	}
 }
+
+
+.pace-running{
+	#load { display: block;  }
+	#tuto{opacity: 0;}
+}
+
+.pace-done{
+	#load{display: none; }
+	#tuto{opacity: 1; .transition(0.5s);}
+}
+
+
+
+.pace-running{
+	#load { display: block;  }
+	#tuto{opacity: 0;}
+}
+
+.pace-done{
+	#load{display: none; }
+	#tuto{opacity: 1; .transition(0.5s);}
+}
+// #loader.loaded{ 
+// 	#load { opacity:0; }
+// 	#tuto { -webkit-animation: tuto-load 6s 0.8s linear forwards; -moz-animation: tuto-load 6s 0.8s linear forwards; -o-animation: tuto-load 6s 0.8s linear forwards; animation: tuto-load 6s 0.8s linear forwards; }
+// }
+
+@-webkit-keyframes load { 0% { opacity:1; } 99% { opacity:0; } 100% { opacity:0; display:none; } }
+  
+@-webkit-keyframes tuto-load { 0% { opacity:0; } 10% { opacity:1; } 90% { opacity:1; }  100% { opacity:0; } }
+@-moz-keyframes tuto-load { 0% { opacity:0; } 10% { opacity:1; } 90% { opacity:1; }  100% { opacity:0; } }
+@-o-keyframes tuto-load { 0% { opacity:0; } 10% { opacity:1; } 90% { opacity:1; }  100% { opacity:0; } }
+@keyframes tuto-load { 0% { opacity:0; } 10% { opacity:1; } 90% { opacity:1; }  100% { opacity:0; } }
+
 @-webkit-keyframes browers { 0% { left:29px; } 12% { left:29px; } 15% { left:-73px; } 27% { left:-73px; } 30% { left:-175px; } 42% { left:-175px; } 45% { left:-277px; } 57% { left:-277px; } 60% { left:-175px; } 72% { left:-175px; } 75% { left:-73px; } 87% { left:-73px; } 90% { left:29px; } 100% { left:29px; } }
 @-moz-keyframes browers { 0% { left:29px; } 12% { left:29px; } 15% { left:-73px; } 27% { left:-73px; } 30% { left:-175px; } 42% { left:-175px; } 45% { left:-277px; } 57% { left:-277px; } 60% { left:-175px; } 72% { left:-175px; } 75% { left:-73px; } 87% { left:-73px; } 90% { left:29px; } 100% { left:29px; } }
 @-o-keyframes browers { 0% { left:29px; } 12% { left:29px; } 15% { left:-73px; } 27% { left:-73px; } 30% { left:-175px; } 42% { left:-175px; } 45% { left:-277px; } 57% { left:-277px; } 60% { left:-175px; } 72% { left:-175px; } 75% { left:-73px; } 87% { left:-73px; } 90% { left:29px; } 100% { left:29px; } }
@@ -112,6 +155,7 @@ section { min-width:980px; margin:0; border:none;
 		a { padding:15px 0; width: 4px; height: 4px; display: block; 
 			&:before{ content: ''; position: absolute; width: 4px; height: 4px; background:@colorGold; .opacity(0.3); border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
 			&.active:before { .opacity(1); }
+			&:hover:before { .opacity(1); }
 		}
 	}
 }
@@ -120,7 +164,7 @@ section { min-width:980px; margin:0; border:none;
 .pagination.socialCoke { margin-top:-120px; }
 .pagination.partech { margin-top:-103px; }
 
-menu { position:fixed; top:-75px; left:0; right:0; z-index:9999; padding:0; margin:0; border:none; border-bottom:1px solid @colorGold;
+menu { position:fixed; top:-75px; left:0; right:0; min-width:980px; z-index:9999; padding:0; margin:0; border:none; border-bottom:1px solid @colorGold; .transition(1.2s);
 	nav {
 		ul { display:block; background:@colorWhite; 
 			li { .inline-block(); .calcWidthKit(100%/6); .boxSizin(border-box); text-align:center; border-right:1px solid @colorGold;
@@ -137,7 +181,7 @@ menu { position:fixed; top:-75px; left:0; right:0; z-index:9999; padding:0; marg
 		}
 	}
 }
-menu.open { top:0; }
+menu.openMenu { top:0; }
 
 @import "project.less";
 

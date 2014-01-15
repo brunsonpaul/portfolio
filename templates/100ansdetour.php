@@ -1,12 +1,12 @@
 <section id='tdf' data-case-study="100ansdetour">
     <nav class="pagination tdf">
         <ul>
-            <li><a class='active' href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a class='active' href="#tdf-introduction"></a></li>
+            <li><a href="#tdf-context"></a></li>
+            <li><a href="#tdf-data"></a></li>
+            <li><a href="#tdf-design"></a></li>
+            <li><a href="#tdf-thanks"></a></li>
+            <li><a href="#tdf-award"></a></li>
         </ul>
     </nav>
     <article id='tdf-introduction'>
@@ -80,15 +80,15 @@
             </h3>
             <ul id='tdf-dataNumbers'>
                 <li>
-                    <span>2 142</span>
+                    <span id="nb-etapes" class='animation-on-scroll' data-start-margin='100'>0</span>
                     étapes
                 </li><!--
                 !--><li>
-                    <span>345 093</span>
+                    <span id="nb-parcours" class='animation-on-scroll' data-start-margin='100'>0</span>
                     km parcourus
                 </li><!--
                 !--><li>
-                    <span>8 745</span> 
+                    <span id="nb-participants" class='animation-on-scroll' data-start-margin='100'>0</span> 
                     participants
                 </li>
             </ul>

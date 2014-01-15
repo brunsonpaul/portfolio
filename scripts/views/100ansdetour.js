@@ -71,6 +71,10 @@ app.Views = app.Views || {};
                     that.velo.css('margin-left', position + "px");
                     that.dragCursor.css('margin-left', position + "px");
 
+                    var degree = ($("#tdfDragCursor").css("margin-left").replace("px", ""));
+                    $('#fixie-wheel1').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                    $('#fixie-wheel2').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                    $('#fixie-pedal').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
                 });
 
                 $(document).on('mouseup', function(e){
@@ -103,9 +107,14 @@ app.Views = app.Views || {};
 
                     that.dragCursor.css('margin-left', "0px");
                     that.velo.css('margin-left', "0px");
-
+                    var degree = ($("#tdfDragCursor").css("margin-left").replace("px", ""));
+                    while (degree>0) { 
+                       $('#fixie-wheel1').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                        $('#fixie-wheel2').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                        $('#fixie-pedal').css({'-webkit-transform' : 'rotate('+ degree +'deg)', '-moz-transform' : 'rotate('+ degree +'deg)', '-ms-transform' : 'rotate('+ degree +'deg)', 'transform' : 'rotate('+ degree +'deg)'});
+                        degree--;
+                    }                     
                 });
-
             });
         },
 
@@ -116,6 +125,47 @@ app.Views = app.Views || {};
             $('.border').addClass('open');
             this.animateDate(that.enterProject, true);
 
+        },
+
+        etapesIncrease: function(){
+            var nbEtapes = $('#nb-etapes.active');
+            var nbParcours = $('#nb-parcours.active');
+            var nbParticipants = $('#nb-participants.active');
+
+            $({someValue: 0}).animate({someValue: 2001}, {
+                duration: 2000,
+                easing:'swing',
+                step: function() { 
+                  nbEtapes.text(Math.round(this.someValue));
+                }
+            });
+            $({someValue: 0}).animate({someValue: 426068}, {
+                duration: 2000,
+                easing:'swing',
+                step: function() { 
+                  nbParcours.text(Math.round(this.someValue));
+                }
+            });
+            $({someValue: 0}).animate({someValue: 13947}, {
+                duration: 2000,
+                easing:'swing',
+                step: function() { 
+                  nbParticipants.text(Math.round(this.someValue));
+                }
+            });
+        },
+
+
+        dataIncrease: function(){
+            var that = this;
+            var run = false;
+
+            $(window).on('scroll', function(){
+                if ($('#nb-etapes').hasClass('active') && run == false) {
+                    that.etapesIncrease();
+                    run = true;
+                }
+            });
         },
 
         // Direction true ouvrir, false fermer
@@ -155,8 +205,11 @@ app.Views = app.Views || {};
                 $('#date').removeClass('active');
             }, false);
 
-            app.initScrollAnims();
+            $('.button-menu').removeClass('open');
+            $('.button-menu').addClass('close');
 
+            app.initScrollAnims();
+            this.dataIncrease();
         },
 
         leaveProject: function(){
@@ -178,10 +231,11 @@ app.Views = app.Views || {};
                     $('.border').addClass('close');
                     that.velo.css('margin-left', 0 + "px");
                     that.dragCursor.css('margin-left', 0 + "px");
-
                 });
-
             });
+
+            $('.button-menu').removeClass('close');
+            $('.button-menu').addClass('open');
         },
 
         enterFromRouter: function(){

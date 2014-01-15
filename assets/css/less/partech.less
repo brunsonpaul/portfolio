@@ -73,7 +73,7 @@
 			h2 { .gothamBook(); text-transform:uppercase; text-align:center; color:@partechColor3; .fontSize20(); }
 	 		p { text-align:center; line-height:1.3em; .fontSize16();  color:@partechColor1; margin:10px auto 40px auto; width:550px; }
 			.toDrag { position:relative; height:38px; margin:auto; width:950px; 
-				.dragCursorPartech { left:10px; opacity:0; cursor:move; position:absolute; top:0; width:38px; height:38px; background:url('../img/partech/drag-cursor.png') no-repeat center center; .transition(1s); .transitionDelay(2.6s); }
+				.dragCursorPartech { left:10px; opacity:0; cursor:move; position:absolute; top:0; width:38px; height:38px; background:url('../img/partech/drag-cursor.png') no-repeat center center; -webkit-transition: opacity 1s 2.6s; -moz-transition: opacity 1s 2.6s; -ms-transition: opacity 1s 2.6s; -o-transition: opacity 1s 2.6s; transition: opacity 1s 2.6s; }
 				.dragScreenArrow { width:0; display:block; padding-top:31px; left:0; height:7px; background:url('../img/partech/trait.png') repeat-x center center; .transition(1.4s); .transitionDelay(0.4s);
 					.dragPoint { opacity:0; width:5px; height:5px; position:absolute; left:0; top:17px; background:@partechColor1; .borderRadius(5px); .transition(0.4s); }
 					.dragArrow { opacity:0; position:absolute; right:0; top:16px; background:@partechColor1; width:7px; height:7px; background:url('../img/partech/arrow.png') no-repeat center center; .transition(0.4s); .transitionDelay(1.8s); }

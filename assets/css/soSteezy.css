@@ -193,22 +193,22 @@ html {
   right: 0;
   bottom: 0;
 }
-#borderTop.menu {
+#borderTop.openMenu {
   top: 95px;
   left: 20px;
   right: 20px;
 }
-#borderBottom.menu {
+#borderBottom.openMenu {
   bottom: -75px;
   left: 20px;
   right: 20px;
 }
-#borderLeft.menu {
+#borderLeft.openMenu {
   top: 95px;
   left: 20px;
   bottom: -75px;
 }
-#borderRight.menu {
+#borderRight.openMenu {
   top: 95px;
   right: 20px;
   bottom: -75px;
@@ -249,7 +249,11 @@ html {
   position: fixed;
   z-index: 9999;
   left: 50%;
-  top: 58px;
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
   margin-left: -20px;
   text-align: center;
 }
@@ -271,7 +275,10 @@ html {
   height: 36px;
   border: solid 2px rgba(181, 150, 99, 0.3);
 }
-.button-menu a svg {
+.button-menu a:hover {
+  border: solid 2px #b59663;
+}
+.button-menu a svg:nth-of-type(1) {
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -283,39 +290,7 @@ html {
   margin-left: -9px;
   margin-top: -3.5px;
 }
-.button-menu a:hover {
-  border: solid 2px #b59663;
-}
-.button-menu.open {
-  top: 133px;
-}
-.button-close {
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 38px;
-  margin-left: -20px;
-  text-align: center;
-}
-.button-close a {
-  position: relative;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -moz-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -khtml-transition: all 0.4s;
-  transition: all 0.4s;
-  color: #b59663;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border: solid 2px rgba(181, 150, 99, 0.3);
-}
-.button-close a svg {
+.button-menu a svg:nth-of-type(2) {
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -327,8 +302,23 @@ html {
   margin-left: -6.717px;
   margin-top: -6.717px;
 }
-.button-close a:hover {
-  border: solid 2px #b59663;
+.button-menu.open {
+  top: 58px;
+}
+.button-menu.open svg:nth-of-type(2) {
+  opacity: 0;
+}
+.button-menu.openMenu {
+  top: 133px;
+}
+.button-menu.openMenu svg:nth-of-type(1) {
+  opacity: 0;
+}
+.button-menu.close {
+  top: 38px;
+}
+.button-menu.close svg:nth-of-type(1) {
+  opacity: 0;
 }
 #resize {
   display: none;
@@ -351,51 +341,58 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
-#loader {
+.pace {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  background: #fbfbfb;
+  z-index: 999;
+}
+.pace .pace-progress {
+  background: #111111;
+  z-index: 2000;
+  height: 1px;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -ms-transition: all 1s;
+  -khtml-transition: all 1s;
+  transition: all 1s;
+}
+.pace-inactive {
   display: none;
+}
+#loader {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9;
   background: #b59663;
   text-align: center;
 }
 #loader #load {
+  background: url('../img/identity/logo-kevin-lagier-black.svg') no-repeat center top;
+  background-size: 100%;
+  width: 148px;
+  height: 120px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -204px;
-  margin-left: -125px;
-}
-#loader #load img {
-  display: block;
-  height: 120px;
-  margin: auto;
+  margin-left: -74px;
+  margin-top: -200px;
 }
 #loader #load p {
+  position: absolute;
+  bottom: -43px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #111111;
   font-size: 14px;
   font-size: 0.875rem;
-  margin: 30px auto;
-}
-#loader #load span {
-  position: relative;
-  display: block;
-  width: 250px;
-  height: 1px;
-  margin: auto;
-  background: #fbfbfb;
-}
-#loader #load span span {
-  position: absolute;
-  width: 50%;
-  background: #111111;
-  top: 0;
-  left: 0;
+  width: 100%;
 }
 #loader #tuto {
   position: absolute;
@@ -494,6 +491,108 @@ html {
   -moz-animation: keyboard 4s 3s infinite linear;
   -o-animation: keyboard 4s 3s infinite linear;
   animation: keyboard 4s 3s infinite linear;
+}
+.pace-running #load {
+  display: block;
+}
+.pace-running #tuto {
+  opacity: 0;
+}
+.pace-done #load {
+  display: none;
+}
+.pace-done #tuto {
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -khtml-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.pace-running #load {
+  display: block;
+}
+.pace-running #tuto {
+  opacity: 0;
+}
+.pace-done #load {
+  display: none;
+}
+.pace-done #tuto {
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -khtml-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes tuto-load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @-webkit-keyframes browers {
   0% {
@@ -1053,6 +1152,15 @@ section .page-content {
   -webkit-opacity: 1;
   opacity: 1;
 }
+.pagination li a:hover:before {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=30);
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
 .pagination.tdf {
   margin-top: -103px;
 }
@@ -1070,11 +1178,17 @@ menu {
   top: -75px;
   left: 0;
   right: 0;
+  min-width: 980px;
   z-index: 9999;
   padding: 0;
   margin: 0;
   border: none;
   border-bottom: 1px solid #b59663;
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
 }
 menu nav ul {
   display: block;
@@ -1178,13 +1292,27 @@ menu nav ul li a:after {
   box-sizing: border-box;
   border: 1px solid #b59663;
 }
-menu.open {
+menu.openMenu {
   top: 0;
 }
-.wrapper-projects-container.open {
+.wrapper-projects-container {
+  -moz-transition: all 1.2s;
+  -webkit-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -khtml-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.wrapper-projects-container .project {
+  -webkit-transition: opacity 1.2s;
+  -moz-transition: opacity 1.2s;
+  -ms-transition: opacity 1.2s;
+  -o-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+}
+.wrapper-projects-container.openMenu {
   margin-top: 75px;
 }
-.wrapper-projects-container.open .project {
+.wrapper-projects-container.openMenu .project {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3);
   opacity: 0.3;
@@ -1872,8 +2000,32 @@ menu.open {
 #tdfProject #tdfBgContent #tdfContent #fixie {
   width: 500px;
   margin: 70px auto 30px auto;
+  position: relative;
 }
-#tdfProject #tdfBgContent #tdfContent #fixie img {
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-wheel1 {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 80px;
+}
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-wheel2 {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 120px;
+  width: 80px;
+}
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-pedal {
+  display: block;
+  position: absolute;
+  left: 76px;
+  bottom: 24px;
+  width: 30px;
+}
+#tdfProject #tdfBgContent #tdfContent #fixie #fixie-body {
   display: block;
   width: 200px;
 }
@@ -5598,16 +5750,11 @@ menu.open {
   width: 38px;
   height: 38px;
   background: url('../img/partech/drag-cursor.png') no-repeat center center;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -ms-transition: all 1s;
-  -khtml-transition: all 1s;
-  transition: all 1s;
-  -moz-transition-delay: 2.6s;
-  -webkit-transition-delay: 2.6s;
-  -ms-transition-delay: 2.6s;
-  -khtml-transition-delay: 2.6s;
-  transition-delay: 2.6s;
+  -webkit-transition: opacity 1s 2.6s;
+  -moz-transition: opacity 1s 2.6s;
+  -ms-transition: opacity 1s 2.6s;
+  -o-transition: opacity 1s 2.6s;
+  transition: opacity 1s 2.6s;
 }
 #partech #partech-dragScreen .page-content .toDrag .dragScreenArrow {
   width: 0;
@@ -6712,7 +6859,7 @@ menu.open {
   margin-top: -7px;
 }
 #socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2) svg g path {
-  fill: #f9f9f9;
+  fill: #f0e2c7;
 }
 #socialCoke #socialCoke-madeWith .page-content ul li a:nth-of-type(2):hover {
   background: #00c4ff;
@@ -6722,7 +6869,7 @@ menu.open {
   bottom: -120px;
   left: 0;
   display: block;
-  width: 100px;
+  width: 139px;
   -webkit-animation: poisson 10s 2.4s infinite linear;
   -moz-animation: poisson 10s 2.4s infinite linear;
   -o-animation: poisson 10s 2.4s infinite linear;

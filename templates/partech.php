@@ -1,12 +1,12 @@
 <section id='partech' data-case-study="partech">
     <nav class="pagination partech">
         <ul>
-            <li><a class='active' href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a class='active' href="#partech-introduction"></a></li>
+            <li><a href="#partech-client"></a></li>
+            <li><a href="#partech-dragScreen"></a></li>
+            <li><a href="#partech-sketch"></a></li>
+            <li><a href="#partech-mobile"></a></li>
+            <li><a href="#partech-ui"></a></li>
         </ul>
     </nav>
     <article id='partech-introduction'>
@@ -69,7 +69,7 @@
             </div>
             <div class="partech-screen">
                 <img src='./assets/img/partech/safari-window.png' alt="Safari Window">
-                <img src='./assets/img/partech/drag-screen.png' alt="Screen partech">
+                <img id='partechScreenImg' src='./assets/img/partech/drag-screen.png' alt="Screen partech">
             </div>
         </div>
     </article>
