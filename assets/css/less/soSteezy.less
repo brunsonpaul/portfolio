@@ -63,15 +63,31 @@ html { height: 100%; }
 	p { position:absolute; width:100%; margin-top:-30px; top:50%; .fontSize30(); .textUppercase(); }
 }
 
-#loader { display:none; position:fixed; top:0; left:0; bottom:0; right:0; z-index:9999; background:@colorGold; text-align:center;
-	#load { position:absolute; left:50%; top:50%; margin-top:-204px; margin-left:-125px; .transition(0.8s); opacity:0;
-		img { display:block; height:120px; margin:auto; }
-		p { .textUppercase(); color:@colorBlack; .fontSize14(); margin:30px auto; }
-		span { position:relative; display:block; width:250px; height:1px; margin:auto; background:@colorWhite;
-			span { position:absolute; width:50%; background:@colorBlack; top:0; left:0; }
-		}
+.pace{
+
+	width: 250px; margin: auto; margin-top: 430px; background: #FFF; z-index: 999; position: relative;
+
+	.pace-progress { background: #000; z-index: 2000;  height: 1px;  .transition(1s); 
+
 	}
-	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px; opacity:1;
+
+}
+
+.pace-inactive {
+  display: none;
+}
+
+#loader { 
+	position:fixed; top:0; left:0; bottom:0; right:0; z-index:9; background:@colorGold; text-align:center; 
+	
+	#load { 
+		background: url('../img/identity/logo-kevin-lagier-black.svg') no-repeat center top; background-size: 100%; width: 250px; height: 280px; margin: auto; margin-top: 10%; position: relative;
+
+		p { .textUppercase(); color:@colorBlack; .fontSize14(); margin:30px auto; position: absolute; bottom: 0; width: 100%;}
+		
+	}
+
+	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px; 
 		p { margin-top:10px; text-transform:uppercase; .fontSize14(); }
 		#dragging { left:50%; position:absolute; clip:rect(0,149px,95px,0); margin-left:-225px;
 			#dragCursorTuto { top:28px; left:55px; width:39px; height:23px; position:absolute; background:url('../img/identity/drag-tuto.png') center top no-repeat; -webkit-animation: cursortuto 15s infinite linear; -moz-animation: cursortuto 15s infinite linear; -o-animation: cursortuto 15s infinite linear; animation: cursortuto 15s infinite linear; }
@@ -91,11 +107,33 @@ html { height: 100%; }
 			}
 		}
 	}
+
+
+	
+
 }
-#loader.loaded{ 
-	#load { opacity:0; }
-	#tuto { -webkit-animation: tuto-load 6s 0.8s linear forwards; -moz-animation: tuto-load 6s 0.8s linear forwards; -o-animation: tuto-load 6s 0.8s linear forwards; animation: tuto-load 6s 0.8s linear forwards; }
+
+
+.pace-running{
+
+	#load { display: block;  }
+
+	#tuto{opacity: 0;}
+
 }
+
+.pace-done{
+
+	#load{display: none; }
+
+	#tuto{opacity: 1; .transition(0.5s);}
+
+}
+
+// #loader.loaded{ 
+// 	#load { opacity:0; }
+// 	#tuto { -webkit-animation: tuto-load 6s 0.8s linear forwards; -moz-animation: tuto-load 6s 0.8s linear forwards; -o-animation: tuto-load 6s 0.8s linear forwards; animation: tuto-load 6s 0.8s linear forwards; }
+// }
 
 @-webkit-keyframes load { 0% { opacity:1; } 99% { opacity:0; } 100% { opacity:0; display:none; } }
   
