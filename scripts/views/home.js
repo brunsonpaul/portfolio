@@ -22,8 +22,7 @@ app.Views = app.Views || {};
 			this.setProjectsSize();
 			this.initProjectsHome();
             this.intervalDragProject = this.windowWidth/5;
-
-
+            
             var that = this;
             $(window).on('resize',function(){
                 that.windowResized();
