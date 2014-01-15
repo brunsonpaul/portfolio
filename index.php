@@ -16,6 +16,8 @@
     <link rel="icon" type="image/x-icon" href="assets/img/identity/favicon.png" />
     <link rel="stylesheet" href="assets/css/soSteezy.css" type="text/css" media="screen" />
 
+    <script src="scripts/views/pace.js"></script>
+
     <meta property="og:title" content="Kévin Lagier Portfolio" />
     <meta property="og:description" content="Kevin Lagier, graphic design, art direction" />
     <meta property="og:type" content="website" />
@@ -29,11 +31,7 @@
     
    <div id="loader">
         <div id='load'>
-            <img src="assets/img/identity/logo-kevin-lagier-black.svg" alt="logo Kévin Lagier"> 
             <p>Loading ...</p>
-            <span>      
-                <span></span>
-            </span>
         </div>
         <div id='tuto'>
             <div id='dragging'>
