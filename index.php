@@ -91,7 +91,7 @@ setcookie('cookie', $cookie);
     <div class="closeLayout"></div>
     
     <nav class="button-menu open">
-        <a href="#" class="close-button">
+        <a href="#585858585" class="close-button">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="7px" viewBox="0 0 17 7.016" enable-background="new 0 0 17 7.016" xml:space="preserve">
                 <rect fill="#b59663" width="18" height="1"/>
                 <rect y="3" fill="#b59663" width="18" height="1"/>
@@ -332,6 +332,9 @@ setcookie('cookie', $cookie);
                    <img src='assets/img/social-coke/wizz-bg.png' alt="">
                 </div>
             </div>
+            <div class="transition-social-coke" style="width:100%; background:blue; color:white; position:absolute;">
+                Test de transition ....
+            </div>
         </div>
 
         <div id='partechProject' class="project" data-project="partech">
@@ -367,9 +370,7 @@ setcookie('cookie', $cookie);
     </div>
 </div>
     <div id="pseudoSocialCoke"></div>
-    <div class="transition-div">
-        
-    </div>
+
     <div class="case-study-container">
 
         <?php require('./templates/100ansdetour.php') ?>

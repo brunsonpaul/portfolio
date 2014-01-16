@@ -15,7 +15,7 @@ THE WHOLE
 
 SOCIAL COKE
 
-. Animation home -> input pseudo + paralaxx position souris
+. Animation home -> input pseudo
 . Lancement du case study
 . Animation du pseudo
 . Animation

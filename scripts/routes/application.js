@@ -16,7 +16,8 @@ app.Routers = app.Routers || {};
 			if(app.homeView.isValidProjectName(project)){
 
 				if(app.activeProjectView && app.activeCaseStudy){
-					app.activeProjectView.leaveProject();
+					// app.activeProjectView.leaveProject();
+					app.leaveProject();
 				}
 
 				this.loadView(project);

@@ -15,7 +15,10 @@ window.app = {
         this.homeView = new this.Views.HomeView();
         this.router = new this.Routers.ApplicationRouter();
         Backbone.history.start();
-        
+
+        this.initOpenCloseMenu();
+        this.initMenuLinks();
+
         // $('#home').addClass('entered');
 
     },
@@ -73,15 +76,94 @@ window.app = {
 
         });
     },
+    leaveProject: function(){
+        $('.closeLayout').css('height', '100%');
+        $('.closeLayout').animate({opacity:1},1000, function(){
+            $('.border').removeClass('close');
+            $('.border').addClass('open');
+            app.activeProjectView.leaveProject();
+
+            $(this).animate({opacity:0},1000, function(){
+
+                app.homeView.enableSlider();
+                app.activeCaseStudy = null;
+                $('.closeLayout').css({height:'0%'});
+                $('.border').removeClass('open');
+                $('.border').addClass('close');
+
+            });
+
+        });
+    },
+    initOpenCloseMenu: function(){
+        var that = this;
+        $('.button-menu').on('click', function(e){
+            e.preventDefault();
+            if(that.isCaseStudyActive()){
+                app.router.navigate("/"+app.activeProjectView.getName());
+                that.leaveProject();
+                return false;
+            }
+            that.openCloseMenu();
+            return false;
+        });
+    },
+    openCloseMenu: function(){
+        var that = $('.button-menu');
+
+        if (that.hasClass('open')) {
+            that.removeClass('open');
+            that.addClass('openMenu');
+
+            $('#borderTop').removeClass('close');
+            $('#borderTop').addClass('openMenu');
+            $('#borderBottom').removeClass('close');
+            $('#borderBottom').addClass('openMenu');
+            $('#borderLeft').removeClass('close');
+            $('#borderLeft').addClass('openMenu');
+            $('#borderRight').removeClass('close');
+            $('#borderRight').addClass('openMenu');
+
+            $('menu').addClass('openMenu');
+            $('.wrapper-projects-container').addClass('openMenu');
+
+        } else if (that.hasClass('openMenu')) {
+            that.removeClass('openMenu');
+            that.addClass('open');
+
+            $('#borderTop').addClass('close');
+            $('#borderTop').removeClass('openMenu');
+            $('#borderBottom').addClass('close');
+            $('#borderBottom').removeClass('openMenu');
+            $('#borderLeft').addClass('close');
+            $('#borderLeft').removeClass('openMenu');
+            $('#borderRight').addClass('close');
+            $('#borderRight').removeClass('openMenu');
+
+            $('menu').removeClass('openMenu');
+            $('.wrapper-projects-container').removeClass('openMenu');
+        };
+    },
+    lastActivePage:null,
+    updateMenu: function(pageNumber){
+
+        var menus = $("menu nav a");
+        if(this.lastActivePage){
+            this.lastActivePage.removeClass('active');
+        }
+        this.lastActivePage = $(menus[pageNumber]);
+        this.lastActivePage.addClass("active");
+
+    },
+    initMenuLinks: function(){
+        var that = this;
+        $("menu nav a").click(function(){
+            that.updateMenu($(this).parent().index());
+            that.openCloseMenu();
+        });
+    },
 
 };
-
-$(document).ready(function () {
-    'use strict';
-    app.init();
-
-});
-
 
 $(window).load(function() {
 
@@ -95,6 +177,8 @@ $(window).load(function() {
 
         $('#home').addClass('entered');
 
+        app.init();
+
         }, 6000);
 
     }else{
@@ -104,10 +188,11 @@ $(window).load(function() {
         $('#loader').fadeOut(1000);
 
         $('#home').addClass('entered');
+        
+        app.init();
 
         }, 1000);
 
     } 
-
 });
 

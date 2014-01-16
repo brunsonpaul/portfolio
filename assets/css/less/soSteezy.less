@@ -180,7 +180,7 @@ menu { position:fixed; top:-75px; left:0; right:0; min-width:980px; z-index:9999
 			li { .inline-block(); .calcWidthKit(100%/6); .boxSizin(border-box); text-align:center; border-right:1px solid @colorGold;
 				&:last-child { border:none; }
 				a { position:relative; .transition(0.4s); display:block; padding:30px 0; .textUppercase(); .fontSize12(); color:@colorGold; 
-					&:hover { color:@colorBlack; background:@colorGold; 
+					&:hover, &.active { color:@colorBlack; background:@colorGold; 
 						&:before { width:49px; margin-left:-24.5px; border-bottom:1px dotted @colorBlack; }
 						&:after { border:1px solid @colorBlack; .rotateKit(135deg); }
 					}

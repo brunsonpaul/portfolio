@@ -1237,16 +1237,19 @@ menu nav ul li a {
   font-size: 0.75rem;
   color: #b59663;
 }
-menu nav ul li a:hover {
+menu nav ul li a:hover,
+menu nav ul li a.active {
   color: #111111;
   background: #b59663;
 }
-menu nav ul li a:hover:before {
+menu nav ul li a:hover:before,
+menu nav ul li a.active:before {
   width: 49px;
   margin-left: -24.5px;
   border-bottom: 1px dotted #111111;
 }
-menu nav ul li a:hover:after {
+menu nav ul li a:hover:after,
+menu nav ul li a.active:after {
   border: 1px solid #111111;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);

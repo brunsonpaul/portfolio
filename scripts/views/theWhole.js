@@ -89,28 +89,12 @@ app.Views = app.Views || {};
         },
         leaveProject: function(){
 
-            var that = this;
-            $('.closeLayout').css('height', '100%');
-            $('.closeLayout').animate({opacity:1},1000, function(){
+            $("#theWholeProject").removeClass("closed");
+            $("#theWhole-introduction").removeClass("active");
+            app.homeView.homeProjectsContainer.css('display', 'block');
 
-                $('.border').removeClass('close');
-                $('.border').addClass('open');
-                $("#theWholeProject").removeClass("closed");
-                $("#theWhole-introduction").removeClass("active");
-                app.homeView.homeProjectsContainer.css('display', 'block');
+            this.caseStudyElem.css('display', 'none');
 
-                that.caseStudyElem.css('display', 'none');
-
-                $(this).animate({opacity:0},1000, function(){
-                    app.homeView.enableSlider();
-                    app.activeCaseStudy = null;
-                    $('.closeLayout').css({height:'0%'});
-                    $('.border').removeClass('open');
-                    $('.border').addClass('close');
-
-                });
-
-            });
         },
         enterFromRouter: function(){
 

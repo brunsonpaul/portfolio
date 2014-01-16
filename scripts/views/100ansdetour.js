@@ -17,11 +17,6 @@ app.Views = app.Views || {};
 
             var that = this;
 
-            $('.close-button').on('click', function(e){
-                e.preventDefault();
-                app.router.navigate('/'+that.name, {trigger: true});
-            });
-
             var screenHeight = (app.homeView.windowHeight - 16)
             var height = screenHeight/6;
             $('#date li').css('height', height);
@@ -265,9 +260,6 @@ app.Views = app.Views || {};
                 $('#date').removeClass('active');
             }, false);
 
-            $('.button-menu').removeClass('open');
-            $('.button-menu').addClass('close');
-
             app.initScrollAnims();
             this.dataIncrease();
             this.activeAnchor();
@@ -275,28 +267,14 @@ app.Views = app.Views || {};
 
         leaveProject: function(){
             var that = this;
-            $('.closeLayout').css('height', '100%');
-            $('.closeLayout').animate({opacity:1},1000, function(){
 
-                $('.border').removeClass('close');
-                $('.border').addClass('open');
-                $('#tdfBgContent').css('display', 'block');
-                app.homeView.homeProjectsContainer.css('display', 'block');
-                that.caseStudyElem.css('display', 'none');
+            $('#tdfBgContent').css('display', 'block');
+            app.homeView.homeProjectsContainer.css('display', 'block');
+            that.caseStudyElem.css('display', 'none');
 
-                $(this).animate({opacity:0},1000, function(){
-                    app.homeView.enableSlider();
-                    app.activeCaseStudy = null;
-                    $('.closeLayout').css({height:'0%'});
-                    $('.border').removeClass('open');
-                    $('.border').addClass('close');
-                    that.velo.css('margin-left', 0 + "px");
-                    that.dragCursor.css('margin-left', 0 + "px");
-                });
-            });
+            that.velo.css('margin-left', 0 + "px");
+            that.dragCursor.css('margin-left', 0 + "px");
 
-            $('.button-menu').removeClass('close');
-            $('.button-menu').addClass('open');
         },
 
         enterFromRouter: function(){

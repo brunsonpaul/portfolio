@@ -143,7 +143,7 @@ app.Views = app.Views || {};
             $(".partechEnterLayout").bind("webkitTransitionEnd", function(e){
 
                 $(this).unbind("webkitTransitionEnd");
-                
+
                 app.router.navigate('/'+that.getName()+'/case-study', {trigger: false});
 
                 app.homeView.homeProjectsContainer.css('display', 'none');
@@ -156,29 +156,13 @@ app.Views = app.Views || {};
         leaveProject: function(){
 
             var that = this;
-            $('.closeLayout').css('height', '100%');
             $(".partechEnterLayout").removeClass("active");
-            $('.closeLayout').animate({opacity:1},1000, function(){
 
-                $('.border').removeClass('close');
-                $('.border').addClass('open');
+            $("#partech-introduction").removeClass("active");
+            app.homeView.homeProjectsContainer.css('display', 'block');
 
-                $("#partech-introduction").removeClass("active");
-                app.homeView.homeProjectsContainer.css('display', 'block');
+            that.caseStudyElem.css('display', 'none');
 
-                that.caseStudyElem.css('display', 'none');
-
-                $(this).animate({opacity:0},1000, function(){
-
-                    app.homeView.enableSlider();
-                    app.activeCaseStudy = null;
-                    $('.closeLayout').css({height:'0%'});
-                    $('.border').removeClass('open');
-                    $('.border').addClass('close');
-
-                });
-
-            });
         },
         enterFromRouter: function(){
 
