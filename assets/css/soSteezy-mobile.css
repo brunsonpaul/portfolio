@@ -219,11 +219,11 @@ header #contact li a:hover:after {
   width: 0;
 }
 header #social {
-  margin: 10% 5%;
+  margin: 15% 5% 10% 5%;
 }
 header #social li {
   display: inline-block;
-  margin: 0 4%;
+  margin: 0 4.5%;
 }
 .lt-ie9 header #social li {
   display: inline;
