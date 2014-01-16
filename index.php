@@ -36,6 +36,16 @@ setcookie('cookie', $cookie);
     <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.svg" />
     <meta property="og:locale" content="en_EN" />
 
+    <script>
+        var host = "http://www.lagier-kevin.com/beta/";
+          if((navigator.userAgent.match(/MSI/g))){
+            window.location = host+"sorry-IE.php";
+          }
+          if(navigator.userAgent.match(/Android/i) ||navigator.userAgent.match(/webOS/i) ||navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)){
+            window.location = host+"mobile";
+          }
+    </script>
+
 </head>
 
 <body class="userSelect">
@@ -213,7 +223,6 @@ setcookie('cookie', $cookie);
         </div>
 
         <div id='theWholeProject' class="project" data-project="the-whole">
-            <div id="theWhole-bg"></div>
             <div id='space-anim'>
                 <div id='rocket'><img src="assets/img/the-whole/the-whole-rocket.svg" alt=""></div>            
                 <div id='astronaut'><img src="assets/img/the-whole/the-whole-astronaut.svg" alt=""></div>
