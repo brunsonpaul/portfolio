@@ -91,7 +91,7 @@ $(window).load(function() {
 
         setTimeout(function() {
       
-        $('#loader').fadeOut();
+        $('#loader').fadeOut(1000);
 
         $('#home').addClass('entered');
 
@@ -101,7 +101,7 @@ $(window).load(function() {
 
         setTimeout(function() {
       
-        $('#loader').fadeOut();
+        $('#loader').fadeOut(1000);
 
         $('#home').addClass('entered');
 

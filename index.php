@@ -73,10 +73,10 @@ setcookie('cookie', $cookie);
 
     </div>
 
-    <div id='borderTop' class="border close"></div>
-    <div id='borderBottom' class="border close"></div>
-    <div id='borderLeft' class="border close"></div>
-    <div id='borderRight' class="border close"></div>
+    <div id='borderTop' class="border close hideBorder"></div>
+    <div id='borderBottom' class="border close hideBorder"></div>
+    <div id='borderLeft' class="border close hideBorder"></div>
+    <div id='borderRight' class="border close hideBorder"></div>
     
     <div class="closeLayout"></div>
     
@@ -97,12 +97,12 @@ setcookie('cookie', $cookie);
     <menu>
         <nav>
             <ul>
-                <li><a href="#">About</a></li><!--
-                !--><li><a href="#">100 ans de Tour</a></li><!--
-                !--><li><a href="#">The Whole</a></li><!--
-                !--><li><a href="#">Social Coke</a></li><!--
-                !--><li><a href="#">Partech</a></li><!--
-                !--><li><a href="#">Footer</a></li>
+                <li><a href="#about">About</a></li><!--
+                !--><li><a href="#100ansdetour">100 ans de Tour</a></li><!--
+                !--><li><a href="#the-whole">The Whole</a></li><!--
+                !--><li><a href="#social-coke">Social Coke</a></li><!--
+                !--><li><a href="#partech">Partech</a></li><!--
+                !--><li><a href="#thanks">Footer</a></li>
             </ul>
         </nav>
     </menu>
@@ -215,56 +215,56 @@ setcookie('cookie', $cookie);
         <div id='theWholeProject' class="project" data-project="the-whole">
             <div id="theWhole-bg"></div>
             <div id='space-anim'>
-                <div id='rocket'><img src="assets/img/the-whole/bg/the-whole-rocket.svg" alt=""></div>            
-                <div id='astronaut'><img src="assets/img/the-whole/bg/the-whole-astronaut.svg" alt=""></div>
-                <div id='meteor1'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-                <div id='meteor2'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
-                <div id='meteor3'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
-                <div id='meteor4'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-                <div id='meteor5'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
-                <div id='meteor6'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-                <div id='meteor7'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
-                <div id='meteor8'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>                
-                <div id='meteor9'><img src="assets/img/the-whole/bg/the-whole-meteor1.svg" alt=""></div>
-                <div id='meteor10'><img src="assets/img/the-whole/bg/the-whole-meteor3.svg" alt=""></div>
-                <div id='meteor11'><img src="assets/img/the-whole/bg/the-whole-meteor2.svg" alt=""></div>
+                <div id='rocket'><img src="assets/img/the-whole/the-whole-rocket.svg" alt=""></div>            
+                <div id='astronaut'><img src="assets/img/the-whole/the-whole-astronaut.svg" alt=""></div>
+                <div id='meteor1'><img src="assets/img/the-whole/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor2'><img src="assets/img/the-whole/the-whole-meteor2.svg" alt=""></div>
+                <div id='meteor3'><img src="assets/img/the-whole/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor4'><img src="assets/img/the-whole/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor5'><img src="assets/img/the-whole/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor6'><img src="assets/img/the-whole/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor7'><img src="assets/img/the-whole/the-whole-meteor2.svg" alt=""></div>
+                <div id='meteor8'><img src="assets/img/the-whole/the-whole-meteor3.svg" alt=""></div>                
+                <div id='meteor9'><img src="assets/img/the-whole/the-whole-meteor1.svg" alt=""></div>
+                <div id='meteor10'><img src="assets/img/the-whole/the-whole-meteor3.svg" alt=""></div>
+                <div id='meteor11'><img src="assets/img/the-whole/the-whole-meteor2.svg" alt=""></div>
             </div>
             
             <div id='theWholeSolarSystem'>
                <div id='theWholePlanet'>
                     <a href='#' class="enter-button">
-                        <img src="assets/img/the-whole/bg/the-whole-planet.svg" alt="">
+                        <img src="assets/img/the-whole/the-whole-planet.svg" alt="">
                     </a>
                 </div>   
                 <div id='theWholeRssPlanet'>
-                    <img src="assets/img/the-whole/bg/the-whole-rssPlanet.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-rssPlanet.svg" alt="">
                 </div>
                 <div id='theWholeFbPlanet'>
-                    <img src="assets/img/the-whole/bg/the-whole-fbPlanet.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-fbPlanet.svg" alt="">
                     <div id='lueurFB'></div>
                 </div>
 
                 <div id='theWholeTwPlanet'>
-                    <img src="assets/img/the-whole/bg/the-whole-twPlanet.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-twPlanet.svg" alt="">
                 </div>
                 <div id='theWholePinPlanet'>
-                    <img src="assets/img/the-whole/bg/the-whole-pinPlanet.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-pinPlanet.svg" alt="">
                 </div>
                 <div id='theWholeScPlanet'>
-                    <img src="assets/img/the-whole/bg/the-whole-scPlanet.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-scPlanet.svg" alt="">
                     <div id='lueurSc'></div>
                 </div>                
                 <div id='theWholeLfPlanet'>
-                    <img src="assets/img/the-whole/bg/the-whole-lfPlanet.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-lfPlanet.svg" alt="">
                 </div>
                 <div id='theWholeSolar'>
-                    <img src="assets/img/the-whole/bg/the-whole-solar.svg" alt="">
+                    <img src="assets/img/the-whole/the-whole-solar.svg" alt="">
                 </div>
             </div>
         </div>
 
         <div id='socialCokeProject' class="project" data-project="social-coke">
-            <div id='socialCokeBgContent'>
+            <div id='socialCokeBgContent' >
                 <h1>
                     <span>Social Coke</span>
                     <img src='./assets/img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
@@ -281,46 +281,46 @@ setcookie('cookie', $cookie);
 
             <div id="parallax">
                 <div class="layer" data-depth="3.00">
-                    <img src='assets/img/social-coke/bg/monkey-bg.png' alt="">
+                    <img src='assets/img/social-coke/monkey-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.80">
-                   <img src='assets/img/social-coke/bg/patate-bg.png' alt="">
+                   <img src='assets/img/social-coke/patate-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="4.10">
-                   <img src='assets/img/social-coke/bg/drink-bg.png' alt="">
+                   <img src='assets/img/social-coke/drink-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.50">
-                   <img src='assets/img/social-coke/bg/hello-bg.png' alt="">
+                   <img src='assets/img/social-coke/hello-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="2.8">
-                   <img src='assets/img/social-coke/bg/goutte-bg.png' alt="">
+                   <img src='assets/img/social-coke/goutte-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.40">
-                   <img src='assets/img/social-coke/bg/pointRose-bg.png' alt="">
+                   <img src='assets/img/social-coke/pointRose-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.70">
-                   <img src='assets/img/social-coke/bg/pointVert-bg.png' alt="">
+                   <img src='assets/img/social-coke/pointVert-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="4.50">
-                   <img src='assets/img/social-coke/bg/pointJaune-bg.png' alt="">
+                   <img src='assets/img/social-coke/pointJaune-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.30">
-                   <img src='assets/img/social-coke/bg/cool-bg.png' alt="">
+                   <img src='assets/img/social-coke/cool-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.90">
-                   <img src='assets/img/social-coke/bg/love-bg.png' alt="">
+                   <img src='assets/img/social-coke/love-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="4.10">
-                   <img src='assets/img/social-coke/bg/king-bg.png' alt="">
+                   <img src='assets/img/social-coke/king-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.70">
-                   <img src='assets/img/social-coke/bg/piou-bg.png' alt="">
+                   <img src='assets/img/social-coke/piou-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.20">
-                   <img src='assets/img/social-coke/bg/pointBlanc-bg.png' alt="">
+                   <img src='assets/img/social-coke/pointBlanc-bg.png' alt="">
                 </div>
                 <div class="layer" data-depth="3.50">
-                   <img src='assets/img/social-coke/bg/wizz-bg.png' alt="">
+                   <img src='assets/img/social-coke/wizz-bg.png' alt="">
                 </div>
             </div>
         </div>
