@@ -81,11 +81,11 @@
         <nav>
             <ul>
                 <li><a href="#">About</a></li><!--
-                !--><li><a href="#">100 ans de Tour</a></li><!--
-                !--><li><a href="#">The Whole</a></li><!--
-                !--><li><a href="#">Social Coke</a></li><!--
-                !--><li><a href="#">Partech</a></li><!--
-                !--><li><a href="#">Footer</a></li>
+                !--><li><a href="#100ansdetour">100 ans de Tour</a></li><!--
+                !--><li><a href="#the-whole">The Whole</a></li><!--
+                !--><li><a href="#social-coke">Social Coke</a></li><!--
+                !--><li><a href="#partech">Partech</a></li><!--
+                !--><li><a href="#thanks">Footer</a></li>
             </ul>
         </nav>
     </menu>
@@ -306,6 +306,9 @@
                    <img src='assets/img/social-coke/bg/wizz-bg.png' alt="">
                 </div>
             </div>
+            <div class="transition-social-coke" style="width:100%; background:blue; color:white; position:absolute;">
+                Test de transition ....
+            </div>
         </div>
 
         <div id='partechProject' class="project" data-project="partech">
@@ -341,9 +344,7 @@
     </div>
 </div>
     <div id="pseudoSocialCoke"></div>
-    <div class="transition-social-coke">
-        zefzefezzffe
-    </div>
+
     <div class="case-study-container">
 
         <?php require('./templates/100ansdetour.php') ?>

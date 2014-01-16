@@ -47,7 +47,7 @@ app.Views = app.Views || {};
             var projects = this.homeProjectsContainer.find(this.homeProjectClass);
             var projectNumber = projects.length;
 
-            this.homeProjectsContainer.addClass('no-transition');
+            // this.homeProjectsContainer.addClass('no-transition');
             // Set le conteneur pour accueillir tout les projets
             this.homeProjectsContainer.css('width', this.windowWidth*projectNumber + 'px');
             projects.css('width', this.windowWidth +'px');

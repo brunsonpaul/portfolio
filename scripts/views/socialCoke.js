@@ -19,6 +19,8 @@ app.Views = app.Views || {};
         initialize: function(){
 
             this.initEnterProjectAction();
+            $('.transition-social-coke').css({top:app.homeView.windowHeight, height:app.homeView.windowHeight*4});
+            app.homeView.homeProjectsContainer.css("overflow","scroll");
 
         },
         initEnterProjectAction: function(){
@@ -52,19 +54,19 @@ app.Views = app.Views || {};
             $('#date').addClass('active');
             $('.border').removeClass('close');
             $('.border').addClass('open');
-            $('.transition-social-coke').css({display:"block", top:app.homeView.windowHeight, width:app.homeView.windowHeight, height:app.homeView.windowHeight, background:"blue", position:"absolute"});
+            app.homeView.homeProjectsContainer.css("overflow","scroll");
             app.homeView.homeProjectsContainer.animate({
-                top: -app.homeView.windowHeight*2},
-                 {easing: "linear",duration:2000}, function() {
+                top: -app.homeView.windowHeight*5},
+                8000, function() {
                 // that.caseStudyElem.css("display","block");
                 /* stuff to do after animation is complete */
             });
-/*            $('.transition-social-coke').animate({
-                top: -app.homeView.windowHeight},
-                 {easing: "linear",duration:2000}, function() {
-                // that.caseStudyElem.css("display","block");
-            });*/
-
+            this.caseStudyElem.css({display:"block", marginTop:app.homeView.windowHeight*5});
+            that.caseStudyElem.animate({
+                marginTop: "0px"},
+                8000, function() {
+                /* stuff to do after animation is complete */
+            });
         },
 
         enterProject: function(){

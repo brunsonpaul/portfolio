@@ -78,13 +78,14 @@ window.app = {
 
 $(document).ready(function () {
     'use strict';
+    $('#loader').fadeOut();
     app.init();
-
-    setTimeout(function() {
-      
+/*    setTimeout(function() {
+      clearTimeout(this);
       $('#loader').fadeOut();
+      app.init();
 
-    }, 2000);
+    }, 4000);*/
 
 });
 
