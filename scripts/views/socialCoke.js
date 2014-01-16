@@ -47,6 +47,82 @@ app.Views = app.Views || {};
 
         },
 
+         activeAnchor: function(){
+            var article2 = ($("#socialCoke-context").offset().top)-1;
+            var article3 = ($("#socialCoke-idea").offset().top)-1;
+            var article4 = ($("#socialCoke-interest").offset().top)-1;
+            var article5 = ($("#socialCoke-universe").offset().top)-1;
+            var article6 = ($("#socialCoke-bottle").offset().top)-1;
+            var article7 = ($("#socialCoke-madeWith").offset().top)-1;
+
+            $(window).scroll(function(){
+
+                if(($(document).scrollTop() == 0)&&($(document).scrollTop() < article2)){
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").addClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article2)&&($(document).scrollTop() < article3)) {
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").addClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article3)&&($(document).scrollTop() < article4)) {
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").addClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article4)&&($(document).scrollTop() < article5)) {
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").addClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article5)&&($(document).scrollTop() < article6)) {
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").addClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article6)&&($(document).scrollTop() < article7)) {
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").addClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").removeClass("active");
+                }
+                else if($(document).scrollTop() >article7) {
+                    $(".pagination.socialCoke ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(6) a").removeClass("active");
+                    $(".pagination.socialCoke ul li:nth-of-type(7) a").addClass("active");
+                }
+            });
+        },
+
         enterProjectAnim: function(){
 
             var that = this;
@@ -72,6 +148,7 @@ app.Views = app.Views || {};
         enterProject: function(){
 
             app.initScrollAnims();
+            this.activeAnchor();
 
         }
     });

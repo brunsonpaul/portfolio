@@ -63,23 +63,23 @@ html { height: 100%; }
 	p { position:absolute; width:100%; margin-top:-30px; top:50%; .fontSize30(); .textUppercase(); }
 }
 
-.pace{ position:absolute; top:50%; left:50%; margin-left:-125px; width:250px; background:@colorWhite; z-index:999;
+.pace{ position:absolute; top:50%; left:50%; margin-left:-125px; width:250px; background:@colorWhite; z-index:999999;
 	.pace-progress { background:@colorBlack; z-index:2000; height: 1px; .transition(1s); 
 	}
 }
 
 .pace-inactive { display: none; }
 
-#loader { position:fixed; top:0; left:0; bottom:0; right:0; z-index:9; background:@colorGold; text-align:center; 
+#loader { position:fixed; top:0; left:0; bottom:0; right:0; z-index:99999; background:@colorGold; text-align:center; 
 	#load { background: url('../img/identity/logo-kevin-lagier-black.svg') no-repeat center top; background-size: 100%; width:148px; height:120px; position:absolute; left:50%; top:50%; margin-left:-74px; margin-top:-200px;
 		p { position:absolute; bottom:-43px; .textUppercase(); color:@colorBlack; .fontSize14(); width:100%; }
 	}
 	#tuto { position:absolute; margin-top:-50px; top:50%; left:0; right:0; height:93px; 
 		p { margin-top:10px; text-transform:uppercase; .fontSize14(); }
 		#dragging { left:50%; position:absolute; clip:rect(0,149px,95px,0); margin-left:-225px;
-			#dragCursorTuto { top:28px; left:55px; width:39px; height:23px; position:absolute; background:url('../img/identity/drag-tuto.png') center top no-repeat; -webkit-animation: cursortuto 15s infinite linear; -moz-animation: cursortuto 15s infinite linear; -o-animation: cursortuto 15s infinite linear; animation: cursortuto 15s infinite linear; }
+			#dragCursorTuto { top:28px; left:55px; width:39px; height:23px; position:absolute; background:url('../img/identity/drag-tuto.png') center top no-repeat; }
 			img { display:block; margin:auto; }
-			#dragAnim { position:absolute; height:51px; width:398px; top:14px; -webkit-animation: browers 15s infinite linear; -moz-animation: browers 15s infinite linear; -o-animation: browers 15s infinite linear; animation: browers 15s infinite linear;
+			#dragAnim { position:absolute; height:51px; width:398px; top:14px;
 				span { float:left; display:block; margin-right:10px; width:90px; height:49px; border:1px solid @colorBlack; 
 					&:last-child { margin:0; }
 				}
@@ -87,10 +87,6 @@ html { height: 100%; }
 		}
 		#keyboard { left:50%; top:15px; margin-left:100px; position:absolute; margin-left:40px;
 			span { .inline-block; width:20px; height:20px; border:1px solid @colorBlack;
-				&:nth-of-type(1) { -webkit-animation: keyboard 4s 1s infinite linear; -moz-animation: keyboard 4s 1s infinite linear; -o-animation: keyboard 4s 1s infinite linear; animation: keyboard 4s 1s infinite linear;}
-				&:nth-of-type(2) { -webkit-animation: keyboard 4s 2s infinite linear; -moz-animation: keyboard 4s 2s infinite linear; -o-animation: keyboard 4s 2s infinite linear; animation: keyboard 4s 2s infinite linear; }
-				&:nth-of-type(3) { -webkit-animation: keyboard 4s 4s infinite linear; -moz-animation: keyboard 4s 4s infinite linear; -o-animation: keyboard 4s 4s infinite linear; animation: keyboard 4s 4s infinite linear; }
-				&:nth-of-type(4) { -webkit-animation: keyboard 4s 3s infinite linear; -moz-animation: keyboard 4s 3s infinite linear; -o-animation: keyboard 4s 3s infinite linear; animation: keyboard 4s 3s infinite linear; }
 			}
 		}
 	}
@@ -104,7 +100,7 @@ html { height: 100%; }
 
 .pace-done{
 	#load{display: none; }
-	#tuto{opacity: 1; .transition(0.5s);}
+	#tuto{opacity: 1; .transition(0.5s); }
 }
 
 
@@ -116,7 +112,21 @@ html { height: 100%; }
 
 .pace-done{
 	#load{display: none; }
-	#tuto{opacity: 1; .transition(0.5s);}
+	#tuto { opacity:1; .transition(1s);
+		#dragging { 
+			#dragCursorTuto { -webkit-animation: cursortuto 15s infinite linear; -moz-animation: cursortuto 15s infinite linear; -o-animation: cursortuto 15s infinite linear; animation: cursortuto 15s infinite linear; }
+			#dragAnim { -webkit-animation: browers 15s infinite linear; -moz-animation: browers 15s infinite linear; -o-animation: browers 15s infinite linear; animation: browers 15s infinite linear;
+			}
+		}
+		#keyboard { 
+			span {
+				&:nth-of-type(1) { -webkit-animation: keyboard 4s 1s infinite linear; -moz-animation: keyboard 4s 1s infinite linear; -o-animation: keyboard 4s 1s infinite linear; animation: keyboard 4s 1s infinite linear;}
+				&:nth-of-type(2) { -webkit-animation: keyboard 4s 2s infinite linear; -moz-animation: keyboard 4s 2s infinite linear; -o-animation: keyboard 4s 2s infinite linear; animation: keyboard 4s 2s infinite linear; }
+				&:nth-of-type(3) { -webkit-animation: keyboard 4s 4s infinite linear; -moz-animation: keyboard 4s 4s infinite linear; -o-animation: keyboard 4s 4s infinite linear; animation: keyboard 4s 4s infinite linear; }
+				&:nth-of-type(4) { -webkit-animation: keyboard 4s 3s infinite linear; -moz-animation: keyboard 4s 3s infinite linear; -o-animation: keyboard 4s 3s infinite linear; animation: keyboard 4s 3s infinite linear; }
+			}
+		}
+	}
 }
 // #loader.loaded{ 
 // 	#load { opacity:0; }
@@ -170,7 +180,7 @@ menu { position:fixed; top:-75px; left:0; right:0; min-width:980px; z-index:9999
 			li { .inline-block(); .calcWidthKit(100%/6); .boxSizin(border-box); text-align:center; border-right:1px solid @colorGold;
 				&:last-child { border:none; }
 				a { position:relative; .transition(0.4s); display:block; padding:30px 0; .textUppercase(); .fontSize12(); color:@colorGold; 
-					&:hover { color:@colorBlack; background:@colorGold; 
+					&:hover, &.active { color:@colorBlack; background:@colorGold; 
 						&:before { width:49px; margin-left:-24.5px; border-bottom:1px dotted @colorBlack; }
 						&:after { border:1px solid @colorBlack; .rotateKit(135deg); }
 					}

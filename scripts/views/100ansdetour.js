@@ -17,11 +17,6 @@ app.Views = app.Views || {};
 
             var that = this;
 
-            $('.close-button').on('click', function(e){
-                e.preventDefault();
-                app.router.navigate('/'+that.name, {trigger: true});
-            });
-
             var screenHeight = (app.homeView.windowHeight - 16)
             var height = screenHeight/6;
             $('#date li').css('height', height);
@@ -118,6 +113,66 @@ app.Views = app.Views || {};
             });
         },
 
+        activeAnchor: function(){
+            var article2 = ($("#tdf-context").offset().top)-1;
+            var article3 = ($("#tdf-data").offset().top)-1;
+            var article4 = ($("#tdf-design").offset().top)-1;
+            var article5 = ($("#tdf-thanks").offset().top)-1;
+            var article6 = ($("#tdf-other").offset().top)-1;
+
+            $(window).scroll(function(){
+
+                if(($(document).scrollTop() == 0)&&($(document).scrollTop() < article2)){
+                    $(".pagination.tdf ul li:nth-of-type(1) a").addClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article2)&&($(document).scrollTop() < article3)) {
+                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(2) a").addClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article3)&&($(document).scrollTop() < article4)) {
+                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(3) a").addClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article4)&&($(document).scrollTop() < article5)) {
+                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(4) a").addClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
+                }
+                else if(($(document).scrollTop() >article5)&&($(document).scrollTop() < article6)) {
+                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(5) a").addClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
+                }
+                else if($(document).scrollTop() >article6) {
+                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
+                    $(".pagination.tdf ul li:nth-of-type(6) a").addClass("active");
+                }
+            });
+        },
+
         enterProjectAnim: function(){
             var that = this;
             $('#date').addClass('active');
@@ -205,37 +260,21 @@ app.Views = app.Views || {};
                 $('#date').removeClass('active');
             }, false);
 
-            $('.button-menu').removeClass('open');
-            $('.button-menu').addClass('close');
-
             app.initScrollAnims();
             this.dataIncrease();
+            this.activeAnchor();
         },
 
         leaveProject: function(){
             var that = this;
-            $('.closeLayout').css('height', '100%');
-            $('.closeLayout').animate({opacity:1},1000, function(){
 
-                $('.border').removeClass('close');
-                $('.border').addClass('open');
-                $('#tdfBgContent').css('display', 'block');
-                app.homeView.homeProjectsContainer.css('display', 'block');
-                that.caseStudyElem.css('display', 'none');
+            $('#tdfBgContent').css('display', 'block');
+            app.homeView.homeProjectsContainer.css('display', 'block');
+            that.caseStudyElem.css('display', 'none');
 
-                $(this).animate({opacity:0},1000, function(){
-                    app.homeView.enableSlider();
-                    app.activeCaseStudy = null;
-                    $('.closeLayout').css({height:'0%'});
-                    $('.border').removeClass('open');
-                    $('.border').addClass('close');
-                    that.velo.css('margin-left', 0 + "px");
-                    that.dragCursor.css('margin-left', 0 + "px");
-                });
-            });
+            that.velo.css('margin-left', 0 + "px");
+            that.dragCursor.css('margin-left', 0 + "px");
 
-            $('.button-menu').removeClass('close');
-            $('.button-menu').addClass('open');
         },
 
         enterFromRouter: function(){

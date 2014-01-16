@@ -22,7 +22,7 @@ app.Views = app.Views || {};
 			this.setProjectsSize();
 			this.initProjectsHome();
             this.intervalDragProject = this.windowWidth/5;
-            
+
             var that = this;
             $(window).on('resize',function(){
                 that.windowResized();
@@ -151,48 +151,9 @@ app.Views = app.Views || {};
         mousePositionX: null,
         currentProject:0,
         isSliderActive: true,
-        initMenu: function(){
-            $('.button-menu').on('click', function(){
-                var that = $('.button-menu');
-
-                if (that.hasClass('open')) {
-                    that.removeClass('open');
-                    that.addClass('openMenu');
-
-                    $('#borderTop').removeClass('close');
-                    $('#borderTop').addClass('openMenu');
-                    $('#borderBottom').removeClass('close');
-                    $('#borderBottom').addClass('openMenu');
-                    $('#borderLeft').removeClass('close');
-                    $('#borderLeft').addClass('openMenu');
-                    $('#borderRight').removeClass('close');
-                    $('#borderRight').addClass('openMenu');
-
-                    $('menu').addClass('openMenu');
-                    $('.wrapper-projects-container').addClass('openMenu');
-
-                } else if (that.hasClass('openMenu')) {
-                    that.removeClass('openMenu');
-                    that.addClass('open');
-
-                    $('#borderTop').addClass('close');
-                    $('#borderTop').removeClass('openMenu');
-                    $('#borderBottom').addClass('close');
-                    $('#borderBottom').removeClass('openMenu');
-                    $('#borderLeft').addClass('close');
-                    $('#borderLeft').removeClass('openMenu');
-                    $('#borderRight').addClass('close');
-                    $('#borderRight').removeClass('openMenu');
-
-                    $('menu').removeClass('openMenu');
-                    $('.wrapper-projects-container').removeClass('openMenu');
-                };
-            });
-        },
         initProjectsHome: function(){
             var that = this;
 
-            this.initMenu();
             this.scrollTo();
 
             // Prevent le drag des images et des a
@@ -236,6 +197,7 @@ app.Views = app.Views || {};
                 });
 
             });
+            app.updateMenu(this.getActiveProjectNumber());
         },
         sliderHandler: function(pEvent){
             var _currentProject = this.currentProject;
@@ -252,14 +214,16 @@ app.Views = app.Views || {};
                 this.slideToProject(this.getActiveProjectName());
                 return true;
             }
-
+            app.updateMenu(this.getActiveProjectNumber());
             Backbone.history.fragment = null;
             app.router.navigate(this.getActiveProjectName(), {trigger:true});
 
         },
         enterProjectEvent: function(e){
             e.preventDefault();
+            console.log(e);
             app.getActiveView().enterProjectAnim();
+            app.updateMenu(this.getActiveProjectNumber());
             // app.router.navigate('/' + this.getActiveProjectName() + '/case-study', {trigger: true})
             return false;
         },
@@ -277,6 +241,9 @@ app.Views = app.Views || {};
 
         // Helpers
         // Récupère le nom du projet actif en fonction de currentProject pour le routage 
+        getActiveProjectNumber: function(){
+            return this.currentProject;
+        },
         getActiveProjectName: function(){
             return this.projectMapping[this.currentProject];
         },
