@@ -146,7 +146,8 @@ app.Views = app.Views || {};
         },
 
         enterProject: function(){
-
+            $(".button-menu").removeClass("open");
+            $(".button-menu").addClass("close");
             app.initScrollAnims();
             this.activeAnchor();
 

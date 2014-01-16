@@ -77,6 +77,8 @@ window.app = {
         });
     },
     leaveProject: function(){
+
+        
         $('.closeLayout').css('height', '100%');
         $('.closeLayout').animate({opacity:1},1000, function(){
             $('.border').removeClass('close');
@@ -84,6 +86,9 @@ window.app = {
             app.activeProjectView.leaveProject();
 
             $(this).animate({opacity:0},1000, function(){
+
+                $(".button-menu").removeClass("close");
+                $(".button-menu").addClass("open");
 
                 app.homeView.enableSlider();
                 app.activeCaseStudy = null;
@@ -95,6 +100,11 @@ window.app = {
 
         });
     },
+    /**
+        MENU
+    **/
+    lastActivePage:null,
+    menuOpen:false,
     initOpenCloseMenu: function(){
         var that = this;
         $('.button-menu').on('click', function(e){
@@ -107,13 +117,21 @@ window.app = {
             that.openCloseMenu();
             return false;
         });
+
+        $('body').click(function(e){
+            console.log(that.isMenuOpen());
+            if(that.isMenuOpen()){
+                that.openCloseMenu();
+            }
+        });
+
     },
     openCloseMenu: function(){
-        var that = $('.button-menu');
-
-        if (that.hasClass('open')) {
-            that.removeClass('open');
-            that.addClass('openMenu');
+        var $buttonMenu = $('.button-menu');
+        var that = this;
+        if ($buttonMenu.hasClass('open')) {
+            $buttonMenu.removeClass('open');
+            $buttonMenu.addClass('openMenu');
 
             $('#borderTop').removeClass('close');
             $('#borderTop').addClass('openMenu');
@@ -126,10 +144,10 @@ window.app = {
 
             $('menu').addClass('openMenu');
             $('.wrapper-projects-container').addClass('openMenu');
-
-        } else if (that.hasClass('openMenu')) {
-            that.removeClass('openMenu');
-            that.addClass('open');
+            that.menuOpen = true;
+        } else if ($buttonMenu.hasClass('openMenu')) {
+            $buttonMenu.removeClass('openMenu');
+            $buttonMenu.addClass('open');
 
             $('#borderTop').addClass('close');
             $('#borderTop').removeClass('openMenu');
@@ -142,9 +160,10 @@ window.app = {
 
             $('menu').removeClass('openMenu');
             $('.wrapper-projects-container').removeClass('openMenu');
+            that.menuOpen = false;
         };
+        console.log(this.menuOpen);
     },
-    lastActivePage:null,
     updateMenu: function(pageNumber){
 
         var menus = $("menu nav a");
@@ -162,7 +181,9 @@ window.app = {
             that.openCloseMenu();
         });
     },
-
+    isMenuOpen: function(){
+        return this.menuOpen;
+    }
 };
 
 $(window).load(function() {

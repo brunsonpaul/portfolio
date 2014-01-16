@@ -250,6 +250,9 @@ app.Views = app.Views || {};
 
         enterProject: function(){
             var that = this;
+            
+            $(".button-menu").removeClass("open");
+            $(".button-menu").addClass("close");
 
             app.setCaseStudyActive(true);
             $('#tdfBgContent').css('display', 'none');

@@ -235,6 +235,7 @@ app.Views = app.Views || {};
             this.currentProject = this.getProjectNumberByName(pProject);
             /*
                 TODO PREFIXER
+                 -webkit-transform -moz-transform -ms-transform -o-transform
              */
             this.homeProjectsContainer.css('-webkit-transform','translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)');
         },
