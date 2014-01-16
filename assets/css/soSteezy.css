@@ -1373,11 +1373,11 @@ menu.openMenu {
   -ms-transition: all 1s;
   -khtml-transition: all 1s;
   transition: all 1s;
-  -moz-transition-delay: 9.1s;
-  -webkit-transition-delay: 9.1s;
-  -ms-transition-delay: 9.1s;
-  -khtml-transition-delay: 9.1s;
-  transition-delay: 9.1s;
+  -moz-transition-delay: 8.1s;
+  -webkit-transition-delay: 8.1s;
+  -ms-transition-delay: 8.1s;
+  -khtml-transition-delay: 8.1s;
+  transition-delay: 8.1s;
 }
 #home header .wave2 {
   opacity: 0;
@@ -1386,11 +1386,11 @@ menu.openMenu {
   -ms-transition: all 1s;
   -khtml-transition: all 1s;
   transition: all 1s;
-  -moz-transition-delay: 9.1s;
-  -webkit-transition-delay: 9.1s;
-  -ms-transition-delay: 9.1s;
-  -khtml-transition-delay: 9.1s;
-  transition-delay: 9.1s;
+  -moz-transition-delay: 8.1s;
+  -webkit-transition-delay: 8.1s;
+  -ms-transition-delay: 8.1s;
+  -khtml-transition-delay: 8.1s;
+  transition-delay: 8.1s;
 }
 #home header #header-content {
   position: absolute;
@@ -1518,6 +1518,7 @@ menu.openMenu {
   transition-delay: 4.3s;
   position: absolute;
   left: 0;
+  height: 0;
   top: 0;
   border-left: 1px dotted #b59663;
 }
@@ -1535,6 +1536,7 @@ menu.openMenu {
   position: absolute;
   right: 0;
   top: 0;
+  height: 0;
   border-right: 1px dotted #b59663;
 }
 #home header #header-content #discover span:nth-of-type(4) {
@@ -1592,11 +1594,11 @@ menu.openMenu {
   -ms-transition: all 1s;
   -khtml-transition: all 1s;
   transition: all 1s;
-  -moz-transition-delay: 7.1s;
-  -webkit-transition-delay: 7.1s;
-  -ms-transition-delay: 7.1s;
-  -khtml-transition-delay: 7.1s;
-  transition-delay: 7.1s;
+  -moz-transition-delay: 6.1s;
+  -webkit-transition-delay: 6.1s;
+  -ms-transition-delay: 6.1s;
+  -khtml-transition-delay: 6.1s;
+  transition-delay: 6.1s;
   width: 0;
   display: block;
   color: #b59663;
@@ -1639,11 +1641,11 @@ menu.openMenu {
   -ms-transition: all 1s;
   -khtml-transition: all 1s;
   transition: all 1s;
-  -moz-transition-delay: 8.1s;
-  -webkit-transition-delay: 8.1s;
-  -ms-transition-delay: 8.1s;
-  -khtml-transition-delay: 8.1s;
-  transition-delay: 8.1s;
+  -moz-transition-delay: 7.1s;
+  -webkit-transition-delay: 7.1s;
+  -ms-transition-delay: 7.1s;
+  -khtml-transition-delay: 7.1s;
+  transition-delay: 7.1s;
   margin-top: 35px;
 }
 #home header #header-content #social li {
@@ -1659,11 +1661,11 @@ menu.openMenu {
   -ms-transition: all 1s;
   -khtml-transition: all 1s;
   transition: all 1s;
-  -moz-transition-delay: 8.1s;
-  -webkit-transition-delay: 8.1s;
-  -ms-transition-delay: 8.1s;
-  -khtml-transition-delay: 8.1s;
-  transition-delay: 8.1s;
+  -moz-transition-delay: 7.1s;
+  -webkit-transition-delay: 7.1s;
+  -ms-transition-delay: 7.1s;
+  -khtml-transition-delay: 7.1s;
+  transition-delay: 7.1s;
 }
 .lt-ie9 #home header #header-content #social li {
   display: inline;
@@ -1729,11 +1731,11 @@ menu.openMenu {
   -ms-transition: all 1s;
   -khtml-transition: all 1s;
   transition: all 1s;
-  -moz-transition-delay: 9.1s;
-  -webkit-transition-delay: 9.1s;
-  -ms-transition-delay: 9.1s;
-  -khtml-transition-delay: 9.1s;
-  transition-delay: 9.1s;
+  -moz-transition-delay: 8.1s;
+  -webkit-transition-delay: 8.1s;
+  -ms-transition-delay: 8.1s;
+  -khtml-transition-delay: 8.1s;
+  transition-delay: 8.1s;
   display: block;
   z-index: 9999;
   position: absolute;

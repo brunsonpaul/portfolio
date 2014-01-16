@@ -27,8 +27,8 @@
 
 #home{
 	header { position:absolute; top:0; left:0; bottom:0; right:0; color:@colorGold; text-align:center; background:@colorBlack;
-		.wave1 { opacity:0; .transition(1s); .transitionDelay(9.1s); }
-		.wave2 { opacity:0; .transition(1s); .transitionDelay(9.1s); }
+		.wave1 { opacity:0; .transition(1s); .transitionDelay(8.1s); }
+		.wave2 { opacity:0; .transition(1s); .transitionDelay(8.1s); }
 		#header-content { position:absolute; left:0; right:0; .textUppercase(); 
 			h1 { opacity:0; .transition(1s); .transitionDelay(1s);
 				span { display:none; }
@@ -45,22 +45,22 @@
 				}
 				span { display:block; 
 					&:nth-of-type(1) { .transition(0.8s); .transitionDelay(3.5s); margin:auto; width:0; height:11px; border-top:1px dotted @colorGold; }
-					&:nth-of-type(2) { .transition(0.3s); .transitionDelay(4.3s); position:absolute; left:0; top:0; border-left:1px dotted @colorGold; }
-					&:nth-of-type(3) { .transition(0.3s); .transitionDelay(4.3s); position:absolute; right:0; top:0; border-right:1px dotted @colorGold; }
+					&:nth-of-type(2) { .transition(0.3s); .transitionDelay(4.3s); position:absolute; left:0; height:0; top:0; border-left:1px dotted @colorGold; }
+					&:nth-of-type(3) { .transition(0.3s); .transitionDelay(4.3s); position:absolute; right:0; top:0; height:0; border-right:1px dotted @colorGold; }
 					&:nth-of-type(4) { .transition(0.4s); .transitionDelay(4.7s); position:absolute; height:11px; botom:-1px; left:0; width:0; border-bottom:1px dotted @colorGold; }
 					&:nth-of-type(5) { .transition(0.4s); .transitionDelay(4.7s); position:absolute; height:11px;  botom:-1px; right:0; width:0; border-bottom:1px dotted @colorGold; }
 				}
 			}
 			#contact { .fontSize14(); margin-top:40px; 
 				li { .inline-block(); margin:0 25px;
-					a { .transition(1s); .transitionDelay(7.1s); width:0; display:block; color:@colorGold; position:relative; padding-bottom:5px; 
+					a { .transition(1s); .transitionDelay(6.1s); width:0; display:block; color:@colorGold; position:relative; padding-bottom:5px; 
 						span { opacity:0; .transition(1s); .transitionDelay(6.1s); width:76px; display:block; }
 						&:after { content:''; .transition(0.2s); position:absolute; left:0; bottom:0px; width:100%; height:0px; border-top:1px dotted @colorGold; }
 					}
 				} 
 			}
-			#social { opacity:0; .transition(1s); .transitionDelay(8.1s); margin-top:35px;
-				li { .inline-block(); margin:0 15px; .rotateKit(90deg); .transition(1s); .transitionDelay(8.1s);
+			#social { opacity:0; .transition(1s); .transitionDelay(7.1s); margin-top:35px;
+				li { .inline-block(); margin:0 15px; .rotateKit(90deg); .transition(1s); .transitionDelay(7.1s);
 					a { position:relative; width:36px; height:36px; .rotateKit(45deg);.transition(0.4s); color:@colorGold; .fontSize24(); display:block; border:solid 2px rgba(181,150,99,0.3);  
 						&:hover { border:solid 2px @colorGold; }
 						span { display:none; }
@@ -73,7 +73,7 @@
 				}
 			}
 		}
-		#copyright { opacity:0; .transition(1s); .transitionDelay(9.1s); display:block; z-index:9999; position:absolute; bottom:48px; right:48px;
+		#copyright { opacity:0; .transition(1s); .transitionDelay(8.1s); display:block; z-index:9999; position:absolute; bottom:48px; right:48px;
 			p { .fontSize13(); color:@colorGold; 
 				a { color:@colorGold; 
 					&:hover { text-decoration:underline; }
