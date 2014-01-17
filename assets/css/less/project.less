@@ -167,7 +167,7 @@
 	#date { position:absolute; top:8px; left:8px; bottom:8px; right:8px; z-index:100; display:none;
 		&.active { display: block; }
 		nav { margin:0; padding:0; display:block; border:none;
-			ul { margin:0; padding:0; list-style: none; position: relative; display:block; height:689px;
+			ul { margin:0; padding:0; list-style: none; position: relative; display:block;
 				li { width:5%; mardin:0; padding:0; border:none; position:relative; float:left; 
 					&:after { content:''; opacity:1; .transition(0s); .transitionDelay(0.1s); position:absolute; top:0; left:-1px; display:block; width:3px; height:100%; background:@tdfColor1; }
 					&:nth-of-type(20n+1):after { content:''; display:none; }
@@ -396,7 +396,13 @@
 
 #footer {
 	footer { background:@colorWhite; position:absolute; top:0; left:0; bottom:0; right:0; color:@colorGold; text-align:center;
-		#footerLogo { display:block; position:absolute; width:15%; top:50%; margin-top:-6%; left:50%; margin-left:-10%; }
+		#thanks-infos { position:absolute; top:50%; margin-top:-122px; width:100%; text-align:center; .fontSize14(); .textUppercase(); 
+			a { display:block; width:15%; margin:auto; 
+				#footerLogo { display:block; width:100%; 
+				}
+			}
+			p { line-height:20px; margin-top:2%; }
+		}
 	}
 }
 

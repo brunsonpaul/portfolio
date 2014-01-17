@@ -2083,7 +2083,6 @@ menu.openMenu {
   list-style: none;
   position: relative;
   display: block;
-  height: 689px;
 }
 #tdfProject #date nav ul li {
   width: 5%;
@@ -5476,14 +5475,29 @@ menu.openMenu {
   color: #b59663;
   text-align: center;
 }
-#footer footer #footerLogo {
-  display: block;
+#footer footer #thanks-infos {
   position: absolute;
-  width: 15%;
   top: 50%;
-  margin-top: -6%;
-  left: 50%;
-  margin-left: -10%;
+  margin-top: -122px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+#footer footer #thanks-infos a {
+  display: block;
+  width: 15%;
+  margin: auto;
+}
+#footer footer #thanks-infos a #footerLogo {
+  display: block;
+  width: 100%;
+}
+#footer footer #thanks-infos p {
+  line-height: 20px;
+  margin-top: 2%;
 }
 #pseudoSocialCoke {
   text-align: center;

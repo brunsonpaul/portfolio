@@ -112,7 +112,7 @@ setcookie('cookie', $cookie);
                 !--><li><a href="#the-whole">The Whole</a></li><!--
                 !--><li><a href="#social-coke">Social Coke</a></li><!--
                 !--><li><a href="#partech">Partech</a></li><!--
-                !--><li><a href="#thanks">Footer</a></li>
+                !--><li><a href="#thanks">Thanks</a></li>
             </ul>
         </nav>
     </menu>
@@ -363,7 +363,16 @@ setcookie('cookie', $cookie);
                 <div class="wave2">        
                     <img src="assets/img/identity/wave-2.svg" alt=""> 
                 </div>
-                <img id='footerLogo' src="assets/img/identity/logo-kevin-lagier.svg" alt="logo Kévin Lagier"> 
+                <div id='thanks-infos'>
+                    <a href="mailto:hello@lagier-kevin.com">
+                        <img id='footerLogo' src="assets/img/identity/logo-kevin-lagier.svg" alt="logo Kévin Lagier"> 
+                    </a>
+                    <p>
+                        I'm open to all your web,<br/>
+                        multimedia and print projects suggestions.<br/>
+                        Feel free to leave me a message.
+                    </p>
+                </div>
                 <link rel="author" href="https://plus.google.com/+LagierKévin" />
             </footer>
         </div>
