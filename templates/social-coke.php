@@ -10,6 +10,7 @@
             <li><a href="#socialCoke-madeWith"></a></li>
         </ul>
     </nav>
+    <div id='socialCokePath'></div>
     <article id='socialCoke-introduction'>
         <div class="page-content">
             <ul>

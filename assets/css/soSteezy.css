@@ -5166,11 +5166,7 @@ menu.openMenu {
   transform: rotate(90deg) scale(0, 0);
 }
 #socialCokeProject {
-  background: url('../img/social-coke/social-bg.jpg') no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url('../img/social-coke/social-coke-pattern.jpg') repeat;
 }
 #socialCokeProject #socialCokeBgContent {
   z-index: 10;
@@ -6298,9 +6294,16 @@ menu.openMenu {
   font-style: normal;
 }
 #socialCoke {
-  background: #f0e2c7 url('../img/social-coke/socialBG.png') top center no-repeat;
+  background: #f0e2c7 url('../img/social-coke/social-coke-pattern.png') repeat;
   font-family: 'PFDinDisplayProRegular';
   color: #231f20;
+}
+#socialCoke #socialCokePath {
+  position: absolute;
+  top: 0;
+  background: url('../img/social-coke/social-coke-path.png') top center no-repeat;
+  width: 100%;
+  height: 2933px;
 }
 #socialCoke #socialCoke-introduction {
   padding: 112px 0 100px 0;
