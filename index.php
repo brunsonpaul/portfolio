@@ -112,7 +112,7 @@ setcookie('cookie', $cookie);
                 !--><li><a href="#the-whole">The Whole</a></li><!--
                 !--><li><a href="#social-coke">Social Coke</a></li><!--
                 !--><li><a href="#partech">Partech</a></li><!--
-                !--><li><a href="#thanks">Footer</a></li>
+                !--><li><a href="#thanks">Thanks</a></li>
             </ul>
         </nav>
     </menu>
@@ -363,7 +363,16 @@ setcookie('cookie', $cookie);
                 <div class="wave2">        
                     <img src="assets/img/identity/wave-2.svg" alt=""> 
                 </div>
-                <img id='footerLogo' src="assets/img/identity/logo-kevin-lagier.svg" alt="logo Kévin Lagier"> 
+                <div id='thanks-infos'>
+                    <a href="mailto:hello@lagier-kevin.com">
+                        <img id='footerLogo' src="assets/img/identity/logo-kevin-lagier.svg" alt="logo Kévin Lagier"> 
+                    </a>
+                    <p>
+                        I'm open to all your web,<br/>
+                        multimedia and print projects suggestions.<br/>
+                        Feel free to leave me a message.
+                    </p>
+                </div>
                 <link rel="author" href="https://plus.google.com/+LagierKévin" />
             </footer>
         </div>
@@ -406,16 +415,53 @@ setcookie('cookie', $cookie);
     </script>
 
     <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-29119748-1']);
-      _gaq.push(['_trackPageview']);
+      ga('create', 'UA-29119748-2', 'lagier-kevin.com');
+      ga('send', 'pageview');
+        
+        $(document).ready(function() {
+            $('#contact li:nth-of-type(1) a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Adresse mail home');
+            });
+            $('#contact li:nth-of-type(2) a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Resume');
+            });
+            $('#social li:nth-of-type(1) a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Twitter');
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+            });
+            $('#social li:nth-of-type(2) a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Behance');
+
+            });
+            $('#social li:nth-of-type(3) a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Dribble');
+
+            });
+            $('#social li:nth-of-type(4) a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Linkedin');
+
+            });
+            $('#thanks-infos a').click(function(){
+               ga('send', 'event', 'Boutons contact', 'Click', 'Adresse mail footer');
+
+            });
+            $('#theWholeProject .enter-button').click(function(){
+               ga('send', 'event', 'Case study', 'Click', 'The Whole case study');
+
+            });
+            $('#partechProject .enter-button').click(function(){
+               ga('send', 'event', 'Case study', 'Click', 'Partech case study');
+
+            });
+        });
+        $(document).ready(function() {
+            
+        });
 
     </script>
 
