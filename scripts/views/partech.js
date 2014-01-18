@@ -18,6 +18,8 @@ app.Views = app.Views || {};
         dragCursorPartech: $(".dragCursorPartech"),
         partechScreen: $('#partechScreenImg'),
 
+        anchorsPositions:[],
+        anchorsName:"partech",
         dragScreen: function(){
             var that = this;
             var dragWidth = Math.round(that.dragCursorPartech.width());
@@ -64,67 +66,17 @@ app.Views = app.Views || {};
                 });
             });
         },
-
-        activeAnchor: function(){
-            var article2 = ($("#partech-client").offset().top)-1;
-            var article3 = ($("#partech-dragScreen").offset().top)-1;
-            var article4 = ($("#partech-sketch").offset().top)-1;
-            var article5 = ($("#partech-mobile").offset().top)-1;
-            var article6 = ($("#partech-ui").offset().top)-1;
-
-            $(window).scroll(function(){
-
-                if(($(document).scrollTop() == 0)&&($(document).scrollTop() < article2)){
-                    $(".pagination.partech ul li:nth-of-type(1) a").addClass("active");
-                    $(".pagination.partech ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article2)&&($(document).scrollTop() < article3)) {
-                    $(".pagination.partech ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(2) a").addClass("active");
-                    $(".pagination.partech ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article3)&&($(document).scrollTop() < article4)) {
-                    $(".pagination.partech ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(3) a").addClass("active");
-                    $(".pagination.partech ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article4)&&($(document).scrollTop() < article5)) {
-                    $(".pagination.partech ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(4) a").addClass("active");
-                    $(".pagination.partech ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article5)&&($(document).scrollTop() < article6)) {
-                    $(".pagination.partech ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(5) a").addClass("active");
-                    $(".pagination.partech ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if($(document).scrollTop() >article6) {
-                    $(".pagination.partech ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.partech ul li:nth-of-type(6) a").addClass("active");
-                }
-            });
+        refreshAnchors: function(){
+            this.anchorsPositions = 
+            [
+                ($("#partech-introduction").offset().top)-1
+                ,($("#partech-client").offset().top)-1
+                ,($("#partech-dragScreen").offset().top)-1
+                ,($("#partech-sketch").offset().top)-1
+                ,($("#partech-mobile").offset().top)-1
+                ,($("#partech-ui").offset().top)-1
+            ];
         },
-
         initialize: function(){
             $("#partechProject .enter-button").on("click", this.enterProjectAnim);
         },
@@ -180,8 +132,8 @@ app.Views = app.Views || {};
             app.setCaseStudyActive(true);
             app.initScrollAnims();
             this.dragScreen();
-            this.activeAnchor();
-
+            this.refreshAnchors();
+            app.refreshAnchors();
         },
         getName: function(){
             return this.name;

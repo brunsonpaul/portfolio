@@ -221,7 +221,6 @@ app.Views = app.Views || {};
         },
         enterProjectEvent: function(e){
             e.preventDefault();
-            console.log(e);
             app.getActiveView().enterProjectAnim();
             app.updateMenu(this.getActiveProjectNumber());
             // app.router.navigate('/' + this.getActiveProjectName() + '/case-study', {trigger: true})
@@ -233,6 +232,7 @@ app.Views = app.Views || {};
         },
         slideToProject: function(pProject){
             this.currentProject = this.getProjectNumberByName(pProject);
+            app.updateMenu(this.getActiveProjectNumber());
             /*
                 TODO PREFIXER
                  -webkit-transform -moz-transform -ms-transform -o-transform
