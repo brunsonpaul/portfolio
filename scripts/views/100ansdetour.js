@@ -207,6 +207,10 @@ app.Views = app.Views || {};
             this.dataIncrease();
             this.refreshAnchors();
             app.refreshAnchors();
+            
+            // Analytics
+            ga('send', 'event', 'Case study', 'Click', '100ans de tour case study');
+
         },
         refreshAnchors: function(){
             this.anchorsPositions = 

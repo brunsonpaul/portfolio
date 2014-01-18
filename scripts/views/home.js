@@ -265,6 +265,12 @@ app.Views = app.Views || {};
         enableSlider: function(e){
             this.homeProjectsContainer.addClass('dragCursor');
             this.isSliderActive = true;
+        },
+        disableTransition: function(){
+            this.homeProjectsContainer.addClass('no-transition');
+        },
+        enableTransition: function(){
+            this.homeProjectsContainer.removeClass('no-transition');
         }
 	});
 })();

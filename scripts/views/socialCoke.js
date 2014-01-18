@@ -23,7 +23,7 @@ app.Views = app.Views || {};
         initialize: function(){
 
             this.initEnterProjectAction();
-            $('.transition-social-coke').css({top:app.homeView.windowHeight, height:app.homeView.windowHeight*4});
+            $('.transition-social-coke').css({marginTop:app.homeView.windowHeight, height:app.homeView.windowHeight*4+"px"});
             app.homeView.homeProjectsContainer.css("overflow","scroll");
 
         },
@@ -43,7 +43,10 @@ app.Views = app.Views || {};
                 that.widthPseudo = that.$pseudoSocialCoke.width();
                 that.$pseudoSocialCoke.css({left:"50%", marginLeft: - that.widthPseudo/2 + "px"})
 
-                that.enterProjectAnim();
+                $(this).fadeOut(1000,function(){
+                    that.enterProjectAnim();
+                })
+
 
                 return false;
 
@@ -70,16 +73,18 @@ app.Views = app.Views || {};
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.homeView.homeProjectsContainer.css("overflow","scroll");
+            app.homeView.disableTransition();
             app.homeView.homeProjectsContainer.animate({
-                top: -app.homeView.windowHeight*5},
-                8000, function() {
+                top: -app.homeView.windowHeight*2},
+                2000, function() {
+                app.homeView.enableTransition();
                 // that.caseStudyElem.css("display","block");
                 /* stuff to do after animation is complete */
             });
-            this.caseStudyElem.css({display:"block", marginTop:app.homeView.windowHeight*5});
+            this.caseStudyElem.css({display:"block", marginTop:app.homeView.windowHeight*2});
             that.caseStudyElem.animate({
                 marginTop: "0px"},
-                8000, function() {
+                2000, function() {
                 /* stuff to do after animation is complete */
             });
         },
@@ -90,6 +95,10 @@ app.Views = app.Views || {};
             app.initScrollAnims();
             this.refreshAnchors();
             app.refreshAnchors();
+
+            // Analytics
+            ga('send', 'event', 'Case study', 'Click', 'Social case study');
+
         },
 
         enterFromRouter: function(){
