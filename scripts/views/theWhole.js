@@ -11,7 +11,8 @@ app.Views = app.Views || {};
         caseStudyElem: $('section[data-case-study="the-whole"]'),
         title: 'The Whole',
         name: 'the-whole',
-        
+        anchorsPositions:[],
+        anchorsName:"theWhole",
         initialize: function(){
 
         },
@@ -42,50 +43,15 @@ app.Views = app.Views || {};
                 that.enterProject();
             });
         },
-        activeAnchor: function(){
-            var article2 = ($("#theWhole-concept").offset().top)-1;
-            var article3 = ($("#theWhole-interface").offset().top)-1;
-            var article4 = ($("#theWhole-element").offset().top)-1;
-            var article5 = ($("#theWhole-madeWith").offset().top)-1;
-
-            $(window).scroll(function(){
-
-                if(($(document).scrollTop() == 0)&&($(document).scrollTop() < article2)){
-                    $(".pagination.theWhole ul li:nth-of-type(1) a").addClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(5) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article2)&&($(document).scrollTop() < article3)) {
-                    $(".pagination.theWhole ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(2) a").addClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(5) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article3)&&($(document).scrollTop() < article4)) {
-                    $(".pagination.theWhole ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(3) a").addClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(5) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article4)&&($(document).scrollTop() < article5)) {
-                    $(".pagination.theWhole ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(4) a").addClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(5) a").removeClass("active");
-                }
-                else if($(document).scrollTop() >article5) {
-                    $(".pagination.theWhole ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.theWhole ul li:nth-of-type(5) a").addClass("active");
-                }
-            });
+        refreshAnchors: function(){
+            this.anchorsPositions = 
+            [
+                ($("#theWhole-introduction").offset().top)-1
+                ,($("#theWhole-concept").offset().top)-1
+                ,($("#theWhole-interface").offset().top)-1
+                ,($("#theWhole-element").offset().top)-1
+                ,($("#theWhole-madeWith").offset().top)-1
+            ];
         },
         leaveProject: function(){
 
@@ -111,8 +77,8 @@ app.Views = app.Views || {};
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
             app.initScrollAnims();
-            this.activeAnchor();
-
+            this.refreshAnchors();
+            app.refreshAnchors();
         },
         getName: function(){
             return this.name;

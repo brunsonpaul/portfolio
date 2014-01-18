@@ -12,7 +12,8 @@ app.Views = app.Views || {};
         title: '100ans de Tour',
         name: '100ansdetour',
         mousePositionX:0,
-
+        anchorsPositions:[],
+        anchorsName:"tdf",
         initialize: function(){
 
             var that = this;
@@ -112,67 +113,6 @@ app.Views = app.Views || {};
                 });
             });
         },
-
-        activeAnchor: function(){
-            var article2 = ($("#tdf-context").offset().top)-1;
-            var article3 = ($("#tdf-data").offset().top)-1;
-            var article4 = ($("#tdf-design").offset().top)-1;
-            var article5 = ($("#tdf-thanks").offset().top)-1;
-            var article6 = ($("#tdf-other").offset().top)-1;
-
-            $(window).scroll(function(){
-
-                if(($(document).scrollTop() == 0)&&($(document).scrollTop() < article2)){
-                    $(".pagination.tdf ul li:nth-of-type(1) a").addClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article2)&&($(document).scrollTop() < article3)) {
-                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(2) a").addClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article3)&&($(document).scrollTop() < article4)) {
-                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(3) a").addClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article4)&&($(document).scrollTop() < article5)) {
-                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(4) a").addClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if(($(document).scrollTop() >article5)&&($(document).scrollTop() < article6)) {
-                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(5) a").addClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(6) a").removeClass("active");
-                }
-                else if($(document).scrollTop() >article6) {
-                    $(".pagination.tdf ul li:nth-of-type(1) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(2) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(3) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(4) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(5) a").removeClass("active");
-                    $(".pagination.tdf ul li:nth-of-type(6) a").addClass("active");
-                }
-            });
-        },
-
         enterProjectAnim: function(){
             var that = this;
             $('#date').addClass('active');
@@ -265,9 +205,20 @@ app.Views = app.Views || {};
 
             app.initScrollAnims();
             this.dataIncrease();
-            this.activeAnchor();
+            this.refreshAnchors();
+            app.refreshAnchors();
         },
-
+        refreshAnchors: function(){
+            this.anchorsPositions = 
+            [
+                ($("#tdf-introduction").offset().top)-1
+                ,($("#tdf-context").offset().top)-1
+                ,($("#tdf-data").offset().top)-1
+                ,($("#tdf-design").offset().top)-1
+                ,($("#tdf-thanks").offset().top)-1
+                ,($("#tdf-other").offset().top)-1
+            ];
+        },
         leaveProject: function(){
             var that = this;
 
