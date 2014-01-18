@@ -40,11 +40,11 @@
                 <img src='./assets/img/social-coke/social-coke-link-hover.svg' alt='Social Coke Link hover'>
             </a>
         </div>
-        <img class='goutte1' src='./assets/img/social-coke/goutte1.png' alt=''>
-        <img class='goutte2' src='./assets/img/social-coke/goutte2.png' alt=''>
-        <img class='goutte3' src='./assets/img/social-coke/goutte3.png' alt=''>
-        <img class='goutte4' src='./assets/img/social-coke/goutte4.png' alt=''>
-        <img class='goutte5' src='./assets/img/social-coke/goutte5.png' alt=''>
+        <div id='goutte1'></div>
+        <div id='goutte2'></div>
+        <div id='goutte3'></div>
+        <div id='goutte4'></div>
+        <div id='goutte5'></div>
     </article>
 
     <article id='socialCoke-context'>
