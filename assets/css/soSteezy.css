@@ -6381,7 +6381,11 @@ menu.openMenu {
 #socialCoke #socialCoke-introduction .page-content a:hover img:nth-of-type(2) {
   opacity: 1;
 }
-#socialCoke #socialCoke-introduction .goutte1 {
+#socialCoke #socialCoke-introduction #goutte1 {
+  width: 10px;
+  height: 18px;
+  background: url('../img/social-coke/goutte.png') no-repeat;
+  background-position: 0 0;
   top: -10%;
   margin-left: 5%;
   position: absolute;
@@ -6392,7 +6396,11 @@ menu.openMenu {
   -webkit-animation: goutte 4s 3s infinite linear;
   animation: goutte 4s 3s infinite linear;
 }
-#socialCoke #socialCoke-introduction .goutte2 {
+#socialCoke #socialCoke-introduction #goutte2 {
+  width: 17px;
+  height: 28px;
+  background: url('../img/social-coke/goutte.png') no-repeat;
+  background-position: -10px 0;
   top: -10%;
   margin-left: -17%;
   position: absolute;
@@ -6403,7 +6411,11 @@ menu.openMenu {
   -webkit-animation: goutte 3.6s 4.3s infinite linear;
   animation: goutte 3.6s 4.3s infinite linear;
 }
-#socialCoke #socialCoke-introduction .goutte3 {
+#socialCoke #socialCoke-introduction #goutte3 {
+  width: 28px;
+  height: 46px;
+  background: url('../img/social-coke/goutte.png') no-repeat;
+  background-position: -27px 0;
   top: -10%;
   margin-left: 10%;
   position: absolute;
@@ -6414,7 +6426,11 @@ menu.openMenu {
   -webkit-animation: goutte 4.4s 6s infinite linear;
   animation: goutte 4.4s 6s infinite linear;
 }
-#socialCoke #socialCoke-introduction .goutte4 {
+#socialCoke #socialCoke-introduction #goutte4 {
+  width: 34px;
+  height: 57px;
+  background: url('../img/social-coke/goutte.png') no-repeat;
+  background-position: -55px 0;
   top: -10%;
   margin-left: 22%;
   position: absolute;
@@ -6425,7 +6441,11 @@ menu.openMenu {
   -webkit-animation: goutte 3.8s 2.7s infinite linear;
   animation: goutte 3.8s 2.7s infinite linear;
 }
-#socialCoke #socialCoke-introduction .goutte5 {
+#socialCoke #socialCoke-introduction #goutte5 {
+  width: 41px;
+  height: 68px;
+  background: url('../img/social-coke/goutte.png') no-repeat;
+  background-position: -89px 0;
   top: -10%;
   margin-left: -12%;
   position: absolute;
