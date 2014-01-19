@@ -18,11 +18,11 @@
                 </li><!--
                 !--><li>
                     <span>Client :</span>
-                    The Whole
+                    Hétic
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Design
+                    Graphic design
                 </li>
             </ul>
             <h1>

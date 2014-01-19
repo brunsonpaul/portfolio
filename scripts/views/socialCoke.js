@@ -23,8 +23,8 @@ app.Views = app.Views || {};
         initialize: function(){
 
             this.initEnterProjectAction();
-            $('.transition-social-coke').css({marginTop:app.homeView.windowHeight, height:app.homeView.windowHeight*4+"px"});
-            app.homeView.homeProjectsContainer.css("overflow","scroll");
+            // $('.transition-social-coke').css({height:app.homeView.windowHeight*4+"px"});
+            // app.homeView.homeProjectsContainer.css("overflow","scroll");
 
         },
         initEnterProjectAction: function(){

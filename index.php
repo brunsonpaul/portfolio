@@ -22,22 +22,22 @@ setcookie('cookie', $cookie);
 
     <meta name="author" content="Kévin LAGIER" />
 
-    <meta name="description" content="Kevin Lagier, graphic design, art direction" />
-    <meta name="keywords" content="web, digital, design, graphic" />
+    <meta name="description" content="Kevin Lagier Portfolio, graphic design, art direction" />
+    <meta name="keywords" content="web, digital, design, graphic, hetic, student, étudiant" />
     <link rel="icon" type="image/x-icon" href="assets/img/identity/favicon.png" />
     <link rel="stylesheet" href="assets/css/soSteezy.css" type="text/css" media="screen" />
 
     <script src="scripts/views/pace.js"></script>
 
     <meta property="og:title" content="Kévin Lagier Portfolio" />
-    <meta property="og:description" content="Kevin Lagier, graphic design, art direction" />
+    <meta property="og:description" content="Kevin Lagier Portfolio, graphic design, art direction" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://lagier-kevin.com" />
     <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.svg" />
     <meta property="og:locale" content="en_EN" />
 
     <script>
-        var host = "http://www.lagier-kevin.com/beta/";
+        var host = "http://www.lagier-kevin.com/";
           if((navigator.userAgent.match(/MSI/g))){
             window.location = host+"sorry-IE.php";
           }
@@ -135,7 +135,7 @@ setcookie('cookie', $cookie);
                     <p>
                         I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
                         I'm looking for an Art Director internship<br/>
-                        From June to November 2014 in London.
+                        From August to December 2014.
                     </p>
                     <div id="discover">
                         <span></span>
@@ -332,9 +332,6 @@ setcookie('cookie', $cookie);
                    <img src='assets/img/social-coke/wizz-bg.png' alt="">
                 </div>
             </div>
-            <div class="transition-social-coke" style="width:100%; background:blue; color:white; position:absolute;">
-                Test de transition ....
-            </div>
         </div>
 
         <div id='partechProject' class="project" data-project="partech">
@@ -391,7 +388,6 @@ setcookie('cookie', $cookie);
         <?php require('./templates/partech.php') ?>
 
     </div>
-
     <!-- build:js scripts/vendor.js -->
     <script src="scripts/vendor/jquery/jquery.js"></script>
     <script src="scripts/vendor/underscore/underscore.js"></script>
