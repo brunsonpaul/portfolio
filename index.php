@@ -375,7 +375,6 @@ setcookie('cookie', $cookie);
         </div>
     </div>
 </div>
-    <div id="pseudoSocialCoke"></div>
 
     <div class="case-study-container">
 
@@ -408,6 +407,23 @@ setcookie('cookie', $cookie);
     <script src="scripts/jquery.parallax.js"></script>
     <script>
         $('#parallax').parallax();
+    </script>
+
+    <script type="text/javascript" src="scripts/vendor/skrollr.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+    var s = skrollr.init({
+        edgeStrategy: 'set',
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
     </script>
 
     <script type="text/javascript">

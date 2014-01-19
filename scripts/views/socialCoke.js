@@ -23,6 +23,7 @@ app.Views = app.Views || {};
         initialize: function(){
 
             this.initEnterProjectAction();
+
         },
         initEnterProjectAction: function(){
 
@@ -36,9 +37,9 @@ app.Views = app.Views || {};
                 pseudoText = that.$inputText.val();
 
                 that.$pseudoSocialCoke.text(pseudoText);
-                that.$pseudoSocialCoke.css({zIndex: 1000, position:"absolute",top: that.pseudoPositions.top + 26 + "px"});
-                that.widthPseudo = that.$pseudoSocialCoke.width();
-                that.$pseudoSocialCoke.css({left:"50%", marginLeft: - that.widthPseudo/2 + "px"})
+                // that.$pseudoSocialCoke.css({zIndex: 1000, position:"absolute",top: that.pseudoPositions.top + 26 + "px"});
+                // that.widthPseudo = that.$pseudoSocialCoke.width();
+                // that.$pseudoSocialCoke.css({left:"50%", marginLeft: - that.widthPseudo/2 + "px"})
 
                 $(this).fadeOut(1000,function(){
                     that.enterProjectAnim();
