@@ -1,5 +1,5 @@
+<div id="transition-social-coke"></div>
 <section id='socialCoke' data-case-study="social-coke">
-    <div id="transition-social-coke"></div>
     <div id="pseudoSocialCoke"
         data-0="top:0px; margin-left:-342px; opacity:0; transform:rotate(0deg); "
         data-10="top:130px; margin-left:-342px; opacity:1;"
