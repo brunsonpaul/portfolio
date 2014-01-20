@@ -28,10 +28,10 @@ app.Routers = app.Routers || {};
 		caseStudyHandler:function(project){
 			if(app.isCaseStudyActive()){
 				// TODO
-				return false;
+				app.activeProjectView.leaveProject();
 			}
 			if(app.activeProjectView){
-				if(app.activeProjectView.name == project && !app.activeCaseStudy){
+				if(app.activeProjectView.name == project){
 					app.setCaseStudyActive(true);
 					app.activeProjectView.enterProjectAnim();
 					return true;
