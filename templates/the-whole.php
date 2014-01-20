@@ -22,7 +22,7 @@
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Graphic design
+                    Design
                 </li>
             </ul>
             <h1>

@@ -30,15 +30,15 @@
             <ul>
                 <li>
                     <span>Date :</span>
-                    Decembre 2012
+                    December 2012
                 </li><!--
                 !--><li>
                     <span>Client :</span>
-                    Coca Cola
+                    Hétic
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Design - Intégration
+                    Design - Html - Css
                 </li>
             </ul>
             <h1>

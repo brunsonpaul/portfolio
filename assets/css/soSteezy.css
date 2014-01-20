@@ -1769,7 +1769,7 @@ menu.openMenu {
 @media screen and (min-height: 705px) {
   #header-content {
     top: 50%;
-    margin-top: -218px;
+    margin-top: -226px;
   }
 }
 #home.entered header .wave1 {
