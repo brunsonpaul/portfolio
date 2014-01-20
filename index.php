@@ -283,11 +283,11 @@ setcookie('cookie', $cookie);
                     <img src='./assets/img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
                 </h1>
                 <p>
-                    Ou comment transformer l’écriture sociale<br/>
-                    en message publicitaire.
+                    Or how to turn social writing<br/>
+                    into advertising messages
                 </p>
                 <form method="get" id="socialCokeForm">
-                    <input type="text" name="pseudo" placeholder="Entrez votre pseudo" />
+                    <input type="text" name="pseudo" placeholder="Enter your nickname" />
                     <input type="submit" value="GO" />
                 </form>
             </div>

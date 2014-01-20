@@ -116,9 +116,6 @@ app.Views = app.Views || {};
         enterProjectAnim: function(){
             var that = this;
             $('#date').addClass('active');
-
-            $('body').removeClass('userSelect');
-
             $('.border').removeClass('close');
             $('.border').addClass('open');
             this.animateDate(that.enterProject, true);
@@ -193,10 +190,9 @@ app.Views = app.Views || {};
 
         enterProject: function(){
             var that = this;
-            $("body").removeClass('userSelect');
             $(".button-menu").removeClass("open");
             $(".button-menu").addClass("close");
-
+            $('body').removeClass('userSelect');
             app.setCaseStudyActive(true);
             $('#tdfBgContent').css('display', 'none');
             this.caseStudyElem.css('display', 'block');
@@ -235,7 +231,7 @@ app.Views = app.Views || {};
 
             that.velo.css('margin-left', 0 + "px");
             that.dragCursor.css('margin-left', 0 + "px");
-
+            $('body').addClass('userSelect');
         },
 
         enterFromRouter: function(){
