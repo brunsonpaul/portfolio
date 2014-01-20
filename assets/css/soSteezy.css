@@ -1116,7 +1116,7 @@ section .page-content {
   position: fixed;
   right: 38px;
   top: 50%;
-  z-index: 5;
+  z-index: 99;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -6310,7 +6310,7 @@ menu.openMenu {
   color: #231f20;
 }
 #socialCoke #socialCokePath {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   top: -500px;
   background: url('../img/social-coke/social-coke-path.png') top center no-repeat;
@@ -6369,6 +6369,7 @@ menu.openMenu {
   width: 600px;
 }
 #socialCoke #socialCoke-introduction .page-content a {
+  z-index: 99;
   position: relative;
   display: block;
   width: 180px;
@@ -6693,6 +6694,7 @@ menu.openMenu {
   margin: 40px auto;
 }
 #socialCoke #socialCoke-idea .page-content a {
+  z-index: 99;
   position: relative;
   margin: 60px auto 0 auto;
   display: block;
@@ -6849,10 +6851,24 @@ menu.openMenu {
 #socialCoke #socialCoke-universe .page-content p:nth-of-type(2n-1) {
   margin-right: 150px;
 }
-#socialCoke #socialCoke-universe .page-content img {
+#socialCoke #socialCoke-universe .page-content #bottle-oiseaux {
+  position: relative;
+  z-index: 99;
+}
+#socialCoke #socialCoke-universe .page-content #bottle-oiseaux img:nth-of-type(1) {
   display: block;
   margin: 60px auto 0 auto;
   width: 500px;
+}
+#socialCoke #socialCoke-universe .page-content #bottle-oiseaux img:nth-of-type(2) {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -77px;
+  width: 115px;
+  height: 119px;
+  bottom: 71px;
+  z-index: 99;
 }
 #socialCoke #socialCoke-bottle {
   padding: 60px 0 0 0;
@@ -9593,4 +9609,3 @@ menu.openMenu {
   font-size: 18px;
   font-size: 1.125rem;
 }
->>>>>>> 51ff164b0fa2f67bf0703c6eb76068a9ce3dce9d

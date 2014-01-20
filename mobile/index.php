@@ -16,7 +16,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/img/identity/favicon.png">
 
-    <link rel="stylesheet" href="../assets/css/soSteezy-mobile.css" type="text/css" media="screen" x/>
+    <link rel="stylesheet" href="../assets/css/soSteezy-mobile.css" type="text/css" media="screen"/>
 </head>
 
 <body>
