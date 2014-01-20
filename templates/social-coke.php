@@ -43,15 +43,15 @@
             </ul>
             <h1>
                 Social Coke
-                <img src='./assets/img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
+                <img src='assets/img/social-coke/social-coke-logo.svg' alt='Social Coke Logo'>
             </h1>
             <p>
                 Social Coke est une (fausse) campagne digitale à l’échelle internationale pour la marque Coca Cola, basée sur un concept innovant de site web collaboratif avec Twitter.
                 Le site plonge ses internautes dans une expérience riche, captivante, amusante où ils pourront découvrir différents modules à base de jeux ou de contenus dynamiques.
             </p>
             <a href='http://lagier-kevin.com/social-coke/' target='_blank'>                    
-                <img src='./assets/img/social-coke/social-coke-link.svg' alt='Social Coke Link'>
-                <img src='./assets/img/social-coke/social-coke-link-hover.svg' alt='Social Coke Link hover'>
+                <img src='assets/img/social-coke/social-coke-link.svg' alt='Social Coke Link'>
+                <img src='assets/img/social-coke/social-coke-link-hover.svg' alt='Social Coke Link hover'>
             </a>
         </div>
         <div id='goutte1'></div>
@@ -62,10 +62,10 @@
     </article>
 
     <article id='socialCoke-context'>
-        <img id='cloud1' src='./assets/img/social-coke/cloud-2.svg' alt=''>
-        <img id='cloud2' src='./assets/img/social-coke/cloud.svg' alt=''>
-        <img id='cloud3' src='./assets/img/social-coke/cloud-3.svg' alt=''>
-        <img id='cloud4' src='./assets/img/social-coke/cloud-4.svg' alt=''>
+        <img id='cloud1' src='assets/img/social-coke/cloud-2.svg' alt=''>
+        <img id='cloud2' src='assets/img/social-coke/cloud.svg' alt=''>
+        <img id='cloud3' src='assets/img/social-coke/cloud-3.svg' alt=''>
+        <img id='cloud4' src='assets/img/social-coke/cloud-4.svg' alt=''>
         <div class="page-content">
             <h2>The Context</h2>
             <h3>Coca Cola, une marque active et créative</h3>
@@ -77,7 +77,7 @@
                 Aujourd’hui Coca Cola cherche à poursuivre cette tradition de campagnes innovantes et créatives en prenant en compte les nouveaux enjeux de 2012 et en particulier le canal internet.<br/>
                 La marque cherche en particulier à s’adresser à une cible jeune, sensible aux innovations digitales, pour renforcer sa notoriété et son image de marque innovante.                
             </p>
-            <img id='coca-cola-logo' src='./assets/img/social-coke/coca-cola.svg' alt='Coca Cola logo'>   
+            <img id='coca-cola-logo' src='assets/img/social-coke/coca-cola.svg' alt='Coca Cola logo'>   
              <p>
                 <em>Une marque active et créative en terme de campagne de communication :</em>
                 <b>•</b><!-- !--><span>Des thèmes récurrents dans la communication Coca Cola : l’émerveillement, le rêve, le merveilleux</span><br/>
@@ -101,8 +101,8 @@
                 Le site propose aux internautes de découvrir un vaste univers très illustré. Au cœur de cet univers se trouve une bouteille dont les formes se dessinent peu à peu avec les noms des internautes qui tweet avec le # de la campagne (#socialcoke). Le but premier de cette page est donc d’inciter les internautes à parler de la marque. Ils ont par ailleurs la possibilité de le faire directement depuis la page d’accueil.
             </p>
             <a href='#'>
-                <img src='./assets/img/social-coke/btn-tweet.svg' alt=''>
-                <img src='./assets/img/social-coke/btn-tweet-hover.svg' alt=''>
+                <img src='assets/img/social-coke/btn-tweet.svg' alt=''>
+                <img src='assets/img/social-coke/btn-tweet-hover.svg' alt=''>
             </a>
         </div>
     </article>
@@ -132,7 +132,10 @@
             !--><p>
                 L’univers est volontairement très illustré, sans cadre défini pour laisser une très grande liberté à la navigation de l’internaute.<br/>Un soin particulier a été accordé aux détails dans les illustrations, les animations et tous autres rendus visuels qui permettent d’attiser, la curiosité et l’enthousiasme du visiteur.            
             </p>
-            <img src='./assets/img/social-coke/oiseaux.svg' alt=''> 
+            <div id='bottle-oiseaux'>
+                <img src='assets/img/social-coke/oiseaux.svg' alt=''> 
+                <img src='assets/img/social-coke/tweet-pseudo.png' alt=''> 
+            </div>
         </div>                  
     </article>
 
@@ -203,7 +206,7 @@
                 </li>
             </ul>
         </div>
-        <img id='poisson' src='./assets/img/social-coke/poisson.png' alt=''>                  
+        <img id='poisson' src='assets/img/social-coke/poisson.png' alt=''>                  
     </article>
             
     <footer>
