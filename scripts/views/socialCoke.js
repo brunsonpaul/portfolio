@@ -71,9 +71,6 @@ app.Views = app.Views || {};
             var that = this;
             this.$socialCokeForm.fadeOut("slow");
             $('#date').addClass('active');
-            
-            $('body').removeClass('userSelect');
-
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.homeView.homeProjectsContainer.css("overflow","scroll");
@@ -97,9 +94,9 @@ app.Views = app.Views || {};
         },
 
         enterProject: function(){
+            $('body').removeClass('userSelect');
             $(".button-menu").removeClass("open");
             $(".button-menu").addClass("close");
-            $("body").removeClass('userSelect');
             app.setCaseStudyActive(true);
             app.initScrollAnims();
             this.refreshAnchors();
@@ -114,6 +111,7 @@ app.Views = app.Views || {};
             app.homeView.homeProjectsContainer.css({'display':'block','top':'0px'});
             this.$socialCokeForm.fadeIn("slow");
             that.caseStudyElem.css('display', 'none');
+            $('body').addClass('userSelect');
 
         },
         enterFromRouter: function(){

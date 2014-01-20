@@ -26,9 +26,6 @@ app.Views = app.Views || {};
             app.homeView.disableSlider();
 
             $("#theWholeProject").addClass("closed");
-            
-            $('body').removeClass('userSelect');
-
             $('.border').removeClass('close');
             $('.border').addClass('open');
 
@@ -80,7 +77,7 @@ app.Views = app.Views || {};
             $(".button-menu").removeClass("open");
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
-            $("body").removeClass('userSelect');
+            $('body').removeClass('userSelect');
             app.initScrollAnims();
             this.refreshAnchors();
             app.refreshAnchors();

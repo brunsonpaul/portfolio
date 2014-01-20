@@ -86,9 +86,6 @@ app.Views = app.Views || {};
 
             //Desactive le slider
             app.homeView.disableSlider();
-            
-            $('body').removeClass('userSelect');
-
             $('.border').removeClass('close');
             $('.border').addClass('open');
 
@@ -130,6 +127,7 @@ app.Views = app.Views || {};
 
         },
         enterProject: function(){
+            $('body').removeClass('userSelect');
             $(".button-menu").removeClass("open");
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
