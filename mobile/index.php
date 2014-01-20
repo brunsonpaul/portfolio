@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Kévin Lagier</title>
+    <title>Kévin Lagier's Portfolio - mobile</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta name="author" content="Kévin LAGIER" />
-    <meta name="keywords" content="Kévin LAGIER, portfolio, web, design, Hetic, graphic design, webdesign, websites, communication, project management, ergonomics, UX, responsive, digital" />
-    <meta name="description" content="Personal portfolio Kévin LAGIER, French Graphic Designer From Annecy, student at Hetic in Paris" />   
+    <meta name="description" content="Kevin Lagier's Portfolio, graphic design, art direction, student at Hétic" />
+    <meta name="keywords" content="kevin, lagier, portfolio, hetic, student, étudiant, web, digital, design, graphic" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/identity/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/soSteezy-mobile.css" type="text/css" media="screen"  />
+    <link rel="stylesheet" href="../assets/css/soSteezy-mobile.css" type="text/css" media="screen" />
 </head>
 
 <body>
