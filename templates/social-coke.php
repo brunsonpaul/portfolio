@@ -1,5 +1,18 @@
-<div id="transition-social-coke"></div>
 <section id='socialCoke' data-case-study="social-coke">
+    <div id="transition-social-coke"></div>
+    <div id="pseudoSocialCoke"
+        data-0="top:0px; margin-left:-342px; opacity:0; transform:rotate(0deg); "
+        data-10="top:60px; margin-left:-342px; opacity:1;"
+        data-310="top:360px; margin-left:50px; transform:rotate(360deg);"
+        data-775="top:835px; margin-left:-293px; transform:rotate(720deg);"
+        data-1635="top:1685px; margin-left:-360px; transform:rotate(1080deg);"
+        data-1940="top:1990px; margin-left:277px; transform:rotate(1440deg);"
+        data-2285="top:2325px; margin-left:-470px; transform:rotate(1800deg);"
+        data-2779="top:2829px; margin-left:-100px; transform:rotate(21600deg);"
+        data-3150="top:3200px; transform:rotate(2520deg);"
+    >
+    </div>
+
     <nav class="pagination socialCoke">
         <ul>
             <li><a class='active' href="#socialCoke-introduction"></a></li>
@@ -17,15 +30,15 @@
             <ul>
                 <li>
                     <span>Date :</span>
-                    Decembre 2012
+                    December 2012
                 </li><!--
                 !--><li>
                     <span>Client :</span>
-                    Coca Cola
+                    Hétic
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Design - Intégration
+                    Design - Html - Css
                 </li>
             </ul>
             <h1>

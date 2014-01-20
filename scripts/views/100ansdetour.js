@@ -116,6 +116,9 @@ app.Views = app.Views || {};
         enterProjectAnim: function(){
             var that = this;
             $('#date').addClass('active');
+
+            $('body').removeClass('userSelect');
+
             $('.border').removeClass('close');
             $('.border').addClass('open');
             this.animateDate(that.enterProject, true);
@@ -232,6 +235,8 @@ app.Views = app.Views || {};
 
             that.velo.css('margin-left', 0 + "px");
             that.dragCursor.css('margin-left', 0 + "px");
+            
+            $('body').addClass('userSelect');
 
         },
 

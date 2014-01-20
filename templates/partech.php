@@ -22,7 +22,7 @@
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Design - Integration
+                    Design - Development
                 </li>
             </ul>
             <h1>

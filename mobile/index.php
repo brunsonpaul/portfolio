@@ -33,8 +33,9 @@
         </h1>
         <p>
             I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
-            I'm looking for an Art Director internship</br>
-            From June to November 2014 in London.
+            I'm looking for an Art Director internship<br/>
+            From August to December 2014 and<br/>
+            a block release training
         </p>
         <div id="discover">To see more, use a desktop</div>
         <ul id="contact">

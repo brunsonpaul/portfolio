@@ -16,14 +16,14 @@ setcookie('cookie', $cookie);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Kévin Lagier Portfolio</title>
+    <title>Kévin Lagier's Portfolio</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta name="author" content="Kévin LAGIER" />
 
-    <meta name="description" content="Kevin Lagier Portfolio, graphic design, art direction" />
-    <meta name="keywords" content="web, digital, design, graphic, hetic, student, étudiant" />
+    <meta name="description" content="Kevin Lagier's Portfolio, graphic design, art direction, student at Hétic" />
+    <meta name="keywords" content="kevin, lagier, portfolio, hetic, student, étudiant, web, digital, design, graphic" />
     <link rel="icon" type="image/x-icon" href="assets/img/identity/favicon.png" />
     <link rel="stylesheet" href="assets/css/soSteezy.css" type="text/css" media="screen" />
 
@@ -33,7 +33,7 @@ setcookie('cookie', $cookie);
     <meta property="og:description" content="Kevin Lagier Portfolio, graphic design, art direction" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://lagier-kevin.com" />
-    <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.svg" />
+    <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.png" />
     <meta property="og:locale" content="en_EN" />
 
     <script>
@@ -135,7 +135,8 @@ setcookie('cookie', $cookie);
                     <p>
                         I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
                         I'm looking for an Art Director internship<br/>
-                        From August to December 2014.
+                        From August to December 2014 and<br/>
+                        a block release training
                     </p>
                     <div id="discover">
                         <span></span>
@@ -183,7 +184,7 @@ setcookie('cookie', $cookie);
                     </ul>
                 </div>
                 <div id="copyright">
-                    <p>© 2013 Kévin Lagier. Made with <a href='http://florentin-monteil.com' target='_blank'>Florentin Monteil</a></p>
+                    <p>© 2014 Kévin Lagier. Made with <a href='http://florentin-monteil.com' target='_blank'>Florentin Monteil</a></p>
                 </div>
             </header>
         </div>
@@ -375,7 +376,6 @@ setcookie('cookie', $cookie);
         </div>
     </div>
 </div>
-    <div id="pseudoSocialCoke"></div>
 
     <div class="case-study-container">
 
@@ -408,6 +408,23 @@ setcookie('cookie', $cookie);
     <script src="scripts/jquery.parallax.js"></script>
     <script>
         $('#parallax').parallax();
+    </script>
+
+    <script type="text/javascript" src="scripts/vendor/skrollr.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+    var s = skrollr.init({
+        edgeStrategy: 'set',
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
     </script>
 
     <script type="text/javascript">

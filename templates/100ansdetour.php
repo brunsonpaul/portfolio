@@ -22,7 +22,7 @@
                 </li><!--
                 !--><li>
                     <span>Role :</span>
-                    Design - HTML - CSS
+                    Design - Html - Css
                 </li>
             </ul>
             <h1>

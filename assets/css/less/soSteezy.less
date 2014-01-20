@@ -3,7 +3,7 @@
 body, html { min-width:950px; .fontSize16(); background:@colorBlack; margin: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; transition: opacity 400ms; font-family: Helvetica, Arial, sans-serif; .fontRegular(); }
 html { height: 100%; }
 
-.userSelect { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+.userSelect { overflow:hidden; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
 .dragCursor { 
 	&:hover { cursor:url('../img/identity/drag.png') 20 11, move; }

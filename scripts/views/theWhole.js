@@ -26,6 +26,8 @@ app.Views = app.Views || {};
             app.homeView.disableSlider();
 
             $("#theWholeProject").addClass("closed");
+            
+            $('body').removeClass('userSelect');
 
             $('.border').removeClass('close');
             $('.border').addClass('open');
@@ -60,6 +62,8 @@ app.Views = app.Views || {};
             app.homeView.homeProjectsContainer.css('display', 'block');
 
             this.caseStudyElem.css('display', 'none');
+            
+            $('body').addClass('userSelect');
 
         },
         enterFromRouter: function(){

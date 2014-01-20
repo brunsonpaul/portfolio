@@ -32,7 +32,7 @@
 #transition-social-coke { position:fixed; z-index:-1; top:0; left:0; bottom:0; right:0; background:@socialBG1  url('../img/social-coke/social-coke-pattern.jpg') repeat; }
 
 #socialCoke { .dinRegular(); color:@socialBG2;
-	#socialCokePath { position:absolute; top:-500px; background:url('../img/social-coke/social-coke-path.png') top center no-repeat; width:100%; height:2933px; }
+	#socialCokePath { z-index:1; position:absolute; top:-500px; background:url('../img/social-coke/social-coke-path.png') top center no-repeat; width:100%; height:3429px; }
 	#socialCoke-introduction { padding:112px 0 100px 0; position:relative; overflow-y:hidden;
 		.page-content { text-align:center; 
 			ul { margin:auto;  
@@ -64,7 +64,7 @@
 		@keyframes goutte { 0% { top:-10%; } 45% { top:110%; } 100% { top:110%; } }
 	}	
 
-	#socialCoke-context { background:@socialBG2; padding:100px 0; position:relative; overflow-x:hidden; .dinThin();
+	#socialCoke-context { z-index:10; background:@socialBG2; padding:100px 0; position:relative; overflow-x:hidden; .dinThin();
 		.page-content {
 			h2 { .lavanderiaRegular(); text-align:center; color:@socialBG1; .fontSize50(); }
 			h3 { .dinThinItalic(); text-align:center; color:@socialBG1; .fontSize18(); line-height:1.3em; }
