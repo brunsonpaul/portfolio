@@ -24,7 +24,10 @@ setcookie('cookie', $cookie);
 
     <meta name="description" content="Kevin Lagier's Portfolio, graphic design, art direction, student at Hétic" />
     <meta name="keywords" content="kevin, lagier, portfolio, hetic, student, étudiant, web, digital, design, graphic" />
-    <link rel="icon" type="image/x-icon" href="assets/img/identity/favicon.png" />
+
+    <!-- Favicon !-->
+    <link rel="icon" type="image/png" href="assets/img/identity/favicon.png">
+
     <link rel="stylesheet" href="assets/css/soSteezy.css" type="text/css" media="screen" />
 
     <script src="scripts/views/pace.js"></script>

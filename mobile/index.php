@@ -14,8 +14,9 @@
     <meta name="description" content="Personal portfolio Kévin LAGIER, French Graphic Designer From Annecy, student at Hetic in Paris" />   
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/identity/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/soSteezy-mobile.css" type="text/css" media="screen"  />
+    <link rel="icon" type="image/png" href="../assets/img/identity/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/soSteezy-mobile.css" type="text/css" media="screen" x/>
 </head>
 
 <body>

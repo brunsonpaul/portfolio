@@ -1,0 +1,147 @@
+/**************** Reset ****************/
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+hr {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+em,
+strong,
+th {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+fieldset,
+img,
+hr {
+  border: none;
+}
+caption,
+th {
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'mostra-nuova-bold';
+  src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot');
+  src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_bold-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_bold-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_bold-webfont.svg#mostra_nuovabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mostra-nuova-light';
+  src: url('font/mostra-nuova/mostra_nuova_light-webfont.eot');
+  src: url('font/mostra-nuova/mostra_nuova_light-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_light-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_light-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_light-webfont.svg#mostra_nuovalight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mostra-nuova-regular';
+  src: url('font/mostra-nuova/mostra_nuova_regular-webfont.eot');
+  src: url('font/mostra-nuova/mostra_nuova_regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_regular-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_regular-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_regular-webfont.svg#mostra_nuova_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mostra-nuova-thin';
+  src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot');
+  src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.svg#mostra_nuovathin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  background: #b59663;
+  color: #111111;
+  text-align: center;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'mostra-nuova-regular';
+}
+#header-404 {
+  position: absolute;
+  top: 50%;
+  margin-top: -151px;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+#header-404 h1 span {
+  display: none;
+}
+#header-404 h1 img {
+  display: block;
+  width: 250px;
+  margin: auto;
+}
+#header-404 p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 30px auto 10px auto;
+}
+#header-404 a {
+  border: 1px dotted #111111;
+  color: #111111;
+  width: 260px;
+  padding: 11px 0;
+  display: block;
+  margin: auto;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -khtml-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#header-404 a:hover {
+  color: #b59663;
+  background: #111111;
+  border: 1px dotted #b59663;
+}
