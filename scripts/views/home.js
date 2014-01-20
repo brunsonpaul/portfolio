@@ -236,9 +236,8 @@ app.Views = app.Views || {};
         slideWithKeyboard: function(e, that){
 
             var keyCode = e.keyCode;
-            alert(app.isCaseStudyActive());
+            
             if(app.isCaseStudyActive()){
-                alert(app.isCaseStudyActive());
                 return true;
             }
             
