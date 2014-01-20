@@ -79,6 +79,7 @@ app.Views = app.Views || {};
             app.homeView.homeProjectsContainer.css("overflow","scroll");
             app.homeView.disableTransition();
             app.router.navigate('/'+this.name+'/case-study', {trigger: false});
+            that.enterProject();
             app.homeView.homeProjectsContainer.animate({
                 top: -app.homeView.windowHeight*2},
                 2000, function() {
@@ -90,6 +91,7 @@ app.Views = app.Views || {};
             that.caseStudyElem.animate({
                 marginTop: "0px"},
                 2000, function() {
+                
                 /* stuff to do after animation is complete */
             });
         },
@@ -109,7 +111,8 @@ app.Views = app.Views || {};
         leaveProject: function(){
             var that = this;
 
-            app.homeView.homeProjectsContainer.css('display', 'block');
+            app.homeView.homeProjectsContainer.css({'display':'block','top':'0px'});
+            this.$socialCokeForm.fadeIn("slow");
             that.caseStudyElem.css('display', 'none');
 
         },
@@ -122,6 +125,8 @@ app.Views = app.Views || {};
             app.homeView.homeProjectsContainer.css('display', 'none');
 
         },
-
+        getName: function(){
+            return this.name;
+        }
     });
 })();
