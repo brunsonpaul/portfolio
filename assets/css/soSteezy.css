@@ -6353,8 +6353,10 @@ menu.openMenu {
   text-transform: uppercase;
 }
 #socialCoke #socialCoke-introduction .page-content h1 {
+  position: relative;
   margin-top: 50px;
   text-indent: -9999px;
+  z-index: 99;
 }
 #socialCoke #socialCoke-introduction .page-content h1 img {
   display: block;
