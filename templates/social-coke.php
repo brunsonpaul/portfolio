@@ -99,7 +99,7 @@
             <p>
                 The website offers users to discover a vast universe highly illustrated. At the heart of this universe, a bottle is getting drawn gradually thanks to the names of users who tweet with the hashtag #socialcoke. The first goal of this page is to encourage people to talk about the brand on Twitter. They also have the opportunity to do it directly from the homepage.
             </p>
-            <a href='#'>
+            <a href="https://twitter.com/intent/tweet?&original_referer=http%3A%2F%2F100ansdetour.fr%2F&text=Kévin%20Lagier's%20Portfolio%20http%3A%2F%2Flagier-kevin.com%20@LagierKevin" target="_blank">
                 <img src='assets/img/social-coke/btn-tweet.svg' alt=''>
                 <img src='assets/img/social-coke/btn-tweet-hover.svg' alt=''>
             </a>
