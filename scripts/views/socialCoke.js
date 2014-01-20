@@ -67,6 +67,9 @@ app.Views = app.Views || {};
             var that = this;
             this.$socialCokeForm.fadeOut("slow");
             $('#date').addClass('active');
+            
+            $('body').removeClass('userSelect');
+
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.homeView.homeProjectsContainer.css("overflow","scroll");
