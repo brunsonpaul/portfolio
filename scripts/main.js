@@ -90,9 +90,10 @@ window.app = {
 
                 $(".button-menu").removeClass("close");
                 $(".button-menu").addClass("open");
-                app.homeView.homeProjectsContainer.css({'top':'0px'});
+                app.homeView.homeProjectsContainer.css({'top':''});
                 app.homeView.enableSlider();
                 app.activeCaseStudy = null;
+                $('body').addClass("userSelect");
                 $('.closeLayout').css({height:'0%'});
                 $('.border').removeClass('open');
                 $('.border').addClass('close');
@@ -198,7 +199,7 @@ window.app = {
                 } else if($(document).scrollTop() == app.activeProjectView.caseStudyElem.height() - app.homeView.windowHeight ) {
 
                     $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").removeClass("active");
-                    
+
                 } else {
 
                     $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").removeClass("active");
