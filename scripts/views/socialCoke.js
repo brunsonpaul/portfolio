@@ -10,6 +10,7 @@ app.Views = app.Views || {};
         caseStudyContainer: $('.case-study-container'),
         caseStudyElem: $('section[data-case-study="social-coke"]'),
         title: 'Social Coke',
+        name: 'social-coke',
         model: null,
         pseudoPositions:{},
         $pseudoSocialCoke: $("#pseudoSocialCoke"),
@@ -33,13 +34,16 @@ app.Views = app.Views || {};
 
             this.pseudoPositions.top = that.$inputText.offset().top;
             this.$socialCokeForm.submit(function(e){
+
                 e.preventDefault();
-                pseudoText = that.$inputText.val();
+
+                if(that.$inputText.val()){
+                    pseudoText = "@"+that.$inputText.val();
+                } else {
+                    pseudoText = "@pseudo";
+                }
 
                 that.$pseudoSocialCoke.text(pseudoText);
-                // that.$pseudoSocialCoke.css({zIndex: 1000, position:"absolute",top: that.pseudoPositions.top + 26 + "px"});
-                // that.widthPseudo = that.$pseudoSocialCoke.width();
-                // that.$pseudoSocialCoke.css({left:"50%", marginLeft: - that.widthPseudo/2 + "px"})
 
                 $(this).fadeOut(1000,function(){
                     that.enterProjectAnim();
@@ -74,6 +78,7 @@ app.Views = app.Views || {};
             $('.border').addClass('open');
             app.homeView.homeProjectsContainer.css("overflow","scroll");
             app.homeView.disableTransition();
+            app.router.navigate('/'+this.name+'/case-study', {trigger: false});
             app.homeView.homeProjectsContainer.animate({
                 top: -app.homeView.windowHeight*2},
                 2000, function() {
@@ -92,20 +97,27 @@ app.Views = app.Views || {};
         enterProject: function(){
             $(".button-menu").removeClass("open");
             $(".button-menu").addClass("close");
+            $("body").removeClass('userSelect');
+            app.setCaseStudyActive(true);
             app.initScrollAnims();
             this.refreshAnchors();
             app.refreshAnchors();
-
             // Analytics
             ga('send', 'event', 'Case study', 'Click', 'Social case study');
 
         },
+        leaveProject: function(){
+            var that = this;
 
+            app.homeView.homeProjectsContainer.css('display', 'block');
+            that.caseStudyElem.css('display', 'none');
+
+        },
         enterFromRouter: function(){
 
             $('.border').removeClass('close');
             $('.border').addClass('open');
-            this.caseStudyElem.css({display:"block"});
+            this.caseStudyElem.css({display:"block", marginTop:app.homeView.windowHeight*2});
             this.enterProject();
             app.homeView.homeProjectsContainer.css('display', 'none');
 

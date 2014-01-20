@@ -32,6 +32,7 @@ app.Routers = app.Routers || {};
 			}
 			if(app.activeProjectView){
 				if(app.activeProjectView.name == project && !app.activeCaseStudy){
+					app.setCaseStudyActive(true);
 					app.activeProjectView.enterProjectAnim();
 					return true;
 				}

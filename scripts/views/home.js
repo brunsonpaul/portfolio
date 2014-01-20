@@ -15,12 +15,13 @@ app.Views = app.Views || {};
     	intervalDragProject: null,
         events: {
             "click .enter-button" : "enterProjectEvent",
+            "onkeydown document": "slideWithKeyboard"
         },
-		initialize: function(){
+        initialize: function(){
 
-			// Initialise les projets
-			this.setProjectsSize();
-			this.initProjectsHome();
+            // Initialise les projets
+            this.setProjectsSize();
+            this.initProjectsHome();
             this.intervalDragProject = this.windowWidth/5;
 
             var that = this;
@@ -30,7 +31,15 @@ app.Views = app.Views || {};
             $('.enter-button').on("click", function(e){
                 that.enterProjectEvent(e);
             });
-            
+            $('body').bind("keyup", function(e){
+                that.slideWithKeyboard(e,that);
+            });
+/*            $(document).on("onkeydown", function(e){
+                console.log(e);
+                that.slideWithKeyboard(e, that);
+            });*/
+            // document.onkeydown = this.slideWithKeyboard(this);
+
         },
 
         scrollTo: function(){
@@ -214,10 +223,35 @@ app.Views = app.Views || {};
                 this.slideToProject(this.getActiveProjectName());
                 return true;
             }
+            this.slideToCurrentProject();
+
+
+        },
+        slideToCurrentProject: function(){
+            this.slideToProject(this.getActiveProjectName());
             app.updateMenu(this.getActiveProjectNumber());
             Backbone.history.fragment = null;
             app.router.navigate(this.getActiveProjectName(), {trigger:true});
+        },
+        slideWithKeyboard: function(e, that){
 
+            var keyCode = e.keyCode;
+            alert(app.isCaseStudyActive());
+            if(app.isCaseStudyActive()){
+                alert(app.isCaseStudyActive());
+                return true;
+            }
+            
+            if(keyCode == 37 && this.currentProject != 0){
+                that.currentProject--;
+            }
+            if(keyCode == 39 && this.currentProject != this.projectMapping.length-1){
+                that.currentProject++;
+            }
+            if(keyCode == 13 && app.activeProjectView){
+                app.activeProjectView.enterProjectAnim();
+            }
+            that.slideToCurrentProject();
         },
         enterProjectEvent: function(e){
             e.preventDefault();
