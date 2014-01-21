@@ -1311,6 +1311,15 @@ menu.openMenu {
   -khtml-transition: all 1.2s;
   transition: all 1.2s;
 }
+.wrapper-projects-container #wrapper-project-filter {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
 .wrapper-projects-container .project {
   -webkit-transition: opacity 1.2s;
   -moz-transition: opacity 1.2s;
@@ -1320,6 +1329,9 @@ menu.openMenu {
 }
 .wrapper-projects-container.openMenu {
   margin-top: 75px;
+}
+.wrapper-projects-container.openMenu #wrapper-project-filter {
+  display: block;
 }
 .wrapper-projects-container.openMenu .project {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3)";
