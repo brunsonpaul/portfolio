@@ -34,11 +34,6 @@ app.Views = app.Views || {};
             $('body').bind("keyup", function(e){
                 that.slideWithKeyboard(e,that);
             });
-/*            $(document).on("onkeydown", function(e){
-                console.log(e);
-                that.slideWithKeyboard(e, that);
-            });*/
-            // document.onkeydown = this.slideWithKeyboard(this);
 
         },
 
@@ -146,13 +141,15 @@ app.Views = app.Views || {};
         // Event du resize du navigateur
         windowResized: function(){
 
+            this.disableTransition();
             this.windowWidth = $(window).width();
             this.windowHeight = $(window).height();
             this.intervalDragProject = this.windowWidth/5;
             // TODO resize horizontal
-            // this.homeProjectsContainer.css('margin-left', -this.currentProject * this.windowWidth);
             this.setProjectsSize();
-
+            var position = -this.currentProject*this.windowWidth;
+            this.homeProjectsContainer.css('-webkit-transform','translate3d('+ position +'px, 0px, 0px)');
+            this.enableTransition();
         },
 
         //------------- Slider Home ----------------//
@@ -247,7 +244,7 @@ app.Views = app.Views || {};
             if(keyCode == 39 && this.currentProject != this.projectMapping.length-1){
                 that.currentProject++;
             }
-            if(keyCode == 13 && app.activeProjectView){
+            if(keyCode == 13 && app.activeProjectView && (app.activeProjectView.getName() != 'social-coke')){
                 app.activeProjectView.enterProjectAnim();
             }
             that.slideToCurrentProject();

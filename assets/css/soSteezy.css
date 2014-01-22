@@ -6298,6 +6298,7 @@ menu.openMenu {
   font-style: normal;
 }
 #transition-social-coke {
+  display: none;
   position: fixed;
   z-index: -2;
   top: 0;

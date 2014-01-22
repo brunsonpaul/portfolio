@@ -14,7 +14,7 @@ app.Views = app.Views || {};
         model: null,
         pseudoPositions:{},
         $pseudoSocialCoke: $("#pseudoSocialCoke"),
-        widthPseudo: 0,
+        widthPseudo: 12,
         $socialCokeForm: $("#socialCokeForm"),
         $inputText: $("#socialCokeForm").find('input[type="text"]'),
 
@@ -34,16 +34,15 @@ app.Views = app.Views || {};
 
             this.pseudoPositions.top = that.$inputText.offset().top;
             this.$socialCokeForm.submit(function(e){
-
                 e.preventDefault();
-
                 if(that.$inputText.val()){
                     pseudoText = "@"+that.$inputText.val();
                 } else {
                     pseudoText = "@pseudo";
                 }
 
-                that.$pseudoSocialCoke.text(pseudoText);
+                that.$pseudoSocialCoke.empty();
+                that.$pseudoSocialCoke.html(pseudoText);
 
                 $(this).fadeOut(1000,function(){
                     that.enterProjectAnim();
@@ -54,7 +53,7 @@ app.Views = app.Views || {};
             });
 
         },
-        refreshAnchors: function(){
+        refreshAnchors: function(fromRouter){
             this.anchorsPositions = 
             [
                 ($("#socialCoke-introduction").offset().top)-1
@@ -70,10 +69,11 @@ app.Views = app.Views || {};
 
             var that = this;
             this.$socialCokeForm.fadeOut("slow");
-            
+
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.homeView.homeProjectsContainer.css("overflow","scroll");
+            $("#transition-social-coke").css({'display':'block'});
             app.homeView.disableTransition();
             app.router.navigate('/'+this.name+'/case-study', {trigger: false});
             that.enterProject();
@@ -88,7 +88,7 @@ app.Views = app.Views || {};
             that.caseStudyElem.animate({
                 marginTop: "0px"},
                 2000, function() {
-                
+                that.refreshAnchors();
                 /* stuff to do after animation is complete */
             });
         },
@@ -107,8 +107,8 @@ app.Views = app.Views || {};
         },
         leaveProject: function(){
             var that = this;
-
-            app.homeView.homeProjectsContainer.css({'display':'block','top':'0px'});
+            $("#transition-social-coke").css({'display':'none'});
+            app.homeView.homeProjectsContainer.css({'display':'block'});
             this.$socialCokeForm.fadeIn("slow");
             that.caseStudyElem.css('display', 'none');
             $('body').addClass('userSelect');
@@ -118,10 +118,13 @@ app.Views = app.Views || {};
 
             $('.border').removeClass('close');
             $('.border').addClass('open');
+            this.$pseudoSocialCoke.html("@pseudo");
             this.caseStudyElem.css({display:"block", marginTop:app.homeView.windowHeight*2});
             this.enterProject();
             app.homeView.homeProjectsContainer.css('display', 'none');
-
+            $("#transition-social-coke").css("display","block");
+            this.caseStudyElem.css({marginTop:0});
+            this.refreshAnchors();
         },
         getName: function(){
             return this.name;

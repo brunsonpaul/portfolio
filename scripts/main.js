@@ -78,19 +78,22 @@ window.app = {
     },
     leaveProject: function(){
 
-        $('body').animate({scrollTop:0}, 2000);
 
         $('.closeLayout').css('height', '100%');
         $('.closeLayout').animate({opacity:1},1000, function(){
+
+            
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.activeProjectView.leaveProject();
-
+            app.homeView.homeProjectsContainer.css({'top':''});
+            app.homeView.slideToProject(app.activeProjectView.getName());
+            
             $(this).animate({opacity:0},1000, function(){
 
                 $(".button-menu").removeClass("close");
                 $(".button-menu").addClass("open");
-                app.homeView.homeProjectsContainer.css({'top':''});
+                
                 app.homeView.enableSlider();
                 app.activeCaseStudy = null;
                 $('body').addClass("userSelect");
@@ -194,15 +197,15 @@ window.app = {
             _.each(that.activeProjectView.anchorsPositions, function(anchorPosition, key){
 
                 if(($(document).scrollTop() > anchorPosition)){
-                    $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").addClass("active");
+                    $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").addClass("active loaded");
 
                 } else if($(document).scrollTop() == app.activeProjectView.caseStudyElem.height() - app.homeView.windowHeight ) {
 
-                    $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").removeClass("active");
+                    $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").addClass("active loaded");
 
                 } else {
 
-                    $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").removeClass("active");
+                    $(".pagination." + that.activeProjectView.anchorsName +  " ul li:nth-of-type("+ (key+1) +") a").removeClass("active loaded");
                 }
 
             });
