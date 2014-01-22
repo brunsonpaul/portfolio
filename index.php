@@ -121,6 +121,7 @@ setcookie('cookie', $cookie);
     </menu>
 
 <div class="wrapper-projects-container" >
+    <div id="wrapper-project-filter"></div>
     <div class="projects-container dragCursor">
         <div id='home' class="project active" data-project="about">
             <header>
