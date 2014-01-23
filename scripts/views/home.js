@@ -147,7 +147,13 @@ app.Views = app.Views || {};
             this.intervalDragProject = this.windowWidth/5;
             this.setProjectsSize();
             var position = -this.currentProject*this.windowWidth;
-            this.homeProjectsContainer.css('-webkit-transform','translate3d('+ position +'px, 0px, 0px)');
+            this.homeProjectsContainer.css({
+                '-webkit-transform':'translate3d('+ position +'px, 0px, 0px)',
+                '-moz-transform':'translate3d('+ position +'px, 0px, 0px)',
+                '-o-transform':'translate3d('+ position +'px, 0px, 0px)',
+                '-ms-transform':'translate3d('+ position +'px, 0px, 0px)',
+                'transform':'translate3d('+ position +'px, 0px, 0px)',
+            });
             this.enableTransition();
         },
 
@@ -272,7 +278,15 @@ app.Views = app.Views || {};
                 TODO PREFIXER
                  -webkit-transform -moz-transform -ms-transform -o-transform
              */
-            this.homeProjectsContainer.css('-webkit-transform','translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)');
+            this.homeProjectsContainer.css(
+                {
+                    '-webkit-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    '-moz-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    '-o-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    '-ms-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    'transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                }
+            );
         },
 
         // Helpers
