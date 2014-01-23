@@ -145,10 +145,15 @@ app.Views = app.Views || {};
             this.windowWidth = $(window).width();
             this.windowHeight = $(window).height();
             this.intervalDragProject = this.windowWidth/5;
-            // TODO resize horizontal
             this.setProjectsSize();
             var position = -this.currentProject*this.windowWidth;
-            this.homeProjectsContainer.css('-webkit-transform','translate3d('+ position +'px, 0px, 0px)');
+            this.homeProjectsContainer.css({
+                '-webkit-transform':'translate3d('+ position +'px, 0px, 0px)',
+                '-moz-transform':'translate3d('+ position +'px, 0px, 0px)',
+                '-o-transform':'translate3d('+ position +'px, 0px, 0px)',
+                '-ms-transform':'translate3d('+ position +'px, 0px, 0px)',
+                'transform':'translate3d('+ position +'px, 0px, 0px)',
+            });
             this.enableTransition();
         },
 
@@ -165,7 +170,7 @@ app.Views = app.Views || {};
             // Prevent le drag des images et des a
             this.homeProjectsContainer.find('img').on('dragstart',function(){return false;});
             this.homeProjectsContainer.find('a').on('dragstart',function(){return false;});
-
+            this.homeProjectsContainer.css('width','12000px');
             // Mapping des projets
             _.each($(this.homeProjectClass), function(project){
                 that.projectMapping.push($(project).attr('data-project'));
@@ -190,7 +195,13 @@ app.Views = app.Views || {};
                 $(document).on('mousemove', function(e){
 
                     var position = -that.currentProject*that.windowWidth + e.clientX-that.mousePositionX;
-                    that.homeProjectsContainer.css('-webkit-transform','translate3d('+ position +'px, 0px, 0px)');
+                    that.homeProjectsContainer.css({
+                        '-webkit-transform':'translate3d('+ position +'px, 0px, 0px)',
+                        '-moz-transform':'translate3d('+ position +'px, 0px, 0px)',
+                        '-o-transform':'translate3d('+ position +'px, 0px, 0px)',
+                        '-ms-transform':'translate3d('+ position +'px, 0px, 0px)',
+                        'transform':'translate3d('+ position +'px, 0px, 0px)',
+                    });
 
                 });
 
@@ -267,7 +278,15 @@ app.Views = app.Views || {};
                 TODO PREFIXER
                  -webkit-transform -moz-transform -ms-transform -o-transform
              */
-            this.homeProjectsContainer.css('-webkit-transform','translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)');
+            this.homeProjectsContainer.css(
+                {
+                    '-webkit-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    '-moz-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    '-o-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    '-ms-transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                    'transform':'translate3d('+ -this.currentProject * this.windowWidth +'px, 0px, 0px)',
+                }
+            );
         },
 
         // Helpers

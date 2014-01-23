@@ -78,7 +78,7 @@ window.app = {
     },
     leaveProject: function(){
 
-
+        var that = this;
         $('.closeLayout').css('height', '100%');
         $('.closeLayout').animate({opacity:1},1000, function(){
 
@@ -86,16 +86,16 @@ window.app = {
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.activeProjectView.leaveProject();
-            app.homeView.homeProjectsContainer.css({'top':''});
+            app.homeView.homeProjectsContainer.css({'top':"0px"});
             app.homeView.slideToProject(app.activeProjectView.getName());
             
             $(this).animate({opacity:0},1000, function(){
 
                 $(".button-menu").removeClass("close");
                 $(".button-menu").addClass("open");
-                
+                that.activeProjectView.caseStudyElem.find('.animation-on-scroll').removeClass('active');
                 app.homeView.enableSlider();
-                app.activeCaseStudy = null;
+                app.activeCaseStudy = false;
                 $('body').addClass("userSelect");
                 $('.closeLayout').css({height:'0%'});
                 $('.border').removeClass('open');

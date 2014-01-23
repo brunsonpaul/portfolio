@@ -57,6 +57,7 @@ app.Views = app.Views || {};
             $("#theWholeProject").removeClass("closed");
             $("#theWhole-introduction").removeClass("active");
             app.homeView.homeProjectsContainer.css('display', 'block');
+            $(".pagination.tdf").removeClass("active");
 
             this.caseStudyElem.css('display', 'none');
             
@@ -78,6 +79,7 @@ app.Views = app.Views || {};
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
             $('body').removeClass('userSelect');
+            $(".pagination.tdf").addClass("active");
             app.initScrollAnims();
             this.refreshAnchors();
             app.refreshAnchors();

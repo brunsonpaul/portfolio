@@ -111,6 +111,7 @@ app.Views = app.Views || {};
 
             $("#partech-introduction").removeClass("active");
             app.homeView.homeProjectsContainer.css('display', 'block');
+            $(".pagination.partech").removeClass("active");
 
             that.caseStudyElem.css('display', 'none');
             $('body').addClass('userSelect');
@@ -132,6 +133,7 @@ app.Views = app.Views || {};
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
             $("body").removeClass('userSelect');
+            $(".pagination.partech").addClass("active");
             app.initScrollAnims();
             this.dragScreen();
             this.refreshAnchors();
