@@ -51,7 +51,7 @@
                 Doté d’un outil performant en conception, Logiciel 3D, calculs en éléments finis. Nos atouts sont fondés sur le sérieux, la motivation, l’expérience et l’écoute des clients.<br/>
                 Partech s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
             </p>   
-            <img class='animation-on-scroll' data-start-margin='50' src='./assets/img/partech/back-rack-sketch.png' alt="Back Rack">
+            <img class='animation-on-scroll' data-start-margin='50' src='./assets/img/partech/single-rack.svg' alt="Single Rack">
         </div>
     </article>
 
@@ -76,7 +76,12 @@
 
     <article id="partech-sketch" class="animation-on-scroll" data-start-margin='200'>
         <div class="page-content">
-            <img src='./assets/img/partech/spad-rail-sketch.png' alt="Sketch Spad Rail">
+            <img src='./assets/img/partech/spad-rail-1.svg' alt="Sketch Spad Rail 1">
+            <img src='./assets/img/partech/spad-rail-2.svg' alt="Sketch Spad Rail 2">
+            <img src='./assets/img/partech/spad-rail-3.svg' alt="Sketch Spad Rail 3">
+            <img src='./assets/img/partech/spad-rail-4.svg' alt="Sketch Spad Rail 4">
+            <img src='./assets/img/partech/spad-rail-5.svg' alt="Sketch Spad Rail 5">
+            <img src='./assets/img/partech/spad-rail-6.svg' alt="Sketch Spad Rail 6">
         </div>
     </article>
 
