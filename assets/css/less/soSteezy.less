@@ -156,9 +156,16 @@ section { min-width:980px; margin:0; border:none;
 	.page-content { width:950px; margin:auto; }
 }
 
-.pagination { position:fixed; right:38px; top:50%; z-index:99; list-style: none; margin:0; padding:0;
-	li { text-align: center; padding:0; 
-		a { padding:15px 0; width: 4px; height: 4px; display: block; 
+.pagination { position:fixed; right:38px; top:50%; z-index:99; list-style: none; margin:0; padding:0; opacity:0; .transition(0.4s); 
+	li { text-align: center; padding:0; opacity:0; .transition(0.4s); 
+			&:nth-of-type(1) { opacity:1; }
+			&:nth-of-type(2) { .transitionDelay(5.1s); }
+			&:nth-of-type(3) { .transitionDelay(1.2s); }
+			&:nth-of-type(4) { .transitionDelay(1.3s); }
+			&:nth-of-type(5) { .transitionDelay(1.4s); }
+			&:nth-of-type(6) { .transitionDelay(1.5s); }
+			&:nth-of-type(7) { .transitionDelay(1.6s); }
+			a { padding:15px 0; width: 4px; height: 4px; display:block; 
 			&:before{ content: ''; position: absolute; width: 4px; height: 4px; background:@colorGold; .opacity(0.3); border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
 			&.active:before { .opacity(1); }
 			&:hover:before { .opacity(1); }
@@ -168,6 +175,10 @@ section { min-width:980px; margin:0; border:none;
 		&:before { -webkit-animation: lightPagination 0.8s 0 linear; -moz-animation: lightPagination 0.8s 0 linear; -o-animation: lightPagination 0.8s 0 linear; animation: lightPagination 0.8s 0 linear; }
 	}
 }
+.pagination.active { 
+	li { opacity:1; }
+}
+
 .pagination.tdf { margin-top:-103px; }
 .pagination.theWhole { margin-top:-86px; }
 .pagination.socialCoke { margin-top:-120px; }
