@@ -30,9 +30,9 @@ app.Views = app.Views || {};
             $('.border').addClass('open');
 
             app.homeView.disableSlider();
-            $("#borderLeft").bind("webkitTransitionEnd", function(e){
+            $("#borderLeft").bind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd", function(e){
 
-                $(this).unbind("webkitTransitionEnd");
+                $(this).unbind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd");
 
                 app.router.navigate('/'+that.name+'/case-study', {trigger: false});
 

@@ -90,9 +90,9 @@ app.Views = app.Views || {};
                         that.dragCursor.css('margin-left', slideSpace - dragWidth + "px");
                         that.velo.css('margin-left', slideSpace - dragWidth + "px");
                         $('.border').toggleClass('close open');
-                        $('#borderTop').on('webkitTransitionEnd', function(e){
+                        $('#borderTop').on('webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd', function(e){
 
-                            $(this).unbind('webkitTransitionEnd');
+                            $(this).unbind('webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd');
 
                             app.router.navigate('/'+that.name+'/case-study', {trigger: false});
                             that.enterProjectAnim();
@@ -236,8 +236,8 @@ app.Views = app.Views || {};
         },
 
         enterFromRouter: function(){
-            $('.border').removeClass('close');
-            $('.border').addClass('open');
+            app.main.border.removeClass('close');
+            app.main.border.addClass('open');
             app.homeView.homeProjectsContainer.css('display', 'none');
             this.caseStudyElem.css('display', 'block');
             this.enterProject();

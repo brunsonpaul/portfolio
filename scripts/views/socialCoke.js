@@ -24,7 +24,7 @@ app.Views = app.Views || {};
         initialize: function(){
 
             this.initEnterProjectAction();
-
+            sayHello();
         },
         initEnterProjectAction: function(){
 
@@ -128,4 +128,5 @@ app.Views = app.Views || {};
             return this.name;
         }
     });
+    app.Views.socialCoke.extend(app.Views.abstractProjectView);
 })();

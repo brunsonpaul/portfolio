@@ -86,14 +86,15 @@ app.Views = app.Views || {};
 
             //Desactive le slider
             app.homeView.disableSlider();
+
             $('.border').removeClass('close');
             $('.border').addClass('open');
 
             app.homeView.disableSlider();
             $(".partechEnterLayout").addClass("active");
-            $(".partechEnterLayout").bind("webkitTransitionEnd", function(e){
+            $(".partechEnterLayout").bind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd", function(e){
 
-                $(this).unbind("webkitTransitionEnd");
+                $(this).unbind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd");
 
                 app.router.navigate('/'+that.getName()+'/case-study', {trigger: false});
 

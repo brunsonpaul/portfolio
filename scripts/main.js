@@ -9,7 +9,7 @@ window.app = {
     homeView: null,
     activeProjectView: null,
     activeCaseStudy: false,
-
+    border:$('.border'),
     init: function () {
         'use strict';
         this.homeView = new this.Views.HomeView();
