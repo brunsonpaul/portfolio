@@ -1121,10 +1121,67 @@ section .page-content {
   list-style: none;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -khtml-transition: all 0.4s;
+  transition: all 0.4s;
 }
 .pagination li {
   text-align: center;
   padding: 0;
+  opacity: 0;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -khtml-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.pagination li:nth-of-type(1) {
+  opacity: 1;
+}
+.pagination li:nth-of-type(2) {
+  -moz-transition-delay: 5.1s;
+  -webkit-transition-delay: 5.1s;
+  -ms-transition-delay: 5.1s;
+  -khtml-transition-delay: 5.1s;
+  transition-delay: 5.1s;
+}
+.pagination li:nth-of-type(3) {
+  -moz-transition-delay: 1.2s;
+  -webkit-transition-delay: 1.2s;
+  -ms-transition-delay: 1.2s;
+  -khtml-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+.pagination li:nth-of-type(4) {
+  -moz-transition-delay: 1.3s;
+  -webkit-transition-delay: 1.3s;
+  -ms-transition-delay: 1.3s;
+  -khtml-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+.pagination li:nth-of-type(5) {
+  -moz-transition-delay: 1.4s;
+  -webkit-transition-delay: 1.4s;
+  -ms-transition-delay: 1.4s;
+  -khtml-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+.pagination li:nth-of-type(6) {
+  -moz-transition-delay: 1.5s;
+  -webkit-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -khtml-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+.pagination li:nth-of-type(7) {
+  -moz-transition-delay: 1.6s;
+  -webkit-transition-delay: 1.6s;
+  -ms-transition-delay: 1.6s;
+  -khtml-transition-delay: 1.6s;
+  transition-delay: 1.6s;
 }
 .pagination li a {
   padding: 15px 0;
@@ -1172,6 +1229,9 @@ section .page-content {
   -moz-animation: lightPagination 0.8s 0 linear;
   -o-animation: lightPagination 0.8s 0 linear;
   animation: lightPagination 0.8s 0 linear;
+}
+.pagination.active li {
+  opacity: 1;
 }
 .pagination.tdf {
   margin-top: -103px;
