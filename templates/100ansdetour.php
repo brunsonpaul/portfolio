@@ -280,7 +280,7 @@
                         <a href='https://twitter.com/Cabaroc/status/363254012474171392' target='_blank'>
                             100 ans de Tour : un site de data visualisation sur les données des tours de France <span>http://bit.ly/16om4rI</span> Boulot monstre
                             <b>JP Cabaroc ‏- @Cabaroc</b>
-                        </span>
+                        </a>
                     </div>
                     <div class="tweetAnimationThree">
                         <a href='https://twitter.com/vpieters/status/359234590847676416' target='_blank'>
@@ -294,7 +294,6 @@
                             <b>Jean-renaud DACLIN ‏- @jrdaclin</b>
                         </a>
                     </div>
-
                 </div>            
                 <div id='tdf-tweetRight' class='tdf-tweet'>
                     <div class="tweetAnimationFive">
@@ -324,7 +323,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
             <ul id='tdf-award'>
                 <li>

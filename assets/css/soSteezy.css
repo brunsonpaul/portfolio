@@ -1167,6 +1167,12 @@ section .page-content {
   -webkit-opacity: 1;
   opacity: 1;
 }
+.pagination .loaded:before {
+  -webkit-animation: lightPagination 0.8s 0 linear;
+  -moz-animation: lightPagination 0.8s 0 linear;
+  -o-animation: lightPagination 0.8s 0 linear;
+  animation: lightPagination 0.8s 0 linear;
+}
 .pagination.tdf {
   margin-top: -103px;
 }
@@ -1178,6 +1184,50 @@ section .page-content {
 }
 .pagination.partech {
   margin-top: -103px;
+}
+@-webkit-keyframes lightPagination {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #b59663;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 4px #b59663;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px #b59663;
+  }
+}
+@-moz-keyframes lightPagination {
+  0% {
+    -moz-box-shadow: 0px 0px 0px 0px #b59663;
+  }
+  50% {
+    -moz-box-shadow: 0px 0px 20px 4px #b59663;
+  }
+  100% {
+    -moz-box-shadow: 0px 0px 0px 0px #b59663;
+  }
+}
+@-o-keyframes lightPagination {
+  0% {
+    -o-box-shadow: 0px 0px 0px 0px #b59663;
+  }
+  50% {
+    -o-box-shadow: 0px 0px 20px 4px #b59663;
+  }
+  100% {
+    -o-box-shadow: 0px 0px 0px 0px #b59663;
+  }
+}
+@keyframes lightPagination {
+  0% {
+    box-shadow: 0px 0px 0px 0px #b59663;
+  }
+  50% {
+    box-shadow: 0px 0px 20px 4px #b59663;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px #b59663;
+  }
 }
 menu {
   position: fixed;
