@@ -43,10 +43,7 @@ app.Views = app.Views || {};
 
                 that.$pseudoSocialCoke.empty();
                 that.$pseudoSocialCoke.html(pseudoText);
-
-                $(this).fadeOut(1000,function(){
-                    that.enterProjectAnim();
-                })
+                that.enterProjectAnim();
 
                 return false;
 
@@ -68,7 +65,6 @@ app.Views = app.Views || {};
         enterProjectAnim: function(){
 
             var that = this;
-            this.$socialCokeForm.fadeOut("slow");
 
             $('.border').removeClass('close');
             $('.border').addClass('open');

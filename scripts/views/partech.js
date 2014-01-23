@@ -107,13 +107,13 @@ app.Views = app.Views || {};
         leaveProject: function(){
 
             var that = this;
-            $(".partechEnterLayout").removeClass("active");
+            // $(".partechEnterLayout").removeClass("active");
 
-            $("#partech-introduction").removeClass("active");
+            // $("#partech-introduction").removeClass("active");
             app.homeView.homeProjectsContainer.css('display', 'block');
 
             that.caseStudyElem.css('display', 'none');
-            $('body').addClass('userSelect');
+            // $('body').addClass('userSelect');
 
         },
         enterFromRouter: function(){

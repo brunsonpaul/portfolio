@@ -86,7 +86,7 @@ window.app = {
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.activeProjectView.leaveProject();
-            app.homeView.homeProjectsContainer.css({'top':''});
+            app.homeView.homeProjectsContainer.css({'top':"0px"});
             app.homeView.slideToProject(app.activeProjectView.getName());
             
             $(this).animate({opacity:0},1000, function(){
