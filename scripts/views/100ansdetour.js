@@ -196,6 +196,7 @@ app.Views = app.Views || {};
             app.setCaseStudyActive(true);
             $('#tdfBgContent').css('display', 'none');
             this.caseStudyElem.css('display', 'block');
+            $(".pagination.tdf").addClass("active");
 
             this.animateDate(function(){
                 app.homeView.homeProjectsContainer.css('display', 'none');
@@ -228,7 +229,7 @@ app.Views = app.Views || {};
             $('#tdfBgContent').css('display', 'block');
             app.homeView.homeProjectsContainer.css('display', 'block');
             that.caseStudyElem.css('display', 'none');
-
+            $(".pagination.tdf").removeClass("active");
             that.velo.css('margin-left', 0 + "px");
             that.dragCursor.css('margin-left', 0 + "px");
             $('body').addClass('userSelect');

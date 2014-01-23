@@ -107,13 +107,14 @@ app.Views = app.Views || {};
         leaveProject: function(){
 
             var that = this;
-            // $(".partechEnterLayout").removeClass("active");
+            $(".partechEnterLayout").removeClass("active");
 
-            // $("#partech-introduction").removeClass("active");
+            $("#partech-introduction").removeClass("active");
             app.homeView.homeProjectsContainer.css('display', 'block');
+            $(".pagination.partech").removeClass("active");
 
             that.caseStudyElem.css('display', 'none');
-            // $('body').addClass('userSelect');
+            $('body').addClass('userSelect');
 
         },
         enterFromRouter: function(){
@@ -132,6 +133,7 @@ app.Views = app.Views || {};
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
             $("body").removeClass('userSelect');
+            $(".pagination.partech").addClass("active");
             app.initScrollAnims();
             this.dragScreen();
             this.refreshAnchors();

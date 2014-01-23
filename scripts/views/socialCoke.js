@@ -94,6 +94,7 @@ app.Views = app.Views || {};
             $(".button-menu").removeClass("open");
             $(".button-menu").addClass("close");
             app.setCaseStudyActive(true);
+            $(".pagination.socialCoke").addClass("active");
             app.initScrollAnims();
             this.refreshAnchors();
             app.refreshAnchors();
@@ -103,6 +104,7 @@ app.Views = app.Views || {};
         },
         leaveProject: function(){
             var that = this;
+            $(".pagination.socialCoke").removeClass("active");
             $("#transition-social-coke").css({'display':'none'});
             app.homeView.homeProjectsContainer.css({'display':'block'});
             this.$socialCokeForm.fadeIn("slow");
