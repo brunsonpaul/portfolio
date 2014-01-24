@@ -288,7 +288,7 @@ setcookie('cookie', $cookie);
                     into advertising messages
                 </p>
                 <form method="get" id="socialCokeForm">
-                    <input type="text" name="pseudo" placeholder="Enter your nickname" />
+                    <input type="text" name="pseudo" placeholder="Enter your nickname" maxlength="12"/>
                     <input type="submit" value="GO" />
                 </form>
             </div>

@@ -90,9 +90,9 @@ app.Views = app.Views || {};
                         that.dragCursor.css('margin-left', slideSpace - dragWidth + "px");
                         that.velo.css('margin-left', slideSpace - dragWidth + "px");
                         $('.border').toggleClass('close open');
-                        $('#borderTop').on('webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd', function(e){
+                        $('#borderTop').on('webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend', function(e){
 
-                            $(this).unbind('webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd');
+                            $(this).unbind('webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend');
 
                             app.router.navigate('/'+that.name+'/case-study', {trigger: false});
                             that.enterProjectAnim();
