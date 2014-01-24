@@ -24,7 +24,6 @@ app.Views = app.Views || {};
         initialize: function(){
 
             this.initEnterProjectAction();
-            sayHello();
         },
         initEnterProjectAction: function(){
 

@@ -32,8 +32,8 @@ setcookie('cookie', $cookie);
 
     <script src="scripts/views/pace.js"></script>
 
-    <meta property="og:title" content="Kévin Lagier Portfolio" />
-    <meta property="og:description" content="Kevin Lagier Portfolio, graphic design, art direction" />
+    <meta property="og:title" content="Kévin Lagier's Portfolio" />
+    <meta property="og:description" content="Kevin Lagier's Portfolio, graphic design, art direction" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://lagier-kevin.com" />
     <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.png" />
