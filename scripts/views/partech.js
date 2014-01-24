@@ -92,9 +92,9 @@ app.Views = app.Views || {};
 
             app.homeView.disableSlider();
             $(".partechEnterLayout").addClass("active");
-            $(".partechEnterLayout").bind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd", function(e){
+            $(".partechEnterLayout").bind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend", function(e){
 
-                $(this).unbind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd");
+                $(this).unbind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend");
 
                 app.router.navigate('/'+that.getName()+'/case-study', {trigger: false});
 
