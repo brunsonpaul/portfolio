@@ -41,9 +41,6 @@ setcookie('cookie', $cookie);
 
     <script>
         var host = "http://www.lagier-kevin.com/";
-          if((navigator.userAgent.match(/MSI/g))){
-            window.location = host+"sorry-IE.php";
-          }
           if(navigator.userAgent.match(/Android/i) ||navigator.userAgent.match(/webOS/i) ||navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)){
             window.location = host+"mobile";
           }
@@ -139,8 +136,8 @@ setcookie('cookie', $cookie);
                     <p>
                         I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
                         I'm looking for an Art Director internship<br/>
-                        From August to December 2014 and<br/>
-                        a block release training
+                        From June to December 2014 and<br/>
+                        a postgraduate training
                     </p>
                     <div id="discover">
                         <span></span>

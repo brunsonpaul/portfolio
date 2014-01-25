@@ -1259,10 +1259,10 @@ menu nav ul li {
   width: -o-calc(16.666666666666668%);
   width: calc(16.666666666666668%);
   -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   border-right: 1px solid #b59663;
@@ -1344,10 +1344,10 @@ menu nav ul li a:after {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #b59663;
 }
@@ -2001,10 +2001,10 @@ menu.openMenu {
   background: #000000;
   border: solid 3px #ffffff;
   -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
@@ -2085,10 +2085,10 @@ menu.openMenu {
   -khtml-border-radius: 100%;
   border-radius: 100%;
   -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
   box-sizing: border-box;
   border: solid 3px #ffffff;
 }
@@ -9474,7 +9474,7 @@ menu.openMenu {
   transition: all 1s;
   opacity: 0;
   position: absolute;
-  top: 70px;
+  top: 55px;
   left: 282px;
   z-index: 99;
 }
@@ -9547,7 +9547,7 @@ menu.openMenu {
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(6).active {
   opacity: 1;
-  top: 80px;
+  top: 65px;
 }
 #theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(7).active {
   opacity: 1;
