@@ -109,11 +109,9 @@ app.Views = app.Views || {};
 
             var that = this;
             $(".partechEnterLayout").removeClass("active");
-
             $("#partech-introduction").removeClass("active");
             app.homeView.homeProjectsContainer.css('display', 'block');
             $(".pagination.partech").removeClass("active");
-
             that.caseStudyElem.css('display', 'none');
             $('body').addClass('userSelect');
 

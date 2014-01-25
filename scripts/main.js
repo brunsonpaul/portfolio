@@ -19,7 +19,6 @@ window.app = {
         this.initOpenCloseMenu();
         this.initMenuLinks();
         this.refreshAnchors();
-        // $('#home').addClass('entered');
 
     },
 
@@ -81,27 +80,34 @@ window.app = {
         var that = this;
         $('.closeLayout').css('height', '100%');
         $('.closeLayout').animate({opacity:1},1000, function(){
-
-            
+            var closeLayout = this;
             $('.border').removeClass('close');
             $('.border').addClass('open');
             app.activeProjectView.leaveProject();
-            app.homeView.homeProjectsContainer.css({'top':"0px"});
-            app.homeView.slideToProject(app.activeProjectView.getName());
+            $("#transition-social-coke").css({'display':'none'});
+            // app.homeView.slideToProject(app.activeProjectView.getName());
             
-            $(this).animate({opacity:0},1000, function(){
+            app.homeView.homeProjectsContainer.addClass('no-transition');
+            app.homeView.homeProjectsContainer.css({'top':""});
+            app.homeView.homeProjectsContainer.removeClass('no-transition');
+            setTimeout(function(){
 
-                $(".button-menu").removeClass("close");
-                $(".button-menu").addClass("open");
-                that.activeProjectView.caseStudyElem.find('.animation-on-scroll').removeClass('active');
-                app.homeView.enableSlider();
-                app.activeCaseStudy = false;
-                $('body').addClass("userSelect");
-                $('.closeLayout').css({height:'0%'});
-                $('.border').removeClass('open');
-                $('.border').addClass('close');
+                $(closeLayout).animate({opacity:0},1000, function(){
 
-            });
+
+                    $(".button-menu").removeClass("close");
+                    $(".button-menu").addClass("open");
+                    that.activeProjectView.caseStudyElem.find('.animation-on-scroll').removeClass('active');
+                    app.homeView.enableSlider();
+                    app.activeCaseStudy = false;
+                    $('body').addClass("userSelect");
+                    $('.closeLayout').css({height:'0%'});
+                    $('.border').removeClass('open');
+                    $('.border').addClass('close');
+
+                });
+
+            },200);
 
         });
     },
@@ -149,7 +155,7 @@ window.app = {
             $('menu').addClass('openMenu');
             $('.wrapper-projects-container').addClass('openMenu');
             that.menuOpen = true;
-            that.homeView.disableSlider();
+            // that.homeView.disableSlider();
 
         } else if ($buttonMenu.hasClass('openMenu')) {
             $buttonMenu.removeClass('openMenu');
@@ -167,7 +173,7 @@ window.app = {
             $('menu').removeClass('openMenu');
             $('.wrapper-projects-container').removeClass('openMenu');
             that.menuOpen = false;
-            that.homeView.enableSlider();
+            // that.homeView.enableSlider();
         };
     },
     updateMenu: function(pageNumber){

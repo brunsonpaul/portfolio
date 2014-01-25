@@ -68,7 +68,6 @@ app.Views = app.Views || {};
 
             $('.border').removeClass('close');
             $('.border').addClass('open');
-            app.homeView.homeProjectsContainer.css("overflow","scroll");
             $("#transition-social-coke").css({'display':'block'});
             app.homeView.disableTransition();
             app.router.navigate('/'+this.name+'/case-study', {trigger: false});
@@ -104,10 +103,8 @@ app.Views = app.Views || {};
         },
         leaveProject: function(){
             var that = this;
-            $(".pagination.socialCoke").removeClass("active");
-            $("#transition-social-coke").css({'display':'none'});
             app.homeView.homeProjectsContainer.css({'display':'block'});
-            this.$socialCokeForm.fadeIn("slow");
+            $(".pagination.socialCoke").removeClass("active");
             that.caseStudyElem.css('display', 'none');
             $('body').addClass('userSelect');
 
