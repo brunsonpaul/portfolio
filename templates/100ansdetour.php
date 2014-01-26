@@ -49,7 +49,7 @@
             </p>
             <ul>
                 <li>
-                    <span>A trend :</span>
+                    <span>A trend</span>
                     The Tour is a regular sporting event that takes place every summer. As part of the national heritage of the French culture, on the one hand it plays on the constituent landmark of our identity, and on the other hand it remains continuously updated and globalized to promote cycling all over the world and to see a real resurgence of interest in this noble sport. 
                 </li><!--
                 !--><li>
@@ -81,7 +81,7 @@
             <ul id='tdf-dataNumbers'>
                 <li>
                     <span id="nb-etapes" class='animation-on-scroll' data-start-margin='100'>0</span>
-                    Stage
+                    Stages
                 </li><!--
                 !--><li>
                     <span id="nb-parcours" class='animation-on-scroll' data-start-margin='100'>0</span>

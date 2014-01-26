@@ -245,6 +245,7 @@ setcookie('cookie', $cookie);
                <div id='theWholePlanet'>
                     <a href='#' class="enter-button">
                         <img src="assets/img/the-whole/the-whole-planet.svg" alt="">
+                        <img src="assets/img/the-whole/click.svg" alt="">
                     </a>
                 </div>   
                 <div id='theWholeRssPlanet'>

@@ -2743,6 +2743,7 @@ menu.openMenu {
   top: 50%;
 }
 #theWholeProject #theWholeSolarSystem #theWholePlanet a {
+  position: relative;
   display: block;
   width: 100%;
   margin: auto;
@@ -2756,8 +2757,20 @@ menu.openMenu {
   -o-animation: lightplanet 2s 0 infinite linear;
   animation: lightplanet 2s 0 infinite linear;
 }
-#theWholeProject #theWholeSolarSystem #theWholePlanet a img {
+#theWholeProject #theWholeSolarSystem #theWholePlanet a img:nth-of-type(1) {
   width: 100%;
+}
+#theWholeProject #theWholeSolarSystem #theWholePlanet a img:nth-of-type(2) {
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  top: 62%;
+  left: 50%;
+  margin-left: -25%;
+  -webkit-animation: click 2s 0 infinite linear;
+  -moz-animation: click 2s 0 infinite linear;
+  -o-animation: click 2s 0 infinite linear;
+  animation: click 2s 0 infinite linear;
 }
 #theWholeProject #theWholeSolarSystem #theWholePlanet a:hover {
   -moz-transition: all 0.4s;
@@ -2808,6 +2821,50 @@ menu.openMenu {
   }
   100% {
     box-shadow: 0px 0px 30px 0px rgba(252, 31, 47, 0.5);
+  }
+}
+@-webkit-keyframes click {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes click {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes click {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes click {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 #theWholeProject #theWholeSolarSystem #theWholeSolar {
