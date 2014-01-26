@@ -22,9 +22,7 @@ app.Views = app.Views || {};
         anchorsName:"socialCoke",
 
         initialize: function(){
-
             this.initEnterProjectAction();
-
         },
         initEnterProjectAction: function(){
 

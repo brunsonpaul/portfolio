@@ -32,8 +32,8 @@ setcookie('cookie', $cookie);
 
     <script src="scripts/views/pace.js"></script>
 
-    <meta property="og:title" content="Kévin Lagier Portfolio" />
-    <meta property="og:description" content="Kevin Lagier Portfolio, graphic design, art direction" />
+    <meta property="og:title" content="Kévin Lagier's Portfolio" />
+    <meta property="og:description" content="Kevin Lagier's Portfolio, graphic design, art direction" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://lagier-kevin.com" />
     <meta property="og:image" content="assets/img/identity/logo-kevin-lagier.png" />
@@ -136,8 +136,8 @@ setcookie('cookie', $cookie);
                     <p>
                         I'm a 22 years old student at <a href='http://hetic.net' target='_blank'>Hétic</a>,<br/>
                         I'm looking for an Art Director internship<br/>
-                        From August to December 2014 and<br/>
-                        a block release training
+                        From June to December 2014 and<br/>
+                        a postgraduate training
                     </p>
                     <div id="discover">
                         <span></span>
@@ -245,6 +245,7 @@ setcookie('cookie', $cookie);
                <div id='theWholePlanet'>
                     <a href='#' class="enter-button">
                         <img src="assets/img/the-whole/the-whole-planet.svg" alt="">
+                        <img src="assets/img/the-whole/click.svg" alt="">
                     </a>
                 </div>   
                 <div id='theWholeRssPlanet'>

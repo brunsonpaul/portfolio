@@ -31,7 +31,7 @@
             </h1>
             <span class="sepPartech"></span>
             <p>
-                Production of the graphism and the development of a static website for the design office Partech. Site responsive, create with HTML 5 / CSS 3, Javascript and Flash.
+                Realization of graphic design and development of a static website for Partech, a design office. Responsive website, created in HTML 5 / CSS 3, Javascript and Flash.
                 <a href='http://partech-sarl.com' target='_blank'>Check the site</a>
             </p>
             <img id='partechCinemaDisplay' src='./assets/img/partech/partech-cinema-display.png' alt="partech cinema display">
@@ -41,15 +41,15 @@
     <article id='partech-client' >
         <div class='page-content'>
             <h2>The Client</h2>
-            <h3>Bureau d'etudes, engineering mecanique</h3>
+            <h3>Design office, engineering mechanics</h3>
             <span class="sepPartech"></span>
             <p>
-                <span>Créée en 1992 par Yves Lagier, PARTECH propose ses solutions d’engineering et réalisations dans le milieu de l’industrie et des remontées mécaniques.</span><br/>
-                Fort d’une expérience de plusieurs années au sein de bureau d’études de grands constructeurs (SKIRAIL, VON ROLL, CWA), PARTECH vous apporte son expérience dans des biens d’équipements industriels et montagne.
+                <span>Founded in 1992 by Yves Lagier, Partech offers its engineering solutions and achievements in the world of industry and ski lifts.</span><br/> 
+                With an experience of many years spent in major manufacturers (Skirail VON ROLL CWA) Partech brings its experience in industrial equipment and mountains
              </p><!--
             !--><p>
-                Doté d’un outil performant en conception, Logiciel 3D, calculs en éléments finis. Nos atouts sont fondés sur le sérieux, la motivation, l’expérience et l’écoute des clients.<br/>
-                Partech s’avère être une alternative économique et sérieuse face à des constructeurs pénalisés par une structure lourde, une politique rigide et des solutions coûteuses.
+                Featuring a powerful tool in design, 3D software, finite-element calculations. Serious and motivated, its strengths are also experience and customer listening.
+                Moreover, Partech proves to be an economic and serious alternative in opposition with manufacturers that are penalized by heavy structures, a rigid policy and costly alternative solutions.
             </p>   
             <img class='animation-on-scroll' data-start-margin='50' src='./assets/img/partech/single-rack.svg' alt="Single Rack">
         </div>
@@ -58,7 +58,7 @@
     <article id='partech-dragScreen' class='animation-on-scroll' data-start-margin='-300'>
         <div class='page-content'>
             <h2>Horizontal navigation</h2>
-            <p>Une navigation originale permettant de présenter un grand nombre de projets et laisse les visiteurs s’imprégner de l’ambiance.</p>
+            <p>An original navigation that allows the presentation of a large number of projects and the visitors to soak up the atmosphere.</p>
             <div class="toDrag" >
                 <div class="dragCursorPartech">
                 </div>
@@ -88,7 +88,7 @@
     <article id="partech-mobile" class='animation-on-scroll' data-start-margin='0'>
         <div class="page-content">
             <h2>Responsive Design</h2>
-            <p>Le web mobile étant de plus en plus important, il était nécessaire de s'adapter aux nouvelles modalités de consultation.</p>
+            <p>Mobile web is becoming increasingly important, it was necessary to adapt to new forms available for consultation.</p>
             <div class="mobileScreen">
                 <img id="partech-iphone" src='./assets/img/partech/partech-iphone.png' alt="Iphone screen Partech">
                 <ul>
@@ -107,7 +107,7 @@
         <div class="sep"></div>
         <div class="page-content">
             <h2>UI Element</h2>
-            <p>Création d'éléments graphiques pour faciliter la consultation du site aux personnes ayant peu de compétences en informatique.</p>
+            <p>Creation of graphic elements helping the website consultation for people with little computer skills.</p>
             <ul>
                 <li><img src='./assets/img/partech/ui1.png' alt='UI Element 1'></li><!--
             !--><li><img src='./assets/img/partech/ui2.png' alt='UI Element 2'></li><!--
