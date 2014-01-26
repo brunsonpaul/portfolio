@@ -41,9 +41,6 @@ setcookie('cookie', $cookie);
 
     <script>
         var host = "http://www.lagier-kevin.com/";
-          if((navigator.userAgent.match(/MSI/g))){
-            window.location = host+"sorry-IE.php";
-          }
           if(navigator.userAgent.match(/Android/i) ||navigator.userAgent.match(/webOS/i) ||navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)){
             window.location = host+"mobile";
           }

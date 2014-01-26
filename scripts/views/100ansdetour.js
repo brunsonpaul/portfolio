@@ -236,8 +236,8 @@ app.Views = app.Views || {};
         },
 
         enterFromRouter: function(){
-            app.main.border.removeClass('close');
-            app.main.border.addClass('open');
+            $(".border").removeClass('close');
+            $(".border").addClass('open');
             app.homeView.homeProjectsContainer.css('display', 'none');
             this.caseStudyElem.css('display', 'block');
             this.enterProject();

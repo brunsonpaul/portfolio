@@ -80,7 +80,7 @@ app.Views = app.Views || {};
         initialize: function(){
             $("#partechProject .enter-button").on("click", this.enterProjectAnim);
         },
-        enterProjectAnim: function(){
+        enterProjectAnim: function(e){
 
             var that = this;
 
