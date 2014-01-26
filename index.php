@@ -391,43 +391,21 @@ setcookie('cookie', $cookie);
 
     </div>
     <!-- build:js scripts/vendor.js -->
-    <script src="scripts/vendor/jquery/jquery.js"></script>
-    <script src="scripts/vendor/underscore/underscore.js"></script>
-    <script src="scripts/vendor/backbone/backbone.js"></script>
+    <script src="scripts/vendor/jquery/jquery.min.js"></script>
+    <script src="scripts/vendor/underscore/underscore-min.js"></script>
+    <script src="scripts/vendor/backbone/backbone-min.js"></script>
+    <!-- Parallax -->
+    <script src="scripts/jquery.parallax.js"></script>
+    <script type="text/javascript" src="scripts/vendor/skrollr.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/routes/application.js"></script>
-    <script src="scripts/views/home.js"></script>
-    <script src="scripts/views/100ansdetour.js"></script>
-    <script src="scripts/views/partech.js"></script>
-    <script src="scripts/views/socialCoke.js"></script>
-    <script src="scripts/views/theWhole.js"></script>
     <!-- endbuild -->
 
-    <!-- Parallax -->
-    <script src="scripts/jquery.parallax.js"></script>
-    <script>
-        $('#parallax').parallax();
-    </script>
-
-    <script type="text/javascript" src="scripts/vendor/skrollr.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
     <![endif]-->
-
-    <script type="text/javascript">
-    var s = skrollr.init({
-        edgeStrategy: 'set',
-        easing: {
-            WTF: Math.random,
-            inverted: function(p) {
-                return 1-p;
-            }
-        }
-    });
-    </script>
 
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -473,11 +451,15 @@ setcookie('cookie', $cookie);
                ga('send', 'event', 'Case study', 'Click', 'Partech case study');
 
             });
-        });
-        $(document).ready(function() {
-            
-        });
+            $('#tdfDragCursor').click(function(){
+               ga('send', 'event', 'Case study', 'Click', '100 ans de tour case study');
 
+            });
+            $('#socialCokeForm').on('submit', function(){
+               ga('send', 'event', 'Case study', 'Click', 'Partech case study');
+
+            });
+        });
     </script>
 
 </body>
